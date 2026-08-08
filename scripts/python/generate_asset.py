@@ -7,6 +7,8 @@ from io import BytesIO
 from PIL import Image
 from rembg import remove
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 COMFYUI_URL = "http://127.0.0.1:8188"
 OUTPUT_DIR = "./assets/billboards"
 
@@ -79,13 +81,13 @@ def generate_pixel_art_asset(noun_input):
         }
     }
 
-    print(f"🎨 Sending prompt to local ComfyUI for noun: '{noun_input}'...")
+    print(f"Sending prompt to local ComfyUI for noun: '{noun_input}'...")
     
     try:
         response = requests.post(f"{COMFYUI_URL}/prompt", json={"prompt": workflow_api})
         response.raise_for_status()
         prompt_id = response.json().get("prompt_id")
-        print(f"⏳ Prompt queued (ID: {prompt_id}). Polling local ComfyUI for output...")
+        print(f"Prompt queued (ID: {prompt_id}). Polling local ComfyUI for output...")
 
         filename = None
         for _ in range(60):
@@ -101,24 +103,24 @@ def generate_pixel_art_asset(noun_input):
             time.sleep(1.0)
 
         if not filename:
-            print("⚠️ Generation timed out or image output not found in ComfyUI history.")
+            print("Generation timed out or image output not found in ComfyUI history.")
             return None
 
         img_resp = requests.get(f"{COMFYUI_URL}/view", params={"filename": filename})
         raw_image = Image.open(BytesIO(img_resp.content))
         
-        print("✂️ Extracting asset boundaries and applying transparent alpha mask...")
+        print("Extracting asset boundaries and applying transparent alpha mask...")
         transparent_image = remove(raw_image)
         
         safe_filename = f"{noun_input.lower().replace(' ', '_')}.png"
         final_path = os.path.join(OUTPUT_DIR, safe_filename)
         transparent_image.save(final_path, "PNG")
         
-        print(f"✅ Success! Asset saved to: {final_path}")
+        print(f"Success! Asset saved to: {final_path}")
         return final_path
 
     except Exception as e:
-        print(f"❌ Error communicating with local ComfyUI server: {e}")
+        print(f"Error communicating with local ComfyUI server: {e}")
         return None
 
 if __name__ == "__main__":
