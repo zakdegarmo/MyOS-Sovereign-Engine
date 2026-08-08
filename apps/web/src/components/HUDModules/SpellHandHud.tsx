@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SpellSchool } from '../World/SpellFxEngine';
+import type { SpellSchool } from '../World/SpellFxEngine';
 
 export interface SpellCardItem {
     id: string;
