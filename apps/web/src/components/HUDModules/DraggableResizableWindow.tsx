@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+let globalZIndex = 1000;
+
 export interface DraggableResizableWindowProps {
     id: string;
     title: string;
@@ -39,9 +41,13 @@ export const DraggableResizableWindow: React.FC<DraggableResizableWindowProps> =
         return defaultSize;
     });
 
+    const [zIndex, setZIndex] = useState<number>(() => ++globalZIndex);
     const [isMinimized, setIsMinimized] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
+    const [isResizing, setIsResizing] = useState(false);
     const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+    const [resizeStart, setResizeStart] = useState({ x: 0, y: 0, w: 0, h: 0 });
+
     const windowRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -56,43 +62,74 @@ export const DraggableResizableWindow: React.FC<DraggableResizableWindowProps> =
         } catch (e) {}
     }, [id, size]);
 
-    const handleHeaderMouseDown = (e: React.MouseEvent) => {
+    const bringToFront = () => {
+        setZIndex(++globalZIndex);
+    };
+
+    const handleHeaderPointerDown = (e: React.PointerEvent) => {
         if ((e.target as HTMLElement).tagName === 'BUTTON') return;
+        bringToFront();
         setIsDragging(true);
         setDragOffset({
             x: e.clientX - pos.x,
             y: e.clientY - pos.y
         });
+        (e.target as HTMLElement).setPointerCapture(e.pointerId);
     };
 
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            if (!isDragging) return;
-            const newX = Math.max(10, Math.min(window.innerWidth - 100, e.clientX - dragOffset.x));
-            const newY = Math.max(10, Math.min(window.innerHeight - 60, e.clientY - dragOffset.y));
-            setPos({ x: newX, y: newY });
-        };
+    const handleHeaderPointerMove = (e: React.PointerEvent) => {
+        if (!isDragging) return;
+        const newX = Math.max(10, Math.min(window.innerWidth - 100, e.clientX - dragOffset.x));
+        const newY = Math.max(10, Math.min(window.innerHeight - 60, e.clientY - dragOffset.y));
+        setPos({ x: newX, y: newY });
+    };
 
-        const handleMouseUp = () => {
-            if (isDragging) setIsDragging(false);
-        };
-
+    const handleHeaderPointerUp = (e: React.PointerEvent) => {
         if (isDragging) {
-            window.addEventListener('mousemove', handleMouseMove);
-            window.addEventListener('mouseup', handleMouseUp);
+            setIsDragging(false);
+            try {
+                (e.target as HTMLElement).releasePointerCapture(e.pointerId);
+            } catch (err) {}
         }
+    };
 
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-            window.removeEventListener('mouseup', handleMouseUp);
-        };
-    }, [isDragging, dragOffset]);
+    const handleResizePointerDown = (e: React.PointerEvent) => {
+        e.stopPropagation();
+        bringToFront();
+        setIsResizing(true);
+        setResizeStart({
+            x: e.clientX,
+            y: e.clientY,
+            w: size.width,
+            h: size.height
+        });
+        (e.target as HTMLElement).setPointerCapture(e.pointerId);
+    };
+
+    const handleResizePointerMove = (e: React.PointerEvent) => {
+        if (!isResizing) return;
+        const deltaX = e.clientX - resizeStart.x;
+        const deltaY = e.clientY - resizeStart.y;
+        const newW = Math.max(minSize.width, Math.min(window.innerWidth - pos.x - 20, resizeStart.w + deltaX));
+        const newH = Math.max(minSize.height, Math.min(window.innerHeight - pos.y - 20, resizeStart.h + deltaY));
+        setSize({ width: newW, height: newH });
+    };
+
+    const handleResizePointerUp = (e: React.PointerEvent) => {
+        if (isResizing) {
+            setIsResizing(false);
+            try {
+                (e.target as HTMLElement).releasePointerCapture(e.pointerId);
+            } catch (err) {}
+        }
+    };
 
     if (!isOpen) return null;
 
     return (
         <div
             ref={windowRef}
+            onMouseDown={bringToFront}
             style={{
                 position: 'fixed',
                 left: `${pos.x}px`,
@@ -101,31 +138,33 @@ export const DraggableResizableWindow: React.FC<DraggableResizableWindowProps> =
                 height: isMinimized ? 'auto' : `${size.height}px`,
                 minWidth: `${minSize.width}px`,
                 minHeight: isMinimized ? 'auto' : `${minSize.height}px`,
-                zIndex: 99999,
-                background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%)',
-                backdropFilter: 'blur(16px)',
-                border: '1.5px solid rgba(56, 189, 248, 0.4)',
-                borderRadius: '12px',
-                boxShadow: isDragging ? '0 25px 50px rgba(56, 189, 248, 0.4)' : '0 15px 35px rgba(0,0,0,0.7)',
+                zIndex: zIndex,
+                background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 41, 59, 0.96) 100%)',
+                backdropFilter: 'blur(20px)',
+                border: isDragging ? '1.5px solid #38bdf8' : '1.5px solid rgba(56, 189, 248, 0.35)',
+                borderRadius: '14px',
+                boxShadow: isDragging ? '0 25px 50px rgba(56, 189, 248, 0.4), 0 0 20px rgba(56, 189, 248, 0.2)' : '0 15px 35px rgba(0,0,0,0.75)',
                 display: 'flex',
                 flexDirection: 'column',
                 overflow: 'hidden',
-                resize: isMinimized ? 'none' : 'both',
                 pointerEvents: 'auto',
-                transition: isDragging ? 'none' : 'box-shadow 0.2s ease'
+                transition: isDragging || isResizing ? 'none' : 'box-shadow 0.2s ease, border-color 0.2s ease'
             }}
         >
             <div
-                onMouseDown={handleHeaderMouseDown}
+                onPointerDown={handleHeaderPointerDown}
+                onPointerMove={handleHeaderPointerMove}
+                onPointerUp={handleHeaderPointerUp}
                 style={{
                     padding: '8px 12px',
-                    background: isDragging ? 'rgba(56, 189, 248, 0.25)' : 'rgba(15, 23, 42, 0.8)',
+                    background: isDragging ? 'rgba(56, 189, 248, 0.25)' : 'rgba(15, 23, 42, 0.85)',
                     borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
                     display: 'flex',
-                    justifyContent: 'space-between',
+                    justify: 'space-between',
                     alignItems: 'center',
                     cursor: isDragging ? 'grabbing' : 'grab',
-                    userSelect: 'none'
+                    userSelect: 'none',
+                    touchAction: 'none'
                 }}
             >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold', fontSize: '13px', color: '#38bdf8' }}>
@@ -183,9 +222,39 @@ export const DraggableResizableWindow: React.FC<DraggableResizableWindowProps> =
                     overflowY: 'auto',
                     padding: '12px',
                     display: 'flex',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    position: 'relative'
                 }}>
                     {children}
+                </div>
+            )}
+
+            {!isMinimized && (
+                <div
+                    onPointerDown={handleResizePointerDown}
+                    onPointerMove={handleResizePointerMove}
+                    onPointerUp={handleResizePointerUp}
+                    title="Drag corner to resize window"
+                    style={{
+                        position: 'absolute',
+                        right: '2px',
+                        bottom: '2px',
+                        width: '16px',
+                        height: '16px',
+                        cursor: 'nwse-resize',
+                        userSelect: 'none',
+                        touchAction: 'none',
+                        display: 'flex',
+                        alignItems: 'flex-end',
+                        justifyContent: 'flex-end',
+                        fontSize: '10px',
+                        color: isResizing ? '#38bdf8' : '#64748b',
+                        paddingRight: '2px',
+                        paddingBottom: '2px',
+                        zIndex: 100000
+                    }}
+                >
+                    ◢
                 </div>
             )}
         </div>
