@@ -29,7 +29,7 @@ export const CANONICAL_SPELL_BOOK: SpellCardItem[] = [
         duration: 'Instantaneous',
         description: 'A bright streak flashes from your pointing finger to a point you choose and then blossoms into an explosion of flame.',
         damageOrEffect: '8d6 Fire Damage (DC 15 Dex Save)',
-        imagePath: '/assets/dnd_cards/card_p14_r1_c1.png'
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Fireball.png'
     },
     {
         id: 'spell_ray_of_frost',
@@ -43,7 +43,7 @@ export const CANONICAL_SPELL_BOOK: SpellCardItem[] = [
         duration: 'Instantaneous',
         description: 'A frigid beam of blue-white light streaks toward a creature within range. Speed reduced by 10ft.',
         damageOrEffect: '1d8 Cold Damage & -10ft Speed',
-        imagePath: '/assets/dnd_cards/card_p15_r0_c2.png'
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Ray%20of%20Frost.png'
     },
     {
         id: 'spell_lightning_bolt',
@@ -57,7 +57,7 @@ export const CANONICAL_SPELL_BOOK: SpellCardItem[] = [
         duration: 'Instantaneous',
         description: 'A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you.',
         damageOrEffect: '8d6 Lightning Damage (DC 15 Dex Save)',
-        imagePath: '/assets/dnd_cards/card_p16_r1_c0.png'
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Lightning%20Bolt.png'
     },
     {
         id: 'spell_shield_of_faith',
@@ -71,7 +71,7 @@ export const CANONICAL_SPELL_BOOK: SpellCardItem[] = [
         duration: 'Concentration, up to 10 min',
         description: 'A shimmering field appears and surrounds a creature of your choice, granting +2 AC.',
         damageOrEffect: '+2 Armor Class Bonus',
-        imagePath: '/assets/dnd_cards/card_p10_r0_c1.png'
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Shield%20of%20Faith.png'
     },
     {
         id: 'spell_misty_step',
@@ -85,7 +85,49 @@ export const CANONICAL_SPELL_BOOK: SpellCardItem[] = [
         duration: 'Instantaneous',
         description: 'Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space you can see.',
         damageOrEffect: 'Teleport 30ft instantly',
-        imagePath: '/assets/dnd_cards/card_p12_r1_c2.png'
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Misty%20Step.png'
+    },
+    {
+        id: 'spell_invisibility',
+        name: 'Invisibility',
+        school: 'conjuration_teleport',
+        schoolName: 'Illusion',
+        level: '2nd-Level',
+        castingTime: '1 Action',
+        range: 'Touch',
+        components: 'V, S, M (An eyelash in gum arabic)',
+        duration: 'Concentration, up to 1 hour',
+        description: 'A creature you touch becomes invisible until the spell ends or until the target attacks or casts a spell.',
+        damageOrEffect: 'Target becomes Invisible',
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Invisibility.png'
+    },
+    {
+        id: 'spell_heal',
+        name: 'Heal',
+        school: 'abjuration_holy',
+        schoolName: 'Evocation (Healing)',
+        level: '6th-Level',
+        castingTime: '1 Action',
+        range: '60 feet',
+        components: 'V, S',
+        duration: 'Instantaneous',
+        description: 'Choose a creature within range. A surge of positive energy washes through the creature, restoring 70 hit points.',
+        damageOrEffect: 'Restore 70 HP & Cure Diseases',
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Heal.png'
+    },
+    {
+        id: 'spell_entangle',
+        name: 'Entangle',
+        school: 'evocation_frost',
+        schoolName: 'Conjuration (Nature)',
+        level: '1st-Level',
+        castingTime: '1 Action',
+        range: '90 feet',
+        components: 'V, S',
+        duration: 'Concentration, up to 1 min',
+        description: 'Grasping weeds and vines sprout from the ground in a 20-foot square, restraining creatures.',
+        damageOrEffect: 'Restrain targets (DC 15 Str Save)',
+        imagePath: '/integrations/5e%20spell%20cards%20individual/Entangle.png'
     }
 ];
 
