@@ -39,7 +39,7 @@ def generate_pixel_art_asset(noun_input):
         },
         "4": {
             "inputs": {
-                "model_name": "flux1-schnell.safetensors"
+                "ckpt_name": "v1-5-pruned-emaonly.safetensors"
             },
             "class_type": "CheckpointLoaderSimple"
         },
