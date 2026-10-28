@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOS Bering Sea Parallax Shader Lab (Standalone Port 5175)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #01040a; color: #00e5ff; font-family: monospace; overflow: hidden; }
+        #canvas-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
+        #hud {
+            position: absolute; top: 20px; left: 20px; z-index: 10;
+            background: rgba(3, 8, 18, 0.88); border: 1px solid rgba(0, 229, 255, 0.4);
+            padding: 16px; border-radius: 8px; width: 320px; backdrop-filter: blur(8px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+        }
+        .title { font-weight: bold; font-size: 14px; margin-bottom: 12px; border-bottom: 1px solid rgba(0, 229, 255, 0.3); padding-bottom: 6px; display: flex; justify-content: space-between; align-items: center; }
+        .tag { font-size: 10px; background: rgba(0, 229, 255, 0.15); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(0, 229, 255, 0.4); }
+        .control-group { margin-bottom: 12px; }
+        .control-group label { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px; }
+        input[type=range] { width: 100%; accent-color: #00e5ff; cursor: pointer; }
+        .footer-note { font-size: 10px; color: rgba(0, 229, 255, 0.7); border-top: 1px solid rgba(0, 229, 255, 0.2); padding-top: 8px; margin-top: 8px; line-height: 1.4; }
+    </style>
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div id="hud">
+        <div class="title">
+            <span>🌊 BERING SEA SHADER LAB</span>
+            <span class="tag">PORT 5175</span>
+        </div>
+        <div class="control-group">
+            <label><span>Wave Turbulence</span><span id="turb-val">1.6x</span></label>
+            <input type="range" id="turb-slider" min="0.4" max="3.0" step="0.1" value="1.6">
+        </div>
+        <div class="control-group">
+            <label><span>Aurora Intensity</span><span id="aurora-val">1.4x</span></label>
+            <input type="range" id="aurora-slider" min="0.0" max="2.5" step="0.1" value="1.4">
+        </div>
+        <div class="control-group">
+            <label><span>Sea Spray & Frost</span><span id="spray-val">0.8x</span></label>
+            <input type="range" id="spray-slider" min="0.0" max="1.5" step="0.1" value="0.8">
+        </div>
+        <div class="footer-note">
+            Move mouse across screen to drive 2.5D multiplane parallax. Independent procedural GLSL shaders running on 5 depth planes at 60 FPS.
+        </div>
+    </div>
+
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 12);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // ═══ LAYER 1: AURORA SKY SHADER (Z = -80) ═══
+        const skyMat = new THREE.ShaderMaterial({
+            uniforms: {
+                u_time: { value: 0 },
+                u_aurora_intensity: { value: 1.4 }
+            },
+            vertexShader: `
+                varying vec2 vUv;
+                void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+            `,
+            fragmentShader: `
+                uniform float u_time;
+                uniform float u_aurora_intensity;
+                varying vec2 vUv;
+                float hash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+                void main() {
+                    vec2 uv = vUv;
+                    vec3 skyColor = mix(vec3(0.01, 0.02, 0.05), vec3(0.03, 0.08, 0.16), uv.y);
+                    float star = hash(floor(uv * 180.0));
+                    if (star > 0.985 && uv.y > 0.35) {
+                        float tw = 0.5 + 0.5 * sin(u_time * 4.0 + star * 6.28);
+                        skyColor += vec3(0.85, 0.95, 1.0) * tw * (uv.y - 0.35);
+                    }
+                    if (uv.y > 0.25) {
+                        float w1 = sin(uv.x * 4.0 + u_time * 0.45) * 0.12;
+                        float w2 = cos(uv.x * 7.5 - u_time * 0.3) * 0.08;
+                        float ribbon = 0.65 + w1 + w2;
+                        float glow = smoothstep(0.28, 0.0, abs(uv.y - ribbon)) * u_aurora_intensity;
+                        vec3 aur = mix(vec3(0.0, 1.0, 0.53), vec3(0.0, 0.9, 1.0), sin(uv.x * 3.0 + u_time) * 0.5 + 0.5);
+                        skyColor += aur * glow * (0.8 + 0.2 * sin(u_time * 2.0 + uv.x * 10.0));
+                    }
+                    gl_FragColor = vec4(skyColor, 1.0);
+                }
+            `
+        });
+        const skyMesh = new THREE.Mesh(new THREE.PlaneGeometry(140, 75), skyMat);
+        skyMesh.position.set(0, 4, -80);
+        scene.add(skyMesh);
+
+        // ═══ LAYER 2: DISTANT OCEAN SWELLS (Z = -45) ═══
+        const distantMat = new THREE.ShaderMaterial({
+            uniforms: { u_time: { value: 0 } },
+            transparent: true,
+            vertexShader: `
+                varying vec2 vUv;
+                void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+            `,
+            fragmentShader: `
+                uniform float u_time;
+                varying vec2 vUv;
+                void main() {
+                    vec2 uv = vUv;
+                    float t = u_time * 0.6;
+                    float horizon = 0.5 + sin(uv.x * 6.0 + t) * 0.08 + cos(uv.x * 11.0 - t * 0.8) * 0.04;
+                    if (uv.y > horizon) discard;
+                    float depth = (horizon - uv.y) / horizon;
+                    vec3 col = mix(vec3(0.04, 0.12, 0.22), vec3(0.015, 0.04, 0.09), depth);
+                    col += vec3(0.5, 0.7, 0.85) * smoothstep(0.02, 0.0, horizon - uv.y) * 0.4;
+                    gl_FragColor = vec4(col, 1.0);
+                }
+            `
+        });
+        const distantMesh = new THREE.Mesh(new THREE.PlaneGeometry(100, 45), distantMat);
+        distantMesh.position.set(0, -2, -45);
+        scene.add(distantMesh);
+
+        // ═══ LAYER 3: MIDGROUND CRASHING WAVES (Z = -20) ═══
+        const midMat = new THREE.ShaderMaterial({
+            uniforms: {
+                u_time: { value: 0 },
+                u_turbulence: { value: 1.6 }
+            },
+            transparent: true,
+            vertexShader: `
+                varying vec2 vUv;
+                void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+            `,
+            fragmentShader: `
+                uniform float u_time;
+                uniform float u_turbulence;
+                varying vec2 vUv;
+                float noise(vec2 p) { return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
+                void main() {
+                    vec2 uv = vUv;
+                    float t = u_time * 1.2;
+                    float edge = 0.48 + (sin(uv.x * 8.0 + t * 1.5) * 0.12 + sin(uv.x * 16.0 - t * 2.0) * 0.06) * (u_turbulence * 0.8);
+                    if (uv.y > edge) discard;
+                    vec3 water = mix(vec3(0.02, 0.06, 0.12), vec3(0.06, 0.18, 0.28), uv.y);
+                    float froth = smoothstep(0.06, 0.0, edge - uv.y) * (0.7 + 0.3 * noise(uv * 40.0 + vec2(t * 2.0, 0.0)));
+                    gl_FragColor = vec4(mix(water, vec3(0.75, 0.88, 0.95), froth * 0.85), 0.95);
+                }
+            `
+        });
+        const midMesh = new THREE.Mesh(new THREE.PlaneGeometry(65, 30), midMat);
+        midMesh.position.set(0, -3, -20);
+        scene.add(midMesh);
+
+        // ═══ LAYER 4: CRAB BOAT SILHOUETTE BILLBOARD (Z = -10) ═══
+        const boatMat = new THREE.ShaderMaterial({
+            uniforms: { u_time: { value: 0 } },
+            transparent: true,
+            vertexShader: `
+                varying vec2 vUv;
+                void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+            `,
+            fragmentShader: `
+                uniform float u_time;
+                varying vec2 vUv;
+                void main() {
+                    vec2 uv = vUv;
+                    float hull = 0.0;
+                    if (uv.y > 0.15 && uv.y < 0.45 && uv.x > 0.15 && uv.x < 0.85) {
+                        float bow = (uv.x < 0.3) ? (uv.x - 0.15) / 0.15 : 1.0;
+                        float stern = (uv.x > 0.75) ? (0.85 - uv.x) / 0.1 : 1.0;
+                        if (uv.y < 0.15 + bow * 0.28 && uv.y < 0.15 + stern * 0.28) hull = 1.0;
+                    }
+                    if (uv.x > 0.25 && uv.x < 0.48 && uv.y >= 0.40 && uv.y < 0.68) hull = 1.0;
+                    if (uv.x > 0.58 && uv.x < 0.61 && uv.y >= 0.40 && uv.y < 0.85) hull = 1.0;
+                    if (uv.x > 0.60 && uv.x < 0.78 && abs(uv.y - (0.85 - (uv.x - 0.6) * 0.8)) < 0.02) hull = 1.0;
+                    if (hull < 0.5) discard;
+                    vec3 col = vec3(0.08, 0.07, 0.06);
+                    if (uv.x > 0.28 && uv.x < 0.44 && uv.y > 0.52 && uv.y < 0.62) {
+                        col = vec3(0.2, 0.85, 0.4) * (0.85 + 0.15 * sin(u_time * 8.0));
+                    }
+                    float flare = smoothstep(0.18, 0.0, length(uv - vec2(0.52, 0.65)));
+                    col += vec3(1.0, 0.6, 0.15) * flare * 2.2;
+                    gl_FragColor = vec4(col, 1.0);
+                }
+            `
+        });
+        const boatGroup = new THREE.Group();
+        const boatMesh = new THREE.Mesh(new THREE.PlaneGeometry(12, 8), boatMat);
+        boatGroup.add(boatMesh);
+        boatGroup.position.set(0, -1.5, -10);
+        scene.add(boatGroup);
+
+        // ═══ LAYER 5: FOREGROUND SPRAY & FROST (Z = -2.5) ═══
+        const sprayMat = new THREE.ShaderMaterial({
+            uniforms: {
+                u_time: { value: 0 },
+                u_spray_intensity: { value: 0.8 }
+            },
+            transparent: true,
+            vertexShader: `
+                varying vec2 vUv;
+                void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
+            `,
+            fragmentShader: `
+                uniform float u_time;
+                uniform float u_spray_intensity;
+                varying vec2 vUv;
+                float noise(vec2 p) { return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
+                void main() {
+                    vec2 uv = vUv;
+                    float t = u_time * 2.5;
+                    float vig = pow(length(abs(uv - 0.5) * 2.0), 2.2) * 0.45;
+                    float sp = (noise(floor(uv * vec2(25.0, 15.0) + vec2(t * 3.0, sin(t * 0.5)))) > 0.94) ? 0.35 : 0.0;
+                    gl_FragColor = vec4(vec3(0.85, 0.95, 1.0), (vig + sp) * u_spray_intensity);
+                }
+            `
+        });
+        const sprayMesh = new THREE.Mesh(new THREE.PlaneGeometry(12, 8), sprayMat);
+        sprayMesh.position.set(0, 0, -2.5);
+        scene.add(sprayMesh);
+
+        // Mouse Parallax
+        let targetMx = 0, targetMy = 0;
+        let mx = 0, my = 0;
+        window.addEventListener('mousemove', (e) => {
+            targetMx = (e.clientX / window.innerWidth) * 2 - 1;
+            targetMy = -(e.clientY / window.innerHeight) * 2 + 1;
+        });
+
+        // UI Controls
+        document.getElementById('turb-slider').addEventListener('input', (e) => {
+            const v = parseFloat(e.target.value);
+            midMat.uniforms.u_turbulence.value = v;
+            document.getElementById('turb-val').innerText = v.toFixed(1) + 'x';
+        });
+        document.getElementById('aurora-slider').addEventListener('input', (e) => {
+            const v = parseFloat(e.target.value);
+            skyMat.uniforms.u_aurora_intensity.value = v;
+            document.getElementById('aurora-val').innerText = v.toFixed(1) + 'x';
+        });
+        document.getElementById('spray-slider').addEventListener('input', (e) => {
+            const v = parseFloat(e.target.value);
+            sprayMat.uniforms.u_spray_intensity.value = v;
+            document.getElementById('spray-val').innerText = v.toFixed(1) + 'x';
+        });
+
+        // Window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Render Loop
+        const clock = new THREE.Clock();
+        function animate() {
+            requestAnimationFrame(animate);
+            const t = clock.getElapsedTime();
+
+            skyMat.uniforms.u_time.value = t;
+            distantMat.uniforms.u_time.value = t;
+            midMat.uniforms.u_time.value = t;
+            boatMat.uniforms.u_time.value = t;
+            sprayMat.uniforms.u_time.value = t;
+
+            // Interpolate mouse
+            mx += (targetMx - mx) * 0.05;
+            my += (targetMy - my) * 0.05;
+
+            sprayMesh.position.x = mx * 0.8;
+            sprayMesh.position.y = my * 0.4;
+
+            boatGroup.position.x = mx * 2.2;
+            boatGroup.position.y = -1.5 + Math.cos(t * 1.5) * 0.6 + my * 1.0;
+            boatGroup.rotation.z = Math.sin(t * 1.8) * 0.12;
+
+            midMesh.position.x = mx * 3.5;
+            midMesh.position.y = -3.0 + my * 1.5;
+
+            distantMesh.position.x = mx * 6.0;
+            distantMesh.position.y = -2.0 + my * 2.5;
+
+            skyMesh.position.x = mx * 1.5;
+            skyMesh.position.y = 4.0 + my * 0.8;
+
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1588 @@
+{
+  "items": [
+    {
+      "id": "equipment_p4_r0_c0",
+      "page": 4,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p4_r0_c0.png",
+      "name": "D&D Item (Page 4 #1)"
+    },
+    {
+      "id": "equipment_p4_r0_c1",
+      "page": 4,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p4_r0_c1.png",
+      "name": "D&D Item (Page 4 #2)"
+    },
+    {
+      "id": "equipment_p4_r0_c2",
+      "page": 4,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p4_r0_c2.png",
+      "name": "D&D Item (Page 4 #3)"
+    },
+    {
+      "id": "equipment_p4_r1_c0",
+      "page": 4,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p4_r1_c0.png",
+      "name": "D&D Item (Page 4 #4)"
+    },
+    {
+      "id": "equipment_p4_r1_c1",
+      "page": 4,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p4_r1_c1.png",
+      "name": "D&D Item (Page 4 #5)"
+    },
+    {
+      "id": "equipment_p4_r1_c2",
+      "page": 4,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p4_r1_c2.png",
+      "name": "D&D Item (Page 4 #6)"
+    },
+    {
+      "id": "equipment_p4_r2_c0",
+      "page": 4,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p4_r2_c0.png",
+      "name": "D&D Item (Page 4 #7)"
+    },
+    {
+      "id": "equipment_p4_r2_c1",
+      "page": 4,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p4_r2_c1.png",
+      "name": "D&D Item (Page 4 #8)"
+    },
+    {
+      "id": "equipment_p4_r2_c2",
+      "page": 4,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p4_r2_c2.png",
+      "name": "D&D Item (Page 4 #9)"
+    },
+    {
+      "id": "equipment_p5_r0_c0",
+      "page": 5,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p5_r0_c0.png",
+      "name": "D&D Item (Page 5 #1)"
+    },
+    {
+      "id": "equipment_p5_r0_c1",
+      "page": 5,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p5_r0_c1.png",
+      "name": "D&D Item (Page 5 #2)"
+    },
+    {
+      "id": "equipment_p5_r0_c2",
+      "page": 5,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p5_r0_c2.png",
+      "name": "D&D Item (Page 5 #3)"
+    },
+    {
+      "id": "equipment_p5_r1_c0",
+      "page": 5,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p5_r1_c0.png",
+      "name": "D&D Item (Page 5 #4)"
+    },
+    {
+      "id": "equipment_p5_r1_c1",
+      "page": 5,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p5_r1_c1.png",
+      "name": "D&D Item (Page 5 #5)"
+    },
+    {
+      "id": "equipment_p5_r1_c2",
+      "page": 5,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p5_r1_c2.png",
+      "name": "D&D Item (Page 5 #6)"
+    },
+    {
+      "id": "equipment_p5_r2_c0",
+      "page": 5,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p5_r2_c0.png",
+      "name": "D&D Item (Page 5 #7)"
+    },
+    {
+      "id": "equipment_p5_r2_c1",
+      "page": 5,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p5_r2_c1.png",
+      "name": "D&D Item (Page 5 #8)"
+    },
+    {
+      "id": "equipment_p5_r2_c2",
+      "page": 5,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p5_r2_c2.png",
+      "name": "D&D Item (Page 5 #9)"
+    },
+    {
+      "id": "equipment_p6_r0_c0",
+      "page": 6,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p6_r0_c0.png",
+      "name": "D&D Item (Page 6 #1)"
+    },
+    {
+      "id": "equipment_p6_r0_c1",
+      "page": 6,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p6_r0_c1.png",
+      "name": "D&D Item (Page 6 #2)"
+    },
+    {
+      "id": "equipment_p6_r0_c2",
+      "page": 6,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p6_r0_c2.png",
+      "name": "D&D Item (Page 6 #3)"
+    },
+    {
+      "id": "equipment_p6_r1_c0",
+      "page": 6,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p6_r1_c0.png",
+      "name": "D&D Item (Page 6 #4)"
+    },
+    {
+      "id": "equipment_p6_r1_c1",
+      "page": 6,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p6_r1_c1.png",
+      "name": "D&D Item (Page 6 #5)"
+    },
+    {
+      "id": "equipment_p6_r1_c2",
+      "page": 6,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p6_r1_c2.png",
+      "name": "D&D Item (Page 6 #6)"
+    },
+    {
+      "id": "equipment_p6_r2_c0",
+      "page": 6,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p6_r2_c0.png",
+      "name": "D&D Item (Page 6 #7)"
+    },
+    {
+      "id": "equipment_p6_r2_c1",
+      "page": 6,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p6_r2_c1.png",
+      "name": "D&D Item (Page 6 #8)"
+    },
+    {
+      "id": "equipment_p6_r2_c2",
+      "page": 6,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p6_r2_c2.png",
+      "name": "D&D Item (Page 6 #9)"
+    },
+    {
+      "id": "equipment_p7_r0_c0",
+      "page": 7,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p7_r0_c0.png",
+      "name": "D&D Item (Page 7 #1)"
+    },
+    {
+      "id": "equipment_p7_r0_c1",
+      "page": 7,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p7_r0_c1.png",
+      "name": "D&D Item (Page 7 #2)"
+    },
+    {
+      "id": "equipment_p7_r0_c2",
+      "page": 7,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p7_r0_c2.png",
+      "name": "D&D Item (Page 7 #3)"
+    },
+    {
+      "id": "equipment_p7_r1_c0",
+      "page": 7,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p7_r1_c0.png",
+      "name": "D&D Item (Page 7 #4)"
+    },
+    {
+      "id": "equipment_p7_r1_c1",
+      "page": 7,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p7_r1_c1.png",
+      "name": "D&D Item (Page 7 #5)"
+    },
+    {
+      "id": "equipment_p7_r1_c2",
+      "page": 7,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p7_r1_c2.png",
+      "name": "D&D Item (Page 7 #6)"
+    },
+    {
+      "id": "equipment_p7_r2_c0",
+      "page": 7,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p7_r2_c0.png",
+      "name": "D&D Item (Page 7 #7)"
+    },
+    {
+      "id": "equipment_p7_r2_c1",
+      "page": 7,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p7_r2_c1.png",
+      "name": "D&D Item (Page 7 #8)"
+    },
+    {
+      "id": "equipment_p7_r2_c2",
+      "page": 7,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p7_r2_c2.png",
+      "name": "D&D Item (Page 7 #9)"
+    },
+    {
+      "id": "equipment_p8_r0_c0",
+      "page": 8,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p8_r0_c0.png",
+      "name": "D&D Item (Page 8 #1)"
+    },
+    {
+      "id": "equipment_p8_r0_c1",
+      "page": 8,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p8_r0_c1.png",
+      "name": "D&D Item (Page 8 #2)"
+    },
+    {
+      "id": "equipment_p8_r0_c2",
+      "page": 8,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p8_r0_c2.png",
+      "name": "D&D Item (Page 8 #3)"
+    },
+    {
+      "id": "equipment_p8_r1_c0",
+      "page": 8,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p8_r1_c0.png",
+      "name": "D&D Item (Page 8 #4)"
+    },
+    {
+      "id": "equipment_p8_r1_c1",
+      "page": 8,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p8_r1_c1.png",
+      "name": "D&D Item (Page 8 #5)"
+    },
+    {
+      "id": "equipment_p8_r1_c2",
+      "page": 8,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p8_r1_c2.png",
+      "name": "D&D Item (Page 8 #6)"
+    },
+    {
+      "id": "equipment_p8_r2_c0",
+      "page": 8,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p8_r2_c0.png",
+      "name": "D&D Item (Page 8 #7)"
+    },
+    {
+      "id": "equipment_p8_r2_c1",
+      "page": 8,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p8_r2_c1.png",
+      "name": "D&D Item (Page 8 #8)"
+    },
+    {
+      "id": "equipment_p8_r2_c2",
+      "page": 8,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p8_r2_c2.png",
+      "name": "D&D Item (Page 8 #9)"
+    },
+    {
+      "id": "equipment_p9_r0_c0",
+      "page": 9,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p9_r0_c0.png",
+      "name": "D&D Item (Page 9 #1)"
+    },
+    {
+      "id": "equipment_p9_r0_c1",
+      "page": 9,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p9_r0_c1.png",
+      "name": "D&D Item (Page 9 #2)"
+    },
+    {
+      "id": "equipment_p9_r0_c2",
+      "page": 9,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p9_r0_c2.png",
+      "name": "D&D Item (Page 9 #3)"
+    },
+    {
+      "id": "equipment_p9_r1_c0",
+      "page": 9,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p9_r1_c0.png",
+      "name": "D&D Item (Page 9 #4)"
+    },
+    {
+      "id": "equipment_p9_r1_c1",
+      "page": 9,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p9_r1_c1.png",
+      "name": "D&D Item (Page 9 #5)"
+    },
+    {
+      "id": "equipment_p9_r1_c2",
+      "page": 9,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p9_r1_c2.png",
+      "name": "D&D Item (Page 9 #6)"
+    },
+    {
+      "id": "equipment_p9_r2_c0",
+      "page": 9,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p9_r2_c0.png",
+      "name": "D&D Item (Page 9 #7)"
+    },
+    {
+      "id": "equipment_p9_r2_c1",
+      "page": 9,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p9_r2_c1.png",
+      "name": "D&D Item (Page 9 #8)"
+    },
+    {
+      "id": "equipment_p9_r2_c2",
+      "page": 9,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p9_r2_c2.png",
+      "name": "D&D Item (Page 9 #9)"
+    },
+    {
+      "id": "equipment_p10_r0_c0",
+      "page": 10,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p10_r0_c0.png",
+      "name": "D&D Item (Page 10 #1)"
+    },
+    {
+      "id": "equipment_p10_r0_c1",
+      "page": 10,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p10_r0_c1.png",
+      "name": "D&D Item (Page 10 #2)"
+    },
+    {
+      "id": "equipment_p10_r0_c2",
+      "page": 10,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p10_r0_c2.png",
+      "name": "D&D Item (Page 10 #3)"
+    },
+    {
+      "id": "equipment_p10_r1_c0",
+      "page": 10,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p10_r1_c0.png",
+      "name": "D&D Item (Page 10 #4)"
+    },
+    {
+      "id": "equipment_p10_r1_c1",
+      "page": 10,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p10_r1_c1.png",
+      "name": "D&D Item (Page 10 #5)"
+    },
+    {
+      "id": "equipment_p10_r1_c2",
+      "page": 10,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p10_r1_c2.png",
+      "name": "D&D Item (Page 10 #6)"
+    },
+    {
+      "id": "equipment_p10_r2_c0",
+      "page": 10,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p10_r2_c0.png",
+      "name": "D&D Item (Page 10 #7)"
+    },
+    {
+      "id": "equipment_p10_r2_c1",
+      "page": 10,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p10_r2_c1.png",
+      "name": "D&D Item (Page 10 #8)"
+    },
+    {
+      "id": "equipment_p10_r2_c2",
+      "page": 10,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p10_r2_c2.png",
+      "name": "D&D Item (Page 10 #9)"
+    },
+    {
+      "id": "equipment_p11_r0_c0",
+      "page": 11,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p11_r0_c0.png",
+      "name": "D&D Item (Page 11 #1)"
+    },
+    {
+      "id": "equipment_p11_r0_c1",
+      "page": 11,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p11_r0_c1.png",
+      "name": "D&D Item (Page 11 #2)"
+    },
+    {
+      "id": "equipment_p11_r0_c2",
+      "page": 11,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p11_r0_c2.png",
+      "name": "D&D Item (Page 11 #3)"
+    },
+    {
+      "id": "equipment_p11_r1_c0",
+      "page": 11,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p11_r1_c0.png",
+      "name": "D&D Item (Page 11 #4)"
+    },
+    {
+      "id": "equipment_p11_r1_c1",
+      "page": 11,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p11_r1_c1.png",
+      "name": "D&D Item (Page 11 #5)"
+    },
+    {
+      "id": "equipment_p11_r1_c2",
+      "page": 11,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p11_r1_c2.png",
+      "name": "D&D Item (Page 11 #6)"
+    },
+    {
+      "id": "equipment_p11_r2_c0",
+      "page": 11,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p11_r2_c0.png",
+      "name": "D&D Item (Page 11 #7)"
+    },
+    {
+      "id": "equipment_p11_r2_c1",
+      "page": 11,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p11_r2_c1.png",
+      "name": "D&D Item (Page 11 #8)"
+    },
+    {
+      "id": "equipment_p11_r2_c2",
+      "page": 11,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p11_r2_c2.png",
+      "name": "D&D Item (Page 11 #9)"
+    },
+    {
+      "id": "equipment_p12_r0_c0",
+      "page": 12,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p12_r0_c0.png",
+      "name": "D&D Item (Page 12 #1)"
+    },
+    {
+      "id": "equipment_p12_r0_c1",
+      "page": 12,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p12_r0_c1.png",
+      "name": "D&D Item (Page 12 #2)"
+    },
+    {
+      "id": "equipment_p12_r0_c2",
+      "page": 12,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p12_r0_c2.png",
+      "name": "D&D Item (Page 12 #3)"
+    },
+    {
+      "id": "equipment_p12_r1_c0",
+      "page": 12,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p12_r1_c0.png",
+      "name": "D&D Item (Page 12 #4)"
+    },
+    {
+      "id": "equipment_p12_r1_c1",
+      "page": 12,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p12_r1_c1.png",
+      "name": "D&D Item (Page 12 #5)"
+    },
+    {
+      "id": "equipment_p12_r1_c2",
+      "page": 12,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p12_r1_c2.png",
+      "name": "D&D Item (Page 12 #6)"
+    },
+    {
+      "id": "equipment_p12_r2_c0",
+      "page": 12,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p12_r2_c0.png",
+      "name": "D&D Item (Page 12 #7)"
+    },
+    {
+      "id": "equipment_p12_r2_c1",
+      "page": 12,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p12_r2_c1.png",
+      "name": "D&D Item (Page 12 #8)"
+    },
+    {
+      "id": "equipment_p12_r2_c2",
+      "page": 12,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p12_r2_c2.png",
+      "name": "D&D Item (Page 12 #9)"
+    },
+    {
+      "id": "equipment_p13_r0_c0",
+      "page": 13,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p13_r0_c0.png",
+      "name": "D&D Item (Page 13 #1)"
+    },
+    {
+      "id": "equipment_p13_r0_c1",
+      "page": 13,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p13_r0_c1.png",
+      "name": "D&D Item (Page 13 #2)"
+    },
+    {
+      "id": "equipment_p13_r0_c2",
+      "page": 13,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p13_r0_c2.png",
+      "name": "D&D Item (Page 13 #3)"
+    },
+    {
+      "id": "equipment_p13_r1_c0",
+      "page": 13,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p13_r1_c0.png",
+      "name": "D&D Item (Page 13 #4)"
+    },
+    {
+      "id": "equipment_p13_r1_c1",
+      "page": 13,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p13_r1_c1.png",
+      "name": "D&D Item (Page 13 #5)"
+    },
+    {
+      "id": "equipment_p13_r1_c2",
+      "page": 13,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p13_r1_c2.png",
+      "name": "D&D Item (Page 13 #6)"
+    },
+    {
+      "id": "equipment_p13_r2_c0",
+      "page": 13,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p13_r2_c0.png",
+      "name": "D&D Item (Page 13 #7)"
+    },
+    {
+      "id": "equipment_p13_r2_c1",
+      "page": 13,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p13_r2_c1.png",
+      "name": "D&D Item (Page 13 #8)"
+    },
+    {
+      "id": "equipment_p13_r2_c2",
+      "page": 13,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p13_r2_c2.png",
+      "name": "D&D Item (Page 13 #9)"
+    },
+    {
+      "id": "equipment_p14_r0_c0",
+      "page": 14,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p14_r0_c0.png",
+      "name": "D&D Item (Page 14 #1)"
+    },
+    {
+      "id": "equipment_p14_r0_c1",
+      "page": 14,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p14_r0_c1.png",
+      "name": "D&D Item (Page 14 #2)"
+    },
+    {
+      "id": "equipment_p14_r0_c2",
+      "page": 14,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p14_r0_c2.png",
+      "name": "D&D Item (Page 14 #3)"
+    },
+    {
+      "id": "equipment_p14_r1_c0",
+      "page": 14,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p14_r1_c0.png",
+      "name": "D&D Item (Page 14 #4)"
+    },
+    {
+      "id": "equipment_p14_r1_c1",
+      "page": 14,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p14_r1_c1.png",
+      "name": "D&D Item (Page 14 #5)"
+    },
+    {
+      "id": "equipment_p14_r1_c2",
+      "page": 14,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p14_r1_c2.png",
+      "name": "D&D Item (Page 14 #6)"
+    },
+    {
+      "id": "equipment_p14_r2_c0",
+      "page": 14,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p14_r2_c0.png",
+      "name": "D&D Item (Page 14 #7)"
+    },
+    {
+      "id": "equipment_p14_r2_c1",
+      "page": 14,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p14_r2_c1.png",
+      "name": "D&D Item (Page 14 #8)"
+    },
+    {
+      "id": "equipment_p14_r2_c2",
+      "page": 14,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p14_r2_c2.png",
+      "name": "D&D Item (Page 14 #9)"
+    },
+    {
+      "id": "equipment_p15_r0_c0",
+      "page": 15,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p15_r0_c0.png",
+      "name": "D&D Item (Page 15 #1)"
+    },
+    {
+      "id": "equipment_p15_r0_c1",
+      "page": 15,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p15_r0_c1.png",
+      "name": "D&D Item (Page 15 #2)"
+    },
+    {
+      "id": "equipment_p15_r0_c2",
+      "page": 15,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p15_r0_c2.png",
+      "name": "D&D Item (Page 15 #3)"
+    },
+    {
+      "id": "equipment_p15_r1_c0",
+      "page": 15,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p15_r1_c0.png",
+      "name": "D&D Item (Page 15 #4)"
+    },
+    {
+      "id": "equipment_p15_r1_c1",
+      "page": 15,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p15_r1_c1.png",
+      "name": "D&D Item (Page 15 #5)"
+    },
+    {
+      "id": "equipment_p15_r1_c2",
+      "page": 15,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p15_r1_c2.png",
+      "name": "D&D Item (Page 15 #6)"
+    },
+    {
+      "id": "equipment_p15_r2_c0",
+      "page": 15,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p15_r2_c0.png",
+      "name": "D&D Item (Page 15 #7)"
+    },
+    {
+      "id": "equipment_p15_r2_c1",
+      "page": 15,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p15_r2_c1.png",
+      "name": "D&D Item (Page 15 #8)"
+    },
+    {
+      "id": "equipment_p15_r2_c2",
+      "page": 15,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p15_r2_c2.png",
+      "name": "D&D Item (Page 15 #9)"
+    },
+    {
+      "id": "equipment_p16_r0_c0",
+      "page": 16,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p16_r0_c0.png",
+      "name": "D&D Item (Page 16 #1)"
+    },
+    {
+      "id": "equipment_p16_r0_c1",
+      "page": 16,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p16_r0_c1.png",
+      "name": "D&D Item (Page 16 #2)"
+    },
+    {
+      "id": "equipment_p16_r0_c2",
+      "page": 16,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p16_r0_c2.png",
+      "name": "D&D Item (Page 16 #3)"
+    },
+    {
+      "id": "equipment_p16_r1_c0",
+      "page": 16,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p16_r1_c0.png",
+      "name": "D&D Item (Page 16 #4)"
+    },
+    {
+      "id": "equipment_p16_r1_c1",
+      "page": 16,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p16_r1_c1.png",
+      "name": "D&D Item (Page 16 #5)"
+    },
+    {
+      "id": "equipment_p16_r1_c2",
+      "page": 16,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p16_r1_c2.png",
+      "name": "D&D Item (Page 16 #6)"
+    },
+    {
+      "id": "equipment_p16_r2_c0",
+      "page": 16,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p16_r2_c0.png",
+      "name": "D&D Item (Page 16 #7)"
+    },
+    {
+      "id": "equipment_p16_r2_c1",
+      "page": 16,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p16_r2_c1.png",
+      "name": "D&D Item (Page 16 #8)"
+    },
+    {
+      "id": "equipment_p16_r2_c2",
+      "page": 16,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p16_r2_c2.png",
+      "name": "D&D Item (Page 16 #9)"
+    },
+    {
+      "id": "equipment_p17_r0_c0",
+      "page": 17,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p17_r0_c0.png",
+      "name": "D&D Item (Page 17 #1)"
+    },
+    {
+      "id": "equipment_p17_r0_c1",
+      "page": 17,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p17_r0_c1.png",
+      "name": "D&D Item (Page 17 #2)"
+    },
+    {
+      "id": "equipment_p17_r0_c2",
+      "page": 17,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p17_r0_c2.png",
+      "name": "D&D Item (Page 17 #3)"
+    },
+    {
+      "id": "equipment_p17_r1_c0",
+      "page": 17,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p17_r1_c0.png",
+      "name": "D&D Item (Page 17 #4)"
+    },
+    {
+      "id": "equipment_p17_r1_c1",
+      "page": 17,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p17_r1_c1.png",
+      "name": "D&D Item (Page 17 #5)"
+    },
+    {
+      "id": "equipment_p17_r1_c2",
+      "page": 17,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p17_r1_c2.png",
+      "name": "D&D Item (Page 17 #6)"
+    },
+    {
+      "id": "equipment_p17_r2_c0",
+      "page": 17,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p17_r2_c0.png",
+      "name": "D&D Item (Page 17 #7)"
+    },
+    {
+      "id": "equipment_p17_r2_c1",
+      "page": 17,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p17_r2_c1.png",
+      "name": "D&D Item (Page 17 #8)"
+    },
+    {
+      "id": "equipment_p17_r2_c2",
+      "page": 17,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p17_r2_c2.png",
+      "name": "D&D Item (Page 17 #9)"
+    },
+    {
+      "id": "equipment_p18_r0_c0",
+      "page": 18,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p18_r0_c0.png",
+      "name": "D&D Item (Page 18 #1)"
+    },
+    {
+      "id": "equipment_p18_r0_c1",
+      "page": 18,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p18_r0_c1.png",
+      "name": "D&D Item (Page 18 #2)"
+    },
+    {
+      "id": "equipment_p18_r0_c2",
+      "page": 18,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p18_r0_c2.png",
+      "name": "D&D Item (Page 18 #3)"
+    },
+    {
+      "id": "equipment_p18_r1_c0",
+      "page": 18,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p18_r1_c0.png",
+      "name": "D&D Item (Page 18 #4)"
+    },
+    {
+      "id": "equipment_p18_r1_c1",
+      "page": 18,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p18_r1_c1.png",
+      "name": "D&D Item (Page 18 #5)"
+    },
+    {
+      "id": "equipment_p18_r1_c2",
+      "page": 18,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p18_r1_c2.png",
+      "name": "D&D Item (Page 18 #6)"
+    },
+    {
+      "id": "equipment_p18_r2_c0",
+      "page": 18,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p18_r2_c0.png",
+      "name": "D&D Item (Page 18 #7)"
+    },
+    {
+      "id": "equipment_p18_r2_c1",
+      "page": 18,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p18_r2_c1.png",
+      "name": "D&D Item (Page 18 #8)"
+    },
+    {
+      "id": "equipment_p18_r2_c2",
+      "page": 18,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p18_r2_c2.png",
+      "name": "D&D Item (Page 18 #9)"
+    },
+    {
+      "id": "equipment_p19_r0_c0",
+      "page": 19,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p19_r0_c0.png",
+      "name": "D&D Item (Page 19 #1)"
+    },
+    {
+      "id": "equipment_p19_r0_c1",
+      "page": 19,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p19_r0_c1.png",
+      "name": "D&D Item (Page 19 #2)"
+    },
+    {
+      "id": "equipment_p19_r0_c2",
+      "page": 19,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p19_r0_c2.png",
+      "name": "D&D Item (Page 19 #3)"
+    },
+    {
+      "id": "equipment_p19_r1_c0",
+      "page": 19,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p19_r1_c0.png",
+      "name": "D&D Item (Page 19 #4)"
+    },
+    {
+      "id": "equipment_p19_r1_c1",
+      "page": 19,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p19_r1_c1.png",
+      "name": "D&D Item (Page 19 #5)"
+    },
+    {
+      "id": "equipment_p19_r1_c2",
+      "page": 19,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p19_r1_c2.png",
+      "name": "D&D Item (Page 19 #6)"
+    },
+    {
+      "id": "equipment_p19_r2_c0",
+      "page": 19,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p19_r2_c0.png",
+      "name": "D&D Item (Page 19 #7)"
+    },
+    {
+      "id": "equipment_p19_r2_c1",
+      "page": 19,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p19_r2_c1.png",
+      "name": "D&D Item (Page 19 #8)"
+    },
+    {
+      "id": "equipment_p19_r2_c2",
+      "page": 19,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p19_r2_c2.png",
+      "name": "D&D Item (Page 19 #9)"
+    },
+    {
+      "id": "equipment_p20_r0_c0",
+      "page": 20,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p20_r0_c0.png",
+      "name": "D&D Item (Page 20 #1)"
+    },
+    {
+      "id": "equipment_p20_r0_c1",
+      "page": 20,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p20_r0_c1.png",
+      "name": "D&D Item (Page 20 #2)"
+    },
+    {
+      "id": "equipment_p20_r0_c2",
+      "page": 20,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p20_r0_c2.png",
+      "name": "D&D Item (Page 20 #3)"
+    },
+    {
+      "id": "equipment_p20_r1_c0",
+      "page": 20,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p20_r1_c0.png",
+      "name": "D&D Item (Page 20 #4)"
+    },
+    {
+      "id": "equipment_p20_r1_c1",
+      "page": 20,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p20_r1_c1.png",
+      "name": "D&D Item (Page 20 #5)"
+    },
+    {
+      "id": "equipment_p20_r1_c2",
+      "page": 20,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p20_r1_c2.png",
+      "name": "D&D Item (Page 20 #6)"
+    },
+    {
+      "id": "equipment_p20_r2_c0",
+      "page": 20,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p20_r2_c0.png",
+      "name": "D&D Item (Page 20 #7)"
+    },
+    {
+      "id": "equipment_p20_r2_c1",
+      "page": 20,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p20_r2_c1.png",
+      "name": "D&D Item (Page 20 #8)"
+    },
+    {
+      "id": "equipment_p20_r2_c2",
+      "page": 20,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p20_r2_c2.png",
+      "name": "D&D Item (Page 20 #9)"
+    },
+    {
+      "id": "equipment_p21_r0_c0",
+      "page": 21,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p21_r0_c0.png",
+      "name": "D&D Item (Page 21 #1)"
+    },
+    {
+      "id": "equipment_p21_r0_c1",
+      "page": 21,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p21_r0_c1.png",
+      "name": "D&D Item (Page 21 #2)"
+    },
+    {
+      "id": "equipment_p21_r0_c2",
+      "page": 21,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p21_r0_c2.png",
+      "name": "D&D Item (Page 21 #3)"
+    },
+    {
+      "id": "equipment_p21_r1_c0",
+      "page": 21,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p21_r1_c0.png",
+      "name": "D&D Item (Page 21 #4)"
+    },
+    {
+      "id": "equipment_p21_r1_c1",
+      "page": 21,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p21_r1_c1.png",
+      "name": "D&D Item (Page 21 #5)"
+    },
+    {
+      "id": "equipment_p21_r1_c2",
+      "page": 21,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p21_r1_c2.png",
+      "name": "D&D Item (Page 21 #6)"
+    },
+    {
+      "id": "equipment_p21_r2_c0",
+      "page": 21,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p21_r2_c0.png",
+      "name": "D&D Item (Page 21 #7)"
+    },
+    {
+      "id": "equipment_p21_r2_c1",
+      "page": 21,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p21_r2_c1.png",
+      "name": "D&D Item (Page 21 #8)"
+    },
+    {
+      "id": "equipment_p21_r2_c2",
+      "page": 21,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p21_r2_c2.png",
+      "name": "D&D Item (Page 21 #9)"
+    },
+    {
+      "id": "equipment_p22_r0_c0",
+      "page": 22,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p22_r0_c0.png",
+      "name": "D&D Item (Page 22 #1)"
+    },
+    {
+      "id": "equipment_p22_r0_c1",
+      "page": 22,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p22_r0_c1.png",
+      "name": "D&D Item (Page 22 #2)"
+    },
+    {
+      "id": "equipment_p22_r0_c2",
+      "page": 22,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p22_r0_c2.png",
+      "name": "D&D Item (Page 22 #3)"
+    },
+    {
+      "id": "equipment_p22_r1_c0",
+      "page": 22,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p22_r1_c0.png",
+      "name": "D&D Item (Page 22 #4)"
+    },
+    {
+      "id": "equipment_p22_r1_c1",
+      "page": 22,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p22_r1_c1.png",
+      "name": "D&D Item (Page 22 #5)"
+    },
+    {
+      "id": "equipment_p22_r1_c2",
+      "page": 22,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p22_r1_c2.png",
+      "name": "D&D Item (Page 22 #6)"
+    },
+    {
+      "id": "equipment_p22_r2_c0",
+      "page": 22,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p22_r2_c0.png",
+      "name": "D&D Item (Page 22 #7)"
+    },
+    {
+      "id": "equipment_p22_r2_c1",
+      "page": 22,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p22_r2_c1.png",
+      "name": "D&D Item (Page 22 #8)"
+    },
+    {
+      "id": "equipment_p22_r2_c2",
+      "page": 22,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p22_r2_c2.png",
+      "name": "D&D Item (Page 22 #9)"
+    },
+    {
+      "id": "equipment_p23_r0_c0",
+      "page": 23,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p23_r0_c0.png",
+      "name": "D&D Item (Page 23 #1)"
+    },
+    {
+      "id": "equipment_p23_r0_c1",
+      "page": 23,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p23_r0_c1.png",
+      "name": "D&D Item (Page 23 #2)"
+    },
+    {
+      "id": "equipment_p23_r0_c2",
+      "page": 23,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p23_r0_c2.png",
+      "name": "D&D Item (Page 23 #3)"
+    },
+    {
+      "id": "equipment_p23_r1_c0",
+      "page": 23,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p23_r1_c0.png",
+      "name": "D&D Item (Page 23 #4)"
+    },
+    {
+      "id": "equipment_p23_r1_c1",
+      "page": 23,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p23_r1_c1.png",
+      "name": "D&D Item (Page 23 #5)"
+    },
+    {
+      "id": "equipment_p23_r1_c2",
+      "page": 23,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p23_r1_c2.png",
+      "name": "D&D Item (Page 23 #6)"
+    },
+    {
+      "id": "equipment_p23_r2_c0",
+      "page": 23,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p23_r2_c0.png",
+      "name": "D&D Item (Page 23 #7)"
+    },
+    {
+      "id": "equipment_p23_r2_c1",
+      "page": 23,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p23_r2_c1.png",
+      "name": "D&D Item (Page 23 #8)"
+    },
+    {
+      "id": "equipment_p23_r2_c2",
+      "page": 23,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p23_r2_c2.png",
+      "name": "D&D Item (Page 23 #9)"
+    },
+    {
+      "id": "equipment_p24_r0_c0",
+      "page": 24,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p24_r0_c0.png",
+      "name": "D&D Item (Page 24 #1)"
+    },
+    {
+      "id": "equipment_p24_r0_c1",
+      "page": 24,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p24_r0_c1.png",
+      "name": "D&D Item (Page 24 #2)"
+    },
+    {
+      "id": "equipment_p24_r0_c2",
+      "page": 24,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p24_r0_c2.png",
+      "name": "D&D Item (Page 24 #3)"
+    },
+    {
+      "id": "equipment_p24_r1_c0",
+      "page": 24,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p24_r1_c0.png",
+      "name": "D&D Item (Page 24 #4)"
+    },
+    {
+      "id": "equipment_p24_r1_c1",
+      "page": 24,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p24_r1_c1.png",
+      "name": "D&D Item (Page 24 #5)"
+    },
+    {
+      "id": "equipment_p24_r1_c2",
+      "page": 24,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p24_r1_c2.png",
+      "name": "D&D Item (Page 24 #6)"
+    },
+    {
+      "id": "equipment_p24_r2_c0",
+      "page": 24,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p24_r2_c0.png",
+      "name": "D&D Item (Page 24 #7)"
+    },
+    {
+      "id": "equipment_p24_r2_c1",
+      "page": 24,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p24_r2_c1.png",
+      "name": "D&D Item (Page 24 #8)"
+    },
+    {
+      "id": "equipment_p24_r2_c2",
+      "page": 24,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p24_r2_c2.png",
+      "name": "D&D Item (Page 24 #9)"
+    },
+    {
+      "id": "equipment_p25_r0_c0",
+      "page": 25,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p25_r0_c0.png",
+      "name": "D&D Item (Page 25 #1)"
+    },
+    {
+      "id": "equipment_p25_r0_c1",
+      "page": 25,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p25_r0_c1.png",
+      "name": "D&D Item (Page 25 #2)"
+    },
+    {
+      "id": "equipment_p25_r0_c2",
+      "page": 25,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p25_r0_c2.png",
+      "name": "D&D Item (Page 25 #3)"
+    },
+    {
+      "id": "equipment_p25_r1_c0",
+      "page": 25,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p25_r1_c0.png",
+      "name": "D&D Item (Page 25 #4)"
+    },
+    {
+      "id": "equipment_p25_r1_c1",
+      "page": 25,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p25_r1_c1.png",
+      "name": "D&D Item (Page 25 #5)"
+    },
+    {
+      "id": "equipment_p25_r1_c2",
+      "page": 25,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p25_r1_c2.png",
+      "name": "D&D Item (Page 25 #6)"
+    },
+    {
+      "id": "equipment_p25_r2_c0",
+      "page": 25,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/lpc_equipment/equipment_p25_r2_c0.png",
+      "name": "D&D Item (Page 25 #7)"
+    },
+    {
+      "id": "equipment_p25_r2_c1",
+      "page": 25,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/lpc_equipment/equipment_p25_r2_c1.png",
+      "name": "D&D Item (Page 25 #8)"
+    },
+    {
+      "id": "equipment_p25_r2_c2",
+      "page": 25,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/lpc_equipment/equipment_p25_r2_c2.png",
+      "name": "D&D Item (Page 25 #9)"
+    }
+  ]
+}

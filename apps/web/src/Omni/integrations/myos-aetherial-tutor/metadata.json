@@ -1,0 +1,8 @@
+{
+  "name": "MyOS Aetherial Tutor",
+  "description": "A compassionate, Socratic AI tutor that shapeshifts into historical personas to guide learning through the MyOntology pillars. Features a persistent Dewey Decimal library and deep reasoning capabilities.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}

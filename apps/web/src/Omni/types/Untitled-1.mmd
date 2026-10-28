@@ -1,0 +1,22 @@
+---
+id: dab6b035-57b5-46f3-a7f9-26a8ba491ae9
+---
+flowchart TD
+ subgraph subGraph0["Core Modules"]
+        PAN["PANTHEON_CANON_SCROLL"]
+        REG["Weave Registry"]
+        FBC["FemtoByteCode<br>Compiler/Decompiler"]
+        PPL["PicoPrimordial<br>Execution Layer"]
+  end
+ subgraph subGraph1["Digital Weave Environment"]
+        NLD["MystraOS NLD Engine"]
+        subGraph0
+  end
+    NLD -- Weave State Updates --- PAN
+    NLD -- NLD Definitions & Manifests --- REG
+    NLD <-- Compression / Manifestation --> FBC
+    NLD -- Processed Intent --- PPL
+    UserInput["User Input<br>(Natural Language, Gestures, Voice)"] -- Natural Language Directives --> NLD
+    NLD -- User Output<br>(Visualizations, Responses, Actions) --> UserOutput["User Output"]
+    NLD <-- System Interactions & API Calls --> Traditional["Traditional Computing Systems<br>(APIs, Hardware, OS Layer)"]
+    subGraph1 --> n1["Untitled Node"]

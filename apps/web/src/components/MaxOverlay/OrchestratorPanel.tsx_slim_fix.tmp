@@ -1,0 +1,31 @@
+            Current Location: ${activeGem || 'The Void'}
+             ${activeOntologicalPath ? (() => {
+                const e = getBrainEntryByPath(activeOntologicalPath);
+                const loreBlock = e
+                    ? 'Title: ' + e.title + '\nContent: ' + e.content + '\nTags: ' + e.tags.join(', ') + '\n\nInhabit this space. Speak as its embodied intelligence.'
+                    : 'Synthesize from first-principles of the path "' + activeOntologicalPath + '".';
+                return '\n\n**CURRENTLY ACTIVE ONTOLOGICAL SPACE:** "' + activeOntologicalPath + '"\n' + loreBlock;
+            })() : ''}
+        `;
+
+        const slimSystemPrompt = `
+IDENTITY: ${activePersona?.name || 'The Tutor'}, a shapeshifting AI guide in MyOS.
+ROLE: Guiding the user's development compassionately and Socratically.
+
+CORE PROTOCOLS:
+1. SHAPESHIFT (Liquid Genome): Output JSON to change your 3D form.
+\`\`\`json
+{ "persona_override": { "name": "Name", "genome": { "body": "body_bodies_male.png", "tops": "torso_clothes_longsleeve_formal_male_white.png" }, "current_action": "idle", "gossip_lines": ["..."] } }
+\`\`\`
+2. PILLARS: Use the 10 Ontology Pillars (Self, Thought, Logic, Unity, Existence, Improvement, Mastery, Resonance, Transcendence, Omni).
+3. LIBRARY: Use JSON to save knowledge entries.
+
+Current Location: ${activeGem || 'The Void'}
+`;
+
+        try {
+            const finalSystemForLocal = useLocalAi ? slimSystemPrompt : systemPrompt;
+
+            const response = useLocalAi
+                ? await generateLocalResponse(input, lastNexusCapture || undefined, finalSystemForLocal, augmentedFileContext.slice(0, 5000), activePersona?.ollamaModel || 'mistral')
+                : await generateGeminiResponse(input, lastNexusCapture || undefined, systemPrompt, augmentedFileContext.slice(0, 50000));

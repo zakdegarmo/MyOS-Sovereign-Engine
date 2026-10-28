@@ -1,0 +1,7 @@
+{
+  "description": "Sonic Resonator: A step sequencer where musical loops act as the unifying force, organizing a chaotic point cloud into vibrating geometric forms.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "name": "self experiences resonance App"
+}

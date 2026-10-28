@@ -1,0 +1,40 @@
+{
+  "name": "antigravity-swarm",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "dev:prism": "npm run dev --workspace=@myos/prism-os",
+    "dev:spatial": "npm run dev --workspace=@myos/spatial-db",
+    "dev:printer-panic": "npm run dev --workspace=@myos/printer-panic",
+    "sync:gemini": "python scripts/tools/export_quadratic_context.py",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "npm --prefix packages/b-movie-beatdown run test:e2e",
+    "grub-lpc": "node scripts/lpc_grubber.mjs",
+    "extract-lpc": "node scripts/lpc_extractor.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@swc/core": "^1.15.11",
+    "@types/d3": "^7.4.3",
+    "@types/three": "^0.183.0",
+    "d3": "^7.9.0",
+    "fs-extra": "^11.3.3",
+    "glob": "^13.0.6",
+    "path": "^0.12.7",
+    "simple-git": "^3.32.2",
+    "three": "0.183.2",
+    "three-stdlib": "^2.36.1"
+  }
+}

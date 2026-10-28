@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F/V SOVEREIGN: 2.5D BERING SEA CUTAWAY SIM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+        body { background: #01040a; color: #00e5ff; font-family: 'Courier New', monospace; overflow: hidden; height: 100vh; width: 100vw; }
+        
+        #canvas-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
+        #game-canvas { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 5; pointer-events: auto; }
+
+        /* Helm HUD (Top) */
+        #top-hud {
+            position: absolute; top: 16px; left: 24px; right: 24px; z-index: 20;
+            display: flex; justify-content: space-between; align-items: center;
+            pointer-events: none;
+        }
+        .vessel-badge {
+            background: rgba(4, 12, 24, 0.9); border: 1px solid rgba(0, 229, 255, 0.5);
+            padding: 8px 16px; border-radius: 6px; backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+        }
+        .vessel-name { font-size: 16px; font-weight: 900; color: #ffca28; letter-spacing: 2px; }
+        .vessel-sub { font-size: 10px; color: #81d4fa; letter-spacing: 1px; }
+
+        .instrument-cluster {
+            display: flex; gap: 16px;
+            background: rgba(4, 12, 24, 0.9); border: 1px solid rgba(0, 229, 255, 0.4);
+            padding: 8px 20px; border-radius: 6px; backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.8); font-size: 12px; font-weight: bold;
+        }
+        .gauge { display: flex; flex-direction: column; align-items: center; }
+        .gauge-lbl { font-size: 9px; color: #90a4ae; letter-spacing: 1px; }
+        .gauge-val { font-size: 15px; color: #fff; font-family: monospace; font-weight: 900; }
+        .gauge-val.gold { color: #ffd700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.8); }
+        .gauge-val.danger { color: #ff334b; text-shadow: 0 0 8px rgba(255, 51, 75, 0.8); }
+
+        /* Rogue Wave Siren Alert */
+        #siren-banner {
+            display: none; position: absolute; top: 75px; left: 50%; transform: translateX(-50%);
+            background: rgba(230, 20, 50, 0.95); color: #fff; padding: 10px 32px; border-radius: 4px;
+            font-size: 15px; font-weight: 900; letter-spacing: 3px; z-index: 50; text-align: center;
+            border: 2px solid #fff; box-shadow: 0 0 40px rgba(255, 0, 0, 1);
+            animation: pulse-siren 0.4s infinite alternate; pointer-events: none;
+        }
+        @keyframes pulse-siren { 0% { transform: translateX(-50%) scale(0.97); opacity: 0.8; } 100% { transform: translateX(-50%) scale(1.03); opacity: 1; } }
+
+        /* Helm & Steering Console (Bottom) */
+        #helm-console {
+            position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
+            z-index: 25; display: flex; gap: 12px; align-items: center;
+            background: linear-gradient(180deg, rgba(8, 20, 36, 0.94) 0%, rgba(2, 6, 14, 0.98) 100%);
+            border: 2px solid #37474f; border-top: 2px solid #00e5ff; border-radius: 10px;
+            padding: 10px 18px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 229, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .helm-btn {
+            background: linear-gradient(180deg, #102a45 0%, #061220 100%);
+            border: 1px solid #00e5ff; color: #00e5ff; padding: 10px 16px; border-radius: 6px;
+            font-family: inherit; font-size: 11px; font-weight: 900; letter-spacing: 1.2px;
+            cursor: pointer; transition: all 0.15s; display: flex; flex-direction: column; align-items: center; gap: 3px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+        }
+        .helm-btn span.sub { font-size: 8px; color: #81d4fa; font-weight: normal; }
+        .helm-btn:hover { background: #00e5ff; color: #020813; box-shadow: 0 0 20px rgba(0, 229, 255, 0.8); }
+        .helm-btn:hover span.sub { color: #020813; }
+        .helm-btn:active { transform: translateY(2px); }
+        .helm-btn:disabled { border-color: #455a64; color: #455a64; background: #0a1118; cursor: not-allowed; box-shadow: none; }
+        .helm-btn:disabled span.sub { color: #455a64; }
+
+        .helm-btn.gold { border-color: #ffd700; color: #ffd700; }
+        .helm-btn.gold span.sub { color: #ffe082; }
+        .helm-btn.gold:hover { background: #ffd700; color: #000; box-shadow: 0 0 25px rgba(255, 215, 0, 0.9); }
+        .helm-btn.gold:hover span.sub { color: #000; }
+
+        .helm-btn.active-toggle { border-color: #ff9800; background: #ff9800; color: #000; }
+        .helm-btn.active-toggle span.sub { color: #3e2723; }
+
+        /* Navigation Directional Steering Cluster */
+        .nav-cluster { display: flex; gap: 6px; background: rgba(0,0,0,0.4); padding: 4px; border-radius: 6px; border: 1px solid rgba(0,229,255,0.3); }
+        .nav-btn {
+            background: #14283c; border: 1px solid #00e5ff; color: #00e5ff; width: 38px; height: 38px;
+            border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px;
+            font-weight: 900; cursor: pointer; transition: all 0.1s;
+        }
+        .nav-btn:hover { background: #00e5ff; color: #000; }
+        .nav-btn:active { transform: scale(0.92); }
+
+        /* Floating Radio Toast */
+        #toast {
+            position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%);
+            background: rgba(3, 10, 20, 0.95); border: 1px solid #ffd700; color: #ffd700;
+            padding: 8px 24px; border-radius: 20px; font-size: 12px; font-weight: bold;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); z-index: 30; pointer-events: none;
+            opacity: 0; transition: opacity 0.3s;
+        }
+
+        /* Keyboard Controls Helper */
+        #controls-help {
+            position: absolute; top: 85px; left: 24px; z-index: 20;
+            background: rgba(4, 12, 24, 0.88); border: 1px solid rgba(0, 229, 255, 0.35);
+            padding: 10px 16px; border-radius: 6px; backdrop-filter: blur(8px);
+            font-size: 11px; color: #81d4fa; line-height: 1.5; pointer-events: none;
+        }
+        #controls-help strong { color: #ffca28; }
+
+        /* Screen Frost Vignette */
+        #frost {
+            position: absolute; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 40; opacity: 0; transition: opacity 0.5s;
+            background: radial-gradient(circle, transparent 50%, rgba(200, 235, 255, 0.25) 85%, rgba(255, 255, 255, 0.7) 100%);
+        }
+        #wipe-btn {
+            position: absolute; top: 80px; right: 24px; z-index: 45;
+            background: rgba(4, 12, 24, 0.92); border: 1px solid #00e5ff; color: #fff;
+            padding: 8px 16px; border-radius: 4px; font-size: 11px; font-weight: bold;
+            cursor: pointer; display: none; box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+        }
+    </style>
+    <!-- Three.js CDN for Ocean Shaders -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <canvas id="game-canvas"></canvas>
+    <div id="frost"></div>
+    <button id="wipe-btn" onclick="wipeIce()">🧤 WIPE ICY VIEWPORT</button>
+
+    <!-- Top Marine HUD -->
+    <div id="top-hud">
+        <div class="vessel-badge">
+            <div class="vessel-name">🦀 F/V SOVEREIGN</div>
+            <div class="vessel-sub">DUTCH HARBOR FLEET // 2.5D CUTAWAY</div>
+        </div>
+        <div class="instrument-cluster">
+            <div class="gauge">
+                <span class="gauge-lbl">KING CRAB HOLD</span>
+                <span class="gauge-val gold" id="val-crab">0 / 2,500 LBS</span>
+            </div>
+            <div class="gauge">
+                <span class="gauge-lbl">ESCROW CASH</span>
+                <span class="gauge-val gold" id="val-cash">$14,250</span>
+            </div>
+            <div class="gauge">
+                <span class="gauge-lbl">HULL INTEGRITY</span>
+                <span class="gauge-val" id="val-hull">100%</span>
+            </div>
+            <div class="gauge">
+                <span class="gauge-lbl">ACTIVE POTS</span>
+                <span class="gauge-val" id="val-pots">0 POTS</span>
+            </div>
+            <div class="gauge">
+                <span class="gauge-lbl">Z-SWELL LAYER</span>
+                <span class="gauge-val" id="val-layer" style="color: #00e5ff;">LAYER 2 (MID-SWELL)</span>
+            </div>
+            <div class="gauge">
+                <span class="gauge-lbl">BAROMETER</span>
+                <span class="gauge-val" id="val-baro" style="color:#ff9800;">28.82" GALE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls Helper Box -->
+    <div id="controls-help">
+        🕹️ <strong>STEERING & TACKING:</strong><br>
+        <strong>A / D (← / →)</strong> : Steer Port / Starboard<br>
+        <strong>W / S (↑ / ↓)</strong> : Tack into Z-Axis Swells (Climb Waves)<br>
+        <strong>C Key</strong> : Toggle X-Ray Hull Cutaway<br>
+        <strong>Spacebar</strong> : Quick Drop / Haul Pot
+    </div>
+
+    <!-- Rogue Wave Siren Banner -->
+    <div id="siren-banner">⚠️ ROGUE SWELL INCOMING! BRACE HELM! ⚠️</div>
+
+    <!-- Radio Toast Notification -->
+    <div id="toast">📻 RADIO: F/V Sovereign on station. Sonar shows crab cluster below.</div>
+
+    <!-- Helm Action Console -->
+    <div id="helm-console">
+        <!-- Directional Nav Pad -->
+        <div class="nav-cluster">
+            <button class="nav-btn" onclick="steer(-1, 0)" title="Steer Port (A)">◀</button>
+            <div style="display:flex; flex-direction:column; gap:4px;">
+                <button class="nav-btn" style="height:17px; font-size:10px;" onclick="tackZ(1)" title="Tack Deeper into Swells (W)">▲</button>
+                <button class="nav-btn" style="height:17px; font-size:10px;" onclick="tackZ(-1)" title="Surf Forward to Troughs (S)">▼</button>
+            </div>
+            <button class="nav-btn" onclick="steer(1, 0)" title="Steer Starboard (D)">▶</button>
+        </div>
+
+        <button class="helm-btn" id="btn-cutaway" onclick="toggleCutaway()">
+            <span>👁️ CUTAWAY X-RAY</span>
+            <span class="sub" id="cutaway-sub">EXPOSING INTERIOR</span>
+        </button>
+        <button class="helm-btn" id="btn-drop" onclick="dropPot()">
+            <span>🎯 DROP 800LB CRAB POT</span>
+            <span class="sub">$250 BAIT // HYDRAULIC</span>
+        </button>
+        <button class="helm-btn" id="btn-haul" onclick="haulPot()" disabled>
+            <span>🏗️ HAUL SOAKED POT</span>
+            <span class="sub" id="haul-sub">NO POTS READY</span>
+        </button>
+        <button class="helm-btn" onclick="toggleCrewHeal()">
+            <span>☕ SEND CREW TO GALLEY</span>
+            <span class="sub" id="galley-sub">WARM UP & COFFEE</span>
+        </button>
+        <button class="helm-btn gold" onclick="deliverCatch()">
+            <span>⚓ RUN TO DUTCH HARBOR</span>
+            <span class="sub">OFFLOAD ($9.50/LB)</span>
+        </button>
+    </div>
+
+    <script>
+        // ═══ WEB AUDIO SYNTHESIZER ═══
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        let actx = null;
+        function initAudio() {
+            if (!actx) actx = new AudioCtx();
+            if (actx.state === 'suspended') actx.resume();
+        }
+        window.addEventListener('click', initAudio, { once: true });
+        window.addEventListener('keydown', initAudio, { once: true });
+
+        function playSound(type) {
+            if (!actx) return;
+            const now = actx.currentTime;
+            if (type === 'splash') {
+                const osc = actx.createOscillator();
+                const gain = actx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(160, now);
+                osc.frequency.exponentialRampToValueAtTime(35, now + 0.7);
+                gain.gain.setValueAtTime(0.5, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.7);
+                osc.connect(gain); gain.connect(actx.destination);
+                osc.start(now); osc.stop(now + 0.7);
+            } else if (type === 'clank') {
+                const osc = actx.createOscillator();
+                const gain = actx.createGain();
+                osc.type = 'square';
+                osc.frequency.setValueAtTime(220, now);
+                osc.frequency.exponentialRampToValueAtTime(80, now + 0.3);
+                gain.gain.setValueAtTime(0.3, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+                osc.connect(gain); gain.connect(actx.destination);
+                osc.start(now); osc.stop(now + 0.3);
+            } else if (type === 'gold') {
+                const osc = actx.createOscillator();
+                const gain = actx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(523.25, now);
+                osc.frequency.setValueAtTime(659.25, now + 0.1);
+                osc.frequency.setValueAtTime(783.99, now + 0.2);
+                gain.gain.setValueAtTime(0.3, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.45);
+                osc.connect(gain); gain.connect(actx.destination);
+                osc.start(now); osc.stop(now + 0.45);
+            } else if (type === 'alarm') {
+                const osc = actx.createOscillator();
+                const gain = actx.createGain();
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(880, now);
+                osc.frequency.linearRampToValueAtTime(440, now + 0.3);
+                gain.gain.setValueAtTime(0.35, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+                osc.connect(gain); gain.connect(actx.destination);
+                osc.start(now); osc.stop(now + 0.35);
+            } else if (type === 'slip') {
+                const osc = actx.createOscillator();
+                const gain = actx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(400, now);
+                osc.frequency.linearRampToValueAtTime(100, now + 0.25);
+                gain.gain.setValueAtTime(0.2, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.25);
+                osc.connect(gain); gain.connect(actx.destination);
+                osc.start(now); osc.stop(now + 0.25);
+            }
+        }
+
+        // ═══ GAME STATE ═══
+        const GameState = {
+            cash: 14250,
+            crabLbs: 0,
+            quotaLbs: 2500,
+            hullIntegrity: 100,
+            crewInGalley: false,
+            cutawayView: true, // X-Ray cutaway enabled by default!
+            
+            // Motion & Parallax Z-Layer Tacking
+            shipX: 0,
+            shipSpeedX: 0,
+            zLayer: 2, // 1 (Foreground breaker), 2 (Mid-swell), 3 (Deep swell)
+            targetScale: 1.0,
+            currentScale: 1.0,
+
+            // Crew Dynamics & Friction Physics
+            frictionMu: 0.22, // Slick ice/saltwater deck
+            crewMembers: [
+                { id: 'sig', name: 'Sig', station: 'wheelhouse', x: 130, y: -70, fallen: 0, velX: 0 },
+                { id: 'manny', name: 'Manny', station: 'deck', x: -140, y: -38, fallen: 0, velX: 0 },
+                { id: 'sully', name: 'Sully', station: 'deck', x: -195, y: -36, fallen: 0, velX: 0 },
+                { id: 'junior', name: 'Junior', station: 'engine', x: -40, y: 35, fallen: 0, velX: 0 }
+            ],
+
+            pots: [],
+            potCounter: 0,
+            frost: 0.05,
+            rogueCountdown: 26,
+            potAnimation: null
+        };
+
+        function showToast(msg) {
+            const el = document.getElementById('toast');
+            el.innerText = '📻 ' + msg;
+            el.style.opacity = '1';
+            setTimeout(() => { el.style.opacity = '0'; }, 3500);
+        }
+
+        function toggleCutaway() {
+            GameState.cutawayView = !GameState.cutawayView;
+            const sub = document.getElementById('cutaway-sub');
+            const btn = document.getElementById('btn-cutaway');
+            if (GameState.cutawayView) {
+                btn.classList.add('active-toggle');
+                sub.innerText = "EXPOSING INTERIOR";
+                showToast("Hull cross-section opened: Wheelhouse, Galley, Engine & Live-Well exposed.");
+            } else {
+                btn.classList.remove('active-toggle');
+                sub.innerText = "HULL PLATING CLOSED";
+                showToast("Hull exterior steel closed.");
+            }
+        }
+
+        // Steer Left / Right (A / D)
+        function steer(dirX) {
+            initAudio();
+            GameState.shipSpeedX += dirX * 1.8;
+            showToast(dirX < 0 ? "Steering Port (Turning into swells)..." : "Steering Starboard (Riding swells)...");
+        }
+
+        // Tack Z-Axis Depth (W / S)
+        function tackZ(deltaZ) {
+            initAudio();
+            GameState.zLayer = Math.max(1, Math.min(3, GameState.zLayer + deltaZ));
+            const names = ["", "LAYER 1 (FOREGROUND TROUGH)", "LAYER 2 (MID-SWELL)", "LAYER 3 (DEEP SWELL)"];
+            document.getElementById('val-layer').innerText = names[GameState.zLayer];
+            GameState.targetScale = GameState.zLayer === 1 ? 1.25 : (GameState.zLayer === 2 ? 1.0 : 0.78);
+            showToast(`TACKED TO ${names[GameState.zLayer]}! Adjusting boat depth plane...`);
+        }
+
+        // Keyboard Controls
+        window.addEventListener('keydown', (e) => {
+            const k = e.key.toLowerCase();
+            if (k === 'a' || e.key === 'ArrowLeft') steer(-1);
+            else if (k === 'd' || e.key === 'ArrowRight') steer(1);
+            else if (k === 'w' || e.key === 'ArrowUp') tackZ(1);
+            else if (k === 's' || e.key === 'ArrowDown') tackZ(-1);
+            else if (k === 'c') toggleCutaway();
+            else if (k === ' ') {
+                const ready = GameState.pots.some(p => p.soak >= p.maxSoak);
+                if (ready) haulPot();
+                else dropPot();
+            }
+        });
+
+        function dropPot() {
+            initAudio();
+            if (GameState.cash < 250) {
+                alert("Need $250 for bait to launch a pot!");
+                return;
+            }
+            if (GameState.crewInGalley) {
+                alert("Crew is inside the galley! Bring them out to work the launcher!");
+                return;
+            }
+
+            GameState.cash -= 250;
+            GameState.potCounter++;
+            const pId = GameState.potCounter;
+            GameState.pots.push({
+                id: pId,
+                soak: 0,
+                maxSoak: 10,
+                yield: Math.floor(220 + Math.random() * 280),
+                bobOffset: Math.random() * 6.28,
+                worldX: GameState.shipX - 340,
+                layer: GameState.zLayer
+            });
+
+            GameState.potAnimation = { state: 'dropping', progress: 0 };
+            playSound('clank');
+            setTimeout(() => playSound('splash'), 600);
+            showToast(`POT #${pId} DROPPED OVER THE RAIL AT Z-LAYER ${GameState.zLayer}!`);
+            updateHUD();
+        }
+
+        function haulPot() {
+            initAudio();
+            const readyIdx = GameState.pots.findIndex(p => p.soak >= p.maxSoak);
+            if (readyIdx === -1) return;
+
+            if (GameState.crewInGalley) {
+                alert("Crew is in the galley! Need hands on deck to hook the coiler line!");
+                return;
+            }
+
+            const pot = GameState.pots.splice(readyIdx, 1)[0];
+            GameState.crabLbs += pot.yield;
+            GameState.potAnimation = { state: 'hauling', progress: 0 };
+            playSound('clank');
+            setTimeout(() => playSound('gold'), 800);
+            showToast(`POT #${pot.id} HAULED! +${pot.yield} LBS OF RED KING CRAB SORTED INTO LIVE-WELL!`);
+            updateHUD();
+        }
+
+        function toggleCrewHeal() {
+            initAudio();
+            GameState.crewInGalley = !GameState.crewInGalley;
+            const sub = document.getElementById('galley-sub');
+            if (GameState.crewInGalley) {
+                sub.innerText = "RESTING (SAFE FROM SWELLS)";
+                sub.style.color = "#ffd700";
+                showToast("All deckhands stepped into the galley for hot coffee and dry woolens.");
+            } else {
+                sub.innerText = "ON DECK (MANNING STATIONS)";
+                sub.style.color = "#81d4fa";
+                showToast("Deckhands returned to open deck to man the hydraulic block and launcher.");
+            }
+        }
+
+        function deliverCatch() {
+            initAudio();
+            if (GameState.crabLbs === 0) {
+                alert("The live-well hold is empty! Soak and haul pots before making for Dutch Harbor!");
+                return;
+            }
+            const payout = GameState.crabLbs * 9.5;
+            GameState.cash += payout;
+            showToast(`DUTCH HARBOR DELIVERY! Sold ${GameState.crabLbs.toLocaleString()} lbs for +$${payout.toLocaleString()}!`);
+            GameState.crabLbs = 0;
+            GameState.hullIntegrity = Math.min(100, GameState.hullIntegrity + 40);
+            playSound('gold');
+            updateHUD();
+        }
+
+        function wipeIce() {
+            GameState.frost = 0.05;
+            document.getElementById('frost').style.opacity = '0';
+            document.getElementById('wipe-btn').style.display = 'none';
+            showToast("Viewport cleared of frozen sea spray!");
+        }
+
+        function updateHUD() {
+            try {
+                const elCrab = document.getElementById('val-crab');
+                if (elCrab) elCrab.innerText = `${GameState.crabLbs.toLocaleString()} / ${GameState.quotaLbs.toLocaleString()} LBS`;
+                const elCash = document.getElementById('val-cash');
+                if (elCash) elCash.innerText = `$${GameState.cash.toLocaleString()}`;
+                const elHull = document.getElementById('val-hull');
+                if (elHull) {
+                    elHull.innerText = `${Math.round(GameState.hullIntegrity)}%`;
+                    if (GameState.hullIntegrity < 35) elHull.className = 'gauge-val danger';
+                    else elHull.className = 'gauge-val';
+                }
+
+                const readyCount = GameState.pots.filter(p => p.soak >= p.maxSoak).length;
+                const elPots = document.getElementById('val-pots');
+                if (elPots) elPots.innerText = `${GameState.pots.length} (${readyCount} READY)`;
+
+                const haulBtn = document.getElementById('btn-haul');
+                const haulSub = document.getElementById('haul-sub');
+                if (haulBtn && haulSub) {
+                    if (readyCount > 0) {
+                        haulBtn.disabled = false;
+                        haulBtn.classList.add('gold');
+                        haulSub.innerText = `${readyCount} POT READY TO WINCH!`;
+                    } else {
+                        haulBtn.disabled = true;
+                        haulBtn.classList.remove('gold');
+                        haulSub.innerText = GameState.pots.length > 0 ? "SOAKING IN SWELLS..." : "NO POTS IN WATER";
+                    }
+                }
+            } catch(e) {
+                console.warn('HUD update non-fatal error:', e);
+            }
+        }
+
+        // ═══ GAME TICK (Every 1s) ═══
+        setInterval(() => {
+            GameState.pots.forEach(p => { p.soak += 1; });
+
+            GameState.rogueCountdown -= 1;
+            if (GameState.rogueCountdown <= 5 && GameState.rogueCountdown > 0) {
+                document.getElementById('siren-banner').style.display = 'block';
+                playSound('alarm');
+            } else if (GameState.rogueCountdown <= 0) {
+                document.getElementById('siren-banner').style.display = 'none';
+                GameState.rogueCountdown = 28 + Math.floor(Math.random() * 20);
+
+                // If tacking into swell (Z-Layer 3), damage is minimized!
+                const layerDmgMult = GameState.zLayer === 3 ? 0.35 : (GameState.zLayer === 2 ? 0.75 : 1.2);
+                const dmg = Math.round((GameState.crewInGalley ? 6 : 18) * layerDmgMult);
+                GameState.hullIntegrity = Math.max(0, GameState.hullIntegrity - dmg);
+                GameState.frost = Math.min(1.0, GameState.frost + 0.35);
+                document.getElementById('frost').style.opacity = GameState.frost;
+                if (GameState.frost > 0.35) document.getElementById('wipe-btn').style.display = 'block';
+
+                // High-velocity swell causes deck crew slip!
+                GameState.crewMembers.forEach(c => {
+                    if (c.station === 'deck' && !GameState.crewInGalley) {
+                        c.fallen = 45; // 45 frames of falling down
+                        c.velX = (Math.random() - 0.5) * 12;
+                        playSound('slip');
+                    }
+                });
+
+                showToast(`💥 ROGUE SWELL HIT AT LAYER ${GameState.zLayer}! Hull took -${dmg}%. Deckhands knocked off feet!`);
+            }
+
+            updateHUD();
+        }, 1000);
+
+        // ═══ THREE.JS BACKGROUND OCEAN SHADER PIPELINE ═══
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 12);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Layer 1: Aurora Sky (Z = -80)
+        const skyMat = new THREE.ShaderMaterial({
+            uniforms: { u_time: { value: 0 }, u_aurora_intensity: { value: 1.5 } },
+            vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+            fragmentShader: `
+                uniform float u_time; uniform float u_aurora_intensity; varying vec2 vUv;
+                float hash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+                void main() {
+                    vec2 uv = vUv;
+                    vec3 skyColor = mix(vec3(0.01, 0.02, 0.05), vec3(0.03, 0.08, 0.16), uv.y);
+                    float star = hash(floor(uv * 180.0));
+                    if (star > 0.985 && uv.y > 0.35) {
+                        float tw = 0.5 + 0.5 * sin(u_time * 4.0 + star * 6.28);
+                        skyColor += vec3(0.85, 0.95, 1.0) * tw * (uv.y - 0.35);
+                    }
+                    if (uv.y > 0.25) {
+                        float w1 = sin(uv.x * 4.0 + u_time * 0.45) * 0.12;
+                        float w2 = cos(uv.x * 7.5 - u_time * 0.3) * 0.08;
+                        float ribbon = 0.65 + w1 + w2;
+                        float glow = smoothstep(0.28, 0.0, abs(uv.y - ribbon)) * u_aurora_intensity;
+                        vec3 aur = mix(vec3(0.0, 1.0, 0.53), vec3(0.0, 0.9, 1.0), sin(uv.x * 3.0 + u_time) * 0.5 + 0.5);
+                        skyColor += aur * glow * (0.8 + 0.2 * sin(u_time * 2.0 + uv.x * 10.0));
+                    }
+                    gl_FragColor = vec4(skyColor, 1.0);
+                }
+            `
+        });
+        const skyMesh = new THREE.Mesh(new THREE.PlaneGeometry(140, 75), skyMat);
+        skyMesh.position.set(0, 4, -80);
+        scene.add(skyMesh);
+
+        // Layer 2: Distant Ocean Swells (Z = -45)
+        const distantMat = new THREE.ShaderMaterial({
+            uniforms: { u_time: { value: 0 } },
+            transparent: true,
+            vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+            fragmentShader: `
+                uniform float u_time; varying vec2 vUv;
+                void main() {
+                    vec2 uv = vUv; float t = u_time * 0.6;
+                    float horizon = 0.52 + sin(uv.x * 6.0 + t) * 0.08 + cos(uv.x * 11.0 - t * 0.8) * 0.04;
+                    if (uv.y > horizon) discard;
+                    float depth = (horizon - uv.y) / horizon;
+                    vec3 col = mix(vec3(0.04, 0.12, 0.22), vec3(0.015, 0.04, 0.09), depth);
+                    col += vec3(0.5, 0.7, 0.85) * smoothstep(0.02, 0.0, horizon - uv.y) * 0.4;
+                    gl_FragColor = vec4(col, 1.0);
+                }
+            `
+        });
+        const distantMesh = new THREE.Mesh(new THREE.PlaneGeometry(100, 45), distantMat);
+        distantMesh.position.set(0, -2, -45);
+        scene.add(distantMesh);
+
+        // Layer 3: Midground Crashing Waves (Z = -20)
+        const midMat = new THREE.ShaderMaterial({
+            uniforms: { u_time: { value: 0 }, u_turbulence: { value: 1.6 } },
+            transparent: true,
+            vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+            fragmentShader: `
+                uniform float u_time; uniform float u_turbulence; varying vec2 vUv;
+                float noise(vec2 p) { return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
+                void main() {
+                    vec2 uv = vUv; float t = u_time * 1.2;
+                    float edge = 0.46 + (sin(uv.x * 8.0 + t * 1.5) * 0.12 + sin(uv.x * 16.0 - t * 2.0) * 0.06) * (u_turbulence * 0.8);
+                    if (uv.y > edge) discard;
+                    vec3 water = mix(vec3(0.02, 0.06, 0.12), vec3(0.06, 0.18, 0.28), uv.y);
+                    float froth = smoothstep(0.06, 0.0, edge - uv.y) * (0.7 + 0.3 * noise(uv * 40.0 + vec2(t * 2.0, 0.0)));
+                    gl_FragColor = vec4(mix(water, vec3(0.75, 0.88, 0.95), froth * 0.85), 0.95);
+                }
+            `
+        });
+        const midMesh = new THREE.Mesh(new THREE.PlaneGeometry(65, 30), midMat);
+        midMesh.position.set(0, -3.5, -20);
+        scene.add(midMesh);
+
+        // ═══ 2.5D CUTAWAY CRAB BOAT & CREW PHYSICS ENGINE ═══
+        const gCanvas = document.getElementById('game-canvas');
+        const ctx = gCanvas.getContext('2d');
+
+        function resizeGameCanvas() {
+            gCanvas.width = window.innerWidth;
+            gCanvas.height = window.innerHeight;
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+        window.addEventListener('resize', resizeGameCanvas);
+        resizeGameCanvas();
+
+        let targetMx = 0, targetMy = 0, mx = 0, my = 0;
+        window.addEventListener('mousemove', (e) => {
+            targetMx = (e.clientX / window.innerWidth) * 2 - 1;
+            targetMy = -(e.clientY / window.innerHeight) * 2 + 1;
+        });
+
+        // ═══ DRAW THE COMPOSITED 2.5D CUTAWAY CRAB BOAT ═══
+        function drawCutawayCrabBoat(t) {
+            ctx.clearRect(0, 0, gCanvas.width, gCanvas.height);
+
+            // Friction & Ship Steer Dynamics
+            GameState.shipX += GameState.shipSpeedX;
+            GameState.shipSpeedX *= 0.92; // Water drag
+            GameState.currentScale += (GameState.targetScale - GameState.currentScale) * 0.08;
+
+            const cx = gCanvas.width / 2 + GameState.shipX + mx * 25;
+            const baseY = gCanvas.height * 0.58 + (GameState.zLayer === 3 ? -35 : (GameState.zLayer === 1 ? 40 : 0)) + my * 15;
+
+            // Wave Heave, Pitch, Roll
+            const heave = Math.cos(t * 1.6) * (14 * GameState.currentScale);
+            const roll = Math.sin(t * 1.35) * (0.05 * (GameState.zLayer === 1 ? 1.4 : 1.0)); // Angle in radians
+
+            ctx.save();
+            ctx.translate(cx, baseY + heave);
+            ctx.rotate(roll);
+
+            // Depth Scale Driven by Z-Layer Tacking
+            const s = Math.min(gCanvas.width / 1200, 1.1) * GameState.currentScale;
+            ctx.scale(s, s);
+
+            // 1. Water Displaced Wake & Splash Behind Stern
+            ctx.fillStyle = "rgba(180, 230, 255, 0.28)";
+            ctx.beginPath();
+            ctx.ellipse(-260, 60, 110, 30, 0, 0, Math.PI * 2);
+            ctx.fill();
+
+            // 2. Heavy Steel Hull (Keel & Framing)
+            ctx.fillStyle = "#7b1a1a"; // Red Antifouling Bottom Keel
+            ctx.beginPath();
+            ctx.moveTo(-280, 25);
+            ctx.lineTo(260, 25);
+            ctx.lineTo(315, 5); // Bow rake
+            ctx.quadraticCurveTo(240, 80, 120, 80);
+            ctx.lineTo(-240, 80);
+            ctx.quadraticCurveTo(-280, 70, -280, 25);
+            ctx.closePath();
+            ctx.fill();
+            ctx.strokeStyle = "#4a0e0e";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Topsides Framing
+            ctx.fillStyle = "#1b2530";
+            ctx.beginPath();
+            ctx.moveTo(-290, -15);
+            ctx.lineTo(240, -15);
+            ctx.lineTo(315, 5);
+            ctx.lineTo(260, 25);
+            ctx.lineTo(-280, 25);
+            ctx.lineTo(-290, -15);
+            ctx.closePath();
+            ctx.fill();
+            ctx.strokeStyle = "#37474f";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // White Sheer Stripe
+            ctx.fillStyle = "#cfd8dc";
+            ctx.fillRect(-290, -15, 545, 6);
+
+            // ═══════════════════════════════════════════════════════
+            // 3. BELOW-DECK & INTERIOR CUTAWAY (FALLOUT SHELTER X-RAY)
+            // ═══════════════════════════════════════════════════════
+            if (GameState.cutawayView) {
+                // Cutaway Aperture Background (Revealing Hull Interior)
+                ctx.fillStyle = "#0a131f";
+                ctx.fillRect(-275, -8, 520, 80);
+                ctx.strokeStyle = "#ff9800";
+                ctx.lineWidth = 2;
+                ctx.strokeRect(-275, -8, 520, 80);
+
+                // --- ROOM A: SEAWATER LIVE-WELL TANK (-265 to -110, Y: -5 to 65) ---
+                ctx.fillStyle = "rgba(0, 136, 170, 0.45)"; // Deep Cyan Seawater
+                ctx.fillRect(-265, -4, 150, 68);
+                ctx.strokeStyle = "#00e5ff";
+                ctx.lineWidth = 2;
+                ctx.strokeRect(-265, -4, 150, 68);
+
+                // Seawater Bubbles
+                ctx.fillStyle = "rgba(255, 255, 255, 0.4)";
+                for (let b = 0; b < 6; b++) {
+                    const bX = -255 + b * 24 + Math.sin(t * 3.0 + b) * 4;
+                    const bY = 55 - ((t * 25 + b * 12) % 55);
+                    ctx.beginPath(); ctx.arc(bX, bY, 2.5, 0, Math.PI * 2); ctx.fill();
+                }
+
+                // Crawling Live King Crabs Inside Tank!
+                const crabCount = Math.min(6, Math.max(1, Math.floor(GameState.crabLbs / 300)));
+                for (let cI = 0; cI < crabCount; cI++) {
+                    const crabX = -250 + cI * 22 + Math.sin(t * 2.0 + cI) * 3;
+                    const crabY = 58 - Math.abs(Math.sin(t * 3.0 + cI * 2)) * 5;
+                    ctx.font = "16px serif";
+                    ctx.fillText("🦀", crabX, crabY);
+                }
+                ctx.font = "9px monospace";
+                ctx.fillStyle = "#80deea";
+                ctx.fillText("LIVE-WELL: " + GameState.crabLbs + " LBS", -255, 12);
+
+                // --- ROOM B: HEAVY DIESEL ENGINE ROOM (-105 to 55, Y: -4 to 68) ---
+                ctx.fillStyle = "#1e222a";
+                ctx.fillRect(-105, -4, 155, 68);
+                ctx.strokeStyle = "#546e7a";
+                ctx.lineWidth = 2;
+                ctx.strokeRect(-105, -4, 155, 68);
+
+                // Cast Iron Diesel Engine Block
+                ctx.fillStyle = "#37474f";
+                ctx.fillRect(-85, 18, 70, 42);
+                ctx.fillStyle = "#263238";
+                ctx.fillRect(-75, 8, 50, 15); // Valve covers
+
+                // Spinning Flywheel
+                ctx.strokeStyle = "#ffd700";
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.arc(-10, 38, 18, 0, Math.PI * 2);
+                ctx.stroke();
+                const spokeAngle = t * 12.0;
+                ctx.beginPath();
+                ctx.moveTo(-10 - Math.cos(spokeAngle) * 16, 38 - Math.sin(spokeAngle) * 16);
+                ctx.lineTo(-10 + Math.cos(spokeAngle) * 16, 38 + Math.sin(spokeAngle) * 16);
+                ctx.stroke();
+
+                // Bilge Pump with Water Pipe
+                ctx.fillStyle = "#00bcd4";
+                ctx.fillRect(20, 30, 24, 30);
+                ctx.font = "9px monospace";
+                ctx.fillStyle = "#a5d6a7";
+                ctx.fillText("DIESEL // BILGE", -95, 12);
+
+                // --- ROOM C: MID-DECK GALLEY & CREW BUNKS (60 to 220, Y: -4 to 68) ---
+                ctx.fillStyle = "rgba(40, 26, 18, 0.9)"; // Warm Wood
+                ctx.fillRect(60, -4, 160, 68);
+                ctx.strokeStyle = "#ff9800";
+                ctx.lineWidth = 2;
+                ctx.strokeRect(60, -4, 160, 68);
+
+                // Bunks (Padded Mat)
+                ctx.fillStyle = "#5d4037";
+                ctx.fillRect(150, 10, 60, 20); // Top bunk
+                ctx.fillRect(150, 42, 60, 20); // Lower bunk
+                ctx.fillStyle = "#b0bec5"; // Pillows
+                ctx.fillRect(195, 12, 12, 8);
+                ctx.fillRect(195, 44, 12, 8);
+
+                // Galley Stove with Sizzling Flame Flicker
+                ctx.fillStyle = "#212121";
+                ctx.fillRect(75, 32, 28, 30);
+                const flameY = 28 + Math.sin(t * 18.0) * 3;
+                ctx.fillStyle = "#ff5722";
+                ctx.beginPath(); ctx.arc(88, flameY, 4, 0, Math.PI * 2); ctx.fill();
+
+                // Steaming Coffee Pot
+                ctx.fillStyle = "#cfd8dc";
+                ctx.fillRect(84, 20, 10, 10);
+                ctx.fillStyle = "rgba(255, 255, 255, 0.4)";
+                ctx.beginPath(); ctx.arc(89, 14 - (t * 15 % 15), 2.5, 0, Math.PI * 2); ctx.fill();
+
+                ctx.font = "9px monospace";
+                ctx.fillStyle = "#ffb74d";
+                ctx.fillText("GALLEY & BUNKS", 70, 12);
+            }
+
+            // ═══════════════════════════════════════════════════════
+            // 4. WHEELHOUSE & COCKPIT SUPERSTRUCTURE
+            // ═══════════════════════════════════════════════════════
+            ctx.fillStyle = "#eceff1";
+            ctx.beginPath();
+            ctx.moveTo(80, -15);
+            ctx.lineTo(80, -95);
+            ctx.lineTo(210, -95);
+            ctx.lineTo(225, -55);
+            ctx.lineTo(225, -15);
+            ctx.closePath();
+            ctx.fill();
+            ctx.strokeStyle = "#90a4ae";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Wheelhouse Roof Visor
+            ctx.fillStyle = "#37474f";
+            ctx.fillRect(75, -100, 145, 7);
+
+            // Amber Heated Cockpit Windows
+            ctx.fillStyle = "rgba(255, 183, 77, 0.9)";
+            ctx.shadowColor = "rgba(255, 183, 77, 0.8)";
+            ctx.shadowBlur = 15;
+            ctx.fillRect(115, -85, 30, 24);
+            ctx.fillRect(155, -85, 30, 24);
+            ctx.fillRect(195, -85, 20, 24);
+            ctx.shadowBlur = 0;
+
+            // Skipper at Helm
+            ctx.fillStyle = "#111";
+            ctx.beginPath();
+            ctx.arc(130, -70, 7, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Radar Mast & Rotating Scanner
+            ctx.strokeStyle = "#b0bec5";
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(145, -95);
+            ctx.lineTo(145, -145);
+            ctx.stroke();
+
+            // Spinning Radar Scanner Bar
+            const radarW = Math.cos(t * 6.0) * 22;
+            ctx.strokeStyle = "#00e5ff";
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.moveTo(145 - radarW, -145);
+            ctx.lineTo(145 + radarW, -145);
+            ctx.stroke();
+
+            // 5. Diesel Stack with Billowing Smoke
+            ctx.fillStyle = "#263238";
+            ctx.fillRect(55, -85, 18, 70);
+            ctx.fillStyle = "#ffd700";
+            ctx.fillRect(55, -85, 18, 5);
+
+            ctx.fillStyle = "rgba(200, 210, 220, 0.18)";
+            for (let i = 0; i < 4; i++) {
+                const smokeAge = ((t * 2.0 + i * 0.8) % 3.0);
+                const smX = 64 - smokeAge * 28;
+                const smY = -90 - smokeAge * 35;
+                const smR = 10 + smokeAge * 15;
+                ctx.beginPath();
+                ctx.arc(smX, smY, smR, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // 6. Aft Work Deck & Hydraulic Boom Crane
+            ctx.strokeStyle = "#78909c";
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(-290, -32);
+            ctx.lineTo(75, -32);
+            ctx.stroke();
+            for (let rx = -280; rx < 70; rx += 45) {
+                ctx.beginPath();
+                ctx.moveTo(rx, -15);
+                ctx.lineTo(rx, -32);
+                ctx.stroke();
+            }
+
+            // Heavy Boom Crane
+            ctx.strokeStyle = "#ffb300";
+            ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.moveTo(25, -20);
+            ctx.lineTo(-40, -115);
+            ctx.lineTo(-140, -100);
+            ctx.stroke();
+
+            // Floodlight Beam
+            ctx.fillStyle = "rgba(255, 235, 150, 0.12)";
+            ctx.beginPath();
+            ctx.moveTo(-35, -110);
+            ctx.lineTo(-240, 20);
+            ctx.lineTo(-50, 20);
+            ctx.closePath();
+            ctx.fill();
+
+            // Hydraulic Pot Launcher & Sorting Table
+            ctx.fillStyle = "#455a64";
+            ctx.fillRect(-220, -22, 60, 18);
+            ctx.fillStyle = "#37474f";
+            ctx.fillRect(-120, -28, 50, 24);
+
+            // Stack of 800lb Crab Pots
+            for (let potI = 0; potI < 3; potI++) {
+                const px = -200 + potI * 28;
+                const py = -38;
+                ctx.strokeStyle = "#90a4ae";
+                ctx.lineWidth = 2;
+                ctx.strokeRect(px, py, 24, 18);
+                ctx.beginPath();
+                ctx.moveTo(px, py); ctx.lineTo(px + 24, py + 18);
+                ctx.moveTo(px + 24, py); ctx.lineTo(px, py + 18);
+                ctx.stroke();
+            }
+
+            // ═══════════════════════════════════════════════════════
+            // 7. COMPOSITED CREW WITH INERTIA & FRICTION COEFFICIENT (μ)
+            // ═══════════════════════════════════════════════════════
+            // Lateral gravity force along deck: F = g * sin(roll)
+            const deckTiltForce = Math.sin(roll) * 18.0;
+
+            GameState.crewMembers.forEach(crew => {
+                if (GameState.crewInGalley && crew.station === 'deck') return;
+
+                // Friction Check on Open Deck
+                if (crew.station === 'deck') {
+                    if (Math.abs(deckTiltForce) > GameState.frictionMu * 40.0) {
+                        crew.velX += deckTiltForce * 0.15; // Slide on icy deck
+                        if (Math.abs(deckTiltForce) > 1.2 && crew.fallen <= 0) {
+                            crew.fallen = 30; // Trip & tumble!
+                            playSound('slip');
+                        }
+                    }
+                    crew.x += crew.velX;
+                    crew.velX *= 0.88; // Friction damping
+                    // Clamp to deck boundaries
+                    crew.x = Math.max(-250, Math.min(45, crew.x));
+                }
+
+                if (crew.fallen > 0) crew.fallen--;
+
+                // Draw Crew Member (Normal or Sliding/Falling Down!)
+                ctx.save();
+                ctx.translate(crew.x, crew.y);
+
+                if (crew.fallen > 0) {
+                    // Tumbled / Slid on Icy Deck!
+                    ctx.rotate(Math.PI / 2.2);
+                    ctx.fillStyle = crew.id === 'manny' ? "#fbc02d" : "#f57c00";
+                    ctx.fillRect(-6, -10, 20, 10);
+                    ctx.fillStyle = "#ffcc80";
+                    ctx.beginPath(); ctx.arc(18, -5, 5, 0, Math.PI * 2); ctx.fill();
+                    ctx.font = "10px monospace";
+                    ctx.fillStyle = "#ffd700";
+                    ctx.fillText("WHOA!", -15, -15);
+                } else {
+                    // Standing Crew Member in Oilskins
+                    const color = crew.id === 'sig' ? "#0288d1" : 
+                                 (crew.id === 'manny' ? "#fbc02d" : 
+                                 (crew.id === 'junior' ? "#7cb342" : "#f57c00"));
+                    ctx.fillStyle = color;
+                    ctx.fillRect(-7, -18, 14, 20); // Oilskin jacket
+                    ctx.fillStyle = "#ffcc80";
+                    ctx.beginPath(); ctx.arc(0, -22, 5, 0, Math.PI * 2); ctx.fill(); // Head
+                    // Oilskin sou'wester hat
+                    ctx.fillStyle = color;
+                    ctx.beginPath(); ctx.ellipse(0, -26, 8, 3, 0, 0, Math.PI * 2); ctx.fill();
+                }
+                ctx.restore();
+            });
+
+            // 8. Pot Drop / Haul Winch Animation
+            if (GameState.potAnimation) {
+                GameState.potAnimation.progress += 0.04;
+                const prog = GameState.potAnimation.progress;
+                const cableEndY = GameState.potAnimation.state === 'dropping' ? 
+                    -100 + prog * 150 : 
+                    50 - prog * 150;
+
+                ctx.strokeStyle = "#cfd8dc";
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(-140, -100);
+                ctx.lineTo(-150, cableEndY);
+                ctx.stroke();
+
+                ctx.strokeStyle = "#ffd700";
+                ctx.lineWidth = 3;
+                ctx.strokeRect(-165, cableEndY, 30, 22);
+                if (GameState.potAnimation.state === 'hauling') {
+                    ctx.font = "14px serif";
+                    ctx.fillText("🦀", -160, cableEndY + 16);
+                }
+
+                if (prog >= 1.0) GameState.potAnimation = null;
+            }
+
+            ctx.restore();
+
+            // 9. Draw Floating Mooring Buoys in Ocean
+            GameState.pots.forEach((pot, idx) => {
+                const potScale = pot.layer === 3 ? 0.75 : (pot.layer === 1 ? 1.25 : 1.0);
+                const buoyX = cx - 380 - idx * 75 + Math.sin(t * 1.5 + pot.bobOffset) * 12;
+                const buoyY = baseY + 45 + Math.cos(t * 2.0 + pot.bobOffset) * 10;
+
+                ctx.save();
+                ctx.translate(buoyX, buoyY);
+                ctx.scale(potScale, potScale);
+
+                ctx.strokeStyle = "rgba(255, 255, 255, 0.35)";
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(0, 0); ctx.lineTo(-25, 90); ctx.stroke();
+
+                ctx.fillStyle = pot.soak >= pot.maxSoak ? "#ffd700" : "#f44336";
+                ctx.beginPath(); ctx.arc(0, 0, 9, 0, Math.PI * 2); ctx.fill();
+                ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.stroke();
+
+                ctx.strokeStyle = "#000"; ctx.lineWidth = 2;
+                ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(0, -26); ctx.stroke();
+
+                ctx.fillStyle = pot.soak >= pot.maxSoak ? "#ffd700" : "#ff5722";
+                ctx.beginPath();
+                ctx.moveTo(0, -26); ctx.lineTo(14, -20); ctx.lineTo(0, -14); ctx.closePath();
+                ctx.fill();
+
+                ctx.font = "10px monospace";
+                ctx.fillStyle = "#fff";
+                const soakTxt = pot.soak >= pot.maxSoak ? "READY!" : `${pot.soak}/${pot.maxSoak}s (L${pot.layer})`;
+                ctx.fillText(soakTxt, -24, 22);
+
+                ctx.restore();
+            });
+        }
+
+        // ═══ MAIN RENDER LOOP ═══
+        const clock = new THREE.Clock();
+
+        function animate() {
+            requestAnimationFrame(animate);
+            const t = clock.getElapsedTime();
+
+            skyMat.uniforms.u_time.value = t;
+            distantMat.uniforms.u_time.value = t;
+            midMat.uniforms.u_time.value = t;
+
+            mx += (targetMx - mx) * 0.05;
+            my += (targetMy - my) * 0.05;
+
+            midMesh.position.x = mx * 3.5;
+            midMesh.position.y = -3.5 + my * 1.5;
+
+            distantMesh.position.x = mx * 6.0;
+            distantMesh.position.y = -2.0 + my * 2.5;
+
+            skyMesh.position.x = mx * 1.5;
+            skyMesh.position.y = 4.0 + my * 0.8;
+
+            renderer.render(scene, camera);
+
+            // Render Full Cutaway Crab Boat, Crew Physics & Z-Axis Scaling
+            try {
+                drawCutawayCrabBoat(t);
+            } catch(err) {
+                console.error("Boat draw error:", err);
+            }
+        }
+
+        animate();
+        updateHUD();
+    </script>
+</body>
+</html>

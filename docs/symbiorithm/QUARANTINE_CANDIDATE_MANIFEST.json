@@ -1,0 +1,566 @@
+[
+  {
+    "path": "temp_720p_benchmark.png",
+    "size_bytes": 897815,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_act1_frame_100.png",
+    "size_bytes": 250309,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_act1_frame_1000.png",
+    "size_bytes": 169691,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_act1_frame_2000.png",
+    "size_bytes": 183794,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_act1_frame_3000.png",
+    "size_bytes": 221435,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_act1_frame_500.png",
+    "size_bytes": 223966,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_base_orig.png",
+    "size_bytes": 26852,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_catalog_decoded_100.png",
+    "size_bytes": 40208,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_catalog_decoded_1000.png",
+    "size_bytes": 42220,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_catalog_decoded_2850.png",
+    "size_bytes": 47345,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_clean_hero_preview.png",
+    "size_bytes": 118204,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_contaminated_uni_preview.png",
+    "size_bytes": 116979,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_extracted_f1.png",
+    "size_bytes": 23637,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_extracted_f30.png",
+    "size_bytes": 29088,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_extracted_f70.png",
+    "size_bytes": 28386,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_full_body_framing.png",
+    "size_bytes": 234373,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_head_uni.glb",
+    "size_bytes": 276928,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_head_uni_preview.png",
+    "size_bytes": 121677,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_junkyard_vignette.png",
+    "size_bytes": 999745,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_nla_f150.png",
+    "size_bytes": 225868,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_nla_f30.png",
+    "size_bytes": 231859,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_nla_f90.png",
+    "size_bytes": 226702,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_perfect_fullbody.png",
+    "size_bytes": 232298,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_sample_test_1.png",
+    "size_bytes": 222816,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_sample_test_16.png",
+    "size_bytes": 230249,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_sample_test_4.png",
+    "size_bytes": 229369,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_sample_test_64.png",
+    "size_bytes": 230241,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_sample_test_8.png",
+    "size_bytes": 230191,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_talking_frame.png",
+    "size_bytes": 625746,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test.png",
+    "size_bytes": 27407,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test_28mm.png",
+    "size_bytes": 232506,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test_death.png",
+    "size_bytes": 220323,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test_film.png",
+    "size_bytes": 577103,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test_frame.png",
+    "size_bytes": 231176,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test_jump.png",
+    "size_bytes": 228387,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_test_zoom_out.png",
+    "size_bytes": 227724,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_txt_f1.png",
+    "size_bytes": 231561,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_txt_f2.png",
+    "size_bytes": 231784,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_f1.png",
+    "size_bytes": 224014,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_f23.png",
+    "size_bytes": 226953,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_f31.png",
+    "size_bytes": 226703,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_frame25.png",
+    "size_bytes": 233272,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_frame28.png",
+    "size_bytes": 225337,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_in.png",
+    "size_bytes": 225683,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_out.png",
+    "size_bytes": 226808,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "temp_wave_pose_test.png",
+    "size_bytes": 226206,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\genX\\backend\\venv\\Lib\\site-packages\\numpy\\typing\\tests\\test_runtime.py",
+    "size_bytes": 3217,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\genX\\backend\\venv\\Lib\\site-packages\\numpy\\typing\\tests\\__pycache__\\test_runtime.cpython-313.pyc",
+    "size_bytes": 6101,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\genX\\backend\\venv\\Lib\\site-packages\\pip\\_internal\\utils\\temp_dir.py",
+    "size_bytes": 9310,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\genX\\backend\\venv\\Lib\\site-packages\\pip\\_internal\\utils\\__pycache__\\temp_dir.cpython-313.pyc",
+    "size_bytes": 12160,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\genX\\backend\\venv\\Lib\\site-packages\\sympy\\testing\\tests\\test_runtests_pytest.py",
+    "size_bytes": 6338,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\genX\\backend\\venv\\Lib\\site-packages\\sympy\\testing\\tests\\__pycache__\\test_runtests_pytest.cpython-313.pyc",
+    "size_bytes": 8585,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\apps\\web\\build_error.log",
+    "size_bytes": 5114,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_models.log",
+    "size_bytes": 3844,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_models_filtered.log",
+    "size_bytes": 2316,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_models_v1.log",
+    "size_bytes": 644,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_test.log",
+    "size_bytes": 874,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\build_error.log",
+    "size_bytes": 2190,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\debug_error.log",
+    "size_bytes": 1548,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output.log",
+    "size_bytes": 20446,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_2.0.log",
+    "size_bytes": 2048,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_debug.log",
+    "size_bytes": 28170,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_pro.log",
+    "size_bytes": 9626,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_refined.log",
+    "size_bytes": 2200,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\antigravity-swarm\\packages\\server\\server_debug.log",
+    "size_bytes": 29455,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\dist\\integrations\\integrations\\modly\\api\\tests\\test_runner.py",
+    "size_bytes": 5748,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\apps\\web\\build_error.log",
+    "size_bytes": 5114,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_models.log",
+    "size_bytes": 3844,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_models_filtered.log",
+    "size_bytes": 2316,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_models_v1.log",
+    "size_bytes": 644,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\api_test.log",
+    "size_bytes": 874,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\build_error.log",
+    "size_bytes": 2190,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\debug_error.log",
+    "size_bytes": 1548,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output.log",
+    "size_bytes": 20446,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_2.0.log",
+    "size_bytes": 2048,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_debug.log",
+    "size_bytes": 28170,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_pro.log",
+    "size_bytes": 9626,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\output_refined.log",
+    "size_bytes": 2200,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\antigravity-swarm\\packages\\server\\server_debug.log",
+    "size_bytes": 29455,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\public\\integrations\\integrations\\modly\\api\\tests\\test_runner.py",
+    "size_bytes": 5748,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "apps\\web\\src\\components\\MaxOverlay\\OrchestratorPanel.tsx_slim_fix.tmp",
+    "size_bytes": 1817,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\temp_last_cel.py",
+    "size_bytes": 11720,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\numba\\cuda\\tests\\cudadrv\\test_runtime.py",
+    "size_bytes": 3156,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\numba\\cuda\\tests\\cudadrv\\__pycache__\\test_runtime.cpython-313.pyc",
+    "size_bytes": 4589,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\numba\\tests\\test_runtests.py",
+    "size_bytes": 11549,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\numba\\tests\\__pycache__\\test_runtests.cpython-313.pyc",
+    "size_bytes": 15979,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\numpy\\typing\\tests\\test_runtime.py",
+    "size_bytes": 3186,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\numpy\\typing\\tests\\__pycache__\\test_runtime.cpython-313.pyc",
+    "size_bytes": 6132,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\pip\\_internal\\utils\\temp_dir.py",
+    "size_bytes": 9310,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\pip\\_internal\\utils\\__pycache__\\temp_dir.cpython-313.pyc",
+    "size_bytes": 12153,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\sympy\\testing\\tests\\test_runtests_pytest.py",
+    "size_bytes": 6083,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\sympy\\testing\\tests\\__pycache__\\test_runtests_pytest.cpython-313.pyc",
+    "size_bytes": 8114,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "scripts\\tools\\comfy_env\\Lib\\site-packages\\torch\\include\\torch\\csrc\\jit\\codegen\\fuser\\cpu\\temp_file.h",
+    "size_bytes": 3285,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  },
+  {
+    "path": "tmp\\ancestral_mining.log",
+    "size_bytes": 2399639,
+    "state": "State Psi (Quarantine Candidate)",
+    "veto_required": true
+  }
+]

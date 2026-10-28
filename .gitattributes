@@ -1,0 +1,12 @@
+# Declare files that should always be treated as binary by Git
+*.glb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.mp4 binary
+*.zip binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

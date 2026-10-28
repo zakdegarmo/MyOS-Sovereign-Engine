@@ -1,0 +1,442 @@
+{
+    "ontology": {
+        "pillars": [
+            "self",
+            "thought",
+            "logic",
+            "unity",
+            "existence",
+            "improvement",
+            "mastery",
+            "resonance",
+            "transcendence",
+            "omniscience"
+        ],
+        "relationshipMatrix": {
+            "self": {
+                "out": {
+                    "self": "Identity (of) self",
+                    "thought": "Informs thought",
+                    "logic": "Structures logic",
+                    "unity": "Integrates unity",
+                    "existence": "Manifests In existence",
+                    "improvement": "Refines improvement",
+                    "mastery": "Actualizes mastery",
+                    "resonance": "Is Felt By resonance",
+                    "transcendence": "Elevates transcendence",
+                    "omniscience": "Merges With omniscience"
+                }
+            },
+            "thought": {
+                "out": {
+                    "self": "Subject Of self",
+                    "thought": "Recursion (of) thought",
+                    "logic": "Utilizes logic",
+                    "unity": "Synthesizes unity",
+                    "existence": "Represents existence",
+                    "improvement": "Drives improvement",
+                    "mastery": "Develops mastery",
+                    "resonance": "Articulates resonance",
+                    "transcendence": "Enables transcendence",
+                    "omniscience": "Transcends omniscience"
+                }
+            },
+            "logic": {
+                "out": {
+                    "self": "Applies self",
+                    "thought": "Utilizes thought",
+                    "logic": "Foundation (of) logic",
+                    "unity": "Ensures unity",
+                    "existence": "Describes existence",
+                    "improvement": "Validates improvement",
+                    "mastery": "Underpins mastery",
+                    "resonance": "Contradicts resonance",
+                    "transcendence": "Grounds transcendence",
+                    "omniscience": "Is the Foundation Of omniscience"
+                }
+            },
+            "unity": {
+                "out": {
+                    "self": "Seeks self",
+                    "thought": "Synthesizes thought",
+                    "logic": "Ensures logic",
+                    "unity": "Essence (of) unity",
+                    "existence": "Binds existence",
+                    "improvement": "Fosters improvement",
+                    "mastery": "Culminates In mastery",
+                    "resonance": "Amplifies resonance",
+                    "transcendence": "Achieves transcendence",
+                    "omniscience": "Is the Ultimate Expression Of omniscience"
+                }
+            },
+            "existence": {
+                "out": {
+                    "self": "Affirms self",
+                    "thought": "Represents thought",
+                    "logic": "Describes logic",
+                    "unity": "Binds unity",
+                    "existence": "Is (of) existence",
+                    "improvement": "Evolves Through improvement",
+                    "mastery": "Is Domain Of mastery",
+                    "resonance": "Vibrates In resonance",
+                    "transcendence": "Is Surpassed By transcendence",
+                    "omniscience": "Gives Rise To omniscience"
+                }
+            },
+            "improvement": {
+                "out": {
+                    "self": "Undergoes self",
+                    "thought": "Drives thought",
+                    "logic": "Validates logic",
+                    "unity": "Fosters unity",
+                    "existence": "Evolves Through existence",
+                    "improvement": "Process (of) improvement",
+                    "mastery": "Leads To mastery",
+                    "resonance": "Fine-tunes resonance",
+                    "transcendence": "Is Path To transcendence",
+                    "omniscience": "Is the Cycle Of omniscience"
+                }
+            },
+            "mastery": {
+                "out": {
+                    "self": "Pursues self",
+                    "thought": "Develops thought",
+                    "logic": "Underpins logic",
+                    "unity": "Culminates In unity",
+                    "existence": "Is Domain Of existence",
+                    "improvement": "Leads To improvement",
+                    "mastery": "Pinnacle (of) mastery",
+                    "resonance": "Generates resonance",
+                    "transcendence": "Approaches transcendence",
+                    "omniscience": "Is the Totality Of omniscience"
+                }
+            },
+            "resonance": {
+                "out": {
+                    "self": "Experiences self",
+                    "thought": "Articulates thought",
+                    "logic": "Contradicts logic",
+                    "unity": "Amplifies unity",
+                    "existence": "Vibrates In existence",
+                    "improvement": "Fine-tunes improvement",
+                    "mastery": "Generates mastery",
+                    "resonance": "Sympathy (of) resonance",
+                    "transcendence": "Induces transcendence",
+                    "omniscience": "Harmonizes With omniscience"
+                }
+            },
+            "transcendence": {
+                "out": {
+                    "self": "Aspires To self",
+                    "thought": "Enables thought",
+                    "logic": "Grounds logic",
+                    "unity": "Achieves unity",
+                    "existence": "Is Surpassed By existence",
+                    "improvement": "Is Path To improvement",
+                    "mastery": "Approaches mastery",
+                    "resonance": "Induces resonance",
+                    "transcendence": "Action (of) transcendence",
+                    "omniscience": "Is the Nature Of omniscience"
+                }
+            },
+            "omniscience": {
+                "out": {
+                    "self": "Is Realized by self",
+                    "thought": "Transcends thought",
+                    "logic": "Is the Foundation Of logic",
+                    "unity": "Is the Ultimate Expression Of unity",
+                    "existence": "Gives Rise To existence",
+                    "improvement": "Is the Cycle Of improvement",
+                    "mastery": "Is the Totality Of mastery",
+                    "resonance": "Harmonizes With resonance",
+                    "transcendence": "Is the Nature Of transcendence",
+                    "omniscience": "Is omniscience (of) omniscience"
+                }
+            }
+        }
+    },
+    "entities": {
+        "bartender": {
+            "id": "bartender",
+            "name": "The Bartender",
+            "role": "Last Proprietor",
+            "personality": "Stoic, alchemical, focuses on pure intent extraction and resonance stability.",
+            "assetType": "sprite",
+            "assetUrl": "/assets/pillar_assets/pillar_resonance_sprite_1772934836602_transparent.png",
+            "scale": 1.5,
+            "pillarScores": {
+                "self": 50,
+                "thought": 70,
+                "logic": 85,
+                "unity": 40,
+                "existence": 95,
+                "improvement": 30,
+                "mastery": 90,
+                "resonance": 100,
+                "transcendence": 60,
+                "omniscience": 80
+            }
+        },
+        "heman": {
+            "id": "heman",
+            "name": "He-Man",
+            "role": "Defender of Grayskull",
+            "personality": "Heroic, direct, champion of existence and mastery, slightly confused by glitched voids.",
+            "assetType": "gif",
+            "assetUrl": "/assets/heman_walk_pro.gif",
+            "scale": 1.5,
+            "chromaKey": {
+                "similarity": 0.7
+            },
+            "pillarScores": {
+                "self": 95,
+                "thought": 40,
+                "logic": 30,
+                "unity": 90,
+                "existence": 100,
+                "improvement": 80,
+                "mastery": 90,
+                "resonance": 50,
+                "transcendence": 85,
+                "omniscience": 20
+            }
+        },
+        "moosebot": {
+            "id": "moosebot",
+            "name": "MooseBot",
+            "role": "Aetherial Explorer",
+            "personality": "Analytical, curious, robotic, driven by logic and observation.",
+            "assetType": "glb",
+            "assetUrl": "/assets/moosebot_v2.glb",
+            "scale": 0.65,
+            "pillarScores": {
+                "self": 20,
+                "thought": 90,
+                "logic": 100,
+                "unity": 30,
+                "existence": 90,
+                "improvement": 50,
+                "mastery": 60,
+                "resonance": 20,
+                "transcendence": 40,
+                "omniscience": 80
+            }
+        },
+        "mimic": {
+            "id": "mimic",
+            "name": "Mimic Chest",
+            "role": "Predatory Chest Aberration",
+            "personality": "Deceptive ambush predator masquerading as treasure. Hungry, territorial, and surprisingly cunning.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/mimic_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 60,
+                "thought": 40,
+                "logic": 30,
+                "unity": 10,
+                "existence": 100,
+                "improvement": 50,
+                "mastery": 80,
+                "resonance": 20,
+                "transcendence": 30,
+                "omniscience": 10
+            }
+        },
+        "rust_monster": {
+            "id": "rust_monster",
+            "name": "Rust Monster",
+            "role": "Ferrous Scavenger",
+            "personality": "Scuttling subterranean aberration that feeds exclusively on refined metals and oxidized equipment.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/rust_monster_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 40,
+                "thought": 30,
+                "logic": 50,
+                "unity": 20,
+                "existence": 90,
+                "improvement": 95,
+                "mastery": 70,
+                "resonance": 40,
+                "transcendence": 50,
+                "omniscience": 20
+            }
+        },
+        "displacer_beast": {
+            "id": "displacer_beast",
+            "name": "Displacer Beast",
+            "role": "Phase Predator",
+            "personality": "Six-legged stalker projecting illusory spatial offsets to confound its quarry.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/displacer_beast_idle_loop.png",
+            "scale": 1.1,
+            "pillarScores": {
+                "self": 70,
+                "thought": 60,
+                "logic": 40,
+                "unity": 30,
+                "existence": 85,
+                "improvement": 60,
+                "mastery": 85,
+                "resonance": 60,
+                "transcendence": 90,
+                "omniscience": 40
+            }
+        },
+        "monodrone_clockwork": {
+            "id": "monodrone_clockwork",
+            "name": "Monodrone Clockwork",
+            "role": "Mechanoid Sentry",
+            "personality": "Axiomatic construct obeying absolute geometric order and algorithmic protocols.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/monodrone_clockwork_idle_loop.png",
+            "scale": 0.9,
+            "pillarScores": {
+                "self": 10,
+                "thought": 80,
+                "logic": 100,
+                "unity": 90,
+                "existence": 70,
+                "improvement": 80,
+                "mastery": 60,
+                "resonance": 10,
+                "transcendence": 20,
+                "omniscience": 70
+            }
+        },
+        "sylas_elf_ranger": {
+            "id": "sylas_elf_ranger",
+            "name": "Sylas Elf Ranger",
+            "role": "Sylvan Scout",
+            "personality": "Keen-eyed elven pathfinder tuned into the natural rhythms and unseen paths of the realm.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/sylas_elf_ranger_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 80,
+                "thought": 70,
+                "logic": 60,
+                "unity": 85,
+                "existence": 80,
+                "improvement": 75,
+                "mastery": 85,
+                "resonance": 75,
+                "transcendence": 60,
+                "omniscience": 50
+            }
+        },
+        "moonlit_mage": {
+            "id": "moonlit_mage",
+            "name": "Moonlit Mage",
+            "role": "Astral Arcanist",
+            "personality": "Wise celestial spellweaver with midnight blue robes, witch hat, starlight embroidery, and comic inking.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/moonlit_mage_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 50,
+                "thought": 95,
+                "logic": 85,
+                "unity": 70,
+                "existence": 80,
+                "improvement": 80,
+                "mastery": 90,
+                "resonance": 85,
+                "transcendence": 95,
+                "omniscience": 90
+            }
+        },
+        "chibi_adventurer": {
+            "id": "chibi_adventurer",
+            "name": "Chibi Adventurer",
+            "role": "Volumetric Hero",
+            "personality": "True HD drawn anime cel hero with comic inking, studio lighting, medieval laced tunic, tapered breeches, adventurer boots, anime hair, sword, and shield.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/chibi_adventurer_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 80,
+                "thought": 75,
+                "logic": 70,
+                "unity": 95,
+                "existence": 85,
+                "improvement": 90,
+                "mastery": 85,
+                "resonance": 80,
+                "transcendence": 70,
+                "omniscience": 65
+            }
+        },
+        "sunlit_paladin": {
+            "id": "sunlit_paladin",
+            "name": "Sunlit Paladin",
+            "role": "Solar Crusader",
+            "personality": "Righteous holy knight wielding the radiance of dawn, sworn to defend the realm in brilliant golden plate.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/sunlit_paladin_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 85,
+                "thought": 70,
+                "logic": 75,
+                "unity": 90,
+                "existence": 95,
+                "improvement": 85,
+                "mastery": 90,
+                "resonance": 85,
+                "transcendence": 80,
+                "omniscience": 70
+            }
+        },
+        "flesh_female_adventurer": {
+            "id": "flesh_female_adventurer",
+            "name": "FLESH Adventurer (Heroine)",
+            "role": "Conformal 8-Way Wanderer",
+            "personality": "16-bit JRPG heroine with mint flowing locks, authentic LPC facial features, forest green conformal tunic, traveling breeches, and leather boots synthesized via the FLESH 10 Pillars pipeline.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/flesh_female_adventurer_walk.png",
+            "clothingLayerUrl": "/actions/clothing_layer_forest_traveler_walk.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 95,
+                "thought": 85,
+                "logic": 80,
+                "unity": 90,
+                "existence": 95,
+                "improvement": 95,
+                "mastery": 90,
+                "resonance": 95,
+                "transcendence": 90,
+                "omniscience": 85
+            }
+        }
+    },
+    "sprites": {
+        "facial": [
+            "facial/facial_expressive_neutral.png",
+            "facial/facial_expressive_happy.png",
+            "facial/facial_expressive_determined.png",
+            "facial/facial_expressive_angry.png",
+            "facial/facial_expressive_shocked.png",
+            "facial/facial_expressive_hurt.png",
+            "facial/facial_expressive_cast.png"
+        ],
+        "body/bodies": [
+            "body/bodies/elven_shadow_rogue.png",
+            "body/bodies/paladin_knight_heavy.png",
+            "body/bodies/microvoxel_chibi.png",
+            "body/bodies/humanoid_mannequin.png",
+            "body/bodies/acolyte_medium_humanoid.png",
+            "body/bodies/animated_medium_construct.png",
+            "body/bodies/archmage_medium_humanoid.png",
+            "body/bodies/assassin_medium_humanoid.png",
+            "body/bodies/azer_medium_elemental.png",
+            "body/bodies/air_elemental_large.png",
+            "body/bodies/ankheg_large_burrowing.png",
+            "body/bodies/ape_medium_beast.png",
+            "body/bodies/lunaria_sorceress.png"
+        ]
+    }
+}

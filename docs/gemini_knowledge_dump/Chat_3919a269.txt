@@ -1,0 +1,25 @@
+# Conversation Record: 3919a269-5118-4282-ae47-428030888842
+
+--- USER ---
+<USER_REQUEST>
+hello? i just upgraded to Antigravity 2.0 but i cant find any of my conversations from the workspace!
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-30T19:09:36-04:00.
+
+The user's current state is as follows:
+Active Document: c:\Users\zakde\Desktop\AntiGravity projects\MyOS\PROJECT.md (LANGUAGE_MARKDOWN)
+Cursor is on line: 1
+Other open documents:
+- c:\Users\zakde\Desktop\AntiGravity projects\MyOS\PROJECT.md (LANGUAGE_MARKDOWN)
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.1 Pro (Low). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
+
+--- AI (Gemini) ---
+
+
+--- AI (Gemini) ---
+
+

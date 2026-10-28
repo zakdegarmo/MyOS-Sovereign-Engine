@@ -1,0 +1,1960 @@
+[
+    {
+        "id": "617c20cb-fd83-51e8-aa36-c8987bea213f",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/153551.png",
+            "fileName": "Items & Weapons.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "system",
+                "items_&_weapons",
+                "700"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "1d0230ef-e86b-59fd-8c70-bc2814ad9967",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/179731.png",
+            "fileName": "Barbecue Cook.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "main_characters",
+                "barbecue_cook",
+                "710"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "93cd52e3-1f85-5e08-b0e2-e40c4fc415ee",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/179732.png",
+            "fileName": "Baby.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "main_characters",
+                "baby",
+                "710"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "400f0372-bfb4-59f4-be41-b25ded0674a9",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/179980.png",
+            "fileName": "Level Prelude Fonts.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "system",
+                "level_prelude_fonts",
+                "700"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "8e2a1125-347d-5f28-b9fc-f9b5fba9a9d6",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/180056.png",
+            "fileName": "Level 48 Bonus / Credit Level: Monsters Among Us.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_48_bonus_/_credit_level:_monsters_among_us",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "46b10663-3269-54c6-bff4-07664deb04e8",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/31620.png",
+            "fileName": "Werewolf.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "werewolf",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "d65704bd-244c-5e51-8989-19a96d245d85",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/31834.png",
+            "fileName": "Pod Plant.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "pod_plant",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "30471a9a-345c-5cd4-a82e-eed40c2580d5",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/31835.png",
+            "fileName": "Vlad Belmont the Vampire.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "vlad_belmont_the_vampire",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "9e5c9428-5e4e-51b9-a036-0a02bc5a4088",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/31836.png",
+            "fileName": "Frankenstein.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "frankenstein",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "5f06f9af-80c2-51e3-bb1e-f4766c862479",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/31837.png",
+            "fileName": "Flying Saucer.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "bosses",
+                "flying_saucer",
+                "730"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "5523d0d6-bdd2-5228-8a2b-a3851eeefbca",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/31838.png",
+            "fileName": "Martians.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "martians",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "bcb3fb56-02a7-5ae9-8bc1-2f1e1aff0724",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/32045.png",
+            "fileName": "Victims (Extra).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "victims",
+                "victims_(extra)",
+                "750"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "b4a37d84-c02e-58de-8d41-b560db02867a",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/32188.png",
+            "fileName": "Boogeyman (Trap).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "hazards",
+                "boogeyman_(trap)",
+                "760"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "beab209f-999b-558e-8cfa-643971d6e587",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/32189.png",
+            "fileName": "Mushroom Men.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "mushroom_men",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "430d546a-7448-5e75-9ae6-f8bdae8a2a70",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/32190.png",
+            "fileName": "Football Player (Hazard).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "football_player_(hazard)",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "d8b580aa-0982-5957-8f63-f0c9d5442c49",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/32191.png",
+            "fileName": "Exit Door.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "system",
+                "exit_door",
+                "700"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "ac8903f9-83fe-5103-9582-f56aabd15998",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/32192.png",
+            "fileName": "Stanley Decker (Axe).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "stanley_decker_(axe)",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "7928c7a4-496e-5d4d-ad59-6fb5b967ea09",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4004.png",
+            "fileName": "Zeke.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "main_characters",
+                "zeke",
+                "710"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "3f940c6a-9f6b-5870-b11f-71cf34d83402",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4005.png",
+            "fileName": "Julie.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "main_characters",
+                "julie",
+                "710"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "232dc4a0-0527-54e3-a012-5439f073365e",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4006.png",
+            "fileName": "Various Victims.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "victims",
+                "various_victims",
+                "750"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "c84df8e7-03b8-5b4c-96d6-a69506defea1",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4007.png",
+            "fileName": "Tommy the Evil Doll.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "tommy_the_evil_doll",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "a910294c-67fb-56c1-8b7f-0639df87cb4d",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4008.png",
+            "fileName": "Level 01: Rescue the Neighbours in: Zombie Panic.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_01:_rescue_the_neighbours_in:_zombie_panic",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "cdcd38f9-721e-5bbb-8a94-78c284604b9c",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4009.png",
+            "fileName": "Level 01 Bonus: Day of the Tentacle.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_01_bonus:_day_of_the_tentacle",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "cb21dd92-a651-5354-9e24-68a96fc853e9",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4010.png",
+            "fileName": "Level 02: Evening of the Undead.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_02:_evening_of_the_undead",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "fea1511a-e3e0-5853-adec-26b2dd751a04",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4011.png",
+            "fileName": "Level 03: Terror in Aisle Five.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_03:_terror_in_aisle_five",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "ea5c48ac-2b18-5c8f-811c-07b4b70230ed",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4012.png",
+            "fileName": "Level 04: Chainsaw / Lumberjack Hedgemaze Mayhem.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_04:_chainsaw_/_lumberjack_hedgemaze_mayhem",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "e0f90c15-2ea5-5c31-939f-fd395cc289ac",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4013.png",
+            "fileName": "Level 05: Weird Kids on the Block.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_05:_weird_kids_on_the_block",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "1b5e480a-960e-5a34-baa2-178ac222d8f6",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4014.png",
+            "fileName": "Level 06: More Shocking than Level 5: Pyramid of Fear.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_06:_more_shocking_than_level_5:_pyramid_of_fear",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "cdd1e09f-9846-5c37-94b2-a567bf1341ab",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4015.png",
+            "fileName": "Level 07: Dr. Tongue's Castle of Terror.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_07:_dr._tongue's_castle_of_terror",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "3875321c-74b0-5db0-adae-9d8054d4b044",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4016.png",
+            "fileName": "Level 08: Forty Feet of Terror in: Titanic Toddler.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_08:_forty_feet_of_terror_in:_titanic_toddler",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "3cb58571-3eea-54ee-ae4d-132bb93035d5",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4017.png",
+            "fileName": "Level 09: Toxic Terrors.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_09:_toxic_terrors",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "1313d7a8-e0b2-506d-b98d-59799daa3e36",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4018.png",
+            "fileName": "Level 09 Bonus: Mushroom Men.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_09_bonus:_mushroom_men",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "eb483add-9379-5cd1-88a2-b3490124f673",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4019.png",
+            "fileName": "Level 10: No Assembly Required.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_10:_no_assembly_required",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "23e7d1fd-2469-572d-8e77-2f33d693d3ac",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4020.png",
+            "fileName": "Level 12: They Came to Earth for One Thing: Mars needs Cheerleaders.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_12:_they_came_to_earth_for_one_thing:_mars_needs_cheerleaders",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "c01fe8df-331b-500e-8623-afc169688f75",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4021.png",
+            "fileName": "Level 12 Bonus: Cheerleaders Versus the Monsters.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_12_bonus:_cheerleaders_versus_the_monsters",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "9328cc27-1c7e-5ee0-8d07-f45560aca099",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4022.png",
+            "fileName": "Level 13: Terrifying to the Bone! Chopping Mall.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_13:_terrifying_to_the_bone!_chopping_mall",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "6a170f12-e036-5ea4-9d7f-2eb1a25236b4",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4023.png",
+            "fileName": "Level 14: Seven Meals for Seven Zombies.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_14:_seven_meals_for_seven_zombies",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "60acf39d-f7e3-5a46-b2e1-4c8d40c67d65",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4024.png",
+            "fileName": "Level 15: Dinner on Monster Island.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_15:_dinner_on_monster_island",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "5262a0e0-8821-5475-8f47-96d73cdf9be4",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4025.png",
+            "fileName": "Level 16: From the Depths of the Earth: Ants.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_16:_from_the_depths_of_the_earth:_ants",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "664994cd-5ee5-57ec-86cd-d51d940828ca",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4026.png",
+            "fileName": "Level 17: Office of the Doomed.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_17:_office_of_the_doomed",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "ab05af7f-af94-523f-affd-6e307b6b87b6",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4027.png",
+            "fileName": "Level 17 Bonus: Someplace Very Warm.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_17_bonus:_someplace_very_warm",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "e55bf6c1-00d1-59b8-8dc1-431b99b2005c",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4028.png",
+            "fileName": "Level 18: The Terror is Back in: Squidmen of the Deep.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_18:_the_terror_is_back_in:_squidmen_of_the_deep",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "2d43a605-fced-5a9b-b6f1-876e7d3ff41d",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4029.png",
+            "fileName": "Level 19: Nightmare on Terror Street.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_19:_nightmare_on_terror_street",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "7e098ad1-8caa-53c3-90c5-71f95a6c5411",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4030.png",
+            "fileName": "Level 20: Invasion of the Snakeoids.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_20:_invasion_of_the_snakeoids",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "f5fdc40d-e32c-508c-8076-3c5624449790",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4031.png",
+            "fileName": "Level 21: The Day the Earth Ran Away.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_21:_the_day_the_earth_ran_away",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "469bde06-ea65-5663-bcb8-ed93412f4733",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4032.png",
+            "fileName": "Level 22: The Scary Sequel to Level 7: Revenge of Dr. Tongue.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_22:_the_scary_sequel_to_level_7:_revenge_of_dr._tongue",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "7e45bec8-69d7-5c34-8a3c-50a50f85f8dd",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4033.png",
+            "fileName": "Level 22 Bonus: The Son of Dr. Tongue.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_22_bonus:_the_son_of_dr._tongue",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "b662f5e2-8e8e-5d24-a899-3b784f147a84",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4034.png",
+            "fileName": "Level 23: The Caves of Mystery.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_23:_the_caves_of_mystery",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "ab74bafe-58ca-5b19-8434-3c84e14dffa6",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4035.png",
+            "fileName": "Level 24: Warehouse of the Evil Dolls.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_24:_warehouse_of_the_evil_dolls",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "9d57f0df-59c8-5ace-8692-d955679aab18",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4036.png",
+            "fileName": "Level 25: Huge Discounts on: Look Who's Shopping.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_25:_huge_discounts_on:_look_who's_shopping",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "37fc4974-90d7-54f3-9108-a68339275e11",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4037.png",
+            "fileName": "Level 27: Dances With Werewolves.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_27:_dances_with_werewolves",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "467be0dc-a66d-5782-aa99-527846f0e269",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4038.png",
+            "fileName": "Level 28: Scream in Horror on: Mark of the Vampire.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_28:_scream_in_horror_on:_mark_of_the_vampire",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "5aafd9ed-8d12-5463-a8ec-4718c17a18cc",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4039.png",
+            "fileName": "Level 29: More Shocking than Level 28: Zombie House Party.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_29:_more_shocking_than_level_28:_zombie_house_party",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "909b9052-def4-500b-9b25-5c22097c9904",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4040.png",
+            "fileName": "Level 30: The Horror of Floor Thirteen.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_30:_the_horror_of_floor_thirteen",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "24688454-be28-5efc-a269-f29f1cbace59",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4041.png",
+            "fileName": "Level 31: Look Who's Coming to Dinner.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_31:_look_who's_coming_to_dinner",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "eae55989-0155-5258-96b7-cbc67c007f49",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4042.png",
+            "fileName": "Level 32: Get Ready for Big Terror: Giant Ant Farm.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_32:_get_ready_for_big_terror:_giant_ant_farm",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "38d46a2e-967c-5af6-9f2f-b532598a312e",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4043.png",
+            "fileName": "Level 33: Fish and Crypts.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_33:_fish_and_crypts",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "55592aae-ca86-5be6-8e75-7d32ab4daa0c",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4044.png",
+            "fileName": "Level 33 Bonus: Curse of the Pharaohs.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_33_bonus:_curse_of_the_pharaohs",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "aebc7022-3641-59e9-a535-b623479877fa",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4045.png",
+            "fileName": "Level 34: I Was a Chainsaw Maniac / Maniac Lumberjack.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_34:_i_was_a_chainsaw_maniac_/_maniac_lumberjack",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "fa8a67c7-5372-5742-bb6f-8d393039e4ce",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4046.png",
+            "fileName": "Level 35: Boardwalk of Terrors.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_35:_boardwalk_of_terrors",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "fa95f8af-e5bc-51af-9215-5b9f31241e06",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4047.png",
+            "fileName": "Level 36: Prepare for the Terror: Monster Phobia.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_36:_prepare_for_the_terror:_monster_phobia",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "a7137736-4c02-5d3c-8326-d771d95f304a",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4048.png",
+            "fileName": "Level 37: Labyrinth of Horrors.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_37:_labyrinth_of_horrors",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "92d6fbcc-ff95-5d53-b382-d84dbf0d721c",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4049.png",
+            "fileName": "Level 38: Monsters of the Blue Lagoon.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_38:_monsters_of_the_blue_lagoon",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "f812aa45-44c7-5232-8577-3e8b5dde8436",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4050.png",
+            "fileName": "Level 39: Destroy All Vampires.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_39:_destroy_all_vampires",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "71b7719c-13b1-5e2c-8a9e-80eefc17ab08",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4051.png",
+            "fileName": "Level 40: More Terror than Before: Pyramid of Fear 2.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_40:_more_terror_than_before:_pyramid_of_fear_2",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "2a4fb3e7-b17a-5f2e-85d0-e541c181764f",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4052.png",
+            "fileName": "Level 41: They Are Back! In: Martians Go Home!.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_41:_they_are_back!_in:_martians_go_home!",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "2b972bad-804c-54a8-abc5-36bbe6938e21",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4053.png",
+            "fileName": "Level 42: Terror has a New Name! Spikes.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_42:_terror_has_a_new_name!_spikes",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "11b2ccc7-65aa-5a93-bb44-1c0a61578ad3",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4054.png",
+            "fileName": "Level 43: Super Fund Cleanup Site.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_43:_super_fund_cleanup_site",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "43a33d2e-b8c0-59fa-9879-67a3599de363",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4055.png",
+            "fileName": "Level 45: Danger in Picnic Park.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_45:_danger_in_picnic_park",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "7da1955a-d512-524e-b248-720363778879",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4056.png",
+            "fileName": "Jelly Blob.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "jelly_blob",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "f4289be0-9851-550b-ab12-7f5f23f2d026",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4057.png",
+            "fileName": "Giant Ant.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "giant_ant",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "5820f8a5-91ef-5cc7-8a47-d84ef2d95d44",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4058.png",
+            "fileName": "Giant Baby.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "main_characters",
+                "giant_baby",
+                "710"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "a977b5df-1ae8-5a4b-9f0d-25894d66299b",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4059.png",
+            "fileName": "Dr. Tongue (Form 1, Giant Spider).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "bosses",
+                "dr._tongue_(form_1,_giant_spider)",
+                "730"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "04ac39c4-ec95-5b5c-8d38-a1c88d119def",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4060.png",
+            "fileName": "Mummy.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "mummy",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "52ff1924-9735-5ab8-a025-88f1cdc94c91",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4061.png",
+            "fileName": "Mutant Plant.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "mutant_plant",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "1ba10f43-2984-5e10-9ba7-bae16dbc09b1",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4062.png",
+            "fileName": "Snakeoid.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "bosses",
+                "snakeoid",
+                "730"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "c6d03abe-289d-50ff-93ab-b4996e4d0ee5",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4063.png",
+            "fileName": "Gillman of the Blue Lagoon (a.k.a Brook Shards).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "gillman_of_the_blue_lagoon_(a.k.a_brook_shards)",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "70f78c73-4349-5338-a3c8-df3d80ede982",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4064.png",
+            "fileName": "Stanley Decker (Chainsaw).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "stanley_decker_(chainsaw)",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "db498e14-7fbf-5212-9188-74ebae9b1831",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4065.png",
+            "fileName": "Tentacle.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "tentacle",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "019b5642-82e2-57c7-a0d5-1ea49ae850de",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/4066.png",
+            "fileName": "Zombie.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "zombie",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "1e1ead42-04f9-5988-9f0a-14e2ba56b6e0",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/62217.png",
+            "fileName": "Dr. Tongue (Form 2, Floating Head).png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "bosses",
+                "dr._tongue_(form_2,_floating_head)",
+                "730"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "73fe96e3-0338-5221-969d-9543d8675889",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63281.png",
+            "fileName": "Credit Level NPCs & Map Placement.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "credit_level_npcs_&_map_placement",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "3d59263c-6472-5d1e-afbc-94606c5a8fa2",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63282.png",
+            "fileName": "Level 48: Curse of the Tongue.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_48:_curse_of_the_tongue",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "3cdfcf67-6dc4-5f64-bb4a-d07f91a4e71b",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63283.png",
+            "fileName": "Level 47: More Shocking than Level 46: Gridiron Terror.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_47:_more_shocking_than_level_46:_gridiron_terror",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "2f89d3d8-8e17-51aa-a9b2-f5b3d12a8cfe",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63284.png",
+            "fileName": "Level 46: A Shocking Sequel to Level 34: Day of the Chainsaw / Lumberjack.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_46:_a_shocking_sequel_to_level_34:_day_of_the_chainsaw_/_lumberjack",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "31314f84-49f2-5d59-9770-ee892ec74718",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63285.png",
+            "fileName": "Level 44: The Curse of Dr. Tongue.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_44:_the_curse_of_dr._tongue",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "c6aece67-d60e-5cfb-b491-f438e35b0a70",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63286.png",
+            "fileName": "Level 26: Where the Red Fern Growls.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_26:_where_the_red_fern_growls",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "56ec2cc1-99ca-5f57-9155-e34f5dd6461a",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63287.png",
+            "fileName": "Level 11: Weeds Gone Bad.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "levels",
+                "level_11:_weeds_gone_bad",
+                "740"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    },
+    {
+        "id": "25234876-42eb-5c4b-bf15-45313202d80e",
+        "type": "asset",
+        "content": {
+            "assetUrl": "/assets/ZAMN_Assets/63288.png",
+            "fileName": "Kelly Flock.png",
+            "mimeType": "image/png"
+        },
+        "meta": {
+            "timestamp": 1770602227448,
+            "origin": "ZAMN Archive",
+            "context": [
+                "snes",
+                "sprite",
+                "enemies",
+                "kelly_flock",
+                "720"
+            ],
+            "resonance": 0.5,
+            "embedding": []
+        }
+    }
+]

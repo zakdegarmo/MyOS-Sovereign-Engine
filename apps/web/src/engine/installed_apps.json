@@ -1,0 +1,10 @@
+[
+    {
+        "id": "excalibur",
+        "name": "Excalibur",
+        "path": "\ud83d\udf0f.\ud83d\udf0b.\u26b9",
+        "type": "iframe-web",
+        "entryPoint": "https://unpkg.com/excalibur/",
+        "description": "Dynamically installed package: excalibur"
+    }
+]

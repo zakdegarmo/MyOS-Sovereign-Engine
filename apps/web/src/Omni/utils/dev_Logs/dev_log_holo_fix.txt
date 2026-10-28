@@ -1,0 +1,81 @@
+
+> the-mystra-nexus@0.0.0 dev
+> concurrently "vite" "node server.js"
+
+[0] 
+[0]   [32m[1mVITE[22m v6.4.1[39m  [2mready in [0m[1m273[22m[2m[0m ms[22m
+[0] 
+[0]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+[0]   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.109:[1m3000[22m/[39m
+[1] [dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[1] [Server] Loading fallback: .env.local
+[1] [dotenv@17.2.3] injecting env (2) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[1] [Forge] Creating new Vector Index...
+[1] Persistent Storage Server running at http://localhost:3001
+[0] [2m6:20:37 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/ExistenceDashboard.tsx[22m
+[0] [2m6:20:37 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\zakde\Downloads\the-mystra-nexus (12)\components\existence\ExistenceDashboard.tsx: Unterminated template. (300:3)
+[0] 
+[0] [0m [90m 298 |[31m
+[0]  [90m 299 |[31m [36mexport[31m [36mdefault[31m [33mExistenceDashboard[31m[33m;[31m
+[0] [31m[1m>[22m[31m[90m 300 |[31m [32m``[31m[32m`[31m
+[0]  [90m     |[31m    [31m[1m^[22m[31m
+[0]  [90m 301 |[31m [32m[31m[0m[39m
+[0]   Plugin: [35mvite:react-babel[39m
+[0]   File: [36mC:/Users/zakde/Downloads/the-mystra-nexus (12)/components/existence/ExistenceDashboard.tsx[39m:300:3
+[0]       at constructor (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:367:19)
+[0]       at TypeScriptParserMixin.raise (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:6624:19)
+[0]       at Object.unterminated (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:5695:20)
+[0]       at readStringContents (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:5390:14)
+[0]       at TypeScriptParserMixin.readTemplateToken (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:6544:9)
+[0]       at TypeScriptParserMixin.getTokenFromCode (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:6252:14)
+[0]       at TypeScriptParserMixin.getTokenFromCode (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:4826:11)
+[0]       at TypeScriptParserMixin.getTokenFromCode (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10042:11)
+[0]       at TypeScriptParserMixin.nextToken (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:5807:10)
+[0]       at TypeScriptParserMixin.next (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:5717:10)
+[0]       at TypeScriptParserMixin.parseTemplateElement (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:11857:10)
+[0]       at TypeScriptParserMixin.parseTemplate (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:11864:23)
+[0]       at TypeScriptParserMixin.parseExprAtom (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:11415:21)
+[0]       at TypeScriptParserMixin.parseExprAtom (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:4793:20)
+[0]       at TypeScriptParserMixin.parseExprSubscripts (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:11145:23)
+[0]       at TypeScriptParserMixin.parseUpdate (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:11130:21)
+[0]       at TypeScriptParserMixin.parseMaybeUnary (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:11110:23)
+[0]       at TypeScriptParserMixin.parseMaybeUnary (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:9890:18)
+[0]       at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10963:61)
+[0]       at TypeScriptParserMixin.parseExprOps (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10968:23)
+[0]       at TypeScriptParserMixin.parseMaybeConditional (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10945:23)
+[0]       at TypeScriptParserMixin.parseMaybeAssign (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10895:21)
+[0]       at TypeScriptParserMixin.parseMaybeAssign (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:9839:20)
+[0]       at TypeScriptParserMixin.parseExpressionBase (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10848:23)
+[0]       at C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10844:39
+[0]       at TypeScriptParserMixin.allowInAnd (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:12495:16)
+[0]       at TypeScriptParserMixin.parseExpression (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10844:17)
+[0]       at TypeScriptParserMixin.parseStatementContent (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:12971:23)
+[0]       at TypeScriptParserMixin.parseStatementContent (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:9569:18)
+[0]       at TypeScriptParserMixin.parseStatementLike (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:12843:17)
+[0]       at TypeScriptParserMixin.parseModuleItem (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:12820:17)
+[0]       at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:13392:36)
+[0]       at TypeScriptParserMixin.parseBlockBody (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:13385:10)
+[0]       at TypeScriptParserMixin.parseProgram (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:12698:10)
+[0]       at TypeScriptParserMixin.parseTopLevel (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:12688:25)
+[0]       at TypeScriptParserMixin.parse (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:14568:25)
+[0]       at TypeScriptParserMixin.parse (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:10183:18)
+[0]       at parse (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\parser\lib\index.js:14602:38)
+[0]       at parser (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\core\lib\parser\index.js:41:34)
+[0]       at parser.next (<anonymous>)
+[0]       at normalizeFile (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+[0]       at normalizeFile.next (<anonymous>)
+[0]       at run (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\core\lib\transformation\index.js:22:50)
+[0]       at run.next (<anonymous>)
+[0]       at transform (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\@babel\core\lib\transform.js:22:33)
+[0]       at transform.next (<anonymous>)
+[0]       at step (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\gensync\index.js:261:32)
+[0]       at C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\gensync\index.js:273:13
+[0]       at async.call.result.err.err (C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\gensync\index.js:223:11)
+[0]       at C:\Users\zakde\Downloads\the-mystra-nexus (12)\node_modules\gensync\index.js:189:28
+[0] [2m6:21:34 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/engine/MooseBot.tsx[22m
+[0] [2m6:21:50 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/ExistenceDashboard.tsx[22m
+[0] [2m6:33:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/ExistenceDashboard.tsx[22m
+[0] [2m6:35:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/ExistenceDashboard.tsx[22m
+[0] [2m6:37:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/ExistenceDashboard.tsx[22m
+[0] [2m6:37:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/existence/ExistenceDashboard.tsx[22m
+[0] [2m6:39:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/components/visual/NexusRoutingGraph.tsx[22m

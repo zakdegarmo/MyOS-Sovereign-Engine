@@ -1,0 +1,253 @@
+import sys
+sys.path.append(r'C:\Users\zakde\AppData\Roaming\Python\Python313\site-packages')
+import bpy, mathutils, math, os, time, json
+from PIL import Image, ImageFilter, ImageEnhance
+import numpy as np
+
+start_time = time.time()
+print("=== Starting Unified Sunlit Paladin Cel-Shaded Action Spritesheet Synthesis ===")
+
+DIR_ACTIONS = os.path.abspath('apps/web/public/actions')
+DIR_ARTIFACTS = os.path.abspath('artifacts/spritesheets')
+DIR_TEMP = os.path.abspath('temp_tiles')
+os.makedirs(DIR_ACTIONS, exist_ok=True)
+os.makedirs(DIR_ARTIFACTS, exist_ok=True)
+os.makedirs(DIR_TEMP, exist_ok=True)
+
+# 1. Hide all modular adventurer meshes
+for o in bpy.data.objects:
+    if o.type == 'MESH':
+        o.hide_viewport = True
+        o.hide_render = True
+
+# 2. Import Clean Sunlit Paladin GLB
+glb_path = os.path.abspath(r'apps/web/public/models/meshy ai glb/rigged/Meshy_AI_Sunlit_Paladin_biped/Meshy_AI_Sunlit_Paladin_biped/Meshy_AI_Sunlit_Paladin_biped_Character_output.glb')
+bpy.ops.import_scene.gltf(filepath=glb_path)
+
+char = bpy.data.objects.get('char1')
+master_arm = bpy.data.objects['Armature']
+imp_arm = [o for o in bpy.data.objects if o.type == 'ARMATURE' and o != master_arm][0]
+
+# Remove extra GLB objects
+for o in list(bpy.data.objects):
+    if any(k in o.name for k in ['Camera.001', 'Light.001', 'Cube.001', 'Icosphere.001']):
+        bpy.data.objects.remove(o, do_unlink=True)
+
+char.hide_viewport = False
+char.hide_render = False
+
+# 3. Match bone rolls from master_arm so Mixamo animations deform accurately
+bpy.context.view_layer.objects.active = master_arm
+bpy.ops.object.mode_set(mode='EDIT')
+master_rolls = {b.name: b.roll for b in master_arm.data.edit_bones}
+bpy.ops.object.mode_set(mode='OBJECT')
+
+bpy.context.view_layer.objects.active = imp_arm
+bpy.ops.object.mode_set(mode='EDIT')
+for b in imp_arm.data.edit_bones:
+    if b.name in master_rolls:
+        b.roll = master_rolls[b.name]
+bpy.ops.object.mode_set(mode='OBJECT')
+
+for pb in imp_arm.pose.bones:
+    pb.rotation_mode = 'QUATERNION'
+
+imp_arm.animation_data_create()
+
+# 4. Camera Setup
+cam = bpy.data.objects['RenderCam']
+cam.parent = None
+cam.location = (0.0, -3.10, 0.75)
+cam.rotation_euler = (math.radians(78), 0, 0)
+cam.data.type = 'ORTHO'
+cam.data.ortho_scale = 1.85 # Snug hero framing from boots to blonde hair
+bpy.context.scene.camera = cam
+
+# Scene render settings
+scene = bpy.context.scene
+scene.render.film_transparent = True
+scene.render.image_settings.file_format = 'PNG'
+scene.render.image_settings.color_mode = 'RGBA'
+scene.render.resolution_x = 256
+scene.render.resolution_y = 256
+
+tile_tmp = os.path.join(DIR_TEMP, 'paladin_render_tile_raw.png')
+scene.render.filepath = tile_tmp
+
+# 5. 8 Directions in standard MyOS order
+DIR_ANGLES = [0, -45, -90, -135, 180, 135, 90, 45]
+
+ACTIONS = [
+    ('idle', 'Idle_Loop'),
+    ('walk', 'Walk_Loop'),
+    ('run', 'Jog_Fwd_Loop'),
+    ('slash', 'Melee_Weapon_Attack'),
+    ('spellcast', 'Spell_Simple_Shoot'),
+    ('hurt', 'Hit_Chest'),
+    ('death', 'Death01'),
+]
+
+# 6. Drawn Cel-Shading & Inking
+def cartoonize_tile(im, outline_px=2):
+    im = im.convert('RGBA')
+    w, h = im.size
+    r, g, b, a = im.split()
+    alpha_np = np.array(a)
+    mask = alpha_np > 25
+
+    im_boost = ImageEnhance.Color(im).enhance(1.25)
+    im_boost = ImageEnhance.Contrast(im_boost).enhance(1.15)
+    rgb = np.array(im_boost.convert('RGB'), dtype=np.float32) / 255.0
+
+    lum = 0.299 * rgb[:,:,0] + 0.587 * rgb[:,:,1] + 0.114 * rgb[:,:,2]
+    lum_cel = np.copy(lum)
+    lum_cel[(lum < 0.42) & mask] = 0.46
+    lum_cel[(lum >= 0.42) & (lum < 0.65) & mask] = 0.68
+    lum_cel[(lum >= 0.65) & (lum < 0.85) & mask] = 0.86
+    lum_cel[(lum >= 0.85) & mask] = 1.00
+
+    scale = np.ones_like(lum)
+    np.divide(lum_cel, lum, out=scale, where=(lum > 0.04))
+    scale = np.clip(scale, 0.6, 1.35)
+    rgb_cel = np.clip(rgb * np.expand_dims(scale, 2), 0.0, 1.0)
+
+    # Major crease inking
+    dx = np.zeros_like(lum)
+    dy = np.zeros_like(lum)
+    dx[:, 1:-1] = lum[:, 2:] - lum[:, :-2]
+    dy[1:-1, :] = lum[2:, :] - lum[:-2, :]
+    grad = np.sqrt(dx**2 + dy**2)
+
+    # Exclude eye/face area
+    y_coords, x_coords = np.ogrid[:h, :w]
+    face_box = (x_coords >= 105) & (x_coords <= 150) & (y_coords >= 65) & (y_coords <= 112)
+
+    is_seam = (grad > 0.30) & mask & (~face_box)
+    ink_color = np.array([0.08, 0.09, 0.13])
+    for c in range(3):
+        rgb_cel[is_seam, c] = rgb_cel[is_seam, c] * 0.25 + ink_color[c] * 0.75
+
+    char_img = Image.fromarray((rgb_cel * 255).astype(np.uint8))
+    char_img.putalpha(a)
+
+    sil = Image.fromarray((mask * 255).astype(np.uint8))
+    sil_dil = sil.filter(ImageFilter.MaxFilter(2 * outline_px + 1))
+    outline_mask = np.array(sil_dil) > 100
+
+    out = Image.new('RGBA', (w, h), (0, 0, 0, 0))
+    ink_outline = Image.new('RGBA', (w, h), (18, 20, 30, 255))
+    out.paste(ink_outline, (0, 0), Image.fromarray((outline_mask * 255).astype(np.uint8)))
+    out.paste(char_img, (0, 0), char_img)
+    return out
+
+rendered_manifest_actions = {}
+
+for act_key, b_act_name in ACTIONS:
+    t0 = time.time()
+    b_act = bpy.data.actions.get(b_act_name)
+    if not b_act:
+        print(f"WARNING: Action '{b_act_name}' not found, skipping.")
+        continue
+
+    imp_arm.animation_data.action = b_act
+    imp_arm.animation_data.action_slot = b_act.slots[0]
+
+    f_start = int(b_act.frame_range[0])
+    f_end = int(b_act.frame_range[1])
+    f_len = max(1, f_end - f_start)
+    sample_frames = [int(round(f_start + i * (f_len / 8.0))) for i in range(8)]
+
+    sheet = Image.new('RGBA', (2048, 2048), (0, 0, 0, 0))
+
+    for row_idx, deg in enumerate(DIR_ANGLES):
+        imp_arm.rotation_euler = (0, 0, math.radians(deg))
+        for col_idx, f in enumerate(sample_frames):
+            scene.frame_set(f)
+            bpy.context.view_layer.update()
+            bpy.ops.render.render(write_still=True)
+
+            raw_tile = Image.open(tile_tmp)
+            drawn_tile = cartoonize_tile(raw_tile, outline_px=2)
+            sheet.paste(drawn_tile, (col_idx * 256, row_idx * 256))
+
+    imp_arm.rotation_euler = (0, 0, 0)
+
+    filename = f"sunlit_paladin_{act_key}_loop.png"
+    out_web_path = os.path.join(DIR_ACTIONS, filename)
+    out_art_path = os.path.join(DIR_ARTIFACTS, filename)
+    sheet.save(out_web_path)
+    sheet.save(out_art_path)
+
+    # 1024px version
+    filename_1024 = f"sunlit_paladin_{act_key}_1024.png"
+    sheet_1024 = sheet.resize((1024, 1024), Image.Resampling.LANCZOS)
+    sheet_1024.save(os.path.join(DIR_ACTIONS, filename_1024))
+    sheet_1024.save(os.path.join(DIR_ARTIFACTS, filename_1024))
+
+    rendered_manifest_actions[act_key] = f"/actions/{filename}"
+    dt = time.time() - t0
+    print(f"Rendered & Cel-Shaded Sunlit Paladin '{act_key}': 64 tiles in {dt:.1f}s -> {filename}")
+
+# Save unified blend file
+blend_save = os.path.abspath('apps/web/public/models/characters/sunlit_paladin_unified_rig.blend')
+bpy.ops.wm.save_as_mainfile(filepath=blend_save)
+print(f"Successfully saved {blend_save}!")
+
+# Update Manifests
+manifest_path = os.path.abspath('apps/web/public/textures/avatars/myos_sprites_manifest.json')
+if os.path.exists(manifest_path):
+    with open(manifest_path, 'r', encoding='utf-8') as f:
+        manifest_data = json.load(f)
+
+    manifest_data['sprites']['sunlit_paladin'] = {
+        "id": "sunlit_paladin",
+        "name": "Sunlit Paladin",
+        "category": "heroes",
+        "badge": "SOLAR CRUSADER",
+        "badgeColor": "bg-gradient-to-r from-amber-500/30 to-yellow-500/30 text-yellow-300 border-yellow-500/50",
+        "description": "True HD drawn anime cel knight clad in solar golden cuirass, white crusader tabard, billowing knight cape, and comic inking.",
+        "tileSize": 256,
+        "grid": { "cols": 8, "rows": 8 },
+        "scale": 1.0,
+        "defaultAction": "idle",
+        "actions": rendered_manifest_actions,
+        "pillarAlignment": "existence"
+    }
+
+    with open(manifest_path, 'w', encoding='utf-8') as f:
+        json.dump(manifest_data, f, indent=2)
+    print("Updated myos_sprites_manifest.json with 'sunlit_paladin' entry!")
+
+# Also register in mephit_manifest.json
+mephit_manifest_path = os.path.abspath('apps/web/public/assets/mephit_manifest.json')
+if os.path.exists(mephit_manifest_path):
+    with open(mephit_manifest_path, 'r', encoding='utf-8') as f:
+        mephit_data = json.load(f)
+    if 'archetypes' in mephit_data:
+        mephit_data['archetypes']['sunlit_paladin'] = {
+            "id": "sunlit_paladin",
+            "name": "Sunlit Paladin",
+            "role": "Solar Crusader",
+            "personality": "Righteous holy knight wielding the radiance of dawn, sworn to defend the realm in brilliant golden plate.",
+            "assetType": "myos_8way",
+            "assetUrl": "/actions/sunlit_paladin_idle_loop.png",
+            "scale": 1.0,
+            "pillarScores": {
+                "self": 85,
+                "thought": 70,
+                "logic": 75,
+                "unity": 90,
+                "existence": 95,
+                "improvement": 85,
+                "mastery": 90,
+                "resonance": 85,
+                "transcendence": 80,
+                "omniscience": 70
+            }
+        }
+        with open(mephit_manifest_path, 'w', encoding='utf-8') as f:
+            json.dump(mephit_data, f, indent=4)
+        print("Updated mephit_manifest.json with 'sunlit_paladin' archetype!")
+
+total_elapsed = time.time() - start_time
+print(f"=== SUNLIT PALADIN SYNTHESIS COMPLETED in {total_elapsed:.1f}s ===")

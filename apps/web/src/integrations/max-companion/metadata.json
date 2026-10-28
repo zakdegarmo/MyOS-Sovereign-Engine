@@ -1,0 +1,8 @@
+{
+  "name": "Network 23 Overlay",
+  "description": "A chaotic, glitch-heavy Max Headroom desktop assistant simulation that interrupts your workflow with 80s cyberpunk commentary.",
+  "requestFramePermissions": [
+    "microphone",
+    "display-capture"
+  ]
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyOS Engine</title>
+    <script>
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        var loader = document.querySelector('.aether-loader');
+        if (loader) {
+          loader.innerHTML = '<div style="color:#ef4444;padding:20px;font-family:monospace;max-width:800px;text-align:left;">' +
+            '<h2 style="font-size:20px;margin-bottom:10px;">⚠️ HTML Script Boot Failure</h2>' +
+            '<p style="color:#fbbf24;">' + msg + '</p>' +
+            '<p style="color:#94a3b8;font-size:12px;margin-top:10px;">URL: ' + url + ' (Line ' + lineNo + ')</p>' +
+            '</div>';
+        }
+        return false;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <style>
+        .aether-loader {
+          position: fixed; inset: 0; background: #050505;
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          color: #06b6d4; font-family: monospace; z-index: 999999;
+        }
+        .aether-glyph {
+          font-size: 5rem; animation: aether-pulse 2s infinite ease-in-out; margin-bottom: 2rem;
+          text-shadow: 0 0 30px rgba(6,182,212,0.8);
+        }
+        .aether-text {
+          font-size: 1rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: bold;
+          animation: aether-blink 1.5s infinite;
+        }
+        .aether-bar {
+          width: 300px; height: 1px; background: rgba(6, 182, 212, 0.1); margin-top: 1.5rem;
+          position: relative; overflow: hidden;
+        }
+        .aether-bar::after {
+          content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 30%;
+          background: #06b6d4; box-shadow: 0 0 10px #06b6d4;
+          animation: aether-slide 2s infinite ease-in-out;
+        }
+        @keyframes aether-pulse { 
+          0%, 100% { opacity: 0.5; transform: scale(0.95); } 
+          50% { opacity: 1; transform: scale(1.05); } 
+        }
+        @keyframes aether-blink {
+          0%, 100% { opacity: 0.4; } 50% { opacity: 1; }
+        }
+        @keyframes aether-slide { 
+          0% { transform: translateX(-100%); } 
+          100% { transform: translateX(400%); } 
+        }
+      </style>
+      <div class="aether-loader">
+        <div class="aether-glyph">🜔</div>
+        <div class="aether-text">Booting Sovereign Omni Engine</div>
+        <div class="aether-bar"></div>
+        <div id="boot-ticker" style="margin-top: 1.5rem; font-size: 11px; color: rgba(6, 182, 212, 0.7); max-width: 400px; text-align: center; line-height: 1.6;">
+          [0.00s] Initializing JavaScript Runtime & WebGL Virtual Machine...
+        </div>
+      </div>
+      <script>
+        (function() {
+          var ticker = document.getElementById('boot-ticker');
+          var start = Date.now();
+          var msgs = [
+            "Compiling TypeScript modules & Vite hot module graph...",
+            "Loading 10-Pillar Ontological Council & Gestalt State...",
+            "Hydrating 2.5D LPC Spritesheet Atlas & Mephit Registry...",
+            "Compiling Three.js WebGL Shaders & Stagecraft Lighting...",
+            "Connecting D&D 5e Action Economy & Spatial World Canvas..."
+          ];
+          var idx = 0;
+          var interval = setInterval(function() {
+            if (!ticker) { clearInterval(interval); return; }
+            var elapsed = ((Date.now() - start) / 1000).toFixed(2);
+            ticker.innerText = "[" + elapsed + "s] " + msgs[idx % msgs.length];
+            idx++;
+          }, 450);
+        })();
+      </script>
+    </div>
+    <script src="/lib/omggif.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

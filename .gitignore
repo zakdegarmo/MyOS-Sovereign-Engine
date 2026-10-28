@@ -1,0 +1,35 @@
+node_modules/
+dist/
+.env
+.env.local
+.venv/
+__pycache__/
+
+# Data dumps and vector stores (files over 100MB)
+data/
+recordings/
+saved_states/
+myos_vector_store.json
+.cache/
+*.db
+*.sqlite
+*.sqlite3
+*.mp4
+*.zip
+*.tar.gz
+*.tif
+*.tiff
+*.exe
+apps/web/public/data/pdf/
+apps/godot/
+
+# Artifacts and logs
+artifacts/
+scratch/
+*.log
+*.blend1
+tmp/
+apps/web/public/assets/billboards/
+packages/archive/
+apps/web/public/assets/lpc/
+apps/web/public/assets/Librarian_Staging/
