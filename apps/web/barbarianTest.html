@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbarian Lady Benchmark Arena (Standalone Test Stage)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #050814;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", monospace;
+            color: #fff;
+        }
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        /* Top Navigation Header */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 24px;
+            background: rgba(5, 8, 20, 0.75);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .icon-badge {
+            font-size: 20px;
+            background: linear-gradient(135deg, #e11d48, #d97706);
+            padding: 6px 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3);
+        }
+        h1 {
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fda4af;
+        }
+        .subtitle {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            font-family: monospace;
+        }
+        .controls-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 6px 12px;
+            border-radius: 10px;
+        }
+        .control-group label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        select {
+            background: #0f172a;
+            color: #38bdf8;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            outline: none;
+            font-family: monospace;
+        }
+        select:focus {
+            border-color: #38bdf8;
+        }
+        button {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-family: monospace;
+        }
+        button:hover {
+            background: rgba(255, 255, 255, 0.16);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .btn-camera {
+            padding: 4px 10px;
+            font-size: 10px;
+        }
+        /* Bottom Metrics Cards */
+        .metrics-grid {
+            position: absolute;
+            bottom: 20px;
+            left: 24px;
+            right: 24px;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            pointer-events: none;
+        }
+        .metric-card {
+            background: rgba(10, 15, 30, 0.65);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 12px 14px;
+        }
+        .metric-card.c1 { border-color: rgba(59, 130, 246, 0.4); }
+        .metric-card.c2 { border-color: rgba(16, 185, 129, 0.4); }
+        .metric-card.c3 { border-color: rgba(245, 158, 11, 0.4); }
+        .metric-card.c4 { border-color: rgba(244, 63, 94, 0.4); }
+
+        .card-tag {
+            font-size: 9px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .c1 .card-tag { color: #60a5fa; }
+        .c2 .card-tag { color: #34d399; }
+        .c3 .card-tag { color: #fbbf24; }
+        .c4 .card-tag { color: #fb7185; }
+
+        .card-desc {
+            font-size: 11px;
+            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .card-footer {
+            margin-top: 8px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.4);
+            display: flex;
+            justify-content: space-between;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <span class="icon-badge">⚔️</span>
+            <div>
+                <h1>Barbarian Lady Benchmark Arena</h1>
+                <div class="subtitle">Standalone Staging Sandbox • 5173/barbarianTest.html</div>
+            </div>
+        </div>
+
+        <div class="controls-bar">
+            <div class="control-group">
+                <label>Action Clip:</label>
+                <select id="action-select">
+                    <option value="Idle_Loop">Loading 45 Actions...</option>
+                </select>
+            </div>
+
+            <button id="play-btn">⏸ Pause</button>
+
+            <div class="control-group">
+                <label>Camera:</label>
+                <button class="btn-camera" data-focus="all">All 4</button>
+                <button class="btn-camera" data-focus="concept">Concept</button>
+                <button class="btn-camera" data-focus="lpc">LPC</button>
+                <button class="btn-camera" data-focus="golem">Golem</button>
+                <button class="btn-camera" data-focus="chibi">Chibi 3D</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="canvas-container"></div>
+
+    <div class="metrics-grid">
+        <div class="metric-card c1">
+            <div class="card-tag">1. Concept Plate</div>
+            <div class="card-desc">2D generative anchor. Establishes Amazonian anatomy, red warrior hair, and fur-bikini silhouette.</div>
+            <div class="card-footer">
+                <span>Substrate: 2D Raster</span>
+                <span>Draw Calls: 1</span>
+            </div>
+        </div>
+
+        <div class="metric-card c2">
+            <div class="card-tag">2. LPC Paperdoll</div>
+            <div class="card-desc">64x64 pixel art grid stacked on canvas. Ultra-lightweight for 16-bit retro top-down realms.</div>
+            <div class="card-footer">
+                <span>Substrate: Modular Canvas</span>
+                <span>Draw Calls: 1</span>
+            </div>
+        </div>
+
+        <div class="metric-card c3">
+            <div class="card-tag">3. Golem (2.5D)</div>
+            <div class="card-desc">Super-sampled directional billboard (Larry class). Cycles 4-way / 8-way frames with depth sorting.</div>
+            <div class="card-footer">
+                <span>Substrate: 256px Sprite Sheet</span>
+                <span>Zero Rig Cost</span>
+            </div>
+        </div>
+
+        <div class="metric-card c4">
+            <div class="card-tag">4. Chibi (3D Realtime)</div>
+            <div class="card-desc">Real-time vertex-skinned 3D biped mesh driven by 45 Mixamo actions and PBR materials.</div>
+            <div class="card-footer">
+                <span>Substrate: Skinned Mesh (.glb)</span>
+                <span>Mixamo 45 Clips</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/tests/barbarianTestApp.ts"></script>
+</body>
+</html>
