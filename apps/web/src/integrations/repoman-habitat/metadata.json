@@ -1,0 +1,5 @@
+{
+  "name": "RepoMan: CodeGraph",
+  "description": "A 3D genetic IDE that visualizes codebases as geometric structures based on data complexity, integrated with a fractal ontology map.",
+  "requestFramePermissions": []
+}

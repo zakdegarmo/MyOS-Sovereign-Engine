@@ -1,0 +1,36 @@
+[
+    {
+        "id": "tree_pine",
+        "tags": [
+            "nature",
+            "tree",
+            "plant",
+            "forest"
+        ],
+        "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Box/glTF-Binary/Box.glb",
+        "type": "model",
+        "notes": "PLACEHOLDER: Need valid Tree URL. Using Box for testing asset pipeline."
+    },
+    {
+        "id": "sci_fi_crate",
+        "tags": [
+            "scifi",
+            "industrial",
+            "crate",
+            "box"
+        ],
+        "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF-Binary/SciFiHelmet.glb",
+        "type": "model",
+        "notes": "SciFi Helmet as Crate placeholder"
+    },
+    {
+        "id": "duck",
+        "tags": [
+            "animal",
+            "duck",
+            "test"
+        ],
+        "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF-Binary/Duck.glb",
+        "type": "model"
+    }
+]

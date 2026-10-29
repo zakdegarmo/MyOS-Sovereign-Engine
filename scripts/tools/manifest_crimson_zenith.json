@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "title": "Crimson Zenith: Duel of the Sundered Sisterhood",
+    "style": "1980s Ralph Bakshi meets Frank Frazetta Heavy Metal Dark Fantasy",
+    "fps": 30,
+    "resolution": {
+      "width": 640,
+      "height": 360
+    },
+    "total_frames": 240,
+    "engine": "BLENDER_EEVEE_NEXT"
+  },
+  "environment": {
+    "base_blend": "lunaria_flesh_mannequin.blend",
+    "terrain": {
+      "type": "cliff_plateau",
+      "dimensions": [12.0, 8.0, 15.0],
+      "material": {
+        "name": "Crag_Rock",
+        "base_rgba": [0.35, 0.25, 0.22, 1.0],
+        "shadow_rgba": [0.12, 0.08, 0.15, 1.0],
+        "rim_rgba": [0.8, 0.3, 0.1, 1.0]
+      }
+    },
+    "backdrop": {
+      "type": "cyclorama_gradient",
+      "emission_strength": 1.8,
+      "gradient_stops": [
+        {
+          "position": 0.0,
+          "color_rgba": [1.0, 0.45, 0.05, 1.0]
+        },
+        {
+          "position": 0.4,
+          "color_rgba": [0.75, 0.08, 0.18, 1.0]
+        },
+        {
+          "position": 1.0,
+          "color_rgba": [0.06, 0.04, 0.18, 1.0]
+        }
+      ]
+    }
+  },
+  "lighting": [
+    {
+      "name": "KeySun",
+      "type": "SUN",
+      "energy": 5.5,
+      "color_rgb": [1.0, 0.55, 0.2],
+      "rotation_deg": [65.0, -15.0, -45.0]
+    },
+    {
+      "name": "RimSun",
+      "type": "SUN",
+      "energy": 8.0,
+      "color_rgb": [1.0, 0.1, 0.5],
+      "rotation_deg": [-40.0, 20.0, 135.0]
+    },
+    {
+      "name": "FillSun",
+      "type": "SUN",
+      "energy": 1.2,
+      "color_rgb": [0.2, 0.25, 0.6],
+      "rotation_deg": [0.0, 0.0, 0.0]
+    }
+  ],
+  "characters": [
+    {
+      "id": "warrior_1",
+      "name": "Warrior 1 (Sister of Crimson)",
+      "source_object": "LPC_Decivoxel_Flesh_Female",
+      "material": {
+        "name": "Bakshi_Flesh_1",
+        "base_rgba": [0.92, 0.72, 0.58, 1.0],
+        "shadow_rgba": [0.45, 0.18, 0.22, 1.0],
+        "rim_rgba": [1.0, 0.3, 0.5, 1.0]
+      },
+      "initial_transform": {
+        "location": [-1.2, 0.0, 0.0],
+        "rotation_deg": [0.0, 0.0, 85.0]
+      },
+      "equipment": [
+        {
+          "name": "Warrior1_Broadsword",
+          "type": "broadsword",
+          "parent_socket": "Hand.R_Socket",
+          "location_offset": [0.0, 0.0, 0.0],
+          "rotation_offset_deg": [0.0, 0.0, 0.0],
+          "material": {
+            "name": "Frazetta_Steel",
+            "base_rgba": [0.8, 0.88, 0.95, 1.0],
+            "shadow_rgba": [0.15, 0.2, 0.35, 1.0],
+            "rim_rgba": [1.0, 0.9, 0.5, 1.0]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "shot_id": 1,
+          "pose_name": "continuous_melee_attack_loop",
+          "bone_rotations_deg": {
+            "arm.R": [-65.0, 40.0, -30.0],
+            "forearm.R": [-45.0, 0.0, 20.0],
+            "arm.L": [25.0, -30.0, 0.0],
+            "thigh.L": [25.0, 0.0, 0.0],
+            "thigh.R": [-25.0, 0.0, 0.0]
+          }
+        },
+        {
+          "shot_id": 2,
+          "pose_name": "striking_overhand_cleave",
+          "bone_rotations_deg": {
+            "arm.R": [-50.0, 30.0, -20.0],
+            "forearm.R": [-35.0, 10.0, 15.0],
+            "arm.L": [15.0, -20.0, 0.0],
+            "thigh.L": [30.0, 0.0, 0.0],
+            "thigh.R": [-30.0, 0.0, 0.0]
+          }
+        },
+        {
+          "shot_id": 3,
+          "pose_name": "combat_cross_slash",
+          "bone_rotations_deg": {
+            "arm.R": [-40.0, 20.0, -10.0],
+            "forearm.R": [-20.0, 10.0, 10.0],
+            "arm.L": [20.0, -15.0, 0.0],
+            "thigh.L": [20.0, 0.0, 0.0],
+            "thigh.R": [-20.0, 0.0, 0.0]
+          }
+        }
+      ]
+    },
+    {
+      "id": "warrior_2",
+      "name": "Warrior 2 (Sister of Zenith)",
+      "source_object": "LPC_Decivoxel_Flesh_Female_2",
+      "duplicate_from": "LPC_Decivoxel_Flesh_Female",
+      "material": {
+        "name": "Bakshi_Flesh_2",
+        "base_rgba": [0.85, 0.65, 0.52, 1.0],
+        "shadow_rgba": [0.38, 0.14, 0.20, 1.0],
+        "rim_rgba": [0.2, 0.8, 1.0, 1.0]
+      },
+      "initial_transform": {
+        "location": [1.2, 0.0, 0.0],
+        "rotation_deg": [0.0, 0.0, -85.0]
+      },
+      "equipment": [
+        {
+          "name": "Warrior2_Shield",
+          "type": "shield",
+          "parent_socket": "Hand.L_Socket",
+          "location_offset": [0.0, 0.0, 0.0],
+          "rotation_offset_deg": [0.0, 0.0, 0.0],
+          "material": {
+            "name": "Bronze_Boss",
+            "base_rgba": [0.75, 0.55, 0.25, 1.0],
+            "shadow_rgba": [0.25, 0.15, 0.08, 1.0],
+            "rim_rgba": [1.0, 0.8, 0.4, 1.0]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "shot_id": 1,
+          "pose_name": "continuous_melee_idle_guard",
+          "bone_rotations_deg": {
+            "arm.R": [45.0, -35.0, 20.0],
+            "arm.L": [-70.0, 25.0, 45.0],
+            "thigh.R": [30.0, 0.0, 0.0],
+            "thigh.L": [-30.0, 0.0, 0.0]
+          }
+        },
+        {
+          "shot_id": 2,
+          "pose_name": "defensive_shield_brace",
+          "bone_rotations_deg": {
+            "arm.R": [35.0, -25.0, 15.0],
+            "arm.L": [-60.0, 20.0, 35.0],
+            "thigh.R": [25.0, 0.0, 0.0],
+            "thigh.L": [-25.0, 0.0, 0.0]
+          }
+        },
+        {
+          "shot_id": 3,
+          "pose_name": "counter_thrust_stance",
+          "bone_rotations_deg": {
+            "arm.R": [25.0, -15.0, 10.0],
+            "arm.L": [-50.0, 15.0, 25.0],
+            "thigh.R": [20.0, 0.0, 0.0],
+            "thigh.L": [-20.0, 0.0, 0.0]
+          }
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "name": "Wide Low-Angle Dolly Across the Abyss",
+      "frame_start": 1,
+      "frame_end": 80,
+      "lens_mm": 28.0,
+      "camera_movement": {
+        "type": "dolly",
+        "start_location": [-4.8, -4.5, 0.8],
+        "start_rotation_deg": [78.0, 0.0, -40.0],
+        "end_location": [-3.2, -3.8, 0.5],
+        "end_rotation_deg": [82.0, 0.0, -32.0],
+        "interpolation": "BEZIER"
+      }
+    },
+    {
+      "shot_id": 2,
+      "name": "Reverse Over-The-Shoulder Hero Crane on Blade Cleave & Shield Parry",
+      "frame_start": 81,
+      "frame_end": 160,
+      "lens_mm": 45.0,
+      "camera_movement": {
+        "type": "crane",
+        "start_location": [0.0, -2.2, 0.2],
+        "start_rotation_deg": [65.0, 0.0, 0.0],
+        "end_location": [0.3, -1.5, 0.9],
+        "end_rotation_deg": [52.0, 0.0, 12.0],
+        "interpolation": "BEZIER"
+      }
+    },
+    {
+      "shot_id": 3,
+      "name": "Low-Angle Horizon Pan Silhouetted Against Sunset",
+      "frame_start": 161,
+      "frame_end": 240,
+      "lens_mm": 35.0,
+      "camera_movement": {
+        "type": "pan",
+        "start_location": [-2.0, -4.0, 0.4],
+        "start_rotation_deg": [85.0, 0.0, -15.0],
+        "end_location": [2.0, -3.8, 0.6],
+        "end_rotation_deg": [85.0, 0.0, 15.0],
+        "interpolation": "BEZIER"
+      }
+    }
+  ]
+}

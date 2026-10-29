@@ -1,0 +1,17 @@
+{
+  "grid": { "width": 32, "height": 32 },
+  "actions": {
+    "idle": { "row": 0, "frames": 1 },
+    "walk": { "row": 0, "frames": 8 },
+    "slash": { "row": 8, "frames": 6 },
+    "shoot": { "row": 16, "frames": 4 },
+    "hurt": { "row": 20, "frames": 4 },
+    "dead": { "row": 22, "frames": 6 }
+  },
+  "directions": {
+    "U": 0,
+    "L": 6,
+    "D": 4,
+    "R": 2
+  }
+}

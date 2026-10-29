@@ -1,0 +1,49 @@
+/* JRPG Window Manager Effects */
+
+@keyframes fire-burn {
+    0% {
+        clip-path: inset(100% 0 0 0);
+        filter: brightness(3) saturate(2) drop-shadow(0 0 10px #ff4400);
+    }
+    50% {
+        clip-path: inset(50% 0 0 0);
+        filter: brightness(2) saturate(1.5) drop-shadow(0 0 20px #ff8800);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+        filter: brightness(1) saturate(1) drop-shadow(0 0 0px transparent);
+    }
+}
+
+.effect-fire-burn {
+    animation: fire-burn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes scroll-open {
+    0% {
+        clip-path: inset(50% 0 50% 0);
+        transform: scaleY(0.1);
+    }
+    60% {
+        clip-path: inset(10% 0 10% 0);
+        transform: scaleY(1.05);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+        transform: scaleY(1);
+    }
+}
+
+.effect-scroll-open {
+    transform-origin: center;
+    animation: scroll-open 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Base style for the Context IDE panels to ensure they have the JRPG feel */
+.jrpg-panel {
+    background: rgba(0, 5, 10, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 255, 200, 0.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 255, 200, 0.05);
+    border-radius: 4px; /* More angular, classic JRPG style */
+}

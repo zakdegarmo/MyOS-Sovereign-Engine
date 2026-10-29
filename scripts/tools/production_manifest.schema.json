@@ -1,0 +1,276 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MyOS Production Manifest",
+  "description": "Authoritative schema for autonomous multi-shot 3D animation studio production manifests",
+  "type": "object",
+  "required": ["metadata", "environment", "lighting", "characters", "shots"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "fps", "resolution", "total_frames", "engine"],
+      "properties": {
+        "title": { "type": "string" },
+        "style": { "type": "string" },
+        "fps": { "type": "integer", "default": 24, "minimum": 1 },
+        "resolution": {
+          "type": "object",
+          "required": ["width", "height"],
+          "properties": {
+            "width": { "type": "integer", "default": 640, "minimum": 16 },
+            "height": { "type": "integer", "default": 360, "minimum": 16 }
+          }
+        },
+        "total_frames": { "type": "integer", "default": 96, "minimum": 1 },
+        "engine": {
+          "type": "string",
+          "enum": ["BLENDER_EEVEE_NEXT", "BLENDER_EEVEE", "CYCLES"],
+          "default": "BLENDER_EEVEE_NEXT"
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "required": ["base_blend", "terrain", "backdrop"],
+      "properties": {
+        "base_blend": { "type": "string", "default": "flesh_female_comic.blend" },
+        "terrain": {
+          "type": "object",
+          "required": ["type", "dimensions", "material"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["cliff_plateau", "arena", "dungeon_corridor", "flat_ground"],
+              "default": "cliff_plateau"
+            },
+            "dimensions": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "material": { "$ref": "#/definitions/CelMaterial" }
+          }
+        },
+        "backdrop": {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["cyclorama_gradient", "procedural_sky", "solid"],
+              "default": "cyclorama_gradient"
+            },
+            "emission_strength": { "type": "number", "default": 1.8 },
+            "gradient_stops": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["position", "color_rgba"],
+                "properties": {
+                  "position": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+                  "color_rgba": {
+                    "type": "array",
+                    "items": { "type": "number" },
+                    "minItems": 4,
+                    "maxItems": 4
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "lighting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "energy", "color_rgb", "rotation_deg"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["SUN", "POINT", "SPOT", "AREA"],
+            "default": "SUN"
+          },
+          "energy": { "type": "number", "minimum": 0.0 },
+          "color_rgb": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "rotation_deg": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3
+          }
+        }
+      }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "material", "initial_transform", "actions"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "source_object": { "type": "string", "default": "LPC_Decivoxel_Flesh_Female" },
+          "duplicate_from": { "type": "string" },
+          "material": { "$ref": "#/definitions/CelMaterial" },
+          "initial_transform": {
+            "type": "object",
+            "required": ["location", "rotation_deg"],
+            "properties": {
+              "location": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "rotation_deg": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            }
+          },
+          "equipment": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "type", "parent_socket", "location_offset", "rotation_offset_deg", "material"],
+              "properties": {
+                "name": { "type": "string" },
+                "type": {
+                  "type": "string",
+                  "enum": ["broadsword", "dagger", "greataxe", "staff", "shield"],
+                  "default": "broadsword"
+                },
+                "parent_socket": { "type": "string", "default": "Armature" },
+                "location_offset": {
+                  "type": "array",
+                  "items": { "type": "number" },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "rotation_offset_deg": {
+                  "type": "array",
+                  "items": { "type": "number" },
+                  "minItems": 3,
+                  "maxItems": 3
+                },
+                "material": { "$ref": "#/definitions/CelMaterial" }
+              }
+            }
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["shot_id", "pose_name", "bone_rotations_deg"],
+              "properties": {
+                "shot_id": { "type": "integer" },
+                "pose_name": { "type": "string" },
+                "bone_rotations_deg": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "array",
+                    "items": { "type": "number" },
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["shot_id", "name", "frame_start", "frame_end", "lens_mm", "camera_movement"],
+        "properties": {
+          "shot_id": { "type": "integer" },
+          "name": { "type": "string" },
+          "frame_start": { "type": "integer", "minimum": 1 },
+          "frame_end": { "type": "integer", "minimum": 1 },
+          "lens_mm": { "type": "number", "default": 35.0, "minimum": 10.0 },
+          "camera_movement": {
+            "type": "object",
+            "required": ["type", "start_location", "start_rotation_deg", "end_location", "end_rotation_deg"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["dolly", "crane", "pan", "static", "tracking"],
+                "default": "dolly"
+              },
+              "start_location": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "start_rotation_deg": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "end_location": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "end_rotation_deg": {
+                "type": "array",
+                "items": { "type": "number" },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "interpolation": {
+                "type": "string",
+                "enum": ["BEZIER", "LINEAR"],
+                "default": "BEZIER"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CelMaterial": {
+      "type": "object",
+      "required": ["name", "base_rgba", "shadow_rgba"],
+      "properties": {
+        "name": { "type": "string" },
+        "base_rgba": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "shadow_rgba": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "rim_rgba": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 4,
+          "maxItems": 4,
+          "default": [1.0, 0.3, 0.5, 1.0]
+        }
+      }
+    }
+  }
+}

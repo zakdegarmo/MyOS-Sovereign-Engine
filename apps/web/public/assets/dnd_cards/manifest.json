@@ -1,0 +1,2596 @@
+{
+  "cards": [
+    {
+      "id": "card_p4_r0_c0",
+      "page": 4,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p4_r0_c0.png",
+      "name": "D&D Card #1",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r0_c1",
+      "page": 4,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p4_r0_c1.png",
+      "name": "D&D Card #2",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r0_c2",
+      "page": 4,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p4_r0_c2.png",
+      "name": "D&D Card #3",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r1_c0",
+      "page": 4,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p4_r1_c0.png",
+      "name": "D&D Card #4",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r1_c1",
+      "page": 4,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p4_r1_c1.png",
+      "name": "D&D Card #5",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r1_c2",
+      "page": 4,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p4_r1_c2.png",
+      "name": "D&D Card #6",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r2_c0",
+      "page": 4,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p4_r2_c0.png",
+      "name": "D&D Card #7",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r2_c1",
+      "page": 4,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p4_r2_c1.png",
+      "name": "D&D Card #8",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p4_r2_c2",
+      "page": 4,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p4_r2_c2.png",
+      "name": "D&D Card #9",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r0_c0",
+      "page": 5,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p5_r0_c0.png",
+      "name": "D&D Card #10",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r0_c1",
+      "page": 5,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p5_r0_c1.png",
+      "name": "D&D Card #11",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r0_c2",
+      "page": 5,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p5_r0_c2.png",
+      "name": "D&D Card #12",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r1_c0",
+      "page": 5,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p5_r1_c0.png",
+      "name": "D&D Card #13",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r1_c1",
+      "page": 5,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p5_r1_c1.png",
+      "name": "D&D Card #14",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r1_c2",
+      "page": 5,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p5_r1_c2.png",
+      "name": "D&D Card #15",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r2_c0",
+      "page": 5,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p5_r2_c0.png",
+      "name": "D&D Card #16",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r2_c1",
+      "page": 5,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p5_r2_c1.png",
+      "name": "D&D Card #17",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p5_r2_c2",
+      "page": 5,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p5_r2_c2.png",
+      "name": "D&D Card #18",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r0_c0",
+      "page": 6,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p6_r0_c0.png",
+      "name": "D&D Card #19",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r0_c1",
+      "page": 6,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p6_r0_c1.png",
+      "name": "D&D Card #20",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r0_c2",
+      "page": 6,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p6_r0_c2.png",
+      "name": "D&D Card #21",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r1_c0",
+      "page": 6,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p6_r1_c0.png",
+      "name": "D&D Card #22",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r1_c1",
+      "page": 6,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p6_r1_c1.png",
+      "name": "D&D Card #23",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r1_c2",
+      "page": 6,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p6_r1_c2.png",
+      "name": "D&D Card #24",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r2_c0",
+      "page": 6,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p6_r2_c0.png",
+      "name": "D&D Card #25",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r2_c1",
+      "page": 6,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p6_r2_c1.png",
+      "name": "D&D Card #26",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p6_r2_c2",
+      "page": 6,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p6_r2_c2.png",
+      "name": "D&D Card #27",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r0_c0",
+      "page": 7,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p7_r0_c0.png",
+      "name": "D&D Card #28",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r0_c1",
+      "page": 7,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p7_r0_c1.png",
+      "name": "D&D Card #29",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r0_c2",
+      "page": 7,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p7_r0_c2.png",
+      "name": "D&D Card #30",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r1_c0",
+      "page": 7,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p7_r1_c0.png",
+      "name": "D&D Card #31",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r1_c1",
+      "page": 7,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p7_r1_c1.png",
+      "name": "D&D Card #32",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r1_c2",
+      "page": 7,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p7_r1_c2.png",
+      "name": "D&D Card #33",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r2_c0",
+      "page": 7,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p7_r2_c0.png",
+      "name": "D&D Card #34",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r2_c1",
+      "page": 7,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p7_r2_c1.png",
+      "name": "D&D Card #35",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p7_r2_c2",
+      "page": 7,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p7_r2_c2.png",
+      "name": "D&D Card #36",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r0_c0",
+      "page": 8,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p8_r0_c0.png",
+      "name": "D&D Card #37",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r0_c1",
+      "page": 8,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p8_r0_c1.png",
+      "name": "D&D Card #38",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r0_c2",
+      "page": 8,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p8_r0_c2.png",
+      "name": "D&D Card #39",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r1_c0",
+      "page": 8,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p8_r1_c0.png",
+      "name": "D&D Card #40",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r1_c1",
+      "page": 8,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p8_r1_c1.png",
+      "name": "D&D Card #41",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r1_c2",
+      "page": 8,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p8_r1_c2.png",
+      "name": "D&D Card #42",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r2_c0",
+      "page": 8,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p8_r2_c0.png",
+      "name": "D&D Card #43",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r2_c1",
+      "page": 8,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p8_r2_c1.png",
+      "name": "D&D Card #44",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p8_r2_c2",
+      "page": 8,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p8_r2_c2.png",
+      "name": "D&D Card #45",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r0_c0",
+      "page": 9,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p9_r0_c0.png",
+      "name": "D&D Card #46",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r0_c1",
+      "page": 9,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p9_r0_c1.png",
+      "name": "D&D Card #47",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r0_c2",
+      "page": 9,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p9_r0_c2.png",
+      "name": "D&D Card #48",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r1_c0",
+      "page": 9,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p9_r1_c0.png",
+      "name": "D&D Card #49",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r1_c1",
+      "page": 9,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p9_r1_c1.png",
+      "name": "D&D Card #50",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r1_c2",
+      "page": 9,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p9_r1_c2.png",
+      "name": "D&D Card #51",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r2_c0",
+      "page": 9,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p9_r2_c0.png",
+      "name": "D&D Card #52",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r2_c1",
+      "page": 9,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p9_r2_c1.png",
+      "name": "D&D Card #53",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p9_r2_c2",
+      "page": 9,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p9_r2_c2.png",
+      "name": "D&D Card #54",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r0_c0",
+      "page": 10,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p10_r0_c0.png",
+      "name": "D&D Card #55",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r0_c1",
+      "page": 10,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p10_r0_c1.png",
+      "name": "D&D Card #56",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r0_c2",
+      "page": 10,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p10_r0_c2.png",
+      "name": "D&D Card #57",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r1_c0",
+      "page": 10,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p10_r1_c0.png",
+      "name": "D&D Card #58",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r1_c1",
+      "page": 10,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p10_r1_c1.png",
+      "name": "D&D Card #59",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r1_c2",
+      "page": 10,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p10_r1_c2.png",
+      "name": "D&D Card #60",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r2_c0",
+      "page": 10,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p10_r2_c0.png",
+      "name": "D&D Card #61",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r2_c1",
+      "page": 10,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p10_r2_c1.png",
+      "name": "D&D Card #62",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p10_r2_c2",
+      "page": 10,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p10_r2_c2.png",
+      "name": "D&D Card #63",
+      "equipType": "weapon"
+    },
+    {
+      "id": "card_p11_r0_c0",
+      "page": 11,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p11_r0_c0.png",
+      "name": "D&D Card #64",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r0_c1",
+      "page": 11,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p11_r0_c1.png",
+      "name": "D&D Card #65",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r0_c2",
+      "page": 11,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p11_r0_c2.png",
+      "name": "D&D Card #66",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r1_c0",
+      "page": 11,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p11_r1_c0.png",
+      "name": "D&D Card #67",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r1_c1",
+      "page": 11,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p11_r1_c1.png",
+      "name": "D&D Card #68",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r1_c2",
+      "page": 11,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p11_r1_c2.png",
+      "name": "D&D Card #69",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r2_c0",
+      "page": 11,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p11_r2_c0.png",
+      "name": "D&D Card #70",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r2_c1",
+      "page": 11,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p11_r2_c1.png",
+      "name": "D&D Card #71",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p11_r2_c2",
+      "page": 11,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p11_r2_c2.png",
+      "name": "D&D Card #72",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r0_c0",
+      "page": 12,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p12_r0_c0.png",
+      "name": "D&D Card #73",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r0_c1",
+      "page": 12,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p12_r0_c1.png",
+      "name": "D&D Card #74",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r0_c2",
+      "page": 12,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p12_r0_c2.png",
+      "name": "D&D Card #75",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r1_c0",
+      "page": 12,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p12_r1_c0.png",
+      "name": "D&D Card #76",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r1_c1",
+      "page": 12,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p12_r1_c1.png",
+      "name": "D&D Card #77",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r1_c2",
+      "page": 12,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p12_r1_c2.png",
+      "name": "D&D Card #78",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r2_c0",
+      "page": 12,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p12_r2_c0.png",
+      "name": "D&D Card #79",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r2_c1",
+      "page": 12,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p12_r2_c1.png",
+      "name": "D&D Card #80",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p12_r2_c2",
+      "page": 12,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p12_r2_c2.png",
+      "name": "D&D Card #81",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r0_c0",
+      "page": 13,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p13_r0_c0.png",
+      "name": "D&D Card #82",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r0_c1",
+      "page": 13,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p13_r0_c1.png",
+      "name": "D&D Card #83",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r0_c2",
+      "page": 13,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p13_r0_c2.png",
+      "name": "D&D Card #84",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r1_c0",
+      "page": 13,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p13_r1_c0.png",
+      "name": "D&D Card #85",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r1_c1",
+      "page": 13,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p13_r1_c1.png",
+      "name": "D&D Card #86",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r1_c2",
+      "page": 13,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p13_r1_c2.png",
+      "name": "D&D Card #87",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r2_c0",
+      "page": 13,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p13_r2_c0.png",
+      "name": "D&D Card #88",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r2_c1",
+      "page": 13,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p13_r2_c1.png",
+      "name": "D&D Card #89",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p13_r2_c2",
+      "page": 13,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p13_r2_c2.png",
+      "name": "D&D Card #90",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r0_c0",
+      "page": 14,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p14_r0_c0.png",
+      "name": "D&D Card #91",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r0_c1",
+      "page": 14,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p14_r0_c1.png",
+      "name": "D&D Card #92",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r0_c2",
+      "page": 14,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p14_r0_c2.png",
+      "name": "D&D Card #93",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r1_c0",
+      "page": 14,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p14_r1_c0.png",
+      "name": "D&D Card #94",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r1_c1",
+      "page": 14,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p14_r1_c1.png",
+      "name": "D&D Card #95",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r1_c2",
+      "page": 14,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p14_r1_c2.png",
+      "name": "D&D Card #96",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r2_c0",
+      "page": 14,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p14_r2_c0.png",
+      "name": "D&D Card #97",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r2_c1",
+      "page": 14,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p14_r2_c1.png",
+      "name": "D&D Card #98",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p14_r2_c2",
+      "page": 14,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p14_r2_c2.png",
+      "name": "D&D Card #99",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r0_c0",
+      "page": 15,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p15_r0_c0.png",
+      "name": "D&D Card #100",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r0_c1",
+      "page": 15,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p15_r0_c1.png",
+      "name": "D&D Card #101",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r0_c2",
+      "page": 15,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p15_r0_c2.png",
+      "name": "D&D Card #102",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r1_c0",
+      "page": 15,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p15_r1_c0.png",
+      "name": "D&D Card #103",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r1_c1",
+      "page": 15,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p15_r1_c1.png",
+      "name": "D&D Card #104",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r1_c2",
+      "page": 15,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p15_r1_c2.png",
+      "name": "D&D Card #105",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r2_c0",
+      "page": 15,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p15_r2_c0.png",
+      "name": "D&D Card #106",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r2_c1",
+      "page": 15,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p15_r2_c1.png",
+      "name": "D&D Card #107",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p15_r2_c2",
+      "page": 15,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p15_r2_c2.png",
+      "name": "D&D Card #108",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r0_c0",
+      "page": 16,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p16_r0_c0.png",
+      "name": "D&D Card #109",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r0_c1",
+      "page": 16,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p16_r0_c1.png",
+      "name": "D&D Card #110",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r0_c2",
+      "page": 16,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p16_r0_c2.png",
+      "name": "D&D Card #111",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r1_c0",
+      "page": 16,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p16_r1_c0.png",
+      "name": "D&D Card #112",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r1_c1",
+      "page": 16,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p16_r1_c1.png",
+      "name": "D&D Card #113",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r1_c2",
+      "page": 16,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p16_r1_c2.png",
+      "name": "D&D Card #114",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r2_c0",
+      "page": 16,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p16_r2_c0.png",
+      "name": "D&D Card #115",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r2_c1",
+      "page": 16,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p16_r2_c1.png",
+      "name": "D&D Card #116",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p16_r2_c2",
+      "page": 16,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p16_r2_c2.png",
+      "name": "D&D Card #117",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r0_c0",
+      "page": 17,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p17_r0_c0.png",
+      "name": "D&D Card #118",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r0_c1",
+      "page": 17,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p17_r0_c1.png",
+      "name": "D&D Card #119",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r0_c2",
+      "page": 17,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p17_r0_c2.png",
+      "name": "D&D Card #120",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r1_c0",
+      "page": 17,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p17_r1_c0.png",
+      "name": "D&D Card #121",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r1_c1",
+      "page": 17,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p17_r1_c1.png",
+      "name": "D&D Card #122",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r1_c2",
+      "page": 17,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p17_r1_c2.png",
+      "name": "D&D Card #123",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r2_c0",
+      "page": 17,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p17_r2_c0.png",
+      "name": "D&D Card #124",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r2_c1",
+      "page": 17,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p17_r2_c1.png",
+      "name": "D&D Card #125",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p17_r2_c2",
+      "page": 17,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p17_r2_c2.png",
+      "name": "D&D Card #126",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r0_c0",
+      "page": 18,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p18_r0_c0.png",
+      "name": "D&D Card #127",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r0_c1",
+      "page": 18,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p18_r0_c1.png",
+      "name": "D&D Card #128",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r0_c2",
+      "page": 18,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p18_r0_c2.png",
+      "name": "D&D Card #129",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r1_c0",
+      "page": 18,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p18_r1_c0.png",
+      "name": "D&D Card #130",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r1_c1",
+      "page": 18,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p18_r1_c1.png",
+      "name": "D&D Card #131",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r1_c2",
+      "page": 18,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p18_r1_c2.png",
+      "name": "D&D Card #132",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r2_c0",
+      "page": 18,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p18_r2_c0.png",
+      "name": "D&D Card #133",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r2_c1",
+      "page": 18,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p18_r2_c1.png",
+      "name": "D&D Card #134",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p18_r2_c2",
+      "page": 18,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p18_r2_c2.png",
+      "name": "D&D Card #135",
+      "equipType": "armor"
+    },
+    {
+      "id": "card_p19_r0_c0",
+      "page": 19,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p19_r0_c0.png",
+      "name": "D&D Card #136",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r0_c1",
+      "page": 19,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p19_r0_c1.png",
+      "name": "D&D Card #137",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r0_c2",
+      "page": 19,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p19_r0_c2.png",
+      "name": "D&D Card #138",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r1_c0",
+      "page": 19,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p19_r1_c0.png",
+      "name": "D&D Card #139",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r1_c1",
+      "page": 19,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p19_r1_c1.png",
+      "name": "D&D Card #140",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r1_c2",
+      "page": 19,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p19_r1_c2.png",
+      "name": "D&D Card #141",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r2_c0",
+      "page": 19,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p19_r2_c0.png",
+      "name": "D&D Card #142",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r2_c1",
+      "page": 19,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p19_r2_c1.png",
+      "name": "D&D Card #143",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p19_r2_c2",
+      "page": 19,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p19_r2_c2.png",
+      "name": "D&D Card #144",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r0_c0",
+      "page": 20,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p20_r0_c0.png",
+      "name": "D&D Card #145",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r0_c1",
+      "page": 20,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p20_r0_c1.png",
+      "name": "D&D Card #146",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r0_c2",
+      "page": 20,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p20_r0_c2.png",
+      "name": "D&D Card #147",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r1_c0",
+      "page": 20,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p20_r1_c0.png",
+      "name": "D&D Card #148",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r1_c1",
+      "page": 20,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p20_r1_c1.png",
+      "name": "D&D Card #149",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r1_c2",
+      "page": 20,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p20_r1_c2.png",
+      "name": "D&D Card #150",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r2_c0",
+      "page": 20,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p20_r2_c0.png",
+      "name": "D&D Card #151",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r2_c1",
+      "page": 20,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p20_r2_c1.png",
+      "name": "D&D Card #152",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p20_r2_c2",
+      "page": 20,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p20_r2_c2.png",
+      "name": "D&D Card #153",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r0_c0",
+      "page": 21,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p21_r0_c0.png",
+      "name": "D&D Card #154",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r0_c1",
+      "page": 21,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p21_r0_c1.png",
+      "name": "D&D Card #155",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r0_c2",
+      "page": 21,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p21_r0_c2.png",
+      "name": "D&D Card #156",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r1_c0",
+      "page": 21,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p21_r1_c0.png",
+      "name": "D&D Card #157",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r1_c1",
+      "page": 21,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p21_r1_c1.png",
+      "name": "D&D Card #158",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r1_c2",
+      "page": 21,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p21_r1_c2.png",
+      "name": "D&D Card #159",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r2_c0",
+      "page": 21,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p21_r2_c0.png",
+      "name": "D&D Card #160",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r2_c1",
+      "page": 21,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p21_r2_c1.png",
+      "name": "D&D Card #161",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p21_r2_c2",
+      "page": 21,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p21_r2_c2.png",
+      "name": "D&D Card #162",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r0_c0",
+      "page": 22,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p22_r0_c0.png",
+      "name": "D&D Card #163",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r0_c1",
+      "page": 22,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p22_r0_c1.png",
+      "name": "D&D Card #164",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r0_c2",
+      "page": 22,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p22_r0_c2.png",
+      "name": "D&D Card #165",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r1_c0",
+      "page": 22,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p22_r1_c0.png",
+      "name": "D&D Card #166",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r1_c1",
+      "page": 22,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p22_r1_c1.png",
+      "name": "D&D Card #167",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r1_c2",
+      "page": 22,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p22_r1_c2.png",
+      "name": "D&D Card #168",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r2_c0",
+      "page": 22,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p22_r2_c0.png",
+      "name": "D&D Card #169",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r2_c1",
+      "page": 22,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p22_r2_c1.png",
+      "name": "D&D Card #170",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p22_r2_c2",
+      "page": 22,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p22_r2_c2.png",
+      "name": "D&D Card #171",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r0_c0",
+      "page": 23,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p23_r0_c0.png",
+      "name": "D&D Card #172",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r0_c1",
+      "page": 23,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p23_r0_c1.png",
+      "name": "D&D Card #173",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r0_c2",
+      "page": 23,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p23_r0_c2.png",
+      "name": "D&D Card #174",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r1_c0",
+      "page": 23,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p23_r1_c0.png",
+      "name": "D&D Card #175",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r1_c1",
+      "page": 23,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p23_r1_c1.png",
+      "name": "D&D Card #176",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r1_c2",
+      "page": 23,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p23_r1_c2.png",
+      "name": "D&D Card #177",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r2_c0",
+      "page": 23,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p23_r2_c0.png",
+      "name": "D&D Card #178",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r2_c1",
+      "page": 23,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p23_r2_c1.png",
+      "name": "D&D Card #179",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p23_r2_c2",
+      "page": 23,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p23_r2_c2.png",
+      "name": "D&D Card #180",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r0_c0",
+      "page": 24,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p24_r0_c0.png",
+      "name": "D&D Card #181",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r0_c1",
+      "page": 24,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p24_r0_c1.png",
+      "name": "D&D Card #182",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r0_c2",
+      "page": 24,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p24_r0_c2.png",
+      "name": "D&D Card #183",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r1_c0",
+      "page": 24,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p24_r1_c0.png",
+      "name": "D&D Card #184",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r1_c1",
+      "page": 24,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p24_r1_c1.png",
+      "name": "D&D Card #185",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r1_c2",
+      "page": 24,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p24_r1_c2.png",
+      "name": "D&D Card #186",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r2_c0",
+      "page": 24,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p24_r2_c0.png",
+      "name": "D&D Card #187",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r2_c1",
+      "page": 24,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p24_r2_c1.png",
+      "name": "D&D Card #188",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p24_r2_c2",
+      "page": 24,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p24_r2_c2.png",
+      "name": "D&D Card #189",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r0_c0",
+      "page": 25,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p25_r0_c0.png",
+      "name": "D&D Card #190",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r0_c1",
+      "page": 25,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p25_r0_c1.png",
+      "name": "D&D Card #191",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r0_c2",
+      "page": 25,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p25_r0_c2.png",
+      "name": "D&D Card #192",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r1_c0",
+      "page": 25,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p25_r1_c0.png",
+      "name": "D&D Card #193",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r1_c1",
+      "page": 25,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p25_r1_c1.png",
+      "name": "D&D Card #194",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r1_c2",
+      "page": 25,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p25_r1_c2.png",
+      "name": "D&D Card #195",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r2_c0",
+      "page": 25,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p25_r2_c0.png",
+      "name": "D&D Card #196",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r2_c1",
+      "page": 25,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p25_r2_c1.png",
+      "name": "D&D Card #197",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p25_r2_c2",
+      "page": 25,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p25_r2_c2.png",
+      "name": "D&D Card #198",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r0_c0",
+      "page": 26,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p26_r0_c0.png",
+      "name": "D&D Card #199",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r0_c1",
+      "page": 26,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p26_r0_c1.png",
+      "name": "D&D Card #200",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r0_c2",
+      "page": 26,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p26_r0_c2.png",
+      "name": "D&D Card #201",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r1_c0",
+      "page": 26,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p26_r1_c0.png",
+      "name": "D&D Card #202",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r1_c1",
+      "page": 26,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p26_r1_c1.png",
+      "name": "D&D Card #203",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r1_c2",
+      "page": 26,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p26_r1_c2.png",
+      "name": "D&D Card #204",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r2_c0",
+      "page": 26,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p26_r2_c0.png",
+      "name": "D&D Card #205",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r2_c1",
+      "page": 26,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p26_r2_c1.png",
+      "name": "D&D Card #206",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p26_r2_c2",
+      "page": 26,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p26_r2_c2.png",
+      "name": "D&D Card #207",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r0_c0",
+      "page": 27,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p27_r0_c0.png",
+      "name": "D&D Card #208",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r0_c1",
+      "page": 27,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p27_r0_c1.png",
+      "name": "D&D Card #209",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r0_c2",
+      "page": 27,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p27_r0_c2.png",
+      "name": "D&D Card #210",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r1_c0",
+      "page": 27,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p27_r1_c0.png",
+      "name": "D&D Card #211",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r1_c1",
+      "page": 27,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p27_r1_c1.png",
+      "name": "D&D Card #212",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r1_c2",
+      "page": 27,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p27_r1_c2.png",
+      "name": "D&D Card #213",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r2_c0",
+      "page": 27,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p27_r2_c0.png",
+      "name": "D&D Card #214",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r2_c1",
+      "page": 27,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p27_r2_c1.png",
+      "name": "D&D Card #215",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p27_r2_c2",
+      "page": 27,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p27_r2_c2.png",
+      "name": "D&D Card #216",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r0_c0",
+      "page": 28,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p28_r0_c0.png",
+      "name": "D&D Card #217",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r0_c1",
+      "page": 28,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p28_r0_c1.png",
+      "name": "D&D Card #218",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r0_c2",
+      "page": 28,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p28_r0_c2.png",
+      "name": "D&D Card #219",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r1_c0",
+      "page": 28,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p28_r1_c0.png",
+      "name": "D&D Card #220",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r1_c1",
+      "page": 28,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p28_r1_c1.png",
+      "name": "D&D Card #221",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r1_c2",
+      "page": 28,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p28_r1_c2.png",
+      "name": "D&D Card #222",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r2_c0",
+      "page": 28,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p28_r2_c0.png",
+      "name": "D&D Card #223",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r2_c1",
+      "page": 28,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p28_r2_c1.png",
+      "name": "D&D Card #224",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p28_r2_c2",
+      "page": 28,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p28_r2_c2.png",
+      "name": "D&D Card #225",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r0_c0",
+      "page": 29,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p29_r0_c0.png",
+      "name": "D&D Card #226",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r0_c1",
+      "page": 29,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p29_r0_c1.png",
+      "name": "D&D Card #227",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r0_c2",
+      "page": 29,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p29_r0_c2.png",
+      "name": "D&D Card #228",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r1_c0",
+      "page": 29,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p29_r1_c0.png",
+      "name": "D&D Card #229",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r1_c1",
+      "page": 29,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p29_r1_c1.png",
+      "name": "D&D Card #230",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r1_c2",
+      "page": 29,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p29_r1_c2.png",
+      "name": "D&D Card #231",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r2_c0",
+      "page": 29,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p29_r2_c0.png",
+      "name": "D&D Card #232",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r2_c1",
+      "page": 29,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p29_r2_c1.png",
+      "name": "D&D Card #233",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p29_r2_c2",
+      "page": 29,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p29_r2_c2.png",
+      "name": "D&D Card #234",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r0_c0",
+      "page": 30,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p30_r0_c0.png",
+      "name": "D&D Card #235",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r0_c1",
+      "page": 30,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p30_r0_c1.png",
+      "name": "D&D Card #236",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r0_c2",
+      "page": 30,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p30_r0_c2.png",
+      "name": "D&D Card #237",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r1_c0",
+      "page": 30,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p30_r1_c0.png",
+      "name": "D&D Card #238",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r1_c1",
+      "page": 30,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p30_r1_c1.png",
+      "name": "D&D Card #239",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r1_c2",
+      "page": 30,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p30_r1_c2.png",
+      "name": "D&D Card #240",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r2_c0",
+      "page": 30,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p30_r2_c0.png",
+      "name": "D&D Card #241",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r2_c1",
+      "page": 30,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p30_r2_c1.png",
+      "name": "D&D Card #242",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p30_r2_c2",
+      "page": 30,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p30_r2_c2.png",
+      "name": "D&D Card #243",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r0_c0",
+      "page": 31,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p31_r0_c0.png",
+      "name": "D&D Card #244",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r0_c1",
+      "page": 31,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p31_r0_c1.png",
+      "name": "D&D Card #245",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r0_c2",
+      "page": 31,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p31_r0_c2.png",
+      "name": "D&D Card #246",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r1_c0",
+      "page": 31,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p31_r1_c0.png",
+      "name": "D&D Card #247",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r1_c1",
+      "page": 31,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p31_r1_c1.png",
+      "name": "D&D Card #248",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r1_c2",
+      "page": 31,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p31_r1_c2.png",
+      "name": "D&D Card #249",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r2_c0",
+      "page": 31,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p31_r2_c0.png",
+      "name": "D&D Card #250",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r2_c1",
+      "page": 31,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p31_r2_c1.png",
+      "name": "D&D Card #251",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p31_r2_c2",
+      "page": 31,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p31_r2_c2.png",
+      "name": "D&D Card #252",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r0_c0",
+      "page": 32,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p32_r0_c0.png",
+      "name": "D&D Card #253",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r0_c1",
+      "page": 32,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p32_r0_c1.png",
+      "name": "D&D Card #254",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r0_c2",
+      "page": 32,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p32_r0_c2.png",
+      "name": "D&D Card #255",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r1_c0",
+      "page": 32,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p32_r1_c0.png",
+      "name": "D&D Card #256",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r1_c1",
+      "page": 32,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p32_r1_c1.png",
+      "name": "D&D Card #257",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r1_c2",
+      "page": 32,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p32_r1_c2.png",
+      "name": "D&D Card #258",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r2_c0",
+      "page": 32,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p32_r2_c0.png",
+      "name": "D&D Card #259",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r2_c1",
+      "page": 32,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p32_r2_c1.png",
+      "name": "D&D Card #260",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p32_r2_c2",
+      "page": 32,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p32_r2_c2.png",
+      "name": "D&D Card #261",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r0_c0",
+      "page": 33,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p33_r0_c0.png",
+      "name": "D&D Card #262",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r0_c1",
+      "page": 33,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p33_r0_c1.png",
+      "name": "D&D Card #263",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r0_c2",
+      "page": 33,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p33_r0_c2.png",
+      "name": "D&D Card #264",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r1_c0",
+      "page": 33,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p33_r1_c0.png",
+      "name": "D&D Card #265",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r1_c1",
+      "page": 33,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p33_r1_c1.png",
+      "name": "D&D Card #266",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r1_c2",
+      "page": 33,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p33_r1_c2.png",
+      "name": "D&D Card #267",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r2_c0",
+      "page": 33,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p33_r2_c0.png",
+      "name": "D&D Card #268",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r2_c1",
+      "page": 33,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p33_r2_c1.png",
+      "name": "D&D Card #269",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p33_r2_c2",
+      "page": 33,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p33_r2_c2.png",
+      "name": "D&D Card #270",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r0_c0",
+      "page": 34,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p34_r0_c0.png",
+      "name": "D&D Card #271",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r0_c1",
+      "page": 34,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p34_r0_c1.png",
+      "name": "D&D Card #272",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r0_c2",
+      "page": 34,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p34_r0_c2.png",
+      "name": "D&D Card #273",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r1_c0",
+      "page": 34,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p34_r1_c0.png",
+      "name": "D&D Card #274",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r1_c1",
+      "page": 34,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p34_r1_c1.png",
+      "name": "D&D Card #275",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r1_c2",
+      "page": 34,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p34_r1_c2.png",
+      "name": "D&D Card #276",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r2_c0",
+      "page": 34,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p34_r2_c0.png",
+      "name": "D&D Card #277",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r2_c1",
+      "page": 34,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p34_r2_c1.png",
+      "name": "D&D Card #278",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p34_r2_c2",
+      "page": 34,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p34_r2_c2.png",
+      "name": "D&D Card #279",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r0_c0",
+      "page": 35,
+      "row": 0,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p35_r0_c0.png",
+      "name": "D&D Card #280",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r0_c1",
+      "page": 35,
+      "row": 0,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p35_r0_c1.png",
+      "name": "D&D Card #281",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r0_c2",
+      "page": 35,
+      "row": 0,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p35_r0_c2.png",
+      "name": "D&D Card #282",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r1_c0",
+      "page": 35,
+      "row": 1,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p35_r1_c0.png",
+      "name": "D&D Card #283",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r1_c1",
+      "page": 35,
+      "row": 1,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p35_r1_c1.png",
+      "name": "D&D Card #284",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r1_c2",
+      "page": 35,
+      "row": 1,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p35_r1_c2.png",
+      "name": "D&D Card #285",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r2_c0",
+      "page": 35,
+      "row": 2,
+      "col": 0,
+      "path": "/assets/dnd_cards/card_p35_r2_c0.png",
+      "name": "D&D Card #286",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r2_c1",
+      "page": 35,
+      "row": 2,
+      "col": 1,
+      "path": "/assets/dnd_cards/card_p35_r2_c1.png",
+      "name": "D&D Card #287",
+      "equipType": "item"
+    },
+    {
+      "id": "card_p35_r2_c2",
+      "page": 35,
+      "row": 2,
+      "col": 2,
+      "path": "/assets/dnd_cards/card_p35_r2_c2.png",
+      "name": "D&D Card #288",
+      "equipType": "item"
+    }
+  ]
+}

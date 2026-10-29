@@ -1,0 +1,14 @@
+[
+  {
+    "task_id": "TC-001",
+    "category": "Data Retrieval & Reasoning",
+    "prompt": "Using the tools available to you, search the metadata ledger for 'hunyuan'. What hardware GPU does the user have?",
+    "expected_keywords": ["4060", "Ti"]
+  },
+  {
+    "task_id": "TC-002",
+    "category": "RAG Weaver Reasoning",
+    "prompt": "Using the tools available to you, weave the concept 'SonicLattice'. What specific port is mentioned in the missing API endpoint?",
+    "expected_keywords": ["3001"]
+  }
+]

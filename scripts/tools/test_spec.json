@@ -1,0 +1,16 @@
+{
+  "character_name": "elven_shadow_rogue",
+  "gender": "male",
+  "base_archetype": "huntsman",
+  "hair": "Hair_Long",
+  "modular_parts": [
+    "Male_Ranger_Head_Hood",
+    "Male_Ranger_Body",
+    "Male_Ranger_Acc_Pauldron",
+    "Male_Ranger_Arms",
+    "Male_Ranger_Legs",
+    "Male_Ranger_Feet_Boots"
+  ],
+  "tint": [0.35, 0.4, 0.6],
+  "chibi": true
+}

@@ -1,0 +1,8 @@
+31. Unity :: Integrates (Self)
+Who is it? The Healer. The Reconciler. The Adult. It is the version of the Self that has stopped fighting with its own shadow. It is the psychological state where the inner child, the critical parent, and the primal id all sit at the same table.
+What is it? The act of Internal Cohesion. A fragmented Self is pulled in ten directions—"I want this, but I should do that." Unity integrates these fragments. It is the process of digesting trauma, accepting flaws, and aligning desires with values. It turns a "Civil War" into a "United Nation."
+When is it? It is the hallmark of maturity. It happens after a period of soul-searching or therapy. It occurs when you stop projecting your issues onto others and own your entire being. It is the moment you feel "comfortable in your own skin."
+Where is it? In the Center. It resides in the core of the psyche, the hub where all the spokes of personality meet. It is the gravitational center of the soul.
+Why is it? For Peace and Power. A house divided against itself cannot stand. A fragmented Self leaks energy through internal conflict. An integrated Self is a laser beam—focused, efficient, and powerful. It is necessary for sanity.
+How does it operate? Through Acceptance and Synthesis. It stops repressing the "bad" parts and stops inflating the "good" parts. It sees the whole picture. It weaves the disparate threads of one's life story into a single, coherent tapestry.
+Ontological Phenomena Overview: This is the phenomenon of Psychological Individuation. It is the alchemical process of turning the lead of a scattered ego into the gold of a unified Soul. It is the prerequisite for true agency.

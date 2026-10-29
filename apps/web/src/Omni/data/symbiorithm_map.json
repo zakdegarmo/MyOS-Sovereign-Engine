@@ -1,0 +1,699 @@
+{
+    "Existence": {
+        "Determines": {
+            "TimeTunnel": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/TimeTunnel.tsx",
+                "status": "ACTIVE"
+            },
+            "OntologyMap": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/OntologyMap.tsx",
+                "status": "ACTIVE"
+            },
+            "StateEngine": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/StateEngine.tsx",
+                "status": "ACTIVE"
+            },
+            "CycleTracker": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/CycleTracker.tsx",
+                "status": "ACTIVE"
+            },
+            "EvolutionMetric": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/EvolutionMetric.tsx",
+                "status": "ACTIVE"
+            },
+            "CausalityChain": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/CausalityChain.tsx",
+                "status": "ACTIVE"
+            },
+            "ProbabilityField": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/ProbabilityField.tsx",
+                "status": "ACTIVE"
+            },
+            "OutcomeSimulator": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/OutcomeSimulator.tsx",
+                "status": "ACTIVE"
+            },
+            "DefiningTrait": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/DefiningTrait.tsx",
+                "status": "ACTIVE"
+            },
+            "ExistentialProof": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Determines/ExistentialProof.tsx",
+                "status": "ACTIVE"
+            }
+        },
+        "Preserves": {
+            "AkashicRecord": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/AkashicRecord.tsx",
+                "status": "ACTIVE"
+            },
+            "MemoryCrystal": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/MemoryCrystal.tsx",
+                "status": "ACTIVE"
+            },
+            "HistoryLog": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/HistoryLog.tsx",
+                "status": "ACTIVE"
+            },
+            "BackupNode": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/BackupNode.tsx",
+                "status": "ACTIVE"
+            },
+            "ArtifactSafe": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/ArtifactSafe.tsx",
+                "status": "ACTIVE"
+            },
+            "LegacyProtocol": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/LegacyProtocol.tsx",
+                "status": "ACTIVE"
+            },
+            "ImmutableLedger": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/ImmutableLedger.tsx",
+                "status": "ACTIVE"
+            },
+            "VersionArchive": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/VersionArchive.tsx",
+                "status": "ACTIVE"
+            },
+            "HeritageTree": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/HeritageTree.tsx",
+                "status": "ACTIVE"
+            },
+            "EternalFlame": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Existence/Factors/Preserves/EternalFlame.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    },
+    "Mastery": {
+        "Demonstrates": {
+            "PortfolioShowcase": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/PortfolioShowcase.tsx",
+                "status": "ACTIVE"
+            },
+            "SkillGraph": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/SkillGraph.tsx",
+                "status": "ACTIVE"
+            },
+            "CertificateWall": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/CertificateWall.tsx",
+                "status": "ACTIVE"
+            },
+            "ProjectDemo": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/ProjectDemo.tsx",
+                "status": "ACTIVE"
+            },
+            "LiveCoding": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/LiveCoding.tsx",
+                "status": "ACTIVE"
+            },
+            "SpeedRun": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/SpeedRun.tsx",
+                "status": "ACTIVE"
+            },
+            "CaseStudy": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/CaseStudy.tsx",
+                "status": "ACTIVE"
+            },
+            "BeforeAfter": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/BeforeAfter.tsx",
+                "status": "ACTIVE"
+            },
+            "Testimonial": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/Testimonial.tsx",
+                "status": "ACTIVE"
+            },
+            "BadgeGrid": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Demonstrates/BadgeGrid.tsx",
+                "status": "ACTIVE"
+            }
+        },
+        "Commands": {
+            "TerminalOverride": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/TerminalOverride.tsx",
+                "status": "ACTIVE"
+            },
+            "SystemControl": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/SystemControl.tsx",
+                "status": "ACTIVE"
+            },
+            "VoiceCommand": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/VoiceCommand.tsx",
+                "status": "ACTIVE"
+            },
+            "GestureInput": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/GestureInput.tsx",
+                "status": "ACTIVE"
+            },
+            "MacroEditor": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/MacroEditor.tsx",
+                "status": "ACTIVE"
+            },
+            "ShortcutMap": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/ShortcutMap.tsx",
+                "status": "ACTIVE"
+            },
+            "AutomationFlow": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/AutomationFlow.tsx",
+                "status": "ACTIVE"
+            },
+            "PermissionManager": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/PermissionManager.tsx",
+                "status": "ACTIVE"
+            },
+            "ResourceAllocator": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/ResourceAllocator.tsx",
+                "status": "ACTIVE"
+            },
+            "OverrideSwitch": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Mastery/Factors/Commands/OverrideSwitch.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    },
+    "Omni": {
+        "Contains": {
+            "VoidSpace": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/VoidSpace.tsx",
+                "status": "ACTIVE"
+            },
+            "NullPoint": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/NullPoint.tsx",
+                "status": "ACTIVE"
+            },
+            "InfiniteSet": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/InfiniteSet.tsx",
+                "status": "ACTIVE"
+            },
+            "Container": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/Container.tsx",
+                "status": "ACTIVE"
+            },
+            "BoundaryLine": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/BoundaryLine.tsx",
+                "status": "ACTIVE"
+            },
+            "EmptyVessel": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/EmptyVessel.tsx",
+                "status": "ACTIVE"
+            },
+            "Holder": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/Holder.tsx",
+                "status": "ACTIVE"
+            },
+            "Archive": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/Archive.tsx",
+                "status": "ACTIVE"
+            },
+            "Vault": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/Vault.tsx",
+                "status": "ACTIVE"
+            },
+            "Abyss": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Contains/Abyss.tsx",
+                "status": "ACTIVE"
+            }
+        },
+        "Permeates": {
+            "EtherNet": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/EtherNet.tsx",
+                "status": "ACTIVE"
+            },
+            "SpiritWeb": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/SpiritWeb.tsx",
+                "status": "ACTIVE"
+            },
+            "PresenceMap": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/PresenceMap.tsx",
+                "status": "ACTIVE"
+            },
+            "FlowState": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/FlowState.tsx",
+                "status": "ACTIVE"
+            },
+            "Osmosis": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/Osmosis.tsx",
+                "status": "ACTIVE"
+            },
+            "Diffusion": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/Diffusion.tsx",
+                "status": "ACTIVE"
+            },
+            "Saturation": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/Saturation.tsx",
+                "status": "ACTIVE"
+            },
+            "Immanence": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/Immanence.tsx",
+                "status": "ACTIVE"
+            },
+            "FieldEffect": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/FieldEffect.tsx",
+                "status": "ACTIVE"
+            },
+            "BackgroundRad": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Omni/Factors/Permeates/BackgroundRad.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    },
+    "Self": {
+        "Identity": {
+            "Avatar": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Avatar.tsx",
+                "status": "ACTIVE"
+            },
+            "Username": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Username.tsx",
+                "status": "ACTIVE"
+            },
+            "UserID": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/UserID.tsx",
+                "status": "ACTIVE"
+            },
+            "Role": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Role.tsx",
+                "status": "ACTIVE"
+            },
+            "Status": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Status.tsx",
+                "status": "ACTIVE"
+            },
+            "Level": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Level.tsx",
+                "status": "ACTIVE"
+            },
+            "Badges": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Badges.tsx",
+                "status": "ACTIVE"
+            },
+            "Aura": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Aura.tsx",
+                "status": "ACTIVE"
+            },
+            "Legacy": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Legacy.tsx",
+                "status": "ACTIVE"
+            },
+            "Gestalt": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/Identity/Gestalt.tsx",
+                "status": "ACTIVE"
+            }
+        },
+        "SubjectOf": {
+            "Selection": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Selection.tsx",
+                "status": "ACTIVE",
+                "symbiosis": "OS_CLIPBOARD"
+            },
+            "FocusCanvas": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/FocusCanvas.tsx",
+                "status": "ACTIVE",
+                "symbiosis": "ACTIVE_WINDOW"
+            },
+            "Breadcrumb": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Breadcrumb.tsx",
+                "status": "ACTIVE"
+            },
+            "Scope": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Scope.tsx",
+                "status": "ACTIVE"
+            },
+            "Neighborhood": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Neighborhood.tsx",
+                "status": "ACTIVE"
+            },
+            "Refinement": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Refinement.tsx",
+                "status": "ACTIVE"
+            },
+            "Concentration": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Concentration.tsx",
+                "status": "ACTIVE"
+            },
+            "Pulse": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Pulse.tsx",
+                "status": "ACTIVE"
+            },
+            "Flash": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/Flash.tsx",
+                "status": "ACTIVE"
+            },
+            "NullPoint": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Self/Factors/SubjectOf/NullPoint.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    },
+    "Logic": {
+        "Governs": {
+            "ProcessList": {
+                "type": "OS_COMMAND",
+                "command": "tasklist",
+                "path": "components/interface/Logic/Factors/Governs/ProcessList.tsx",
+                "status": "PENDING"
+            },
+            "ServiceManager": {
+                "type": "OS_COMMAND",
+                "command": "net start",
+                "path": "components/interface/Logic/Factors/Governs/ServiceManager.tsx",
+                "status": "PENDING"
+            },
+            "ResourceMonitor": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Governs/ResourceMonitor.tsx",
+                "status": "ACTIVE"
+            },
+            "KillSwitch": {
+                "type": "OS_COMMAND",
+                "command": "taskkill",
+                "path": "components/interface/Logic/Factors/Governs/KillSwitch.tsx",
+                "status": "PENDING"
+            },
+            "StartupApps": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Governs/StartupApps.tsx",
+                "status": "ACTIVE"
+            },
+            "EnvironmentVars": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Governs/EnvironmentVars.tsx",
+                "status": "ACTIVE"
+            },
+            "RegistryHive": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Governs/RegistryHive.tsx",
+                "status": "ACTIVE"
+            },
+            "NetworkPorts": {
+                "type": "OS_COMMAND",
+                "command": "netstat -ano",
+                "path": "components/interface/Logic/Factors/Governs/NetworkPorts.tsx",
+                "status": "PENDING"
+            },
+            "EventLog": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Governs/EventLog.tsx",
+                "status": "ACTIVE"
+            },
+            "TaskManager": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Governs/TaskManager.tsx",
+                "status": "ACTIVE"
+            }
+        },
+        "Structures": {
+            "KineticFileverse": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/KineticFileverse.tsx",
+                "status": "ACTIVE"
+            },
+            "DirectoryTree": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/DirectoryTree.tsx",
+                "status": "ACTIVE"
+            },
+            "FileEditor": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/FileEditor.tsx",
+                "status": "ACTIVE"
+            },
+            "DependencyGraph": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/DependencyGraph.tsx",
+                "status": "ACTIVE"
+            },
+            "GitStatus": {
+                "type": "OS_COMMAND",
+                "command": "git status",
+                "path": "components/interface/Logic/Factors/Structures/GitStatus.tsx",
+                "status": "PENDING"
+            },
+            "NpmModules": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/NpmModules.tsx",
+                "status": "ACTIVE"
+            },
+            "DiskUsage": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/DiskUsage.tsx",
+                "status": "ACTIVE"
+            },
+            "FileSearch": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/FileSearch.tsx",
+                "status": "ACTIVE"
+            },
+            "PermissionMatrix": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/PermissionMatrix.tsx",
+                "status": "ACTIVE"
+            },
+            "VolumeMounts": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Logic/Factors/Structures/VolumeMounts.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    },
+    "Thought": {
+        "Informs": {
+            "SelfCorrection": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/SelfCorrection.tsx",
+                "status": "ACTIVE"
+            },
+            "Insight": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Insight.tsx",
+                "status": "ACTIVE"
+            },
+            "Rationale": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Rationale.tsx",
+                "status": "ACTIVE"
+            },
+            "Relevance": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Relevance.tsx",
+                "status": "ACTIVE"
+            },
+            "Observation": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Observation.tsx",
+                "status": "ACTIVE"
+            },
+            "Suggestion": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Suggestion.tsx",
+                "status": "ACTIVE"
+            },
+            "Tutor": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Tutor.tsx",
+                "status": "ACTIVE"
+            },
+            "Nuance": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Nuance.tsx",
+                "status": "ACTIVE"
+            },
+            "Oracle": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Oracle.tsx",
+                "status": "ACTIVE"
+            },
+            "Gnosis": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Thought/Factors/Informs/Gnosis.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    },
+    "Improvement": {
+        "Refines": {
+            "CodeAnalysis": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/CodeAnalysis.tsx",
+                "status": "ACTIVE"
+            },
+            "PerformanceMetric": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/PerformanceMetric.tsx",
+                "status": "ACTIVE"
+            },
+            "RefactorEngine": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/RefactorEngine.tsx",
+                "status": "ACTIVE"
+            },
+            "LintCheck": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/LintCheck.tsx",
+                "status": "ACTIVE"
+            },
+            "DeadCodePruning": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/DeadCodePruning.tsx",
+                "status": "ACTIVE"
+            },
+            "MemoryLeak": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/MemoryLeak.tsx",
+                "status": "ACTIVE"
+            },
+            "EfficiencyScore": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/EfficiencyScore.tsx",
+                "status": "ACTIVE"
+            },
+            "ComplexityGraph": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/ComplexityGraph.tsx",
+                "status": "ACTIVE"
+            },
+            "DependencyTree": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/DependencyTree.tsx",
+                "status": "ACTIVE"
+            },
+            "BottleneckDetector": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Refines/BottleneckDetector.tsx",
+                "status": "ACTIVE"
+            }
+        },
+        "Hones": {
+            "UIPolish": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/UIPolish.tsx",
+                "status": "ACTIVE"
+            },
+            "AnimationTweak": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/AnimationTweak.tsx",
+                "status": "ACTIVE"
+            },
+            "ColorBalance": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/ColorBalance.tsx",
+                "status": "ACTIVE"
+            },
+            "TypoFix": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/TypoFix.tsx",
+                "status": "ACTIVE"
+            },
+            "UserFeedback": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/UserFeedback.tsx",
+                "status": "ACTIVE"
+            },
+            "AccessibilityAudit": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/AccessibilityAudit.tsx",
+                "status": "ACTIVE"
+            },
+            "ResponsiveTest": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/ResponsiveTest.tsx",
+                "status": "ACTIVE"
+            },
+            "CrossBrowser": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/CrossBrowser.tsx",
+                "status": "ACTIVE"
+            },
+            "StressTest": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/StressTest.tsx",
+                "status": "ACTIVE"
+            },
+            "SecurityScan": {
+                "type": "APP_COMPONENT",
+                "path": "components/interface/Improvement/Factors/Hones/SecurityScan.tsx",
+                "status": "ACTIVE"
+            }
+        }
+    }
+}

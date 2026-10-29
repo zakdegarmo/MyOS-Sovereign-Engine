@@ -1,0 +1,8 @@
+{
+    "name": "@antigravity/swarm-core",
+    "version": "0.0.1",
+    "description": "Core types and configs for the Antigravity Swarm",
+    "main": "index.ts",
+    "types": "index.ts",
+    "private": true
+}

@@ -1,0 +1,6782 @@
+[
+  {
+    "depth": 1,
+    "title": "D1: Self",
+    "symbol": "⚹",
+    "text": "Self"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Identity",
+    "symbol": "≡",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ego",
+    "symbol": "❙",
+    "text": "Ego"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Alpha",
+    "symbol": "≔",
+    "text": "Ego_Alpha"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_01",
+    "symbol": "⊁",
+    "text": "Ego_Alpha_01"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_02",
+    "symbol": "✛",
+    "text": "Ego_Alpha_02"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_03",
+    "symbol": "⤑",
+    "text": "Ego_Alpha_03"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_04",
+    "symbol": "▢",
+    "text": "Ego_Alpha_04"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_05",
+    "symbol": "⊅",
+    "text": "Ego_Alpha_05"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_06",
+    "symbol": "✟",
+    "text": "Ego_Alpha_06"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_07",
+    "symbol": "⤕",
+    "text": "Ego_Alpha_07"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_08",
+    "symbol": "▦",
+    "text": "Ego_Alpha_08"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_09",
+    "symbol": "⊉",
+    "text": "Ego_Alpha_09"
+  },
+  {
+    "depth": 5,
+    "title": "D5: Ego_Alpha_10",
+    "symbol": "⤭",
+    "text": "Ego_Alpha_10"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Beta",
+    "symbol": "⤖",
+    "text": "Ego_Beta"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Prime",
+    "symbol": "✟",
+    "text": "Ego_Prime"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Locus",
+    "symbol": "⊡",
+    "text": "Ego_Locus"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Flux",
+    "symbol": "▸",
+    "text": "Ego_Flux"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Node",
+    "symbol": "∓",
+    "text": "Ego_Node"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Core",
+    "symbol": "❯",
+    "text": "Ego_Core"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Link",
+    "symbol": "∌",
+    "text": "Ego_Link"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Wave",
+    "symbol": "▬",
+    "text": "Ego_Wave"
+  },
+  {
+    "depth": 4,
+    "title": "D4: Ego_Form",
+    "symbol": "⥟",
+    "text": "Ego_Form"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Name",
+    "symbol": "◰",
+    "text": "Name"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Profile",
+    "symbol": "✑",
+    "text": "Profile"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Persona",
+    "symbol": "⋶",
+    "text": "Persona"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Character",
+    "symbol": "▼",
+    "text": "Character"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mask",
+    "symbol": "⊫",
+    "text": "Mask"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Signature",
+    "symbol": "⊈",
+    "text": "Signature"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Core",
+    "symbol": "◚",
+    "text": "Core"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Soul",
+    "symbol": "▩",
+    "text": "Soul"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheI_Am",
+    "symbol": "▭",
+    "text": "TheI_Am"
+  },
+  {
+    "depth": 2,
+    "title": "D2: SubjectOf",
+    "symbol": "∈",
+    "text": "SubjectOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Thinker",
+    "symbol": "▶",
+    "text": "Thinker"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mind",
+    "symbol": "⤶",
+    "text": "Mind"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Focus",
+    "symbol": "∯",
+    "text": "Focus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Attention",
+    "symbol": "⥽",
+    "text": "Attention"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Analyst",
+    "symbol": "⤛",
+    "text": "Analyst"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Critic",
+    "symbol": "≾",
+    "text": "Critic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dreamer",
+    "symbol": "⊵",
+    "text": "Dreamer"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Observer",
+    "symbol": "⤱",
+    "text": "Observer"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Witness",
+    "symbol": "◈",
+    "text": "Witness"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Consciousness",
+    "symbol": "➭",
+    "text": "Consciousness"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Applies",
+    "symbol": "⇒",
+    "text": "Applies"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Choice",
+    "symbol": "✍",
+    "text": "Choice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reason",
+    "symbol": "⋡",
+    "text": "Reason"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Deduction",
+    "symbol": "◒",
+    "text": "Deduction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Order",
+    "symbol": "⤻",
+    "text": "Order"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Rule",
+    "symbol": "≎",
+    "text": "Rule"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Judgment",
+    "symbol": "⊆",
+    "text": "Judgment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Algorithm",
+    "symbol": "➙",
+    "text": "Algorithm"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Strategy",
+    "symbol": "◵",
+    "text": "Strategy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Wisdom",
+    "symbol": "◌",
+    "text": "Wisdom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheDecider",
+    "symbol": "✛",
+    "text": "TheDecider"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Seeks",
+    "symbol": "℘",
+    "text": "Seeks"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Belonging",
+    "symbol": "◄",
+    "text": "Belonging"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Connection",
+    "symbol": "⥖",
+    "text": "Connection"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tribe",
+    "symbol": "⥇",
+    "text": "Tribe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Love",
+    "symbol": "⤛",
+    "text": "Love"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Wholeness",
+    "symbol": "⤿",
+    "text": "Wholeness"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Integration",
+    "symbol": "∰",
+    "text": "Integration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peace",
+    "symbol": "⥂",
+    "text": "Peace"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Union",
+    "symbol": "◝",
+    "text": "Union"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Affirms",
+    "symbol": "⊧",
+    "text": "Affirms"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Survival",
+    "symbol": "⥗",
+    "text": "Survival"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Breath",
+    "symbol": "⋁",
+    "text": "Breath"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pulse",
+    "symbol": "❳",
+    "text": "Pulse"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Body",
+    "symbol": "⤝",
+    "text": "Body"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Presence",
+    "symbol": "❨",
+    "text": "Presence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Will",
+    "symbol": "⥟",
+    "text": "Will"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Action",
+    "symbol": "⤨",
+    "text": "Action"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Being",
+    "symbol": "◦",
+    "text": "Being"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reality",
+    "symbol": "⊀",
+    "text": "Reality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Life",
+    "symbol": "≣",
+    "text": "Life"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Undergoes",
+    "symbol": "Δ",
+    "text": "Undergoes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Change",
+    "symbol": "⊄",
+    "text": "Change"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Learning",
+    "symbol": "⤻",
+    "text": "Learning"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Adaptation",
+    "symbol": "◛",
+    "text": "Adaptation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Healing",
+    "symbol": "⤗",
+    "text": "Healing"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Update",
+    "symbol": "▯",
+    "text": "Update"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Evolution",
+    "symbol": "❈",
+    "text": "Evolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Metamorphosis",
+    "symbol": "➝",
+    "text": "Metamorphosis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Refinement",
+    "symbol": "➑",
+    "text": "Refinement"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Becoming",
+    "symbol": "≩",
+    "text": "Becoming"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Pursues",
+    "symbol": "➚",
+    "text": "Pursues"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Practice",
+    "symbol": "❜",
+    "text": "Practice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Discipline",
+    "symbol": "∟",
+    "text": "Discipline"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Craft",
+    "symbol": "≛",
+    "text": "Craft"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambition",
+    "symbol": "❈",
+    "text": "Ambition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Excellence",
+    "symbol": "≸",
+    "text": "Excellence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Power",
+    "symbol": "➬",
+    "text": "Power"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Control",
+    "symbol": "○",
+    "text": "Control"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Art",
+    "symbol": "◺",
+    "text": "Art"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Virtuosity",
+    "symbol": "⤔",
+    "text": "Virtuosity"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Experiences",
+    "symbol": "∿",
+    "text": "Experiences"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Feeling",
+    "symbol": "∵",
+    "text": "Feeling"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Emotion",
+    "symbol": "◱",
+    "text": "Emotion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Empathy",
+    "symbol": "⋩",
+    "text": "Empathy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Impact",
+    "symbol": "⤠",
+    "text": "Impact"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Echo",
+    "symbol": "➒",
+    "text": "Echo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sentiment",
+    "symbol": "➔",
+    "text": "Sentiment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mood",
+    "symbol": "◑",
+    "text": "Mood"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Passion",
+    "symbol": "◓",
+    "text": "Passion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Awe",
+    "symbol": "◈",
+    "text": "Awe"
+  },
+  {
+    "depth": 2,
+    "title": "D2: AspiresTo",
+    "symbol": "🌠",
+    "text": "AspiresTo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Prayer",
+    "symbol": "❲",
+    "text": "Prayer"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Hope",
+    "symbol": "⋧",
+    "text": "Hope"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Rise",
+    "symbol": "❂",
+    "text": "Rise"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Release",
+    "symbol": "✆",
+    "text": "Release"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flight",
+    "symbol": "∕",
+    "text": "Flight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Beyond",
+    "symbol": "◥",
+    "text": "Beyond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Liberation",
+    "symbol": "❼",
+    "text": "Liberation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ascension",
+    "symbol": "◄",
+    "text": "Ascension"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsRealizedBy",
+    "symbol": "Ω",
+    "text": "IsRealizedBy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Silence",
+    "symbol": "▵",
+    "text": "Silence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Death",
+    "symbol": "⋧",
+    "text": "Death"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Birth",
+    "symbol": "▪",
+    "text": "Birth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Cycle",
+    "symbol": "⥙",
+    "text": "Cycle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mirror",
+    "symbol": "➥",
+    "text": "Mirror"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Paradox",
+    "symbol": "➩",
+    "text": "Paradox"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Awakening",
+    "symbol": "◴",
+    "text": "Awakening"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Enlightenment",
+    "symbol": "∇",
+    "text": "Enlightenment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheTruth",
+    "symbol": "⥊",
+    "text": "TheTruth"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Thought",
+    "symbol": "☿",
+    "text": "Thought"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Informs",
+    "symbol": "⊸",
+    "text": "Informs"
+  },
+  {
+    "depth": 3,
+    "title": "D3: SelfCorrection",
+    "symbol": "⤽",
+    "text": "SelfCorrection"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Rationale",
+    "symbol": "✎",
+    "text": "Rationale"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Relevance",
+    "symbol": "❻",
+    "text": "Relevance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Observation",
+    "symbol": "⊫",
+    "text": "Observation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Suggestion",
+    "symbol": "≂",
+    "text": "Suggestion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tutor",
+    "symbol": "⥥",
+    "text": "Tutor"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Nuance",
+    "symbol": "⤒",
+    "text": "Nuance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Oracle",
+    "symbol": "⤠",
+    "text": "Oracle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gnosis",
+    "symbol": "➲",
+    "text": "Gnosis"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Recursion",
+    "symbol": "⟳",
+    "text": "Recursion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: MetaThought",
+    "symbol": "⊁",
+    "text": "MetaThought"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Echo",
+    "symbol": "➒",
+    "text": "Echo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Nesting",
+    "symbol": "⤚",
+    "text": "Nesting"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Loop",
+    "symbol": "∣",
+    "text": "Loop"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Persistence",
+    "symbol": "▻",
+    "text": "Persistence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Refactor",
+    "symbol": "⥂",
+    "text": "Refactor"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Iteration",
+    "symbol": "✐",
+    "text": "Iteration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Feedback",
+    "symbol": "▧",
+    "text": "Feedback"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Leap",
+    "symbol": "⊿",
+    "text": "Leap"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheStillPoint",
+    "symbol": "❵",
+    "text": "TheStillPoint"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Utilizes",
+    "symbol": "⚒",
+    "text": "Utilizes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Method",
+    "symbol": "◊",
+    "text": "Method"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Grammar",
+    "symbol": "►",
+    "text": "Grammar"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Algorithm",
+    "symbol": "➙",
+    "text": "Algorithm"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Protocol",
+    "symbol": "⊧",
+    "text": "Protocol"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Implementation",
+    "symbol": "⥺",
+    "text": "Implementation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Heuristic",
+    "symbol": "⥚",
+    "text": "Heuristic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Technique",
+    "symbol": "≟",
+    "text": "Technique"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Filter",
+    "symbol": "∻",
+    "text": "Filter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Principle",
+    "symbol": "≩",
+    "text": "Principle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLaw",
+    "symbol": "◡",
+    "text": "TheLaw"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Synthesizes",
+    "symbol": "⨇",
+    "text": "Synthesizes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Integration",
+    "symbol": "∰",
+    "text": "Integration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Summary",
+    "symbol": "⥚",
+    "text": "Summary"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Categorization",
+    "symbol": "✻",
+    "text": "Categorization"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Network",
+    "symbol": "⤠",
+    "text": "Network"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Assembly",
+    "symbol": "⥧",
+    "text": "Assembly"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Optimization",
+    "symbol": "◛",
+    "text": "Optimization"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pinnacle",
+    "symbol": "∊",
+    "text": "Pinnacle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Convergence",
+    "symbol": "✻",
+    "text": "Convergence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Monad",
+    "symbol": "◺",
+    "text": "Monad"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Represents",
+    "symbol": "≘",
+    "text": "Represents"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Label",
+    "symbol": "⋃",
+    "text": "Label"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concept",
+    "symbol": "∢",
+    "text": "Concept"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Type",
+    "symbol": "⤂",
+    "text": "Type"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Set",
+    "symbol": "⥏",
+    "text": "Set"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Object",
+    "symbol": "❹",
+    "text": "Object"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Model",
+    "symbol": "➇",
+    "text": "Model"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tool",
+    "symbol": "⊽",
+    "text": "Tool"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sign",
+    "symbol": "❐",
+    "text": "Sign"
+  },
+  {
+    "depth": 3,
+    "title": "D3: SacredText",
+    "symbol": "◫",
+    "text": "SacredText"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheGlyph",
+    "symbol": "◫",
+    "text": "TheGlyph"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Drives",
+    "symbol": "⚡",
+    "text": "Drives"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambition",
+    "symbol": "❈",
+    "text": "Ambition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Directive",
+    "symbol": "◙",
+    "text": "Directive"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Strategy",
+    "symbol": "◵",
+    "text": "Strategy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Incentive",
+    "symbol": "▫",
+    "text": "Incentive"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Action",
+    "symbol": "⤨",
+    "text": "Action"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Refinement",
+    "symbol": "➑",
+    "text": "Refinement"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Instruction",
+    "symbol": "⥓",
+    "text": "Instruction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Goal",
+    "symbol": "●",
+    "text": "Goal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheCycle",
+    "symbol": "✪",
+    "text": "TheCycle"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Develops",
+    "symbol": "⇶",
+    "text": "Develops"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Apprenticeship",
+    "symbol": "◈",
+    "text": "Apprenticeship"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Drill",
+    "symbol": "◁",
+    "text": "Drill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Exercise",
+    "symbol": "≈",
+    "text": "Exercise"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Lesson",
+    "symbol": "−",
+    "text": "Lesson"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Laboratory",
+    "symbol": "◂",
+    "text": "Laboratory"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Update",
+    "symbol": "▯",
+    "text": "Update"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Masterclass",
+    "symbol": "⤦",
+    "text": "Masterclass"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Scale",
+    "symbol": "⤃",
+    "text": "Scale"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Expansion",
+    "symbol": "▾",
+    "text": "Expansion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: ThePath",
+    "symbol": "⤯",
+    "text": "ThePath"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Articulates",
+    "symbol": "⌶",
+    "text": "Articulates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tone",
+    "symbol": "⥭",
+    "text": "Tone"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Diction",
+    "symbol": "⥨",
+    "text": "Diction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Syntax",
+    "symbol": "➥",
+    "text": "Syntax"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chorus",
+    "symbol": "⥴",
+    "text": "Chorus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Volume",
+    "symbol": "⤞",
+    "text": "Volume"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pitch",
+    "symbol": "⊐",
+    "text": "Pitch"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Expression",
+    "symbol": "∀",
+    "text": "Expression"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibration",
+    "symbol": "⥶",
+    "text": "Vibration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Poetry",
+    "symbol": "◐",
+    "text": "Poetry"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Silence",
+    "symbol": "▵",
+    "text": "Silence"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Enables",
+    "symbol": "🔓",
+    "text": "Enables"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vision",
+    "symbol": "≙",
+    "text": "Vision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Imagination",
+    "symbol": "⤄",
+    "text": "Imagination"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Axiom",
+    "symbol": "∼",
+    "text": "Axiom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Connection",
+    "symbol": "⥖",
+    "text": "Connection"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Space",
+    "symbol": "⤦",
+    "text": "Space"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Leap",
+    "symbol": "⊿",
+    "text": "Leap"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Agency",
+    "symbol": "➉",
+    "text": "Agency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Release",
+    "symbol": "✆",
+    "text": "Release"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Warp",
+    "symbol": "⋗",
+    "text": "Warp"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gateway",
+    "symbol": "≍",
+    "text": "Gateway"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Transcends",
+    "symbol": "🜂",
+    "text": "Transcends"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dissolution",
+    "symbol": "➶",
+    "text": "Dissolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheVoid",
+    "symbol": "❻",
+    "text": "TheVoid"
+  },
+  {
+    "depth": 3,
+    "title": "D3: ThePureCode",
+    "symbol": "⤒",
+    "text": "ThePureCode"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSource",
+    "symbol": "∮",
+    "text": "TheSource"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheGround",
+    "symbol": "⊤",
+    "text": "TheGround"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSingularity",
+    "symbol": "⥇",
+    "text": "TheSingularity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheMaster",
+    "symbol": "□",
+    "text": "TheMaster"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheFrequency",
+    "symbol": "❣",
+    "text": "TheFrequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOracle",
+    "symbol": "△",
+    "text": "TheOracle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Logic",
+    "symbol": "🜔",
+    "text": "Logic"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Structures",
+    "symbol": "⊞",
+    "text": "Structures"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dependency",
+    "symbol": "▼",
+    "text": "Dependency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mapping",
+    "symbol": "⤻",
+    "text": "Mapping"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Hierarchy",
+    "symbol": "◗",
+    "text": "Hierarchy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Integration",
+    "symbol": "∰",
+    "text": "Integration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Blueprint",
+    "symbol": "✱",
+    "text": "Blueprint"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Optimization",
+    "symbol": "◛",
+    "text": "Optimization"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Architect",
+    "symbol": "❏",
+    "text": "Architect"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Form",
+    "symbol": "⊆",
+    "text": "Form"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pattern",
+    "symbol": "∹",
+    "text": "Pattern"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheGraph",
+    "symbol": "➑",
+    "text": "TheGraph"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Governs",
+    "symbol": "⚔",
+    "text": "Governs"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Consent",
+    "symbol": "⤿",
+    "text": "Consent"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Instruction",
+    "symbol": "⥓",
+    "text": "Instruction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Constraint",
+    "symbol": "✺",
+    "text": "Constraint"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Consensus",
+    "symbol": "◀",
+    "text": "Consensus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Policy",
+    "symbol": "⥑",
+    "text": "Policy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: RuleSet",
+    "symbol": "⤞",
+    "text": "RuleSet"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ethic",
+    "symbol": "◚",
+    "text": "Ethic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Boundaries",
+    "symbol": "≧",
+    "text": "Boundaries"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Standard",
+    "symbol": "✀",
+    "text": "Standard"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sovereignty",
+    "symbol": "✨",
+    "text": "Sovereignty"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Foundation",
+    "symbol": "⌨",
+    "text": "Foundation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logos",
+    "symbol": "≯",
+    "text": "Logos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Axiom",
+    "symbol": "∼",
+    "text": "Axiom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Set",
+    "symbol": "⥏",
+    "text": "Set"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Material",
+    "symbol": "◝",
+    "text": "Material"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Substrate",
+    "symbol": "▦",
+    "text": "Substrate"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Framework",
+    "symbol": "⥄",
+    "text": "Framework"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Substance",
+    "symbol": "∪",
+    "text": "Substance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ground",
+    "symbol": "◐",
+    "text": "Ground"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheNull",
+    "symbol": "∴",
+    "text": "TheNull"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Ensures",
+    "symbol": "⚓",
+    "text": "Ensures"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Integrity",
+    "symbol": "●",
+    "text": "Integrity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Coherence",
+    "symbol": "≕",
+    "text": "Coherence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Checksum",
+    "symbol": "▲",
+    "text": "Checksum"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Persistence",
+    "symbol": "▻",
+    "text": "Persistence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Robustness",
+    "symbol": "≿",
+    "text": "Robustness"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Quality",
+    "symbol": "❏",
+    "text": "Quality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Alignment",
+    "symbol": "❳",
+    "text": "Alignment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Unity",
+    "symbol": "➬",
+    "text": "Unity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Wholeness",
+    "symbol": "⤿",
+    "text": "Wholeness"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Describes",
+    "symbol": "✍",
+    "text": "Describes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Profile",
+    "symbol": "✑",
+    "text": "Profile"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Narrative",
+    "symbol": "⥁",
+    "text": "Narrative"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Definition",
+    "symbol": "◎",
+    "text": "Definition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Relationship",
+    "symbol": "⊳",
+    "text": "Relationship"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Catalog",
+    "symbol": "◓",
+    "text": "Catalog"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Manual",
+    "symbol": "⥲",
+    "text": "Manual"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Recipe",
+    "symbol": "⤛",
+    "text": "Recipe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Label",
+    "symbol": "⋃",
+    "text": "Label"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chronicle",
+    "symbol": "◑",
+    "text": "Chronicle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Lexicon",
+    "symbol": "∮",
+    "text": "Lexicon"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Validates",
+    "symbol": "⚖",
+    "text": "Validates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: UserTest",
+    "symbol": "◸",
+    "text": "UserTest"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Review",
+    "symbol": "≟",
+    "text": "Review"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Proof",
+    "symbol": "⊞",
+    "text": "Proof"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fit",
+    "symbol": "➢",
+    "text": "Fit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: RealityCheck",
+    "symbol": "⋩",
+    "text": "RealityCheck"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Benchmark",
+    "symbol": "▯",
+    "text": "Benchmark"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Exam",
+    "symbol": "◃",
+    "text": "Exam"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Audit",
+    "symbol": "◮",
+    "text": "Audit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Verdict",
+    "symbol": "❉",
+    "text": "Verdict"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Truth",
+    "symbol": "◡",
+    "text": "Truth"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Underpins",
+    "symbol": "🧱",
+    "text": "Underpins"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Philosophy",
+    "symbol": "➆",
+    "text": "Philosophy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Knowledge",
+    "symbol": "⤧",
+    "text": "Knowledge"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Theorem",
+    "symbol": "≛",
+    "text": "Theorem"
+  },
+  {
+    "depth": 3,
+    "title": "D3: System",
+    "symbol": "❍",
+    "text": "System"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Science",
+    "symbol": "∨",
+    "text": "Science"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Research",
+    "symbol": "❐",
+    "text": "Research"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Discipline",
+    "symbol": "∟",
+    "text": "Discipline"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Core",
+    "symbol": "◚",
+    "text": "Core"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Paradigm",
+    "symbol": "▧",
+    "text": "Paradigm"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Principle",
+    "symbol": "≩",
+    "text": "Principle"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Contradicts",
+    "symbol": "✖",
+    "text": "Contradicts"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Conflict",
+    "symbol": "⥇",
+    "text": "Conflict"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Debate",
+    "symbol": "✥",
+    "text": "Debate"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Anomaly",
+    "symbol": "◊",
+    "text": "Anomaly"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fracture",
+    "symbol": "⤱",
+    "text": "Fracture"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Illusion",
+    "symbol": "◇",
+    "text": "Illusion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Friction",
+    "symbol": "⥡",
+    "text": "Friction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Challenge",
+    "symbol": "➷",
+    "text": "Challenge"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dissonance",
+    "symbol": "✻",
+    "text": "Dissonance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mystery",
+    "symbol": "✌",
+    "text": "Mystery"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheUnknown",
+    "symbol": "◣",
+    "text": "TheUnknown"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Grounds",
+    "symbol": "⛏",
+    "text": "Grounds"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Language",
+    "symbol": "≀",
+    "text": "Language"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fact",
+    "symbol": "⋷",
+    "text": "Fact"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Structure",
+    "symbol": "❔",
+    "text": "Structure"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Earth",
+    "symbol": "⤃",
+    "text": "Earth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Stability",
+    "symbol": "◙",
+    "text": "Stability"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Praxis",
+    "symbol": "➺",
+    "text": "Praxis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Base",
+    "symbol": "❢",
+    "text": "Base"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reality",
+    "symbol": "⊀",
+    "text": "Reality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Point",
+    "symbol": "≵",
+    "text": "Point"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsFoundationOf",
+    "symbol": "⛩",
+    "text": "IsFoundationOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Creator",
+    "symbol": "⊴",
+    "text": "Creator"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concept",
+    "symbol": "∢",
+    "text": "Concept"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Syntax",
+    "symbol": "➥",
+    "text": "Syntax"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Architecture",
+    "symbol": "◽",
+    "text": "Architecture"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Physics",
+    "symbol": "◣",
+    "text": "Physics"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Lifecycle",
+    "symbol": "⤾",
+    "text": "Lifecycle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Agency",
+    "symbol": "➉",
+    "text": "Agency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Law",
+    "symbol": "⥙",
+    "text": "Law"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheCode",
+    "symbol": "⥳",
+    "text": "TheCode"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Unity",
+    "symbol": "⚭",
+    "text": "Unity"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Integrates",
+    "symbol": "⨝",
+    "text": "Integrates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Synapse",
+    "symbol": "◯",
+    "text": "Synapse"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bridge",
+    "symbol": "➑",
+    "text": "Bridge"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Merge",
+    "symbol": "∽",
+    "text": "Merge"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bond",
+    "symbol": "◣",
+    "text": "Bond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Body",
+    "symbol": "⤝",
+    "text": "Body"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Adapt",
+    "symbol": "⥹",
+    "text": "Adapt"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Conduit",
+    "symbol": "⤢",
+    "text": "Conduit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Signal",
+    "symbol": "⊯",
+    "text": "Signal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ascension",
+    "symbol": "◄",
+    "text": "Ascension"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLink",
+    "symbol": "◥",
+    "text": "TheLink"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Harmonizes",
+    "symbol": "≈",
+    "text": "Harmonizes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Agreement",
+    "symbol": "⤼",
+    "text": "Agreement"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dialogue",
+    "symbol": "⋩",
+    "text": "Dialogue"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Proof",
+    "symbol": "⊞",
+    "text": "Proof"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flow",
+    "symbol": "⤿",
+    "text": "Flow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Balance",
+    "symbol": "∓",
+    "text": "Balance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tuning",
+    "symbol": "◅",
+    "text": "Tuning"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Virtuosity",
+    "symbol": "⤔",
+    "text": "Virtuosity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Echo",
+    "symbol": "➒",
+    "text": "Echo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peace",
+    "symbol": "⥂",
+    "text": "Peace"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resolution",
+    "symbol": "⊫",
+    "text": "Resolution"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Requires",
+    "symbol": "‼",
+    "text": "Requires"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Need",
+    "symbol": "⥄",
+    "text": "Need"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Call",
+    "symbol": "⥛",
+    "text": "Call"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Link",
+    "symbol": "⥳",
+    "text": "Link"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Knot",
+    "symbol": "⊎",
+    "text": "Knot"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resource",
+    "symbol": "⥭",
+    "text": "Resource"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Upgrade",
+    "symbol": "⋴",
+    "text": "Upgrade"
+  },
+  {
+    "depth": 3,
+    "title": "D3: SkillSet",
+    "symbol": "◾",
+    "text": "SkillSet"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pulse",
+    "symbol": "❳",
+    "text": "Pulse"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sacrifice",
+    "symbol": "◡",
+    "text": "Sacrifice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLaw",
+    "symbol": "◡",
+    "text": "TheLaw"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Essence",
+    "symbol": "☀",
+    "text": "Essence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Seed",
+    "symbol": "➯",
+    "text": "Seed"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibration",
+    "symbol": "⥶",
+    "text": "Vibration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Number",
+    "symbol": "◑",
+    "text": "Number"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Node",
+    "symbol": "⥻",
+    "text": "Node"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Atom",
+    "symbol": "❥",
+    "text": "Atom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pivot",
+    "symbol": "⥢",
+    "text": "Pivot"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Heart",
+    "symbol": "⥟",
+    "text": "Heart"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tone",
+    "symbol": "⥭",
+    "text": "Tone"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Binds",
+    "symbol": "∞",
+    "text": "Binds"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Will",
+    "symbol": "⥟",
+    "text": "Will"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Attention",
+    "symbol": "⥽",
+    "text": "Attention"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Force",
+    "symbol": "▯",
+    "text": "Force"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Thread",
+    "symbol": "⤦",
+    "text": "Thread"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Density",
+    "symbol": "⊆",
+    "text": "Density"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Control",
+    "symbol": "○",
+    "text": "Control"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Grip",
+    "symbol": "⥹",
+    "text": "Grip"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tension",
+    "symbol": "⤈",
+    "text": "Tension"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gravity",
+    "symbol": "⤭",
+    "text": "Gravity"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Fosters",
+    "symbol": "🌱",
+    "text": "Fosters"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mentorship",
+    "symbol": "❁",
+    "text": "Mentorship"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Scaffolding",
+    "symbol": "⋐",
+    "text": "Scaffolding"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Community",
+    "symbol": "✧",
+    "text": "Community"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Habitat",
+    "symbol": "❎",
+    "text": "Habitat"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Climate",
+    "symbol": "◭",
+    "text": "Climate"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Path",
+    "symbol": "✾",
+    "text": "Path"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resonance",
+    "symbol": "⥗",
+    "text": "Resonance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Transcendence",
+    "symbol": "◨",
+    "text": "Transcendence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheField",
+    "symbol": "✲",
+    "text": "TheField"
+  },
+  {
+    "depth": 2,
+    "title": "D2: CulminatesIn",
+    "symbol": "♛",
+    "text": "CulminatesIn"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Masterpiece",
+    "symbol": "≔",
+    "text": "Masterpiece"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Theorem",
+    "symbol": "≛",
+    "text": "Theorem"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tapestry",
+    "symbol": "⤙",
+    "text": "Tapestry"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Monument",
+    "symbol": "❉",
+    "text": "Monument"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Zenith",
+    "symbol": "⥦",
+    "text": "Zenith"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pinnacle",
+    "symbol": "∊",
+    "text": "Pinnacle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Symphony",
+    "symbol": "◹",
+    "text": "Symphony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Eclipse",
+    "symbol": "➎",
+    "text": "Eclipse"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheEnd",
+    "symbol": "⥞",
+    "text": "TheEnd"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Amplifies",
+    "symbol": "🔊",
+    "text": "Amplifies"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Voice",
+    "symbol": "⥛",
+    "text": "Voice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Broadcast",
+    "symbol": "✜",
+    "text": "Broadcast"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Power",
+    "symbol": "➬",
+    "text": "Power"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Network",
+    "symbol": "⤠",
+    "text": "Network"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Amplitude",
+    "symbol": "➫",
+    "text": "Amplitude"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gain",
+    "symbol": "◐",
+    "text": "Gain"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Intensity",
+    "symbol": "➺",
+    "text": "Intensity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Oscillation",
+    "symbol": "➊",
+    "text": "Oscillation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Radiation",
+    "symbol": "➬",
+    "text": "Radiation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSource",
+    "symbol": "∮",
+    "text": "TheSource"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Achieves",
+    "symbol": "🏆",
+    "text": "Achieves"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Apotheosis",
+    "symbol": "❿",
+    "text": "Apotheosis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concept",
+    "symbol": "∢",
+    "text": "Concept"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Equation",
+    "symbol": "⊓",
+    "text": "Equation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Unity",
+    "symbol": "➬",
+    "text": "Unity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reality",
+    "symbol": "⊀",
+    "text": "Reality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Victory",
+    "symbol": "⤨",
+    "text": "Victory"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Award",
+    "symbol": "✨",
+    "text": "Award"
+  },
+  {
+    "depth": 3,
+    "title": "D3: High",
+    "symbol": "⥯",
+    "text": "High"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Transcendence",
+    "symbol": "◨",
+    "text": "Transcendence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: All",
+    "symbol": "✚",
+    "text": "All"
+  },
+  {
+    "depth": 2,
+    "title": "D2: UltimateExpressionOf",
+    "symbol": "★",
+    "text": "UltimateExpressionOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: ThePerson",
+    "symbol": "⤓",
+    "text": "ThePerson"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLogos",
+    "symbol": "◜",
+    "text": "TheLogos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheMath",
+    "symbol": "✯",
+    "text": "TheMath"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheWeave",
+    "symbol": "✎",
+    "text": "TheWeave"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheWorld",
+    "symbol": "➉",
+    "text": "TheWorld"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheEvolution",
+    "symbol": "⤼",
+    "text": "TheEvolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheMaster",
+    "symbol": "□",
+    "text": "TheMaster"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSound",
+    "symbol": "⥅",
+    "text": "TheSound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLight",
+    "symbol": "➪",
+    "text": "TheLight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheVoid",
+    "symbol": "❻",
+    "text": "TheVoid"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Existence",
+    "symbol": "🜄",
+    "text": "Existence"
+  },
+  {
+    "depth": 2,
+    "title": "D2: ManifestsIn",
+    "symbol": "👁",
+    "text": "ManifestsIn"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Expression",
+    "symbol": "∀",
+    "text": "Expression"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bone",
+    "symbol": "⊲",
+    "text": "Bone"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Group",
+    "symbol": "◰",
+    "text": "Group"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mesh",
+    "symbol": "❆",
+    "text": "Mesh"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Morph",
+    "symbol": "⊞",
+    "text": "Morph"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Stance",
+    "symbol": "≆",
+    "text": "Stance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Intensity",
+    "symbol": "➺",
+    "text": "Intensity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ascension",
+    "symbol": "◄",
+    "text": "Ascension"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsPonderedBy",
+    "symbol": "?",
+    "text": "IsPonderedBy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Observation",
+    "symbol": "⊫",
+    "text": "Observation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Analysis",
+    "symbol": "⋛",
+    "text": "Analysis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Categorization",
+    "symbol": "✻",
+    "text": "Categorization"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Association",
+    "symbol": "✨",
+    "text": "Association"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Evidence",
+    "symbol": "▫",
+    "text": "Evidence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Hypothesis",
+    "symbol": "∤",
+    "text": "Hypothesis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Judgment",
+    "symbol": "⊆",
+    "text": "Judgment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Intuition",
+    "symbol": "✾",
+    "text": "Intuition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Truth",
+    "symbol": "◡",
+    "text": "Truth"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Obeys",
+    "symbol": "⚖",
+    "text": "Obeys"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Will",
+    "symbol": "⥟",
+    "text": "Will"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Order",
+    "symbol": "⤻",
+    "text": "Order"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Law",
+    "symbol": "⥙",
+    "text": "Law"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Attraction",
+    "symbol": "➽",
+    "text": "Attraction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Matter",
+    "symbol": "▹",
+    "text": "Matter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Change",
+    "symbol": "⊄",
+    "text": "Change"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Command",
+    "symbol": "✒",
+    "text": "Command"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Space",
+    "symbol": "⤦",
+    "text": "Space"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheCode",
+    "symbol": "⥳",
+    "text": "TheCode"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Comprises",
+    "symbol": "Σ",
+    "text": "Comprises"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Presence",
+    "symbol": "❨",
+    "text": "Presence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Symbol",
+    "symbol": "⋓",
+    "text": "Symbol"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Class",
+    "symbol": "⋷",
+    "text": "Class"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Cluster",
+    "symbol": "⥐",
+    "text": "Cluster"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Object",
+    "symbol": "❹",
+    "text": "Object"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Delta",
+    "symbol": "≕",
+    "text": "Delta"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Artifact",
+    "symbol": "⥷",
+    "text": "Artifact"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Echo",
+    "symbol": "➒",
+    "text": "Echo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Total",
+    "symbol": "⋧",
+    "text": "Total"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Is",
+    "symbol": "=",
+    "text": "Is"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Core",
+    "symbol": "◚",
+    "text": "Core"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logos",
+    "symbol": "≯",
+    "text": "Logos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Math",
+    "symbol": "⋇",
+    "text": "Math"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Connection",
+    "symbol": "⥖",
+    "text": "Connection"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Existence",
+    "symbol": "⥕",
+    "text": "Existence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Null",
+    "symbol": "◶",
+    "text": "Null"
+  },
+  {
+    "depth": 2,
+    "title": "D2: EvolvesThrough",
+    "symbol": "↝",
+    "text": "EvolvesThrough"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mutation",
+    "symbol": "➾",
+    "text": "Mutation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Refusal",
+    "symbol": "≹",
+    "text": "Refusal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Constraint",
+    "symbol": "✺",
+    "text": "Constraint"
+  },
+  {
+    "depth": 3,
+    "title": "D3: System",
+    "symbol": "❍",
+    "text": "System"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Matter",
+    "symbol": "▹",
+    "text": "Matter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Optimization",
+    "symbol": "◛",
+    "text": "Optimization"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Trial",
+    "symbol": "⤯",
+    "text": "Trial"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pulse",
+    "symbol": "❳",
+    "text": "Pulse"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Jump",
+    "symbol": "⤭",
+    "text": "Jump"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Cycle",
+    "symbol": "⥙",
+    "text": "Cycle"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsDomainOf",
+    "symbol": "🏰",
+    "text": "IsDomainOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Authority",
+    "symbol": "➘",
+    "text": "Authority"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concept",
+    "symbol": "∢",
+    "text": "Concept"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Access",
+    "symbol": "∧",
+    "text": "Access"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Territory",
+    "symbol": "⥋",
+    "text": "Territory"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Upgrade",
+    "symbol": "⋴",
+    "text": "Upgrade"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Expertise",
+    "symbol": "➓",
+    "text": "Expertise"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Style",
+    "symbol": "❙",
+    "text": "Style"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Space",
+    "symbol": "⤦",
+    "text": "Space"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 2,
+    "title": "D2: VibratesIn",
+    "symbol": "〰",
+    "text": "VibratesIn"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mood",
+    "symbol": "◑",
+    "text": "Mood"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Idea",
+    "symbol": "◘",
+    "text": "Idea"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Precision",
+    "symbol": "⥡",
+    "text": "Precision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Physical",
+    "symbol": "✥",
+    "text": "Physical"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pulse",
+    "symbol": "❳",
+    "text": "Pulse"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flow",
+    "symbol": "⤿",
+    "text": "Flow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Transcendence",
+    "symbol": "◨",
+    "text": "Transcendence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheField",
+    "symbol": "✲",
+    "text": "TheField"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsSurpassedBy",
+    "symbol": "≫",
+    "text": "IsSurpassedBy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vision",
+    "symbol": "≙",
+    "text": "Vision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Paradox",
+    "symbol": "➩",
+    "text": "Paradox"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Math",
+    "symbol": "⋇",
+    "text": "Math"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Singularity",
+    "symbol": "➐",
+    "text": "Singularity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Infinity",
+    "symbol": "≑",
+    "text": "Infinity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mastery",
+    "symbol": "✸",
+    "text": "Mastery"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Silence",
+    "symbol": "▵",
+    "text": "Silence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Transcendence",
+    "symbol": "◨",
+    "text": "Transcendence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Aether",
+    "symbol": "✉",
+    "text": "Aether"
+  },
+  {
+    "depth": 2,
+    "title": "D2: GivesRiseTo",
+    "symbol": "↗",
+    "text": "GivesRiseTo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Avatar",
+    "symbol": "❛",
+    "text": "Avatar"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Signal",
+    "symbol": "⊯",
+    "text": "Signal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Code",
+    "symbol": "❞",
+    "text": "Code"
+  },
+  {
+    "depth": 3,
+    "title": "D3: System",
+    "symbol": "❍",
+    "text": "System"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Being",
+    "symbol": "◦",
+    "text": "Being"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Actor",
+    "symbol": "➯",
+    "text": "Actor"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Improvement",
+    "symbol": "⟁",
+    "text": "Improvement"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Refines",
+    "symbol": "🔨",
+    "text": "Refines"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Preference",
+    "symbol": "◃",
+    "text": "Preference"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Constraint",
+    "symbol": "✺",
+    "text": "Constraint"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Role",
+    "symbol": "⤜",
+    "text": "Role"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Status",
+    "symbol": "⤐",
+    "text": "Status"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Goal",
+    "symbol": "●",
+    "text": "Goal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vision",
+    "symbol": "≙",
+    "text": "Vision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Optimizes",
+    "symbol": "🚀",
+    "text": "Optimizes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Attention",
+    "symbol": "⥽",
+    "text": "Attention"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Prompt",
+    "symbol": "⊩",
+    "text": "Prompt"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Efficiency",
+    "symbol": "◖",
+    "text": "Efficiency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flow",
+    "symbol": "⤿",
+    "text": "Flow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resources",
+    "symbol": "➦",
+    "text": "Resources"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Cycles",
+    "symbol": "✏",
+    "text": "Cycles"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Accuracy",
+    "symbol": "◊",
+    "text": "Accuracy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Clarity",
+    "symbol": "∥",
+    "text": "Clarity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Latency",
+    "symbol": "⥸",
+    "text": "Latency"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Systematizes",
+    "symbol": "🏗",
+    "text": "Systematizes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Registry",
+    "symbol": "◈",
+    "text": "Registry"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Schema",
+    "symbol": "▲",
+    "text": "Schema"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Protocol",
+    "symbol": "⊧",
+    "text": "Protocol"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Hierarchy",
+    "symbol": "◗",
+    "text": "Hierarchy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Database",
+    "symbol": "◤",
+    "text": "Database"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Standard",
+    "symbol": "✀",
+    "text": "Standard"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Template",
+    "symbol": "⤌",
+    "text": "Template"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Set",
+    "symbol": "⥏",
+    "text": "Set"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Axiom",
+    "symbol": "∼",
+    "text": "Axiom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Core",
+    "symbol": "◚",
+    "text": "Core"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Strengthens",
+    "symbol": "💪",
+    "text": "Strengthens"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Will",
+    "symbol": "⥟",
+    "text": "Will"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Message",
+    "symbol": "➮",
+    "text": "Message"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Node",
+    "symbol": "⥻",
+    "text": "Node"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Link",
+    "symbol": "⥳",
+    "text": "Link"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Loop",
+    "symbol": "∣",
+    "text": "Loop"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Expertise",
+    "symbol": "➓",
+    "text": "Expertise"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resonance",
+    "symbol": "⥗",
+    "text": "Resonance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Nexus",
+    "symbol": "▰",
+    "text": "Nexus"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Enhances",
+    "symbol": "✨",
+    "text": "Enhances"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Presence",
+    "symbol": "❨",
+    "text": "Presence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Symbol",
+    "symbol": "⋓",
+    "text": "Symbol"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Quality",
+    "symbol": "❏",
+    "text": "Quality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Context",
+    "symbol": "✱",
+    "text": "Context"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mesh",
+    "symbol": "❆",
+    "text": "Mesh"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Shader",
+    "symbol": "●",
+    "text": "Shader"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Artifact",
+    "symbol": "⥷",
+    "text": "Artifact"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Visions",
+    "symbol": "◹",
+    "text": "Visions"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Source",
+    "symbol": "➓",
+    "text": "Source"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Process",
+    "symbol": "⚙",
+    "text": "Process"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Code",
+    "symbol": "❞",
+    "text": "Code"
+  },
+  {
+    "depth": 3,
+    "title": "D3: System",
+    "symbol": "❍",
+    "text": "System"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Material",
+    "symbol": "◝",
+    "text": "Material"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Update",
+    "symbol": "▯",
+    "text": "Update"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Cycle",
+    "symbol": "⥙",
+    "text": "Cycle"
+  },
+  {
+    "depth": 2,
+    "title": "D2: LeadsTo",
+    "symbol": "➜",
+    "text": "LeadsTo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambition",
+    "symbol": "❈",
+    "text": "Ambition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Plan",
+    "symbol": "❶",
+    "text": "Plan"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mentorship",
+    "symbol": "❁",
+    "text": "Mentorship"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Application",
+    "symbol": "≕",
+    "text": "Application"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Progress",
+    "symbol": "▤",
+    "text": "Progress"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Expertise",
+    "symbol": "➓",
+    "text": "Expertise"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Style",
+    "symbol": "❙",
+    "text": "Style"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheEnd",
+    "symbol": "⥞",
+    "text": "TheEnd"
+  },
+  {
+    "depth": 2,
+    "title": "D2: FineTunes",
+    "symbol": "🎛",
+    "text": "FineTunes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Taste",
+    "symbol": "◆",
+    "text": "Taste"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Voice",
+    "symbol": "⥛",
+    "text": "Voice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Precision",
+    "symbol": "⥡",
+    "text": "Precision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chorus",
+    "symbol": "⥴",
+    "text": "Chorus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Visual",
+    "symbol": "⋕",
+    "text": "Visual"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pitch",
+    "symbol": "⊐",
+    "text": "Pitch"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Wave",
+    "symbol": "❖",
+    "text": "Wave"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsPathTo",
+    "symbol": "🛣",
+    "text": "IsPathTo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Way",
+    "symbol": "■",
+    "text": "Way"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Directive",
+    "symbol": "◙",
+    "text": "Directive"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pilgrim",
+    "symbol": "⥽",
+    "text": "Pilgrim"
+  },
+  {
+    "depth": 3,
+    "title": "D3: World",
+    "symbol": "⥩",
+    "text": "World"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Step",
+    "symbol": "⊎",
+    "text": "Step"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Master",
+    "symbol": "⥈",
+    "text": "Master"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Song",
+    "symbol": "➇",
+    "text": "Song"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gate",
+    "symbol": "■",
+    "text": "Gate"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsCycleOf",
+    "symbol": "🔄",
+    "text": "IsCycleOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concept",
+    "symbol": "∢",
+    "text": "Concept"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Syntax",
+    "symbol": "➥",
+    "text": "Syntax"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Network",
+    "symbol": "⤠",
+    "text": "Network"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Matter",
+    "symbol": "▹",
+    "text": "Matter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Delta",
+    "symbol": "≕",
+    "text": "Delta"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Agency",
+    "symbol": "➉",
+    "text": "Agency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Warp",
+    "symbol": "⋗",
+    "text": "Warp"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Mastery",
+    "symbol": "☉",
+    "text": "Mastery"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Actualizes",
+    "symbol": "🏗",
+    "text": "Actualizes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: EgoProof",
+    "symbol": "▻",
+    "text": "EgoProof"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Intent",
+    "symbol": "⋈",
+    "text": "Intent"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Result",
+    "symbol": "◷",
+    "text": "Result"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bond",
+    "symbol": "◣",
+    "text": "Bond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Manifest",
+    "symbol": "▸",
+    "text": "Manifest"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Progress",
+    "symbol": "▤",
+    "text": "Progress"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Echo",
+    "symbol": "➒",
+    "text": "Echo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mark",
+    "symbol": "✒",
+    "text": "Mark"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Being",
+    "symbol": "◦",
+    "text": "Being"
+  },
+  {
+    "depth": 2,
+    "title": "D2: RequiresDeep",
+    "symbol": "⚓",
+    "text": "RequiresDeep"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Will",
+    "symbol": "⥟",
+    "text": "Will"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concentration",
+    "symbol": "❇",
+    "text": "Concentration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Strictness",
+    "symbol": "∌",
+    "text": "Strictness"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Community",
+    "symbol": "✧",
+    "text": "Community"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Place",
+    "symbol": "▯",
+    "text": "Place"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Practice",
+    "symbol": "❜",
+    "text": "Practice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mastery",
+    "symbol": "✸",
+    "text": "Mastery"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Silence",
+    "symbol": "▵",
+    "text": "Silence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Source",
+    "symbol": "➓",
+    "text": "Source"
+  },
+  {
+    "depth": 2,
+    "title": "D2: AppliesPerfected",
+    "symbol": "✅",
+    "text": "AppliesPerfected"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Truth",
+    "symbol": "◡",
+    "text": "Truth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Theorem",
+    "symbol": "≛",
+    "text": "Theorem"
+  },
+  {
+    "depth": 3,
+    "title": "D3: System",
+    "symbol": "❍",
+    "text": "System"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Physics",
+    "symbol": "◣",
+    "text": "Physics"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Update",
+    "symbol": "▯",
+    "text": "Update"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Art",
+    "symbol": "◺",
+    "text": "Art"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tone",
+    "symbol": "⥭",
+    "text": "Tone"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Principle",
+    "symbol": "≩",
+    "text": "Principle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLaw",
+    "symbol": "◡",
+    "text": "TheLaw"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Embodies",
+    "symbol": "🧍",
+    "text": "Embodies"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Self",
+    "symbol": "⋖",
+    "text": "Self"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Thought",
+    "symbol": "❊",
+    "text": "Thought"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Union",
+    "symbol": "◝",
+    "text": "Union"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Life",
+    "symbol": "≣",
+    "text": "Life"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Power",
+    "symbol": "➬",
+    "text": "Power"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Song",
+    "symbol": "➇",
+    "text": "Song"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Commands",
+    "symbol": "🗣",
+    "text": "Commands"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Word",
+    "symbol": "⥆",
+    "text": "Word"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Order",
+    "symbol": "⤻",
+    "text": "Order"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Matter",
+    "symbol": "▹",
+    "text": "Matter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Shift",
+    "symbol": "⤋",
+    "text": "Shift"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Force",
+    "symbol": "▯",
+    "text": "Force"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Warp",
+    "symbol": "⋗",
+    "text": "Warp"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Genesis",
+    "symbol": "⋽",
+    "text": "Genesis"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsGoalOf",
+    "symbol": "🎯",
+    "text": "IsGoalOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambition",
+    "symbol": "❈",
+    "text": "Ambition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Target",
+    "symbol": "◓",
+    "text": "Target"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Benchmark",
+    "symbol": "▯",
+    "text": "Benchmark"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Incentive",
+    "symbol": "▫",
+    "text": "Incentive"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Existence",
+    "symbol": "⥕",
+    "text": "Existence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Evolution",
+    "symbol": "❈",
+    "text": "Evolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mastery",
+    "symbol": "✸",
+    "text": "Mastery"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Feeling",
+    "symbol": "∵",
+    "text": "Feeling"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peak",
+    "symbol": "◜",
+    "text": "Peak"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Home",
+    "symbol": "◸",
+    "text": "Home"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Pinnacle",
+    "symbol": "🏔",
+    "text": "Pinnacle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Signature",
+    "symbol": "⊈",
+    "text": "Signature"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Concept",
+    "symbol": "∢",
+    "text": "Concept"
+  },
+  {
+    "depth": 3,
+    "title": "D3: GoldenRatio",
+    "symbol": "⥫",
+    "text": "GoldenRatio"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Body",
+    "symbol": "⤝",
+    "text": "Body"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peak",
+    "symbol": "◜",
+    "text": "Peak"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Opus",
+    "symbol": "◸",
+    "text": "Opus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Timbre",
+    "symbol": "◫",
+    "text": "Timbre"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Aura",
+    "symbol": "▨",
+    "text": "Aura"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Generates",
+    "symbol": "⚛",
+    "text": "Generates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Awe",
+    "symbol": "◈",
+    "text": "Awe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Idea",
+    "symbol": "◘",
+    "text": "Idea"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Clarity",
+    "symbol": "∥",
+    "text": "Clarity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Community",
+    "symbol": "✧",
+    "text": "Community"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Field",
+    "symbol": "⤋",
+    "text": "Field"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resonance",
+    "symbol": "⥗",
+    "text": "Resonance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Trance",
+    "symbol": "◶",
+    "text": "Trance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Source",
+    "symbol": "➓",
+    "text": "Source"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Approaches",
+    "symbol": "lim",
+    "text": "Approaches"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Crisis",
+    "symbol": "▿",
+    "text": "Crisis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Breakthrough",
+    "symbol": "⤬",
+    "text": "Breakthrough"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Anomaly",
+    "symbol": "◊",
+    "text": "Anomaly"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Singularity",
+    "symbol": "➐",
+    "text": "Singularity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: QuantumLeap",
+    "symbol": "◴",
+    "text": "QuantumLeap"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Absolute",
+    "symbol": "◯",
+    "text": "Absolute"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Infinite",
+    "symbol": "∽",
+    "text": "Infinite"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ascension",
+    "symbol": "◄",
+    "text": "Ascension"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Godhood",
+    "symbol": "≝",
+    "text": "Godhood"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsTotalityOf",
+    "symbol": "🌌",
+    "text": "IsTotalityOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: ThePerson",
+    "symbol": "⤓",
+    "text": "ThePerson"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLogos",
+    "symbol": "◜",
+    "text": "TheLogos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLogic",
+    "symbol": "➚",
+    "text": "TheLogic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSystem",
+    "symbol": "⋘",
+    "text": "TheSystem"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheWorld",
+    "symbol": "➉",
+    "text": "TheWorld"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheEvolution",
+    "symbol": "⤼",
+    "text": "TheEvolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheMaster",
+    "symbol": "□",
+    "text": "TheMaster"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSong",
+    "symbol": "⥇",
+    "text": "TheSong"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLight",
+    "symbol": "➪",
+    "text": "TheLight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Resonance",
+    "symbol": "∿",
+    "text": "Resonance"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsFeltBy",
+    "symbol": "♥",
+    "text": "IsFeltBy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: SelfFeeling",
+    "symbol": "∞",
+    "text": "SelfFeeling"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Temperament",
+    "symbol": "⥊",
+    "text": "Temperament"
+  },
+  {
+    "depth": 3,
+    "title": "D3: LogicVibe",
+    "symbol": "⋠",
+    "text": "LogicVibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Belonging",
+    "symbol": "◄",
+    "text": "Belonging"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Physicality",
+    "symbol": "❉",
+    "text": "Physicality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: GrowthBuz",
+    "symbol": "∖",
+    "text": "GrowthBuz"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Confidence",
+    "symbol": "⤧",
+    "text": "Confidence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ecstasy",
+    "symbol": "≻",
+    "text": "Ecstasy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peace",
+    "symbol": "⥂",
+    "text": "Peace"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsEvokedBy",
+    "symbol": "⚡",
+    "text": "IsEvokedBy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Passion",
+    "symbol": "◓",
+    "text": "Passion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Curiosity",
+    "symbol": "◩",
+    "text": "Curiosity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Clarity",
+    "symbol": "∥",
+    "text": "Clarity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Empathy",
+    "symbol": "⋩",
+    "text": "Empathy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dread",
+    "symbol": "⥷",
+    "text": "Dread"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambition",
+    "symbol": "❈",
+    "text": "Ambition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pride",
+    "symbol": "⊪",
+    "text": "Pride"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Awe",
+    "symbol": "◈",
+    "text": "Awe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Veneration",
+    "symbol": "▮",
+    "text": "Veneration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Apathy",
+    "symbol": "◺",
+    "text": "Apathy"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Eludes",
+    "symbol": "👻",
+    "text": "Eludes"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sacred",
+    "symbol": "⊬",
+    "text": "Sacred"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Paradox",
+    "symbol": "➩",
+    "text": "Paradox"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Anomaly",
+    "symbol": "◊",
+    "text": "Anomaly"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ghost",
+    "symbol": "◀",
+    "text": "Ghost"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chaos",
+    "symbol": "∬",
+    "text": "Chaos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Magic",
+    "symbol": "➓",
+    "text": "Magic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Beauty",
+    "symbol": "≬",
+    "text": "Beauty"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Grace",
+    "symbol": "⊉",
+    "text": "Grace"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Creates",
+    "symbol": "🎨",
+    "text": "Creates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambiance",
+    "symbol": "⤗",
+    "text": "Ambiance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chorus",
+    "symbol": "⥴",
+    "text": "Chorus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sync",
+    "symbol": "◳",
+    "text": "Sync"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mesh",
+    "symbol": "❆",
+    "text": "Mesh"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Physics",
+    "symbol": "◣",
+    "text": "Physics"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Climate",
+    "symbol": "◭",
+    "text": "Climate"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Field",
+    "symbol": "⤋",
+    "text": "Field"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Radiation",
+    "symbol": "➬",
+    "text": "Radiation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Absolute",
+    "symbol": "◯",
+    "text": "Absolute"
+  },
+  {
+    "depth": 2,
+    "title": "D2: EchoesThrough",
+    "symbol": "🔊",
+    "text": "EchoesThrough"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Shadow",
+    "symbol": "∾",
+    "text": "Shadow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tear",
+    "symbol": "⤏",
+    "text": "Tear"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Grid",
+    "symbol": "⥭",
+    "text": "Grid"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bonds",
+    "symbol": "⋷",
+    "text": "Bonds"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Crack",
+    "symbol": "⤲",
+    "text": "Crack"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Stain",
+    "symbol": "✴",
+    "text": "Stain"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Portal",
+    "symbol": "⊛",
+    "text": "Portal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 2,
+    "title": "D2: AlignsWith",
+    "symbol": "📏",
+    "text": "AlignsWith"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Comfort",
+    "symbol": "≟",
+    "text": "Comfort"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Intuition",
+    "symbol": "✾",
+    "text": "Intuition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Efficiency",
+    "symbol": "◖",
+    "text": "Efficiency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Symmetry",
+    "symbol": "⋅",
+    "text": "Symmetry"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Density",
+    "symbol": "⊆",
+    "text": "Density"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fit",
+    "symbol": "➢",
+    "text": "Fit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Grace",
+    "symbol": "⊉",
+    "text": "Grace"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Theme",
+    "symbol": "❠",
+    "text": "Theme"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vision",
+    "symbol": "≙",
+    "text": "Vision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: RadiatesFrom",
+    "symbol": "☀",
+    "text": "RadiatesFrom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flavor",
+    "symbol": "⤌",
+    "text": "Flavor"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Voice",
+    "symbol": "⥛",
+    "text": "Voice"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Math",
+    "symbol": "⋇",
+    "text": "Math"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Weave",
+    "symbol": "⥱",
+    "text": "Weave"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Glow",
+    "symbol": "✡",
+    "text": "Glow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flow",
+    "symbol": "⤿",
+    "text": "Flow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Source",
+    "symbol": "➓",
+    "text": "Source"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Sympathy",
+    "symbol": "🤝",
+    "text": "Sympathy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Feed",
+    "symbol": "⥷",
+    "text": "Feed"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mirror",
+    "symbol": "➥",
+    "text": "Mirror"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sync",
+    "symbol": "◳",
+    "text": "Sync"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bond",
+    "symbol": "◣",
+    "text": "Bond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Glow",
+    "symbol": "✡",
+    "text": "Glow"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Boost",
+    "symbol": "▩",
+    "text": "Boost"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Power",
+    "symbol": "➬",
+    "text": "Power"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Echo",
+    "symbol": "➒",
+    "text": "Echo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Trance",
+    "symbol": "◶",
+    "text": "Trance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Facilitates",
+    "symbol": "🛠",
+    "text": "Facilitates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Release",
+    "symbol": "✆",
+    "text": "Release"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dream",
+    "symbol": "▽",
+    "text": "Dream"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mantra",
+    "symbol": "◦",
+    "text": "Mantra"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Communion",
+    "symbol": "◜",
+    "text": "Communion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Warp",
+    "symbol": "⋗",
+    "text": "Warp"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Evolution",
+    "symbol": "❈",
+    "text": "Evolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Agency",
+    "symbol": "➉",
+    "text": "Agency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Heaven",
+    "symbol": "➭",
+    "text": "Heaven"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Source",
+    "symbol": "➓",
+    "text": "Source"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsGroundOf",
+    "symbol": "🌍",
+    "text": "IsGroundOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logos",
+    "symbol": "≯",
+    "text": "Logos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheNumber",
+    "symbol": "⥇",
+    "text": "TheNumber"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheBond",
+    "symbol": "⋟",
+    "text": "TheBond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAtom",
+    "symbol": "⤫",
+    "text": "TheAtom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheStep",
+    "symbol": "✸",
+    "text": "TheStep"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheMaster",
+    "symbol": "□",
+    "text": "TheMaster"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSound",
+    "symbol": "⥅",
+    "text": "TheSound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLight",
+    "symbol": "➪",
+    "text": "TheLight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Transcendence",
+    "symbol": "🜍",
+    "text": "Transcendence"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Elevates",
+    "symbol": "⏫",
+    "text": "Elevates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Apotheosis",
+    "symbol": "❿",
+    "text": "Apotheosis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Insight",
+    "symbol": "⋺",
+    "text": "Insight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Truth",
+    "symbol": "◡",
+    "text": "Truth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Unity",
+    "symbol": "➬",
+    "text": "Unity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Density",
+    "symbol": "⊆",
+    "text": "Density"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sovereignty",
+    "symbol": "✨",
+    "text": "Sovereignty"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ecstasy",
+    "symbol": "≻",
+    "text": "Ecstasy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Warp",
+    "symbol": "⋗",
+    "text": "Warp"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: GoesBeyond",
+    "symbol": "🚀",
+    "text": "GoesBeyond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Message",
+    "symbol": "➮",
+    "text": "Message"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Oracle",
+    "symbol": "⤠",
+    "text": "Oracle"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Symbol",
+    "symbol": "⋓",
+    "text": "Symbol"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Signal",
+    "symbol": "⊯",
+    "text": "Signal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Aether",
+    "symbol": "✉",
+    "text": "Aether"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Update",
+    "symbol": "▯",
+    "text": "Update"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Command",
+    "symbol": "✒",
+    "text": "Command"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gateway",
+    "symbol": "≍",
+    "text": "Gateway"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsNotBoundBy",
+    "symbol": "🆓",
+    "text": "IsNotBoundBy"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Will",
+    "symbol": "⥟",
+    "text": "Will"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chaos",
+    "symbol": "∬",
+    "text": "Chaos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Paradox",
+    "symbol": "➩",
+    "text": "Paradox"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flux",
+    "symbol": "✢",
+    "text": "Flux"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ghost",
+    "symbol": "◀",
+    "text": "Ghost"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Evolution",
+    "symbol": "❈",
+    "text": "Evolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Magic",
+    "symbol": "➓",
+    "text": "Magic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Beauty",
+    "symbol": "≬",
+    "text": "Beauty"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Space",
+    "symbol": "⤦",
+    "text": "Space"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Null",
+    "symbol": "◶",
+    "text": "Null"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsStateOf",
+    "symbol": "🧘",
+    "text": "IsStateOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Monad",
+    "symbol": "◺",
+    "text": "Monad"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logos",
+    "symbol": "≯",
+    "text": "Logos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Equation",
+    "symbol": "⊓",
+    "text": "Equation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Nexus",
+    "symbol": "▰",
+    "text": "Nexus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Body",
+    "symbol": "⤝",
+    "text": "Body"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peak",
+    "symbol": "◜",
+    "text": "Peak"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Master",
+    "symbol": "⥈",
+    "text": "Master"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tone",
+    "symbol": "⥭",
+    "text": "Tone"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: RisesAbove",
+    "symbol": "🦅",
+    "text": "RisesAbove"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Idea",
+    "symbol": "◘",
+    "text": "Idea"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Math",
+    "symbol": "⋇",
+    "text": "Math"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bond",
+    "symbol": "◣",
+    "text": "Bond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Matter",
+    "symbol": "▹",
+    "text": "Matter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Action",
+    "symbol": "⤨",
+    "text": "Action"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Source",
+    "symbol": "➓",
+    "text": "Source"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsAimOf",
+    "symbol": "🏹",
+    "text": "IsAimOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ambition",
+    "symbol": "❈",
+    "text": "Ambition"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Goal",
+    "symbol": "●",
+    "text": "Goal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Target",
+    "symbol": "◓",
+    "text": "Target"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ideal",
+    "symbol": "❷",
+    "text": "Ideal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: World",
+    "symbol": "⥩",
+    "text": "World"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Path",
+    "symbol": "✾",
+    "text": "Path"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Future",
+    "symbol": "▪",
+    "text": "Future"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Origin",
+    "symbol": "⤆",
+    "text": "Origin"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsPinnacleOf",
+    "symbol": "🏰",
+    "text": "IsPinnacleOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Artist",
+    "symbol": "◻",
+    "text": "Artist"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vision",
+    "symbol": "≙",
+    "text": "Vision"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ratio",
+    "symbol": "◎",
+    "text": "Ratio"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tapestry",
+    "symbol": "⤙",
+    "text": "Tapestry"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Monument",
+    "symbol": "❉",
+    "text": "Monument"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Zenith",
+    "symbol": "⥦",
+    "text": "Zenith"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Masterpiece",
+    "symbol": "≔",
+    "text": "Masterpiece"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Score",
+    "symbol": "⤶",
+    "text": "Score"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Halo",
+    "symbol": "⊲",
+    "text": "Halo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Induces",
+    "symbol": "💊",
+    "text": "Induces"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fear",
+    "symbol": "⋊",
+    "text": "Fear"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Wonder",
+    "symbol": "✲",
+    "text": "Wonder"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Clarity",
+    "symbol": "∥",
+    "text": "Clarity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Unity",
+    "symbol": "➬",
+    "text": "Unity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Density",
+    "symbol": "⊆",
+    "text": "Density"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Shock",
+    "symbol": "⥗",
+    "text": "Shock"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Power",
+    "symbol": "➬",
+    "text": "Power"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bliss",
+    "symbol": "◛",
+    "text": "Bliss"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peace",
+    "symbol": "⥂",
+    "text": "Peace"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Action",
+    "symbol": "🎬",
+    "text": "Action"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Departure",
+    "symbol": "⋬",
+    "text": "Departure"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Flash",
+    "symbol": "⋠",
+    "text": "Flash"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Paradigm",
+    "symbol": "▧",
+    "text": "Paradigm"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Merge",
+    "symbol": "∽",
+    "text": "Merge"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dissolve",
+    "symbol": "➵",
+    "text": "Dissolve"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Leap",
+    "symbol": "⊿",
+    "text": "Leap"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Command",
+    "symbol": "✒",
+    "text": "Command"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Release",
+    "symbol": "✆",
+    "text": "Release"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Event",
+    "symbol": "⤭",
+    "text": "Event"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Return",
+    "symbol": "≂",
+    "text": "Return"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsNatureOf",
+    "symbol": "🌿",
+    "text": "IsNatureOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: ThePerson",
+    "symbol": "⤓",
+    "text": "ThePerson"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheWord",
+    "symbol": "▭",
+    "text": "TheWord"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLaw",
+    "symbol": "◡",
+    "text": "TheLaw"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheBond",
+    "symbol": "⋟",
+    "text": "TheBond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheWorld",
+    "symbol": "➉",
+    "text": "TheWorld"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheGrowth",
+    "symbol": "⋬",
+    "text": "TheGrowth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheMaster",
+    "symbol": "□",
+    "text": "TheMaster"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheSong",
+    "symbol": "⥇",
+    "text": "TheSong"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheLight",
+    "symbol": "➪",
+    "text": "TheLight"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 1,
+    "title": "D1: Omni",
+    "symbol": "🜋",
+    "text": "Omni"
+  },
+  {
+    "depth": 2,
+    "title": "D2: MergesWith",
+    "symbol": "🌊",
+    "text": "MergesWith"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Profile",
+    "symbol": "✑",
+    "text": "Profile"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Context",
+    "symbol": "✱",
+    "text": "Context"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bond",
+    "symbol": "◣",
+    "text": "Bond"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Avatar",
+    "symbol": "❛",
+    "text": "Avatar"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Update",
+    "symbol": "▯",
+    "text": "Update"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Agency",
+    "symbol": "➉",
+    "text": "Agency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Contemplates",
+    "symbol": "🤔",
+    "text": "Contemplates"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logos",
+    "symbol": "≯",
+    "text": "Logos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Theorem",
+    "symbol": "≛",
+    "text": "Theorem"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Graph",
+    "symbol": "⥨",
+    "text": "Graph"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reality",
+    "symbol": "⊀",
+    "text": "Reality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Evolution",
+    "symbol": "❈",
+    "text": "Evolution"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Tone",
+    "symbol": "⥭",
+    "text": "Tone"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Gnosis",
+    "symbol": "➲",
+    "text": "Gnosis"
+  },
+  {
+    "depth": 3,
+    "title": "D3: All",
+    "symbol": "✚",
+    "text": "All"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsSubsetOf",
+    "symbol": "⊂",
+    "text": "IsSubsetOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Contradiction",
+    "symbol": "✰",
+    "text": "Contradiction"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mystery",
+    "symbol": "✌",
+    "text": "Mystery"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Axiom",
+    "symbol": "∼",
+    "text": "Axiom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Set",
+    "symbol": "⥏",
+    "text": "Set"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Void",
+    "symbol": "⊢",
+    "text": "Void"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Anomaly",
+    "symbol": "◊",
+    "text": "Anomaly"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Dissonance",
+    "symbol": "✻",
+    "text": "Dissonance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Truth",
+    "symbol": "◡",
+    "text": "Truth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Infinity",
+    "symbol": "≑",
+    "text": "Infinity"
+  },
+  {
+    "depth": 2,
+    "title": "D2: IsAspectOf",
+    "symbol": "🔍",
+    "text": "IsAspectOf"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Node",
+    "symbol": "⥻",
+    "text": "Node"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Signal",
+    "symbol": "⊯",
+    "text": "Signal"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mesh",
+    "symbol": "❆",
+    "text": "Mesh"
+  },
+  {
+    "depth": 3,
+    "title": "D3: World",
+    "symbol": "⥩",
+    "text": "World"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Loop",
+    "symbol": "∣",
+    "text": "Loop"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Artifact",
+    "symbol": "⥷",
+    "text": "Artifact"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Sound",
+    "symbol": "◝",
+    "text": "Sound"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Light",
+    "symbol": "⤤",
+    "text": "Light"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheOne",
+    "symbol": "▻",
+    "text": "TheOne"
+  },
+  {
+    "depth": 2,
+    "title": "D2: EmergesFrom",
+    "symbol": "🐣",
+    "text": "EmergesFrom"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Birth",
+    "symbol": "▪",
+    "text": "Birth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Idea",
+    "symbol": "◘",
+    "text": "Idea"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Calculation",
+    "symbol": "❵",
+    "text": "Calculation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fusion",
+    "symbol": "⊔",
+    "text": "Fusion"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Matter",
+    "symbol": "▹",
+    "text": "Matter"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Growth",
+    "symbol": "◦",
+    "text": "Growth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Act",
+    "symbol": "⥶",
+    "text": "Act"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Wave",
+    "symbol": "❖",
+    "text": "Wave"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Spirit",
+    "symbol": "◝",
+    "text": "Spirit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheNull",
+    "symbol": "∴",
+    "text": "TheNull"
+  },
+  {
+    "depth": 2,
+    "title": "D2: OccursWithin",
+    "symbol": "📦",
+    "text": "OccursWithin"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Identity",
+    "symbol": "⤏",
+    "text": "Identity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Thought",
+    "symbol": "❊",
+    "text": "Thought"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logic",
+    "symbol": "⥫",
+    "text": "Logic"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Integration",
+    "symbol": "∰",
+    "text": "Integration"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Environment",
+    "symbol": "▭",
+    "text": "Environment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Simulation",
+    "symbol": "◸",
+    "text": "Simulation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Skill",
+    "symbol": "✭",
+    "text": "Skill"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Resonance",
+    "symbol": "⥗",
+    "text": "Resonance"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Change",
+    "symbol": "⊄",
+    "text": "Change"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheCycle",
+    "symbol": "✪",
+    "text": "TheCycle"
+  },
+  {
+    "depth": 2,
+    "title": "D2: SeeksToUnderstand",
+    "symbol": "🧐",
+    "text": "SeeksToUnderstand"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Profile",
+    "symbol": "✑",
+    "text": "Profile"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Knowledge",
+    "symbol": "⤧",
+    "text": "Knowledge"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Theorem",
+    "symbol": "≛",
+    "text": "Theorem"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Network",
+    "symbol": "⤠",
+    "text": "Network"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Status",
+    "symbol": "⤐",
+    "text": "Status"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Health",
+    "symbol": "≻",
+    "text": "Health"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Competence",
+    "symbol": "✟",
+    "text": "Competence"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Vibe",
+    "symbol": "⥖",
+    "text": "Vibe"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reality",
+    "symbol": "⊀",
+    "text": "Reality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: TheAll",
+    "symbol": "∐",
+    "text": "TheAll"
+  },
+  {
+    "depth": 2,
+    "title": "D2: HarmonizesWith",
+    "symbol": "🎶",
+    "text": "HarmonizesWith"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Peace",
+    "symbol": "⥂",
+    "text": "Peace"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Logos",
+    "symbol": "≯",
+    "text": "Logos"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Standard",
+    "symbol": "✀",
+    "text": "Standard"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Chorus",
+    "symbol": "⥴",
+    "text": "Chorus"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Luminosity",
+    "symbol": "◨",
+    "text": "Luminosity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Pulsation",
+    "symbol": "◈",
+    "text": "Pulsation"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Art",
+    "symbol": "◺",
+    "text": "Art"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Frequency",
+    "symbol": "⊚",
+    "text": "Frequency"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Bliss",
+    "symbol": "◛",
+    "text": "Bliss"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Monad",
+    "symbol": "◺",
+    "text": "Monad"
+  },
+  {
+    "depth": 2,
+    "title": "D2: AspiresTo",
+    "symbol": "🌠",
+    "text": "AspiresTo"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Exit",
+    "symbol": "⤞",
+    "text": "Exit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Clear",
+    "symbol": "✼",
+    "text": "Clear"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Prime",
+    "symbol": "◴",
+    "text": "Prime"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Join",
+    "symbol": "⥺",
+    "text": "Join"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reset",
+    "symbol": "◍",
+    "text": "Reset"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Jump",
+    "symbol": "⤭",
+    "text": "Jump"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Submit",
+    "symbol": "⋆",
+    "text": "Submit"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Fade",
+    "symbol": "∈",
+    "text": "Fade"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Ascension",
+    "symbol": "◄",
+    "text": "Ascension"
+  },
+  {
+    "depth": 3,
+    "title": "D3: ZeroPoint",
+    "symbol": "⋵",
+    "text": "ZeroPoint"
+  },
+  {
+    "depth": 2,
+    "title": "D2: Is",
+    "symbol": "=",
+    "text": "Is"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Self",
+    "symbol": "⋖",
+    "text": "Self"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Word",
+    "symbol": "⥆",
+    "text": "Word"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Truth",
+    "symbol": "◡",
+    "text": "Truth"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Unity",
+    "symbol": "➬",
+    "text": "Unity"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Reality",
+    "symbol": "⊀",
+    "text": "Reality"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Betterment",
+    "symbol": "⥭",
+    "text": "Betterment"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Mastery",
+    "symbol": "✸",
+    "text": "Mastery"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Harmony",
+    "symbol": "⥗",
+    "text": "Harmony"
+  },
+  {
+    "depth": 3,
+    "title": "D3: Glory",
+    "symbol": "✢",
+    "text": "Glory"
+  },
+  {
+    "depth": 3,
+    "title": "D3: God",
+    "symbol": "≵",
+    "text": "God"
+  }
+]
