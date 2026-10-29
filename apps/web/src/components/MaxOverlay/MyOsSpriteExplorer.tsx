@@ -38,7 +38,19 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
 }) => {
     const [manifest, setManifest] = useState<Record<string, MyOsSpriteEntry>>({});
     const [searchQuery, setSearchQuery] = useState('');
-    const [activeCategory, setActiveCategory] = useState<'all' | 'golems' | 'chibis' | 'lpc' | 'monsters'>('all');
+    const [activeCategory, setActiveCategory] = useState<string>('all');
+    const [customTabs, setCustomTabs] = useState<string[]>(() => {
+        try {
+            const saved = localStorage.getItem('myos_custom_sprite_tabs');
+            return saved ? JSON.parse(saved) : [];
+        } catch { return []; }
+    });
+    const [spriteCategoryMap, setSpriteCategoryMap] = useState<Record<string, string>>(() => {
+        try {
+            const saved = localStorage.getItem('myos_sprite_category_map');
+            return saved ? JSON.parse(saved) : {};
+        } catch { return {}; }
+    });
     const [isLoading, setIsLoading] = useState(true);
     const [trashedIds, setTrashedIds] = useState<string[]>(() => {
         try {
@@ -132,17 +144,55 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
         localStorage.setItem('myos_trashed_sprites', JSON.stringify(nextTrashed));
     };
 
+    const handleAddTab = () => {
+        const name = prompt("Enter new Category / World tab name (e.g. Faerun, Printer Panic, Bosses, Red Outlaws):");
+        if (!name || !name.trim()) return;
+        const clean = name.trim();
+        if (!customTabs.includes(clean)) {
+            const next = [...customTabs, clean];
+            setCustomTabs(next);
+            localStorage.setItem('myos_custom_sprite_tabs', JSON.stringify(next));
+            setActiveCategory(clean);
+        }
+    };
+
+    const handleRemoveTab = (e: React.MouseEvent, tabName: string) => {
+        e.stopPropagation();
+        if (confirm(`Remove tab "${tabName}"? Sprites in it will return to default categories.`)) {
+            const next = customTabs.filter(t => t !== tabName);
+            setCustomTabs(next);
+            localStorage.setItem('myos_custom_sprite_tabs', JSON.stringify(next));
+            if (activeCategory === tabName) setActiveCategory('all');
+        }
+    };
+
+    const handleDropOnCategory = (e: React.DragEvent, categoryId: string) => {
+        e.preventDefault();
+        const spriteId = e.dataTransfer.getData('text/plain');
+        if (!spriteId) return;
+        const nextMap = { ...spriteCategoryMap, [spriteId]: categoryId };
+        setSpriteCategoryMap(nextMap);
+        localStorage.setItem('myos_sprite_category_map', JSON.stringify(nextMap));
+    };
+
     const filteredSprites = useMemo(() => {
         return spriteList.filter(sprite => {
             let matchesCategory = true;
-            if (activeCategory === 'golems') {
-                matchesCategory = isGolem(sprite);
-            } else if (activeCategory === 'chibis') {
-                matchesCategory = isChibi(sprite);
-            } else if (activeCategory === 'lpc') {
-                matchesCategory = isLpc(sprite);
-            } else if (activeCategory === 'monsters') {
-                matchesCategory = isMonster(sprite);
+            const customCat = spriteCategoryMap[sprite.id];
+            if (activeCategory !== 'all') {
+                if (customCat) {
+                    matchesCategory = (customCat === activeCategory);
+                } else if (activeCategory === 'golems') {
+                    matchesCategory = isGolem(sprite);
+                } else if (activeCategory === 'chibis') {
+                    matchesCategory = isChibi(sprite);
+                } else if (activeCategory === 'lpc') {
+                    matchesCategory = isLpc(sprite);
+                } else if (activeCategory === 'monsters') {
+                    matchesCategory = isMonster(sprite);
+                } else {
+                    matchesCategory = (customCat === activeCategory);
+                }
             }
 
             const matchesSearch = !searchQuery || 
@@ -174,11 +224,13 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                 </span>
             </div>
 
-            {/* Segmented Category Filter: 4 Core Types + All */}
-            <div className="grid grid-cols-5 p-1 gap-1 border-b border-white/10 bg-black/60">
+            {/* Dynamic Category Filter: Built-in + User Custom Tabs with Drag & Drop */}
+            <div className="flex items-center gap-1 p-1 border-b border-white/10 bg-black/60 overflow-x-auto scrollbar-none">
                 <button
                     onClick={() => setActiveCategory('all')}
-                    className={`py-1 px-0.5 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center flex items-center justify-center cursor-pointer ${
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={(e) => handleDropOnCategory(e, 'all')}
+                    className={`py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center shrink-0 cursor-pointer ${
                         activeCategory === 'all'
                             ? 'bg-cyan-500 text-black font-extrabold shadow-md shadow-cyan-500/20'
                             : 'text-white/40 hover:text-white hover:bg-white/5'
@@ -188,7 +240,9 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                 </button>
                 <button
                     onClick={() => setActiveCategory('golems')}
-                    className={`py-1 px-0.5 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center flex items-center justify-center cursor-pointer ${
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={(e) => handleDropOnCategory(e, 'golems')}
+                    className={`py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center shrink-0 cursor-pointer ${
                         activeCategory === 'golems'
                             ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-black font-extrabold shadow-md shadow-amber-500/20'
                             : 'text-amber-400/70 hover:text-amber-300 hover:bg-white/5'
@@ -198,7 +252,9 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                 </button>
                 <button
                     onClick={() => setActiveCategory('chibis')}
-                    className={`py-1 px-0.5 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center flex items-center justify-center cursor-pointer ${
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={(e) => handleDropOnCategory(e, 'chibis')}
+                    className={`py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center shrink-0 cursor-pointer ${
                         activeCategory === 'chibis'
                             ? 'bg-gradient-to-r from-pink-500 to-rose-400 text-white font-extrabold shadow-md shadow-pink-500/20'
                             : 'text-pink-400/70 hover:text-pink-300 hover:bg-white/5'
@@ -208,7 +264,9 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                 </button>
                 <button
                     onClick={() => setActiveCategory('lpc')}
-                    className={`py-1 px-0.5 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center flex items-center justify-center cursor-pointer ${
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={(e) => handleDropOnCategory(e, 'lpc')}
+                    className={`py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center shrink-0 cursor-pointer ${
                         activeCategory === 'lpc'
                             ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-black font-extrabold shadow-md shadow-emerald-500/20'
                             : 'text-emerald-400/60 hover:text-emerald-300 hover:bg-white/5'
@@ -218,13 +276,52 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                 </button>
                 <button
                     onClick={() => setActiveCategory('monsters')}
-                    className={`py-1 px-0.5 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center flex items-center justify-center cursor-pointer ${
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={(e) => handleDropOnCategory(e, 'monsters')}
+                    className={`py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center shrink-0 cursor-pointer ${
                         activeCategory === 'monsters'
                             ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-extrabold shadow-md shadow-purple-500/20'
                             : 'text-purple-400/60 hover:text-purple-300 hover:bg-white/5'
                     }`}
                 >
                     <span>💀 Foes ({monsterCount})</span>
+                </button>
+
+                {/* User-Defined Custom Tabs */}
+                {customTabs.map(tab => {
+                    const count = spriteList.filter(s => spriteCategoryMap[s.id] === tab).length;
+                    const isActive = activeCategory === tab;
+                    return (
+                        <div
+                            key={tab}
+                            onClick={() => setActiveCategory(tab)}
+                            onDragOver={(e) => e.preventDefault()}
+                            onDrop={(e) => handleDropOnCategory(e, tab)}
+                            className={`py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all text-center shrink-0 flex items-center gap-1 cursor-pointer ${
+                                isActive
+                                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-black font-extrabold shadow-md'
+                                    : 'text-cyan-400/80 bg-cyan-950/40 border border-cyan-500/30 hover:bg-cyan-900/40'
+                            }`}
+                        >
+                            <span>📁 {tab} ({count})</span>
+                            <span
+                                onClick={(e) => handleRemoveTab(e, tab)}
+                                title="Remove tab"
+                                className="text-white/40 hover:text-red-400 ml-0.5 text-[9px]"
+                            >
+                                ✕
+                            </span>
+                        </div>
+                    );
+                })}
+
+                {/* Add New Tab Button */}
+                <button
+                    onClick={handleAddTab}
+                    title="Create custom category tab (e.g. Faerûn, Printer Panic, Bosses)"
+                    className="py-1 px-2 rounded-lg text-[8px] font-black uppercase tracking-tight transition-all shrink-0 bg-white/5 border border-dashed border-white/20 text-white/50 hover:text-cyan-300 hover:border-cyan-400 hover:bg-cyan-500/10 cursor-pointer"
+                >
+                    <span>+ Tab</span>
                 </button>
             </div>
 
@@ -266,12 +363,16 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                                         : 'bg-slate-900/60 border-white/10 hover:bg-slate-900/90 hover:border-white/20'
                                 }`}
                             >
-                                <button
+                                <div
+                                    draggable={true}
+                                    onDragStart={(e) => {
+                                        e.dataTransfer.setData('text/plain', sprite.id);
+                                    }}
                                     onClick={() => {
                                         const defaultAct = sprite.actions[selectedAction] ? selectedAction : sprite.defaultAction;
                                         onSelectSprite(sprite, defaultAct);
                                     }}
-                                    className="w-full p-3 text-left flex flex-col gap-1.5 group cursor-pointer"
+                                    className="w-full p-3 text-left flex flex-col gap-1.5 group cursor-pointer active:cursor-grabbing"
                                 >
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-2">
@@ -322,7 +423,7 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                                             Pillar: <strong className="text-purple-300">{sprite.pillarAlignment}</strong>
                                         </span>
                                     </div>
-                                </button>
+                                </div>
                             </div>
                         );
                     })
