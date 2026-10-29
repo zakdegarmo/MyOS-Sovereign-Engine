@@ -10,32 +10,40 @@ class BarbarianTestStage {
     private controls: OrbitControls;
     private clock: THREE.Clock;
 
+    // 3D Chibi
     private mixer: THREE.AnimationMixer | null = null;
     private actionsMap: Map<string, THREE.AnimationAction> = new Map();
     private currentAction: THREE.AnimationAction | null = null;
     private isPlaying: boolean = true;
 
-    // Golem billboard texture animation
-    private golemTexture: THREE.Texture | null = null;
-    private golemIdleTexture: THREE.Texture | null = null;
-    private golemWalkTexture: THREE.Texture | null = null;
+    // 2.5D Golem (8x8 Grid = 8 cols x 8 rows, 128x128 tiles on 1024x1024 sheet)
+    private golemMesh: THREE.Mesh | null = null;
+    private golemMaterial: THREE.MeshBasicMaterial | null = null;
+    private golemTextures: { idle?: THREE.Texture; walk?: THREE.Texture; run?: THREE.Texture } = {};
+    private currentGolemTexture: THREE.Texture | null = null;
     private golemFrameTimer: number = 0;
     private golemFrameIdx: number = 0;
-    private golemMesh: THREE.Mesh | null = null;
+    private golemNumFrames: number = 8;
+    private golemRow: number = 0; // Row 0: South (front-facing)
 
-    // LPC Paperdoll texture animation
+    // 2D LPC Paperdoll (13 cols x 21 rows, 64x64 tiles on 832x1344 standard sheet)
+    private lpcMesh: THREE.Mesh | null = null;
     private lpcTexture: THREE.Texture | null = null;
+    private lpcMaterial: THREE.MeshBasicMaterial | null = null;
     private lpcFrameTimer: number = 0;
     private lpcFrameIdx: number = 0;
+    private lpcRow: number = 10; // Row 10: South Walk
+    private lpcNumFrames: number = 9;
+    private lpcIsStaticFrame: boolean = false;
 
     constructor() {
         this.container = document.getElementById('canvas-container') || document.body;
         this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color(0x050814);
-        this.scene.fog = new THREE.FogExp2(0x050814, 0.035);
+        this.scene.background = new THREE.Color(0x060913);
+        this.scene.fog = new THREE.FogExp2(0x060913, 0.035);
 
         this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
-        this.camera.position.set(0, 2.8, 10.5);
+        this.camera.position.set(0, 2.6, 9.8);
 
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -67,31 +75,30 @@ class BarbarianTestStage {
     }
 
     private setupLights() {
-        const ambient = new THREE.AmbientLight(0xffffff, 1.2);
+        const ambient = new THREE.AmbientLight(0xffffff, 1.3);
         this.scene.add(ambient);
 
-        const keyLight = new THREE.DirectionalLight(0xfff5ea, 2.0);
-        keyLight.position.set(6, 10, 6);
+        const keyLight = new THREE.DirectionalLight(0xfff7ed, 2.2);
+        keyLight.position.set(5, 9, 6);
         keyLight.castShadow = true;
         keyLight.shadow.mapSize.width = 2048;
         keyLight.shadow.mapSize.height = 2048;
         keyLight.shadow.bias = -0.0001;
         this.scene.add(keyLight);
 
-        const rimBlue = new THREE.PointLight(0x38bdf8, 2.5, 20);
-        rimBlue.position.set(-6, 4, -3);
-        this.scene.add(rimBlue);
+        const fillCyan = new THREE.PointLight(0x38bdf8, 2.0, 25);
+        fillCyan.position.set(-6, 4, -2);
+        this.scene.add(fillCyan);
 
-        const rimRose = new THREE.PointLight(0xf43f5e, 2.5, 20);
-        rimRose.position.set(6, 4, -3);
-        this.scene.add(rimRose);
+        const rimAmber = new THREE.PointLight(0xf59e0b, 2.0, 25);
+        rimAmber.position.set(6, 4, -2);
+        this.scene.add(rimAmber);
     }
 
     private setupEnvironment() {
-        // Floor Plane
-        const floorGeo = new THREE.PlaneGeometry(30, 20);
+        const floorGeo = new THREE.PlaneGeometry(32, 22);
         const floorMat = new THREE.MeshStandardMaterial({
-            color: 0x0a0f1d,
+            color: 0x090d1a,
             roughness: 0.85,
             metalness: 0.2
         });
@@ -100,13 +107,12 @@ class BarbarianTestStage {
         floor.receiveShadow = true;
         this.scene.add(floor);
 
-        // Grid Helper
-        const grid = new THREE.GridHelper(30, 30, 0x334155, 0x1e293b);
+        const grid = new THREE.GridHelper(32, 32, 0x334155, 0x1e293b);
         grid.position.y = 0.001;
         this.scene.add(grid);
     }
 
-    private createPodium(x: number, colorHex: number, labelText: string, subText: string) {
+    private createPodium(x: number, colorHex: number) {
         const group = new THREE.Group();
         group.position.set(x, 0, 0);
 
@@ -133,10 +139,10 @@ class BarbarianTestStage {
     }
 
     private setupPodiums() {
-        this.createPodium(-4.5, 0x3b82f6, "[1. CONCEPT ART]", "2D Reference");
-        this.createPodium(-1.5, 0x10b981, "[2. LPC PAPERDOLL]", "64x64 Grid");
-        this.createPodium(1.5, 0xf59e0b, "[3. GOLEM 2.5D]", "Directional Sheet");
-        this.createPodium(4.5, 0xf43f5e, "[4. CHIBI 3D]", "Skeletal Biped");
+        this.createPodium(-4.5, 0x3b82f6);
+        this.createPodium(-1.5, 0x10b981);
+        this.createPodium(1.5, 0xf59e0b);
+        this.createPodium(4.5, 0xf43f5e);
     }
 
     // 1. Concept Art Billboard
@@ -152,57 +158,69 @@ class BarbarianTestStage {
         });
     }
 
-    // 2. LPC Paperdoll
+    // 2. LPC Paperdoll (832x1344: 13 cols x 21 rows, 64x64 tiles)
     private loadLpcPaperdoll() {
         const loader = new THREE.TextureLoader();
         loader.load('/textures/avatars/lpc/barbarian_lady_lpc.png', (tex) => {
+            tex.colorSpace = THREE.SRGBColorSpace;
             tex.magFilter = THREE.NearestFilter;
             tex.minFilter = THREE.NearestFilter;
-            tex.repeat.set(1 / 13, 1 / 21);
-            tex.offset.set(0, 1 - (11 / 21)); // South walk
+            tex.wrapS = THREE.ClampToEdgeWrapping;
+            tex.wrapT = THREE.ClampToEdgeWrapping;
+
+            // Exactly 1 tile out of 13 columns and 21 standard rows
+            const repeatX = 1 / 13;
+            const repeatY = 1 / 21;
+            tex.repeat.set(repeatX, repeatY);
+
+            // Row 10 is South Walk (0-indexed from top). UV offset.y = 1.0 - (row + 1) * repeatY
+            tex.offset.set(0, 1.0 - (11 * repeatY));
             this.lpcTexture = tex;
 
-            const geo = new THREE.PlaneGeometry(1.8, 2.2);
-            const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide });
-            const mesh = new THREE.Mesh(geo, mat);
-            mesh.position.set(-1.5, 1.45, 0);
-            this.scene.add(mesh);
+            const geo = new THREE.PlaneGeometry(1.5, 2.2);
+            this.lpcMaterial = new THREE.MeshBasicMaterial({ map: tex, transparent: true, side: THREE.DoubleSide });
+            this.lpcMesh = new THREE.Mesh(geo, this.lpcMaterial);
+            this.lpcMesh.position.set(-1.5, 1.35, 0);
+            this.scene.add(this.lpcMesh);
         });
     }
 
-    // 3. Golem 2.5D Billboard
+    // 3. Golem 2.5D (1024x1024: 8 cols x 8 rows, 128x128 tiles)
     private loadGolem() {
         const loader = new THREE.TextureLoader();
-        loader.load('/actions/barbarian_lady_golem_idle.png', (idleTex) => {
-            idleTex.magFilter = THREE.NearestFilter;
-            idleTex.minFilter = THREE.NearestFilter;
-            idleTex.repeat.set(0.25, 0.25);
-            idleTex.offset.set(0, 0.75);
-            this.golemIdleTexture = idleTex;
-            this.golemTexture = idleTex;
+        const setupGolemTex = (tex: THREE.Texture) => {
+            tex.colorSpace = THREE.SRGBColorSpace;
+            tex.magFilter = THREE.NearestFilter;
+            tex.minFilter = THREE.NearestFilter;
+            tex.wrapS = THREE.ClampToEdgeWrapping;
+            tex.wrapT = THREE.ClampToEdgeWrapping;
+            // Exactly 1 tile out of 8x8 matrix
+            tex.repeat.set(1 / 8, 1 / 8);
+            // Row 0 is South front-facing: offset.y = 1.0 - (0 + 1) * 0.125 = 0.875
+            tex.offset.set(0, 0.875);
+            return tex;
+        };
 
-            loader.load('/actions/barbarian_lady_golem_walk.png', (walkTex) => {
-                walkTex.magFilter = THREE.NearestFilter;
-                walkTex.minFilter = THREE.NearestFilter;
-                walkTex.repeat.set(0.25, 0.25);
-                walkTex.offset.set(0, 0.75);
-                this.golemWalkTexture = walkTex;
-            });
+        const idleTex = setupGolemTex(loader.load('/actions/barbarian_lady_golem_idle.png'));
+        const walkTex = setupGolemTex(loader.load('/actions/barbarian_lady_golem_walk.png'));
+        const runTex = setupGolemTex(loader.load('/actions/barbarian_lady_golem_run.png'));
 
-            const geo = new THREE.PlaneGeometry(2.0, 2.4);
-            const mat = new THREE.MeshBasicMaterial({ map: idleTex, transparent: true, side: THREE.DoubleSide });
-            this.golemMesh = new THREE.Mesh(geo, mat);
-            this.golemMesh.position.set(1.5, 1.45, 0);
-            this.scene.add(this.golemMesh);
-        });
+        this.golemTextures = { idle: idleTex, walk: walkTex, run: runTex };
+        this.currentGolemTexture = idleTex;
+
+        const geo = new THREE.PlaneGeometry(1.6, 2.2);
+        this.golemMaterial = new THREE.MeshBasicMaterial({ map: idleTex, transparent: true, side: THREE.DoubleSide });
+        this.golemMesh = new THREE.Mesh(geo, this.golemMaterial);
+        this.golemMesh.position.set(1.5, 1.35, 0);
+        this.scene.add(this.golemMesh);
     }
 
-    // 4. Chibi 3D Real-time Actor
+    // 4. Chibi 3D Real-time Actor (from canonical mannequin_chibi_master.glb)
     private loadChibi3D() {
         const loader = new GLTFLoader();
         loader.load('/models/characters/barbarian_lady_chibi.glb', (gltf) => {
             const model = gltf.scene;
-            model.position.set(4.5, 0.1, 0);
+            model.position.set(4.5, 0.12, 0);
             model.scale.set(1.2, 1.2, 1.2);
 
             model.traverse((child) => {
@@ -230,7 +248,7 @@ class BarbarianTestStage {
                 }
             });
 
-            // Start with Idle_Loop if present
+            // Start with Idle_Loop
             const defaultAnim = this.actionsMap.has('Idle_Loop') ? 'Idle_Loop' : gltf.animations[0]?.name;
             if (defaultAnim) {
                 this.switchAction(defaultAnim);
@@ -244,24 +262,71 @@ class BarbarianTestStage {
     }
 
     public switchAction(name: string) {
+        // 1. Switch 3D Chibi Animation
         const nextAction = this.actionsMap.get(name);
-        if (!nextAction || nextAction === this.currentAction) return;
-
-        if (this.currentAction) {
-            this.currentAction.fadeOut(0.25);
+        if (nextAction && nextAction !== this.currentAction) {
+            if (this.currentAction) {
+                this.currentAction.fadeOut(0.25);
+            }
+            nextAction.reset().fadeIn(0.25).play();
+            this.currentAction = nextAction;
         }
 
-        nextAction.reset().fadeIn(0.25).play();
-        this.currentAction = nextAction;
+        const lower = name.toLowerCase();
 
-        // Switch Golem texture to match movement vs idle
-        const isWalk = name.toLowerCase().includes('walk') || name.toLowerCase().includes('jog') || name.toLowerCase().includes('run');
-        if (this.golemMesh) {
-            const targetTex = isWalk ? this.golemWalkTexture : this.golemIdleTexture;
-            if (targetTex) {
-                this.golemTexture = targetTex;
-                (this.golemMesh.material as THREE.MeshBasicMaterial).map = targetTex;
-            }
+        // 2. Synchronize 2.5D Golem Sprite Sheet & Action
+        let golemTargetTex = this.golemTextures.idle;
+        if (lower.includes('run') || lower.includes('sprint') || lower.includes('jog')) {
+            golemTargetTex = this.golemTextures.run || this.golemTextures.walk || this.golemTextures.idle;
+        } else if (lower.includes('walk') || lower.includes('crouch_fwd')) {
+            golemTargetTex = this.golemTextures.walk || this.golemTextures.idle;
+        } else {
+            golemTargetTex = this.golemTextures.idle;
+        }
+
+        if (golemTargetTex && this.golemMesh && this.golemMaterial) {
+            this.currentGolemTexture = golemTargetTex;
+            this.golemMaterial.map = golemTargetTex;
+            this.golemMaterial.needsUpdate = true;
+            this.golemFrameIdx = 0;
+            this.golemFrameTimer = 0;
+            this.currentGolemTexture.offset.set(0, 0.875);
+        }
+
+        // 3. Synchronize 2D LPC Paperdoll Action Row
+        // Row 10: Walk South (9 frames)
+        // Row 14: Slash South (6 frames)
+        // Row 2: Spellcast South (7 frames)
+        // Row 20: Hurt/Death (6 frames)
+        if (lower.includes('attack') || lower.includes('slash') || lower.includes('sword')) {
+            this.lpcRow = 14;
+            this.lpcNumFrames = 6;
+            this.lpcIsStaticFrame = false;
+        } else if (lower.includes('spell') || lower.includes('cast')) {
+            this.lpcRow = 2;
+            this.lpcNumFrames = 7;
+            this.lpcIsStaticFrame = false;
+        } else if (lower.includes('death') || lower.includes('hit')) {
+            this.lpcRow = 20;
+            this.lpcNumFrames = 6;
+            this.lpcIsStaticFrame = false;
+        } else if (lower.includes('walk') || lower.includes('run') || lower.includes('jog')) {
+            this.lpcRow = 10;
+            this.lpcNumFrames = 9;
+            this.lpcIsStaticFrame = false;
+        } else {
+            // Idle stance: Row 10, stationary frame 0
+            this.lpcRow = 10;
+            this.lpcNumFrames = 1;
+            this.lpcIsStaticFrame = true;
+        }
+
+        if (this.lpcTexture) {
+            this.lpcFrameIdx = 0;
+            this.lpcFrameTimer = 0;
+            // Standard 21 rows
+            this.lpcTexture.offset.y = 1.0 - ((this.lpcRow + 1) / 21);
+            this.lpcTexture.offset.x = 0;
         }
 
         const badge = document.getElementById('current-anim-badge');
@@ -280,24 +345,24 @@ class BarbarianTestStage {
     public setFocus(target: 'all' | 'concept' | 'lpc' | 'golem' | 'chibi') {
         switch (target) {
             case 'all':
-                this.camera.position.set(0, 2.8, 10.5);
+                this.camera.position.set(0, 2.6, 9.8);
                 this.controls.target.set(0, 1.2, 0);
                 break;
             case 'concept':
-                this.camera.position.set(-4.5, 2.0, 4.5);
+                this.camera.position.set(-4.5, 1.9, 4.2);
                 this.controls.target.set(-4.5, 1.7, 0);
                 break;
             case 'lpc':
-                this.camera.position.set(-1.5, 1.8, 3.8);
-                this.controls.target.set(-1.5, 1.4, 0);
+                this.camera.position.set(-1.5, 1.6, 3.4);
+                this.controls.target.set(-1.5, 1.35, 0);
                 break;
             case 'golem':
-                this.camera.position.set(1.5, 1.8, 3.8);
-                this.controls.target.set(1.5, 1.4, 0);
+                this.camera.position.set(1.5, 1.6, 3.4);
+                this.controls.target.set(1.5, 1.35, 0);
                 break;
             case 'chibi':
-                this.camera.position.set(4.5, 1.8, 3.8);
-                this.controls.target.set(4.5, 1.3, 0);
+                this.camera.position.set(4.5, 1.6, 3.4);
+                this.controls.target.set(4.5, 1.25, 0);
                 break;
         }
     }
@@ -333,25 +398,28 @@ class BarbarianTestStage {
         const delta = this.clock.getDelta();
 
         if (this.isPlaying) {
+            // Update 3D Skeletal Animation
             if (this.mixer) this.mixer.update(delta);
 
-            // Animate LPC paperdoll frames (9 frames cycle)
-            if (this.lpcTexture) {
+            // Animate 2D LPC Paperdoll
+            if (this.lpcTexture && !this.lpcIsStaticFrame) {
                 this.lpcFrameTimer += delta;
                 if (this.lpcFrameTimer > 0.12) {
                     this.lpcFrameTimer = 0;
-                    this.lpcFrameIdx = (this.lpcFrameIdx + 1) % 9;
-                    this.lpcTexture.offset.x = this.lpcFrameIdx / 13;
+                    this.lpcFrameIdx = (this.lpcFrameIdx + 1) % this.lpcNumFrames;
+                    this.lpcTexture.offset.x = (this.lpcFrameIdx % 13) / 13;
                 }
             }
 
-            // Animate Golem billboard frames (4 frames cycle)
-            if (this.golemTexture) {
+            // Animate 2.5D Golem (8 frames across row 0)
+            if (this.currentGolemTexture) {
                 this.golemFrameTimer += delta;
-                if (this.golemFrameTimer > 0.14) {
+                if (this.golemFrameTimer > 0.12) {
                     this.golemFrameTimer = 0;
-                    this.golemFrameIdx = (this.golemFrameIdx + 1) % 4;
-                    this.golemTexture.offset.x = this.golemFrameIdx * 0.25;
+                    this.golemFrameIdx = (this.golemFrameIdx + 1) % this.golemNumFrames;
+                    // UV x offset is frame / 8
+                    this.currentGolemTexture.offset.x = (this.golemFrameIdx % 8) * 0.125;
+                    this.currentGolemTexture.offset.y = 1.0 - ((this.golemRow + 1) * 0.125); // 0.875
                 }
             }
         }
@@ -361,7 +429,6 @@ class BarbarianTestStage {
     }
 }
 
-// Initialize on page load
 window.addEventListener('DOMContentLoaded', () => {
     (window as any).__barbarianStage = new BarbarianTestStage();
 });
