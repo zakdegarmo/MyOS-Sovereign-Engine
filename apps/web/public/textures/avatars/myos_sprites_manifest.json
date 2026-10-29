@@ -50,123 +50,28 @@
         "damage": "/actions/larry_damage_loop.png"
       }
     },
-    "flesh_adventurer": {
-      "id": "flesh_adventurer",
-      "name": "Decivoxel Adventurer (Outfitted Flesh Golem)",
-      "category": "heroes",
-      "badge": "OUTFITTED FLESH",
-      "badgeColor": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
-      "description": "Canonical Decivoxel Flesh Mannequin wearing the full Adventurer ensemble (Mycenaean Tunic, Tactical Cargo Pants, and Hero Boots). 100% rigged and deformed across all 45 actions.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/flesh_adventurer_preview.png",
-      "actions": {
-        "tpose": "/actions/flesh_adventurer_tpose_loop.png",
-        "crouch_walk": "/actions/flesh_adventurer_crouch_walk_loop.png",
-        "crouch_idle": "/actions/flesh_adventurer_crouch_idle_loop.png",
-        "dance": "/actions/flesh_adventurer_dance_loop.png",
-        "death": "/actions/flesh_adventurer_death_loop.png",
-        "drive": "/actions/flesh_adventurer_drive_loop.png",
-        "repair": "/actions/flesh_adventurer_repair_loop.png",
-        "damage": "/actions/flesh_adventurer_damage_loop.png",
-        "hit_head": "/actions/flesh_adventurer_hit_head_loop.png",
-        "idle": "/actions/flesh_adventurer_idle_loop.png",
-        "talk": "/actions/flesh_adventurer_talk_loop.png",
-        "idle_torch": "/actions/flesh_adventurer_idle_torch_loop.png",
-        "interact": "/actions/flesh_adventurer_interact_loop.png",
-        "run": "/actions/flesh_adventurer_run_loop.png",
-        "jump_land": "/actions/flesh_adventurer_jump_land_loop.png",
-        "jump": "/actions/flesh_adventurer_jump_loop.png",
-        "jump_start": "/actions/flesh_adventurer_jump_start_loop.png",
-        "slash": "/actions/flesh_adventurer_slash_loop.png",
-        "melee_attack_rm": "/actions/flesh_adventurer_melee_attack_rm_loop.png",
-        "combat_idle": "/actions/flesh_adventurer_combat_idle_loop.png",
-        "pickup": "/actions/flesh_adventurer_pickup_loop.png",
-        "aim_down": "/actions/flesh_adventurer_aim_down_loop.png",
-        "aim_neutral": "/actions/flesh_adventurer_aim_neutral_loop.png",
-        "aim_up": "/actions/flesh_adventurer_aim_up_loop.png",
-        "gun_idle": "/actions/flesh_adventurer_gun_idle_loop.png",
-        "reload": "/actions/flesh_adventurer_reload_loop.png",
-        "shoot": "/actions/flesh_adventurer_shoot_loop.png",
-        "punch_cross": "/actions/flesh_adventurer_punch_cross_loop.png",
-        "punch_jab": "/actions/flesh_adventurer_punch_jab_loop.png",
-        "push": "/actions/flesh_adventurer_push_loop.png",
-        "roll": "/actions/flesh_adventurer_roll_loop.png",
-        "roll_rm": "/actions/flesh_adventurer_roll_rm_loop.png",
-        "sit_down": "/actions/flesh_adventurer_sit_down_loop.png",
-        "stand_up": "/actions/flesh_adventurer_stand_up_loop.png",
-        "sitting_idle": "/actions/flesh_adventurer_sitting_idle_loop.png",
-        "sitting_talk": "/actions/flesh_adventurer_sitting_talk_loop.png",
-        "spell_charge": "/actions/flesh_adventurer_spell_charge_loop.png",
-        "spell_release": "/actions/flesh_adventurer_spell_release_loop.png",
-        "spell_idle": "/actions/flesh_adventurer_spell_idle_loop.png",
-        "spellcast": "/actions/flesh_adventurer_spellcast_loop.png",
-        "sprint": "/actions/flesh_adventurer_sprint_loop.png",
-        "swim_fwd": "/actions/flesh_adventurer_swim_fwd_loop.png",
-        "swim_idle": "/actions/flesh_adventurer_swim_idle_loop.png",
-        "walk_formal": "/actions/flesh_adventurer_walk_formal_loop.png",
-        "walk": "/actions/flesh_adventurer_walk_loop.png"
-      },
-      "pillarAlignment": "self"
-    },
     "einstein": {
       "id": "einstein",
-      "name": "Albert Einstein (Companion)",
+      "name": "Albert Einstein (Chrono-Physicist)",
       "category": "heroes",
-      "badge": "COMPANION CO-PILOT",
-      "badgeColor": "bg-amber-500/20 text-amber-300 border-amber-500/40",
-      "description": "Albert Einstein as the primary local AI companion and thought experimenter in MyOS. Warm, passionately curious, and witty.",
+      "badge": "QUANTUM RELATIVITY",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Legendary theoretical physicist in tailored khaki overcoat, charcoal suit vest, and black bow tie with voluminous shock-white locks and sweeping walrus mustache, bending spacetime and relativity.",
       "tileSize": 256,
       "grid": {
         "cols": 8,
         "rows": 8
       },
-      "scale": 1.0,
+      "scale": 1.05,
       "defaultAction": "idle",
       "previewUrl": "/actions/einstein_preview.png",
       "actions": {
         "idle": "/actions/einstein_idle_loop.png",
         "walk": "/actions/einstein_walk_loop.png",
         "run": "/actions/einstein_run_loop.png",
-        "spellcast": "/actions/einstein_spellcast_loop.png",
-        "talk": "/actions/einstein_idle_loop.png",
-        "agreeing": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
-        "dismissing_gesture": "/actions/flesh_base_mannequin_combat_idle_loop.png",
-        "interact": "/actions/flesh_base_mannequin_interact_loop.png",
-        "combat_idle": "/actions/flesh_base_mannequin_combat_idle_loop.png",
-        "dance": "/actions/flesh_base_mannequin_dance_loop.png",
-        "repair": "/actions/flesh_base_mannequin_repair_loop.png"
+        "spellcast": "/actions/einstein_spellcast_loop.png"
       },
-      "pillarAlignment": "thought"
-    },
-    "bullywug_voxel": {
-      "id": "bullywug_voxel",
-      "name": "Bullywug Voxel Golem (FLESH Golem)",
-      "category": "heroes",
-      "badge": "FLESH GOLEM",
-      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
-      "description": "bullywug frog creature in hide armor",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/bullywug_voxel_preview.png",
-      "actions": {
-        "idle": "/actions/bullywug_voxel_idle_loop.png",
-        "walk": "/actions/bullywug_voxel_walk_loop.png",
-        "run": "/actions/bullywug_voxel_run_loop.png",
-        "spellcast": "/actions/bullywug_voxel_spellcast_loop.png",
-        "damage": "/actions/bullywug_voxel_damage_loop.png"
-      },
-      "pillarAlignment": "thought"
+      "pillarAlignment": "logic"
     },
     "colossus_titan": {
       "id": "colossus_titan",
@@ -377,92 +282,6 @@
       },
       "pillarAlignment": "self"
     },
-    "humanoid_mannequin": {
-      "id": "humanoid_mannequin",
-      "name": "Flesh Base Mannequin",
-      "category": "heroes",
-      "badge": "CANONICAL FLESH",
-      "badgeColor": "bg-rose-500/20 text-rose-300 border-rose-500/40",
-      "description": "Canonical flesh base mannequin armature from flesh_base_mannequin.blend calibrated for 8-directional kinematics, emotional gestures, and modular equipment.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/flesh_base_mannequin_preview.png",
-      "actions": {
-        "idle": "/actions/flesh_base_mannequin_idle_loop.png",
-        "walk": "/actions/flesh_base_mannequin_walk_loop.png",
-        "run": "/actions/flesh_base_mannequin_run_loop.png",
-        "sprint": "/actions/flesh_base_mannequin_sprint_loop.png",
-        "walk_formal": "/actions/flesh_base_mannequin_walk_formal_loop.png",
-        "crouch_walk": "/actions/flesh_base_mannequin_crouch_walk_loop.png",
-        "crouch_idle": "/actions/flesh_base_mannequin_crouch_idle_loop.png",
-        "slash": "/actions/flesh_base_mannequin_slash_loop.png",
-        "melee_attack_rm": "/actions/flesh_base_mannequin_melee_attack_rm_loop.png",
-        "combat_idle": "/actions/flesh_base_mannequin_combat_idle_loop.png",
-        "punch_cross": "/actions/flesh_base_mannequin_punch_cross_loop.png",
-        "punch_jab": "/actions/flesh_base_mannequin_punch_jab_loop.png",
-        "shoot": "/actions/flesh_base_mannequin_shoot_loop.png",
-        "gun_idle": "/actions/flesh_base_mannequin_gun_idle_loop.png",
-        "aim_neutral": "/actions/flesh_base_mannequin_aim_neutral_loop.png",
-        "aim_down": "/actions/flesh_base_mannequin_aim_down_loop.png",
-        "aim_up": "/actions/flesh_base_mannequin_aim_up_loop.png",
-        "reload": "/actions/flesh_base_mannequin_reload_loop.png",
-        "spellcast": "/actions/flesh_base_mannequin_spellcast_loop.png",
-        "spell_idle": "/actions/flesh_base_mannequin_spell_idle_loop.png",
-        "spell_charge": "/actions/flesh_base_mannequin_spell_charge_loop.png",
-        "spell_release": "/actions/flesh_base_mannequin_spell_release_loop.png",
-        "damage": "/actions/flesh_base_mannequin_damage_loop.png",
-        "hit_head": "/actions/flesh_base_mannequin_hit_head_loop.png",
-        "death": "/actions/flesh_base_mannequin_death_loop.png",
-        "jump": "/actions/flesh_base_mannequin_jump_loop.png",
-        "jump_start": "/actions/flesh_base_mannequin_jump_start_loop.png",
-        "jump_land": "/actions/flesh_base_mannequin_jump_land_loop.png",
-        "roll": "/actions/flesh_base_mannequin_roll_loop.png",
-        "roll_rm": "/actions/flesh_base_mannequin_roll_rm_loop.png",
-        "talk": "/actions/flesh_base_mannequin_talk_loop.png",
-        "interact": "/actions/flesh_base_mannequin_interact_loop.png",
-        "acknowledging": "/actions/flesh_base_mannequin_interact_loop.png",
-        "agreeing": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
-        "dismissing_gesture": "/actions/flesh_base_mannequin_combat_idle_loop.png",
-        "sitting_talk": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
-        "sitting_idle": "/actions/flesh_base_mannequin_sitting_idle_loop.png",
-        "sit_down": "/actions/flesh_base_mannequin_sit_down_loop.png",
-        "stand_up": "/actions/flesh_base_mannequin_stand_up_loop.png",
-        "dance": "/actions/flesh_base_mannequin_dance_loop.png",
-        "idle_torch": "/actions/flesh_base_mannequin_idle_torch_loop.png",
-        "pickup": "/actions/flesh_base_mannequin_pickup_loop.png",
-        "push": "/actions/flesh_base_mannequin_push_loop.png",
-        "repair": "/actions/flesh_base_mannequin_repair_loop.png",
-        "swim_fwd": "/actions/flesh_base_mannequin_swim_fwd_loop.png",
-        "swim_idle": "/actions/flesh_base_mannequin_swim_idle_loop.png",
-        "drive": "/actions/flesh_base_mannequin_drive_loop.png",
-        "tpose": "/actions/flesh_base_mannequin_tpose_loop.png"
-      },
-      "pillarAlignment": "self"
-    },
-    "warlock": {
-      "id": "warlock",
-      "name": "Void Warlock",
-      "category": "heroes",
-      "badge": "ELDRITCH OCCULT",
-      "badgeColor": "bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/40",
-      "description": "Robed occult spellweaver channeling deep void resonance and arcane runes.",
-      "tileSize": 128,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "actions": {
-        "idle": "/actions/warlock_idle_8x8.png"
-      },
-      "pillarAlignment": "transcendence"
-    },
     "moonlit_mage": {
       "id": "moonlit_mage",
       "name": "Moonlit Mage",
@@ -560,25 +379,6 @@
       },
       "pillarAlignment": "self"
     },
-    "flesh_clothing_layer": {
-      "id": "flesh_clothing_layer",
-      "name": "Forest Traveler Outfit (Layer)",
-      "category": "heroes",
-      "badge": "CONFORMAL 8-WAY LAYER",
-      "badgeColor": "bg-gradient-to-r from-teal-500/30 to-cyan-500/30 text-teal-300 border-teal-500/50",
-      "description": "Isolated transparent conformal clothing layer (Pillar 2 Forest Tunic, Slate Breeches, Leather Boots & Belt) for dynamic 2D runtime stacking in Sprite Lab.",
-      "tileSize": 128,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "walk",
-      "actions": {
-        "walk": "/actions/clothing_layer_forest_traveler_walk.png"
-      },
-      "pillarAlignment": "thought"
-    },
     "shadow_rogue": {
       "id": "shadow_rogue",
       "name": "Shadow Rogue",
@@ -604,104 +404,6 @@
       },
       "pillarAlignment": "logic"
     },
-    "test_dwarf_paladin": {
-      "id": "test_dwarf_paladin",
-      "name": "Thorgar Ironbreaker",
-      "category": "heroes",
-      "badge": "CUSTOM HERO",
-      "badgeColor": "bg-gradient-to-r from-purple-500/30 to-indigo-500/30 text-purple-300 border-purple-500/50",
-      "description": "Custom synthesized 2.5D miniature-painted character.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/test_dwarf_paladin_preview.png",
-      "actions": {
-        "idle": "/actions/test_dwarf_paladin_idle_loop.png"
-      },
-      "pillarAlignment": "unity"
-    },
-    "moose_bot": {
-      "id": "moose_bot",
-      "name": "Moose-Bot",
-      "category": "heroes",
-      "badge": "RETRO CYBORG DANCER",
-      "badgeColor": "bg-gradient-to-r from-pink-500/30 to-cyan-500/30 text-cyan-300 border-cyan-500/50",
-      "description": "Shades-wearing bipedal moose cyborg throwing down 360-degree orbital dance moves in a 2.5D cel-shaded nightclub.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "dance",
-      "previewUrl": "/actions/moose_dance/moose_cel_f000.png",
-      "actions": {
-        "dance": "/actions/moose_dance/moosebot_dance_contact_sheet.png",
-        "idle": "/actions/moose_dance/moosebot_dance_contact_sheet.png"
-      },
-      "pillarAlignment": "resonance"
-    },
-    "stoner_squirrel": {
-      "id": "stoner_squirrel",
-      "name": "Stoner Squirrel",
-      "category": "characters",
-      "badge": "GENX SYNTHESIS",
-      "badgeColor": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
-      "description": "Chill red squirrel in a green hoodie holding sacred leaves, synthesized via GenX SD v1.5 into a 3D rigged tabletop miniature and filmed via Sprite-Inator.",
-      "tileSize": 128,
-      "grid": {
-        "cols": 8,
-        "rows": 4
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "actions": {
-        "idle": "/actions/stoner_squirrel_idle.png"
-      },
-      "pillarAlignment": "freedom"
-    },
-    "doob_bee": {
-      "id": "doob_bee",
-      "name": "Doob-bee",
-      "category": "characters",
-      "badge": "MUTATED HYBRID",
-      "badgeColor": "bg-amber-500/20 text-amber-300 border-amber-500/40",
-      "description": "Anthropomorphic honey bee fusing C's 2 golden wings and violet anime face, A's upright body & boots, and B's bold bumblebee stripes, smoking a lit joint while hovering.",
-      "tileSize": 128,
-      "grid": {
-        "cols": 8,
-        "rows": 4
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "actions": {
-        "idle": "/actions/doob_bee_idle.png"
-      },
-      "pillarAlignment": "creation"
-    },
-    "doob_bee_juiced": {
-      "id": "doob_bee_juiced",
-      "name": "Doob-bee (Juiced)",
-      "category": "characters",
-      "badge": "DISNEY JUICE RIG",
-      "badgeColor": "bg-rose-500/20 text-rose-300 border-rose-500/40",
-      "description": "Juiced-up Doob-bee featuring dynamic joint combustion flare, springy antenna whip physics, sleepy eye blink, expanding smoke ring exhale, and rapid buzzing wings.",
-      "tileSize": 128,
-      "grid": {
-        "cols": 8,
-        "rows": 4
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "actions": {
-        "idle": "/actions/doob_bee_juiced_idle.png"
-      },
-      "pillarAlignment": "creation"
-    },
     "frankie_gallagher": {
       "id": "frankie_gallagher",
       "name": "Frankie 'Nuts' Gallagher",
@@ -722,26 +424,6 @@
         "visemes": "/actions/frankie_8way_visemes.png"
       },
       "pillarAlignment": "resonance"
-    },
-    "lpc_mannequin": {
-      "id": "lpc_mannequin",
-      "name": "LPC Modern Mannequin",
-      "category": "characters",
-      "badge": "8-WAY LPC EVOLUTION",
-      "badgeColor": "bg-gradient-to-r from-amber-500/30 to-orange-500/30 text-amber-300 border-amber-500/50",
-      "description": "Modernized Liberated Pixel Cup 3D humanoid mannequin featuring organic decivoxel flesh, authentic 3-tier cel shading, and full 8-directional omni-movement.",
-      "tileSize": 128,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "actions": {
-        "idle": "/actions/lpc_mannequin_8way_idle.png",
-        "walk": "/actions/lpc_mannequin_8way_walk.png"
-      },
-      "pillarAlignment": "creation"
     },
     "elven_shadow_rogue": {
       "id": "elven_shadow_rogue",
@@ -812,69 +494,6 @@
       },
       "pillarAlignment": "will"
     },
-    "einstein": {
-      "id": "einstein",
-      "name": "Albert Einstein (Chrono-Physicist)",
-      "category": "heroes",
-      "badge": "QUANTUM RELATIVITY",
-      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
-      "description": "Legendary theoretical physicist in tailored khaki overcoat, charcoal suit vest, and black bow tie with voluminous shock-white locks and sweeping walrus mustache, bending spacetime and relativity.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.05,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/einstein_preview.png",
-      "actions": {
-        "idle": "/actions/einstein_idle_loop.png",
-        "walk": "/actions/einstein_walk_loop.png",
-        "run": "/actions/einstein_run_loop.png",
-        "spellcast": "/actions/einstein_spellcast_loop.png"
-      },
-      "pillarAlignment": "logic"
-    },
-    "monodrone_5e": {
-      "id": "monodrone_5e",
-      "name": "Monodrone 5e",
-      "category": "heroes",
-      "badge": "CUSTOM HERO",
-      "badgeColor": "bg-gradient-to-r from-purple-500/30 to-indigo-500/30 text-purple-300 border-purple-500/50",
-      "description": "Custom synthesized 2.5D miniature-painted character.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/monodrone_5e_preview.png",
-      "actions": {
-        "idle": "/actions/monodrone_5e_idle_loop.png"
-      },
-      "pillarAlignment": "unity"
-    },
-    "duodrone_5e": {
-      "id": "duodrone_5e",
-      "name": "Duodrone 5e",
-      "category": "heroes",
-      "badge": "CUSTOM HERO",
-      "badgeColor": "bg-gradient-to-r from-purple-500/30 to-indigo-500/30 text-purple-300 border-purple-500/50",
-      "description": "Custom synthesized 2.5D miniature-painted character.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/duodrone_5e_preview.png",
-      "actions": {
-        "idle": "/actions/duodrone_5e_idle_loop.png"
-      },
-      "pillarAlignment": "unity"
-    },
     "test_golem": {
       "id": "test_golem",
       "name": "Test Golem (FLESH Golem)",
@@ -921,29 +540,6 @@
       },
       "pillarAlignment": "thought"
     },
-    "curl_test": {
-      "id": "curl_test",
-      "name": "Curl Test (FLESH Golem)",
-      "category": "heroes",
-      "badge": "FLESH GOLEM",
-      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
-      "description": "test knight",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/curl_test_preview.png",
-      "actions": {
-        "idle": "/actions/curl_test_idle_loop.png",
-        "walk": "/actions/curl_test_walk_loop.png",
-        "run": "/actions/curl_test_walk_loop.png",
-        "spellcast": "/actions/curl_test_idle_loop.png"
-      },
-      "pillarAlignment": "thought"
-    },
     "verification_hero": {
       "id": "verification_hero",
       "name": "Verification Hero (FLESH Golem)",
@@ -987,52 +583,6 @@
         "walk": "/actions/bullywug_5e_walk_loop.png",
         "run": "/actions/bullywug_5e_run_loop.png",
         "spellcast": "/actions/bullywug_5e_spellcast_loop.png"
-      },
-      "pillarAlignment": "thought"
-    },
-    "barbed_devil": {
-      "id": "barbed_devil",
-      "name": "Barbed Devil (FLESH Golem)",
-      "category": "heroes",
-      "badge": "FLESH GOLEM",
-      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
-      "description": "Barbed Devil: Barbed Devil (Hamatula)\nCreatures of unbridled greed and desire, barbed devils act as guards to the more powerful denizens of the Nine Hells and their vaults. Resembling a tall humanoid covered in sharp barbs, spines, and hooks, a barbed devil has gleaming eyes that are ever watchful for objects and creatures it might claim for itself. These fiends welcome any chance to fight when victory promises reward.\n\nBarbed devils are known for an alertness that makes them difficult to surprise, and they attend to their duties without boredom or distraction. They use their sharp claws as weapons or hurl balls of flame at foes that try to flee them.",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/barbed_devil_preview.png",
-      "actions": {
-        "idle": "/actions/barbed_devil_idle_loop.png",
-        "walk": "/actions/barbed_devil_walk_loop.png",
-        "run": "/actions/barbed_devil_walk_loop.png",
-        "spellcast": "/actions/barbed_devil_idle_loop.png"
-      },
-      "pillarAlignment": "thought"
-    },
-    "microvoxel_golem": {
-      "id": "microvoxel_golem",
-      "name": "Obsidian Wyrmkin (FLESH Golem)",
-      "category": "heroes",
-      "badge": "FLESH GOLEM",
-      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
-      "description": "obsidian dragon wyrmkin microvoxel flesh golem with glowing ruby scale voxels and fiery core",
-      "tileSize": 256,
-      "grid": {
-        "cols": 8,
-        "rows": 8
-      },
-      "scale": 1.0,
-      "defaultAction": "idle",
-      "previewUrl": "/actions/microvoxel_golem_preview.png",
-      "actions": {
-        "idle": "/actions/microvoxel_golem_idle_loop.png",
-        "walk": "/actions/microvoxel_golem_walk_loop.png",
-        "run": "/actions/microvoxel_golem_run_loop.png",
-        "spellcast": "/actions/microvoxel_golem_spellcast_loop.png"
       },
       "pillarAlignment": "thought"
     }
