@@ -64,7 +64,6 @@ import { DiegeticHeroStudio } from '../HUDModules/DiegeticHeroStudio';
 import { PixelArtInatorHud } from '../HUDModules/PixelArtInatorHud';
 import { MicrovoxelCombatLab } from '../HUDModules/MicrovoxelCombatLab';
 import { SpriteLaboratory } from './SpriteLaboratory';
-import { BarbarianBenchmarkSandbox } from './BarbarianBenchmarkSandbox';
 import { SoundstageStudioModal } from '../Soundstage/SoundstageStudioModal';
 import { CinemaRemoteControl } from '../Soundstage/CinemaRemoteControl';
 import { SoundstageDirectorRemote } from '../Soundstage/SoundstageDirectorRemote';
@@ -1543,7 +1542,6 @@ export const MaxOverlay: React.FC<MaxOverlayProps> = ({
                 {(activeModuleId === 'microvoxel-combat' || activeModuleId === 'dragon-lab') && <MicrovoxelCombatLab onClose={() => setActiveModuleId(null)} />}
                 {(activeModuleId === 'heroforge-studio' || activeModuleId === 'dnd-studio' || activeModuleId === 'cyclotrope-hero') && <DiegeticHeroStudio onClose={() => setActiveModuleId(null)} />}
                 {(activeModuleId === 'sprite-lab' || activeModuleId === 'sprite-laboratory') && <SpriteLaboratory onClose={() => setActiveModuleId(null)} />}
-                {(activeModuleId === 'barbarian-benchmark' || activeModuleId === 'barbarian-arena') && <BarbarianBenchmarkSandbox onClose={() => setActiveModuleId(null)} />}
                 {activeModuleId === 'soundstage-studio' && (
                     <SoundstageStudioModal 
                         onClose={() => setActiveModuleId(null)} 

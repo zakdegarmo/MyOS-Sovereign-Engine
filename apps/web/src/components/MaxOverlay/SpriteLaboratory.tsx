@@ -8,7 +8,6 @@ import {
 } from 'lucide-react';
 import { useAvatarCompositor } from '../../hooks/useAvatarCompositor';
 import { MyOsSpriteExplorer, type MyOsSpriteEntry } from './MyOsSpriteExplorer';
-import { BarbarianBenchmarkSandbox } from './BarbarianBenchmarkSandbox';
 import { useCouncil } from '../../council/CouncilContext';
 import { type AgentId } from '../../council/agentRegistry';
 
@@ -49,7 +48,6 @@ export const SpriteLaboratory: React.FC<{
 }> = ({ onClose, isNested, targetAgentId = 'user' }) => {
     const { updateAgentGenome, spawnNPC } = useCouncil();
     const [appliedStatus, setAppliedStatus] = useState<string | null>(null);
-    const [showBenchmark, setShowBenchmark] = useState(false);
     const [celShading, setCelShading] = useState<boolean>(true);
 
     const [customSprites, setCustomSprites] = useState<MyOsSpriteEntry[]>(() => {
@@ -729,15 +727,7 @@ export const SpriteLaboratory: React.FC<{
                     </div>
 
                     <div className="flex items-center gap-3">
-                        {/* Barbarian Benchmark Arena Launch Button */}
-                        <button
-                            onClick={() => setShowBenchmark(true)}
-                            className="px-3 py-1.5 rounded-xl border flex items-center gap-1.5 text-[9px] font-extrabold uppercase tracking-wider transition cursor-pointer bg-gradient-to-r from-rose-600/30 to-amber-600/30 border-rose-500/50 text-rose-300 hover:from-rose-600/50 hover:to-amber-600/50 shadow-[0_0_15px_rgba(244,63,94,0.3)]"
-                        >
-                            <span>⚔️ Barbarian Arena</span>
-                        </button>
-
-                        {/* Cel-Shading Filter Toggle */}
+                                                {/* Cel-Shading Filter Toggle */}
                         <button
                             onClick={() => setCelShading(prev => !prev)}
                             className={`px-2.5 py-1.5 rounded-xl border flex items-center gap-1.5 text-[9px] font-bold uppercase tracking-wider transition cursor-pointer ${
