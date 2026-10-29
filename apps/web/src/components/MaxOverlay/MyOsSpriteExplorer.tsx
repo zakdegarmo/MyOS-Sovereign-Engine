@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Sparkles, Shield, Skull, Wand2, Box, Eye, Layers, ChevronRight } from 'lucide-react';
+import { Search, Sparkles, Shield, Skull, Wand2, Box, Eye, Layers, ChevronRight, Trash2, RotateCcw } from 'lucide-react';
 
 export interface MyOsSpriteAction {
     [actionKey: string]: string;
@@ -40,6 +40,15 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
     const [searchQuery, setSearchQuery] = useState('');
     const [activeCategory, setActiveCategory] = useState<'all' | 'golems' | 'chibis' | 'lpc' | 'monsters'>('all');
     const [isLoading, setIsLoading] = useState(true);
+    const [trashedIds, setTrashedIds] = useState<string[]>(() => {
+        try {
+            const saved = localStorage.getItem('myos_trashed_sprites');
+            return saved ? JSON.parse(saved) : [];
+        } catch {
+            return [];
+        }
+    });
+    const [showTrashed, setShowTrashed] = useState(false);
 
     useEffect(() => {
         fetch('/textures/avatars/myos_sprites_manifest.json')
@@ -91,16 +100,37 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
 
     const spriteList = useMemo(() => {
         const base = Object.values(manifest);
-        if (!customSprites || customSprites.length === 0) return base;
-        const customMap = new Map(customSprites.map(s => [s.id, s]));
-        const combined = base.map(s => customMap.has(s.id) ? customMap.get(s.id)! : s);
-        for (const cs of customSprites) {
-            if (!combined.some(s => s.id === cs.id)) {
-                combined.unshift(cs);
+        let combined = [...base];
+        if (customSprites && customSprites.length > 0) {
+            const customMap = new Map(customSprites.map(s => [s.id, s]));
+            combined = combined.map(s => customMap.has(s.id) ? customMap.get(s.id)! : s);
+            for (const cs of customSprites) {
+                if (!combined.some(s => s.id === cs.id)) {
+                    combined.unshift(cs);
+                }
             }
         }
-        return combined;
-    }, [manifest, customSprites]);
+        if (showTrashed) {
+            return combined.filter(s => trashedIds.includes(s.id));
+        }
+        return combined.filter(s => !trashedIds.includes(s.id));
+    }, [manifest, customSprites, trashedIds, showTrashed]);
+
+    const handleTrash = (e: React.MouseEvent, spriteId: string, spriteName: string) => {
+        e.stopPropagation();
+        if (confirm(`Move "${spriteName}" to trash? You can view or restore it anytime.`)) {
+            const nextTrashed = [...trashedIds, spriteId];
+            setTrashedIds(nextTrashed);
+            localStorage.setItem('myos_trashed_sprites', JSON.stringify(nextTrashed));
+        }
+    };
+
+    const handleRestore = (e: React.MouseEvent, spriteId: string) => {
+        e.stopPropagation();
+        const nextTrashed = trashedIds.filter(id => id !== spriteId);
+        setTrashedIds(nextTrashed);
+        localStorage.setItem('myos_trashed_sprites', JSON.stringify(nextTrashed));
+    };
 
     const filteredSprites = useMemo(() => {
         return spriteList.filter(sprite => {
@@ -254,9 +284,30 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
                                                 <Shield size={13} className="text-emerald-400 shrink-0" />
                                             )}
                                         </div>
-                                        <span className={`text-[8px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md border ${sprite.badgeColor}`}>
-                                            {sprite.badge}
-                                        </span>
+                                        <div className="flex items-center gap-1.5">
+                                            <span className={`text-[8px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md border ${sprite.badgeColor}`}>
+                                                {sprite.badge}
+                                            </span>
+                                            {showTrashed ? (
+                                                <button
+                                                    type="button"
+                                                    onClick={(e) => handleRestore(e, sprite.id)}
+                                                    title="Restore this sprite"
+                                                    className="p-1 rounded-md bg-emerald-500/20 hover:bg-emerald-500/40 text-emerald-300 border border-emerald-500/40 transition-colors cursor-pointer"
+                                                >
+                                                    <RotateCcw size={11} />
+                                                </button>
+                                            ) : (
+                                                <button
+                                                    type="button"
+                                                    onClick={(e) => handleTrash(e, sprite.id, sprite.name)}
+                                                    title="Trash this sprite attempt"
+                                                    className="p-1 rounded-md opacity-25 hover:opacity-100 hover:bg-red-500/30 text-red-400 border border-transparent hover:border-red-500/40 transition-all cursor-pointer"
+                                                >
+                                                    <Trash2 size={11} />
+                                                </button>
+                                            )}
+                                        </div>
                                     </div>
 
                                     <p className="text-[9px] text-slate-400 leading-relaxed font-sans line-clamp-2">
@@ -278,6 +329,38 @@ export const MyOsSpriteExplorer: React.FC<MyOsSpriteExplorerProps> = ({
 
                 )}
             </div>
+
+            {/* Trashed Sprites Bottom Bar */}
+            {trashedIds.length > 0 && (
+                <div className="p-2 border-t border-white/10 bg-black/60 flex items-center justify-between">
+                    <button
+                        type="button"
+                        onClick={() => setShowTrashed(!showTrashed)}
+                        className={`text-[9px] font-mono flex items-center gap-1.5 px-2 py-1 rounded-lg border transition-all cursor-pointer ${
+                            showTrashed
+                                ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-sm shadow-amber-500/10'
+                                : 'text-slate-400 hover:text-white border-white/10 hover:bg-white/5'
+                        }`}
+                    >
+                        <Trash2 size={10} className={showTrashed ? 'text-amber-400' : 'text-slate-400'} />
+                        <span>{showTrashed ? '← Back to Active Roster' : `Trashed Sprites (${trashedIds.length})`}</span>
+                    </button>
+                    {showTrashed && (
+                        <button
+                            type="button"
+                            onClick={() => {
+                                if (confirm("Restore all trashed sprites back to the active roster?")) {
+                                    setTrashedIds([]);
+                                    localStorage.setItem('myos_trashed_sprites', JSON.stringify([]));
+                                }
+                            }}
+                            className="text-[8px] font-mono text-emerald-400 hover:text-emerald-300 hover:underline cursor-pointer"
+                        >
+                            Restore All
+                        </button>
+                    )}
+                </div>
+            )}
         </div>
     );
 };

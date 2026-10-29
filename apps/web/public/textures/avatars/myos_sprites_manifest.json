@@ -1,0 +1,1040 @@
+{
+  "version": "2.0.0",
+  "engine": "MyOS-Sovereign-8Way",
+  "sprites": {
+    "uniracer": {
+      "id": "uniracer",
+      "name": "Red the Outlaw (Uniracer Hero)",
+      "category": "heroes",
+      "pillarAlignment": "mastery",
+      "badge": "SOVEREIGN UNIRACER",
+      "badgeColor": "bg-red-500/20 text-red-300 border-red-500/40",
+      "description": "Authentic Uniracers 3D competition unicycle model with rigged wheel, crank, pedals, frame, and banana saddle. WASDQERF stunt control scheme with aerial flips and twists.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "drive",
+      "previewUrl": "/assets/sprites/uniracer/uniracer_red_preview.png",
+      "archetype": "uniracer",
+      "modelType": "uniracer",
+      "modelUrl": "/models/uniracer_hero.glb",
+      "actions": {
+        "idle": "/assets/sprites/uniracer/uniracer_red_preview.png",
+        "drive": "/assets/sprites/uniracer/uniracer_red_preview.png"
+      }
+    },
+    "larry_it_technician": {
+      "id": "larry_it_technician",
+      "name": "Larry (Frontline IT Desktop Support)",
+      "category": "heroes",
+      "pillarAlignment": "logic",
+      "badge": "IT FLESH GOLEM",
+      "badgeColor": "bg-cyan-500/20 text-cyan-300 border-cyan-500/40",
+      "description": "Frontline Desktop Support Flesh Golem dressed in a crisp white collared button-up dress shirt, equippable red power tie, tailored powder-blue slacks, and dark oxford dress shoes. Rendered in bespoke hand-drawn Mephit cel shading and ink outlines.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/larry_idle_loop.png",
+      "actions": {
+        "idle": "/actions/larry_idle_loop.png",
+        "walk": "/actions/larry_walk_loop.png",
+        "sprint": "/actions/larry_sprint_loop.png",
+        "repair": "/actions/larry_repair_loop.png",
+        "damage": "/actions/larry_damage_loop.png"
+      }
+    },
+    "flesh_adventurer": {
+      "id": "flesh_adventurer",
+      "name": "Decivoxel Adventurer (Outfitted Flesh Golem)",
+      "category": "heroes",
+      "badge": "OUTFITTED FLESH",
+      "badgeColor": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
+      "description": "Canonical Decivoxel Flesh Mannequin wearing the full Adventurer ensemble (Mycenaean Tunic, Tactical Cargo Pants, and Hero Boots). 100% rigged and deformed across all 45 actions.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/flesh_adventurer_preview.png",
+      "actions": {
+        "tpose": "/actions/flesh_adventurer_tpose_loop.png",
+        "crouch_walk": "/actions/flesh_adventurer_crouch_walk_loop.png",
+        "crouch_idle": "/actions/flesh_adventurer_crouch_idle_loop.png",
+        "dance": "/actions/flesh_adventurer_dance_loop.png",
+        "death": "/actions/flesh_adventurer_death_loop.png",
+        "drive": "/actions/flesh_adventurer_drive_loop.png",
+        "repair": "/actions/flesh_adventurer_repair_loop.png",
+        "damage": "/actions/flesh_adventurer_damage_loop.png",
+        "hit_head": "/actions/flesh_adventurer_hit_head_loop.png",
+        "idle": "/actions/flesh_adventurer_idle_loop.png",
+        "talk": "/actions/flesh_adventurer_talk_loop.png",
+        "idle_torch": "/actions/flesh_adventurer_idle_torch_loop.png",
+        "interact": "/actions/flesh_adventurer_interact_loop.png",
+        "run": "/actions/flesh_adventurer_run_loop.png",
+        "jump_land": "/actions/flesh_adventurer_jump_land_loop.png",
+        "jump": "/actions/flesh_adventurer_jump_loop.png",
+        "jump_start": "/actions/flesh_adventurer_jump_start_loop.png",
+        "slash": "/actions/flesh_adventurer_slash_loop.png",
+        "melee_attack_rm": "/actions/flesh_adventurer_melee_attack_rm_loop.png",
+        "combat_idle": "/actions/flesh_adventurer_combat_idle_loop.png",
+        "pickup": "/actions/flesh_adventurer_pickup_loop.png",
+        "aim_down": "/actions/flesh_adventurer_aim_down_loop.png",
+        "aim_neutral": "/actions/flesh_adventurer_aim_neutral_loop.png",
+        "aim_up": "/actions/flesh_adventurer_aim_up_loop.png",
+        "gun_idle": "/actions/flesh_adventurer_gun_idle_loop.png",
+        "reload": "/actions/flesh_adventurer_reload_loop.png",
+        "shoot": "/actions/flesh_adventurer_shoot_loop.png",
+        "punch_cross": "/actions/flesh_adventurer_punch_cross_loop.png",
+        "punch_jab": "/actions/flesh_adventurer_punch_jab_loop.png",
+        "push": "/actions/flesh_adventurer_push_loop.png",
+        "roll": "/actions/flesh_adventurer_roll_loop.png",
+        "roll_rm": "/actions/flesh_adventurer_roll_rm_loop.png",
+        "sit_down": "/actions/flesh_adventurer_sit_down_loop.png",
+        "stand_up": "/actions/flesh_adventurer_stand_up_loop.png",
+        "sitting_idle": "/actions/flesh_adventurer_sitting_idle_loop.png",
+        "sitting_talk": "/actions/flesh_adventurer_sitting_talk_loop.png",
+        "spell_charge": "/actions/flesh_adventurer_spell_charge_loop.png",
+        "spell_release": "/actions/flesh_adventurer_spell_release_loop.png",
+        "spell_idle": "/actions/flesh_adventurer_spell_idle_loop.png",
+        "spellcast": "/actions/flesh_adventurer_spellcast_loop.png",
+        "sprint": "/actions/flesh_adventurer_sprint_loop.png",
+        "swim_fwd": "/actions/flesh_adventurer_swim_fwd_loop.png",
+        "swim_idle": "/actions/flesh_adventurer_swim_idle_loop.png",
+        "walk_formal": "/actions/flesh_adventurer_walk_formal_loop.png",
+        "walk": "/actions/flesh_adventurer_walk_loop.png"
+      },
+      "pillarAlignment": "self"
+    },
+    "einstein": {
+      "id": "einstein",
+      "name": "Albert Einstein (Companion)",
+      "category": "heroes",
+      "badge": "COMPANION CO-PILOT",
+      "badgeColor": "bg-amber-500/20 text-amber-300 border-amber-500/40",
+      "description": "Albert Einstein as the primary local AI companion and thought experimenter in MyOS. Warm, passionately curious, and witty.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/einstein_preview.png",
+      "actions": {
+        "idle": "/actions/einstein_idle_loop.png",
+        "walk": "/actions/einstein_walk_loop.png",
+        "run": "/actions/einstein_run_loop.png",
+        "spellcast": "/actions/einstein_spellcast_loop.png",
+        "talk": "/actions/einstein_idle_loop.png",
+        "agreeing": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
+        "dismissing_gesture": "/actions/flesh_base_mannequin_combat_idle_loop.png",
+        "interact": "/actions/flesh_base_mannequin_interact_loop.png",
+        "combat_idle": "/actions/flesh_base_mannequin_combat_idle_loop.png",
+        "dance": "/actions/flesh_base_mannequin_dance_loop.png",
+        "repair": "/actions/flesh_base_mannequin_repair_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "bullywug_voxel": {
+      "id": "bullywug_voxel",
+      "name": "Bullywug Voxel Golem (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "bullywug frog creature in hide armor",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/bullywug_voxel_preview.png",
+      "actions": {
+        "idle": "/actions/bullywug_voxel_idle_loop.png",
+        "walk": "/actions/bullywug_voxel_walk_loop.png",
+        "run": "/actions/bullywug_voxel_run_loop.png",
+        "spellcast": "/actions/bullywug_voxel_spellcast_loop.png",
+        "damage": "/actions/bullywug_voxel_damage_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "colossus_titan": {
+      "id": "colossus_titan",
+      "name": "Colossus Titan",
+      "category": "monsters",
+      "badge": "MICROVOXEL TITAN",
+      "badgeColor": "bg-amber-600/20 text-amber-300 border-amber-500/40",
+      "description": "Colossal 3.4m microvoxel titan synthesized directly from volumetric mass envelopes and rig inflation without base mannequin, featuring terracotta sandstone strata, exposed molten core, and multi-voxel kinetic chunk breakaway physics.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.4,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/colossus_titan_preview.png",
+      "voxelLatticeUrl": "/actions/colossus_titan_voxels.json",
+      "actions": {
+        "idle": "/actions/colossus_titan_idle_loop.png",
+        "walk": "/actions/colossus_titan_walk_loop.png",
+        "punch": "/actions/colossus_titan_punch_loop.png",
+        "damage": "/actions/colossus_titan_damage_loop.png"
+      },
+      "pillarAlignment": "existence"
+    },
+    "mimic": {
+      "id": "mimic",
+      "name": "Mimic Chest",
+      "category": "monsters",
+      "badge": "PREDATOR D&D",
+      "badgeColor": "bg-purple-500/20 text-purple-300 border-purple-500/40",
+      "description": "Deceptive wooden chest with razor fangs, amber predator eyes, and a prehensile whip tongue.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/mimic_idle_loop.png",
+        "move": "/actions/mimic_move_loop.png",
+        "attack": "/actions/mimic_attack_loop.png",
+        "tongue_lash": "/actions/mimic_tongue_lash_loop.png",
+        "mimic_reveal": "/actions/mimic_mimic_reveal_loop.png"
+      },
+      "pillarAlignment": "existence"
+    },
+    "rust_monster": {
+      "id": "rust_monster",
+      "name": "Rust Monster",
+      "category": "monsters",
+      "badge": "CORROSIVE ABERRATION",
+      "badgeColor": "bg-amber-500/20 text-amber-300 border-amber-500/40",
+      "description": "Chitinous quadruped with feathery antennae and a prehensile tail that corrodes ferrous metals.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/rust_monster_idle_loop.png",
+        "move": "/actions/rust_monster_move_loop.png",
+        "attack": "/actions/rust_monster_attack_loop.png",
+        "rust_touch": "/actions/rust_monster_rust_touch_loop.png",
+        "rust_cloud": "/actions/rust_monster_rust_cloud_loop.png",
+        "slash": "/actions/rust_monster_slash_loop.png",
+        "spellcast": "/actions/rust_monster_spellcast_loop.png",
+        "walk": "/actions/rust_monster_walk_loop.png"
+      },
+      "pillarAlignment": "improvement"
+    },
+    "displacer_beast": {
+      "id": "displacer_beast",
+      "name": "Displacer Beast",
+      "category": "monsters",
+      "badge": "ILLUSORY BEAST",
+      "badgeColor": "bg-indigo-500/20 text-indigo-300 border-indigo-500/40",
+      "description": "Six-legged feline predator with paired bladed tentacles projecting phase displacement illusions.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.1,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/displacer_beast_idle_loop.png",
+        "walk": "/actions/displacer_beast_walk_loop.png",
+        "run": "/actions/displacer_beast_run_loop.png",
+        "slash": "/actions/displacer_beast_slash_loop.png",
+        "spellcast": "/actions/displacer_beast_spellcast_loop.png"
+      },
+      "pillarAlignment": "transcendence"
+    },
+    "monodrone_clockwork": {
+      "id": "monodrone_clockwork",
+      "name": "Monodrone Clockwork",
+      "category": "monsters",
+      "badge": "AXIOMATIC CONSTRUCT",
+      "badgeColor": "bg-cyan-500/20 text-cyan-300 border-cyan-500/40",
+      "description": "Spherical mechanoid sentry driven by internal brass gears and single focal optic lens.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 0.9,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/monodrone_clockwork_idle_loop.png",
+        "walk": "/actions/monodrone_clockwork_walk_loop.png",
+        "run": "/actions/monodrone_clockwork_run_loop.png",
+        "slash": "/actions/monodrone_clockwork_slash_loop.png",
+        "spellcast": "/actions/monodrone_clockwork_spellcast_loop.png"
+      },
+      "pillarAlignment": "logic"
+    },
+    "sylas_elf_ranger": {
+      "id": "sylas_elf_ranger",
+      "name": "Sylas Elf Ranger",
+      "category": "heroes",
+      "badge": "SYLVAN SCOUT",
+      "badgeColor": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
+      "description": "Fleet-footed elven scout in emerald-leather traveling attire with longbow mastery.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/sylas_elf_ranger_idle_loop.png",
+        "walk": "/actions/sylas_elf_ranger_walk_loop.png",
+        "run": "/actions/sylas_elf_ranger_run_loop.png",
+        "slash": "/actions/sylas_elf_ranger_slash_loop.png",
+        "spellcast": "/actions/sylas_elf_ranger_spellcast_loop.png"
+      },
+      "pillarAlignment": "unity"
+    },
+    "flesh_base_mannequin": {
+      "id": "flesh_base_mannequin",
+      "name": "Flesh Base Mannequin",
+      "category": "heroes",
+      "badge": "CANONICAL FLESH",
+      "badgeColor": "bg-rose-500/20 text-rose-300 border-rose-500/40",
+      "description": "Canonical ungendered flesh biped base mesh, rig, and cel-shaded style from flesh_base_mannequin.blend with calibrated 8-way camera framing.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/flesh_base_mannequin_preview.png",
+      "actions": {
+        "idle": "/actions/flesh_base_mannequin_idle_loop.png",
+        "walk": "/actions/flesh_base_mannequin_walk_loop.png",
+        "run": "/actions/flesh_base_mannequin_run_loop.png",
+        "sprint": "/actions/flesh_base_mannequin_sprint_loop.png",
+        "walk_formal": "/actions/flesh_base_mannequin_walk_formal_loop.png",
+        "crouch_walk": "/actions/flesh_base_mannequin_crouch_walk_loop.png",
+        "crouch_idle": "/actions/flesh_base_mannequin_crouch_idle_loop.png",
+        "slash": "/actions/flesh_base_mannequin_slash_loop.png",
+        "melee_attack_rm": "/actions/flesh_base_mannequin_melee_attack_rm_loop.png",
+        "combat_idle": "/actions/flesh_base_mannequin_combat_idle_loop.png",
+        "punch_cross": "/actions/flesh_base_mannequin_punch_cross_loop.png",
+        "punch_jab": "/actions/flesh_base_mannequin_punch_jab_loop.png",
+        "shoot": "/actions/flesh_base_mannequin_shoot_loop.png",
+        "gun_idle": "/actions/flesh_base_mannequin_gun_idle_loop.png",
+        "aim_neutral": "/actions/flesh_base_mannequin_aim_neutral_loop.png",
+        "aim_down": "/actions/flesh_base_mannequin_aim_down_loop.png",
+        "aim_up": "/actions/flesh_base_mannequin_aim_up_loop.png",
+        "reload": "/actions/flesh_base_mannequin_reload_loop.png",
+        "spellcast": "/actions/flesh_base_mannequin_spellcast_loop.png",
+        "spell_idle": "/actions/flesh_base_mannequin_spell_idle_loop.png",
+        "spell_charge": "/actions/flesh_base_mannequin_spell_charge_loop.png",
+        "spell_release": "/actions/flesh_base_mannequin_spell_release_loop.png",
+        "damage": "/actions/flesh_base_mannequin_damage_loop.png",
+        "hit_head": "/actions/flesh_base_mannequin_hit_head_loop.png",
+        "death": "/actions/flesh_base_mannequin_death_loop.png",
+        "jump": "/actions/flesh_base_mannequin_jump_loop.png",
+        "jump_start": "/actions/flesh_base_mannequin_jump_start_loop.png",
+        "jump_land": "/actions/flesh_base_mannequin_jump_land_loop.png",
+        "roll": "/actions/flesh_base_mannequin_roll_loop.png",
+        "roll_rm": "/actions/flesh_base_mannequin_roll_rm_loop.png",
+        "talk": "/actions/flesh_base_mannequin_talk_loop.png",
+        "interact": "/actions/flesh_base_mannequin_interact_loop.png",
+        "acknowledging": "/actions/flesh_base_mannequin_interact_loop.png",
+        "agreeing": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
+        "dismissing_gesture": "/actions/flesh_base_mannequin_combat_idle_loop.png",
+        "sitting_talk": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
+        "sitting_idle": "/actions/flesh_base_mannequin_sitting_idle_loop.png",
+        "sit_down": "/actions/flesh_base_mannequin_sit_down_loop.png",
+        "stand_up": "/actions/flesh_base_mannequin_stand_up_loop.png",
+        "dance": "/actions/flesh_base_mannequin_dance_loop.png",
+        "idle_torch": "/actions/flesh_base_mannequin_idle_torch_loop.png",
+        "pickup": "/actions/flesh_base_mannequin_pickup_loop.png",
+        "push": "/actions/flesh_base_mannequin_push_loop.png",
+        "repair": "/actions/flesh_base_mannequin_repair_loop.png",
+        "swim_fwd": "/actions/flesh_base_mannequin_swim_fwd_loop.png",
+        "swim_idle": "/actions/flesh_base_mannequin_swim_idle_loop.png",
+        "drive": "/actions/flesh_base_mannequin_drive_loop.png",
+        "tpose": "/actions/flesh_base_mannequin_tpose_loop.png"
+      },
+      "pillarAlignment": "self"
+    },
+    "humanoid_mannequin": {
+      "id": "humanoid_mannequin",
+      "name": "Flesh Base Mannequin",
+      "category": "heroes",
+      "badge": "CANONICAL FLESH",
+      "badgeColor": "bg-rose-500/20 text-rose-300 border-rose-500/40",
+      "description": "Canonical flesh base mannequin armature from flesh_base_mannequin.blend calibrated for 8-directional kinematics, emotional gestures, and modular equipment.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/flesh_base_mannequin_preview.png",
+      "actions": {
+        "idle": "/actions/flesh_base_mannequin_idle_loop.png",
+        "walk": "/actions/flesh_base_mannequin_walk_loop.png",
+        "run": "/actions/flesh_base_mannequin_run_loop.png",
+        "sprint": "/actions/flesh_base_mannequin_sprint_loop.png",
+        "walk_formal": "/actions/flesh_base_mannequin_walk_formal_loop.png",
+        "crouch_walk": "/actions/flesh_base_mannequin_crouch_walk_loop.png",
+        "crouch_idle": "/actions/flesh_base_mannequin_crouch_idle_loop.png",
+        "slash": "/actions/flesh_base_mannequin_slash_loop.png",
+        "melee_attack_rm": "/actions/flesh_base_mannequin_melee_attack_rm_loop.png",
+        "combat_idle": "/actions/flesh_base_mannequin_combat_idle_loop.png",
+        "punch_cross": "/actions/flesh_base_mannequin_punch_cross_loop.png",
+        "punch_jab": "/actions/flesh_base_mannequin_punch_jab_loop.png",
+        "shoot": "/actions/flesh_base_mannequin_shoot_loop.png",
+        "gun_idle": "/actions/flesh_base_mannequin_gun_idle_loop.png",
+        "aim_neutral": "/actions/flesh_base_mannequin_aim_neutral_loop.png",
+        "aim_down": "/actions/flesh_base_mannequin_aim_down_loop.png",
+        "aim_up": "/actions/flesh_base_mannequin_aim_up_loop.png",
+        "reload": "/actions/flesh_base_mannequin_reload_loop.png",
+        "spellcast": "/actions/flesh_base_mannequin_spellcast_loop.png",
+        "spell_idle": "/actions/flesh_base_mannequin_spell_idle_loop.png",
+        "spell_charge": "/actions/flesh_base_mannequin_spell_charge_loop.png",
+        "spell_release": "/actions/flesh_base_mannequin_spell_release_loop.png",
+        "damage": "/actions/flesh_base_mannequin_damage_loop.png",
+        "hit_head": "/actions/flesh_base_mannequin_hit_head_loop.png",
+        "death": "/actions/flesh_base_mannequin_death_loop.png",
+        "jump": "/actions/flesh_base_mannequin_jump_loop.png",
+        "jump_start": "/actions/flesh_base_mannequin_jump_start_loop.png",
+        "jump_land": "/actions/flesh_base_mannequin_jump_land_loop.png",
+        "roll": "/actions/flesh_base_mannequin_roll_loop.png",
+        "roll_rm": "/actions/flesh_base_mannequin_roll_rm_loop.png",
+        "talk": "/actions/flesh_base_mannequin_talk_loop.png",
+        "interact": "/actions/flesh_base_mannequin_interact_loop.png",
+        "acknowledging": "/actions/flesh_base_mannequin_interact_loop.png",
+        "agreeing": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
+        "dismissing_gesture": "/actions/flesh_base_mannequin_combat_idle_loop.png",
+        "sitting_talk": "/actions/flesh_base_mannequin_sitting_talk_loop.png",
+        "sitting_idle": "/actions/flesh_base_mannequin_sitting_idle_loop.png",
+        "sit_down": "/actions/flesh_base_mannequin_sit_down_loop.png",
+        "stand_up": "/actions/flesh_base_mannequin_stand_up_loop.png",
+        "dance": "/actions/flesh_base_mannequin_dance_loop.png",
+        "idle_torch": "/actions/flesh_base_mannequin_idle_torch_loop.png",
+        "pickup": "/actions/flesh_base_mannequin_pickup_loop.png",
+        "push": "/actions/flesh_base_mannequin_push_loop.png",
+        "repair": "/actions/flesh_base_mannequin_repair_loop.png",
+        "swim_fwd": "/actions/flesh_base_mannequin_swim_fwd_loop.png",
+        "swim_idle": "/actions/flesh_base_mannequin_swim_idle_loop.png",
+        "drive": "/actions/flesh_base_mannequin_drive_loop.png",
+        "tpose": "/actions/flesh_base_mannequin_tpose_loop.png"
+      },
+      "pillarAlignment": "self"
+    },
+    "warlock": {
+      "id": "warlock",
+      "name": "Void Warlock",
+      "category": "heroes",
+      "badge": "ELDRITCH OCCULT",
+      "badgeColor": "bg-fuchsia-500/20 text-fuchsia-300 border-fuchsia-500/40",
+      "description": "Robed occult spellweaver channeling deep void resonance and arcane runes.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/warlock_idle_8x8.png"
+      },
+      "pillarAlignment": "transcendence"
+    },
+    "moonlit_mage": {
+      "id": "moonlit_mage",
+      "name": "Moonlit Mage",
+      "category": "heroes",
+      "badge": "ASTRAL ARCANIST",
+      "badgeColor": "bg-gradient-to-r from-blue-500/30 to-cyan-500/30 text-cyan-300 border-cyan-500/50",
+      "description": "True HD native chibi drawn anime cel spellweaver with midnight blue robes, witch hat, starlight embroidery, and comic inking.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/moonlit_mage_idle_loop.png",
+        "walk": "/actions/moonlit_mage_walk_loop.png",
+        "run": "/actions/moonlit_mage_run_loop.png",
+        "slash": "/actions/moonlit_mage_slash_loop.png",
+        "spellcast": "/actions/moonlit_mage_spellcast_loop.png",
+        "hurt": "/actions/moonlit_mage_hurt_loop.png",
+        "death": "/actions/moonlit_mage_death_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "chibi_adventurer": {
+      "id": "chibi_adventurer",
+      "name": "Chibi Fighter",
+      "category": "heroes",
+      "badge": "VERDANT FIGHTER",
+      "badgeColor": "bg-gradient-to-r from-emerald-500/30 to-teal-500/30 text-emerald-300 border-emerald-500/50",
+      "description": "True HD drawn anime cel fighter with spiky chestnut warrior hair, medieval laced tunic, tailored trousers, boots, arming sword, and round buckler.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/chibi_adventurer_idle_loop.png",
+        "walk": "/actions/chibi_adventurer_walk_loop.png",
+        "run": "/actions/chibi_adventurer_run_loop.png",
+        "slash": "/actions/chibi_adventurer_slash_loop.png",
+        "spellcast": "/actions/chibi_adventurer_spellcast_loop.png",
+        "hurt": "/actions/chibi_adventurer_hurt_loop.png",
+        "death": "/actions/chibi_adventurer_death_loop.png"
+      },
+      "pillarAlignment": "unity"
+    },
+    "sunlit_paladin": {
+      "id": "sunlit_paladin",
+      "name": "Sunlit Paladin",
+      "category": "heroes",
+      "badge": "SOLAR CRUSADER",
+      "badgeColor": "bg-gradient-to-r from-amber-500/30 to-yellow-500/30 text-amber-300 border-amber-500/50",
+      "description": "True HD native chibi anime cel holy crusader with ivory surcoat, slate-steel cuirass, radiant sunburst emblem, royal azure cape, and comic inking.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/sunlit_paladin_idle_loop.png",
+        "walk": "/actions/sunlit_paladin_walk_loop.png",
+        "run": "/actions/sunlit_paladin_run_loop.png",
+        "slash": "/actions/sunlit_paladin_slash_loop.png",
+        "spellcast": "/actions/sunlit_paladin_spellcast_loop.png",
+        "hurt": "/actions/sunlit_paladin_hurt_loop.png",
+        "death": "/actions/sunlit_paladin_death_loop.png"
+      },
+      "pillarAlignment": "will"
+    },
+    "flesh_female_adventurer": {
+      "id": "flesh_female_adventurer",
+      "name": "Flesh Heroine (Conformal Base)",
+      "category": "heroes",
+      "badge": "16-BIT CONFORMAL HEROINE",
+      "badgeColor": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
+      "description": "Foundational JRPG heroine rendered directly from the conformal flesh female mannequin with shrinkwrapped anime facial decal.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/flesh_female_adventurer_preview.png",
+      "actions": {
+        "idle": "/actions/flesh_female_adventurer_idle.png",
+        "walk": "/actions/flesh_female_adventurer_walk.png",
+        "run": "/actions/flesh_female_adventurer_run.png"
+      },
+      "pillarAlignment": "self"
+    },
+    "flesh_clothing_layer": {
+      "id": "flesh_clothing_layer",
+      "name": "Forest Traveler Outfit (Layer)",
+      "category": "heroes",
+      "badge": "CONFORMAL 8-WAY LAYER",
+      "badgeColor": "bg-gradient-to-r from-teal-500/30 to-cyan-500/30 text-teal-300 border-teal-500/50",
+      "description": "Isolated transparent conformal clothing layer (Pillar 2 Forest Tunic, Slate Breeches, Leather Boots & Belt) for dynamic 2D runtime stacking in Sprite Lab.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "walk",
+      "actions": {
+        "walk": "/actions/clothing_layer_forest_traveler_walk.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "shadow_rogue": {
+      "id": "shadow_rogue",
+      "name": "Shadow Rogue",
+      "category": "heroes",
+      "badge": "PHANTOM ASSASSIN",
+      "badgeColor": "bg-gradient-to-r from-red-600/30 to-purple-600/30 text-red-300 border-red-500/50",
+      "description": "True HD drawn anime cel shadow assassin with comic inking, hooded cowl with crimson silk piping, glowing crimson phantom mask, obsidian studded leather brigandine, and dual curved stealth daggers.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/shadow_rogue_idle_loop.png",
+        "walk": "/actions/shadow_rogue_walk_loop.png",
+        "run": "/actions/shadow_rogue_run_loop.png",
+        "slash": "/actions/shadow_rogue_slash_loop.png",
+        "spellcast": "/actions/shadow_rogue_spellcast_loop.png",
+        "hurt": "/actions/shadow_rogue_hurt_loop.png",
+        "death": "/actions/shadow_rogue_death_loop.png"
+      },
+      "pillarAlignment": "logic"
+    },
+    "test_dwarf_paladin": {
+      "id": "test_dwarf_paladin",
+      "name": "Thorgar Ironbreaker",
+      "category": "heroes",
+      "badge": "CUSTOM HERO",
+      "badgeColor": "bg-gradient-to-r from-purple-500/30 to-indigo-500/30 text-purple-300 border-purple-500/50",
+      "description": "Custom synthesized 2.5D miniature-painted character.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/test_dwarf_paladin_preview.png",
+      "actions": {
+        "idle": "/actions/test_dwarf_paladin_idle_loop.png"
+      },
+      "pillarAlignment": "unity"
+    },
+    "moose_bot": {
+      "id": "moose_bot",
+      "name": "Moose-Bot",
+      "category": "heroes",
+      "badge": "RETRO CYBORG DANCER",
+      "badgeColor": "bg-gradient-to-r from-pink-500/30 to-cyan-500/30 text-cyan-300 border-cyan-500/50",
+      "description": "Shades-wearing bipedal moose cyborg throwing down 360-degree orbital dance moves in a 2.5D cel-shaded nightclub.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "dance",
+      "previewUrl": "/actions/moose_dance/moose_cel_f000.png",
+      "actions": {
+        "dance": "/actions/moose_dance/moosebot_dance_contact_sheet.png",
+        "idle": "/actions/moose_dance/moosebot_dance_contact_sheet.png"
+      },
+      "pillarAlignment": "resonance"
+    },
+    "stoner_squirrel": {
+      "id": "stoner_squirrel",
+      "name": "Stoner Squirrel",
+      "category": "characters",
+      "badge": "GENX SYNTHESIS",
+      "badgeColor": "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
+      "description": "Chill red squirrel in a green hoodie holding sacred leaves, synthesized via GenX SD v1.5 into a 3D rigged tabletop miniature and filmed via Sprite-Inator.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 4
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/stoner_squirrel_idle.png"
+      },
+      "pillarAlignment": "freedom"
+    },
+    "doob_bee": {
+      "id": "doob_bee",
+      "name": "Doob-bee",
+      "category": "characters",
+      "badge": "MUTATED HYBRID",
+      "badgeColor": "bg-amber-500/20 text-amber-300 border-amber-500/40",
+      "description": "Anthropomorphic honey bee fusing C's 2 golden wings and violet anime face, A's upright body & boots, and B's bold bumblebee stripes, smoking a lit joint while hovering.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 4
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/doob_bee_idle.png"
+      },
+      "pillarAlignment": "creation"
+    },
+    "doob_bee_juiced": {
+      "id": "doob_bee_juiced",
+      "name": "Doob-bee (Juiced)",
+      "category": "characters",
+      "badge": "DISNEY JUICE RIG",
+      "badgeColor": "bg-rose-500/20 text-rose-300 border-rose-500/40",
+      "description": "Juiced-up Doob-bee featuring dynamic joint combustion flare, springy antenna whip physics, sleepy eye blink, expanding smoke ring exhale, and rapid buzzing wings.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 4
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/doob_bee_juiced_idle.png"
+      },
+      "pillarAlignment": "creation"
+    },
+    "frankie_gallagher": {
+      "id": "frankie_gallagher",
+      "name": "Frankie 'Nuts' Gallagher",
+      "category": "characters",
+      "badge": "SOVEREIGN SQUIRREL",
+      "badgeColor": "bg-amber-500/20 text-amber-300 border-amber-500/40",
+      "description": "Anthropomorphic black squirrel in rumpled suit with crazed bloodshot eyes, smoking joint, and giant bushy tail. Authentic underground comix 2.5D hand-drawn animation.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/frankie_8way_idle.png",
+        "walk": "/actions/frankie_8way_walk.png",
+        "visemes": "/actions/frankie_8way_visemes.png"
+      },
+      "pillarAlignment": "resonance"
+    },
+    "lpc_mannequin": {
+      "id": "lpc_mannequin",
+      "name": "LPC Modern Mannequin",
+      "category": "characters",
+      "badge": "8-WAY LPC EVOLUTION",
+      "badgeColor": "bg-gradient-to-r from-amber-500/30 to-orange-500/30 text-amber-300 border-amber-500/50",
+      "description": "Modernized Liberated Pixel Cup 3D humanoid mannequin featuring organic decivoxel flesh, authentic 3-tier cel shading, and full 8-directional omni-movement.",
+      "tileSize": 128,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "actions": {
+        "idle": "/actions/lpc_mannequin_8way_idle.png",
+        "walk": "/actions/lpc_mannequin_8way_walk.png"
+      },
+      "pillarAlignment": "creation"
+    },
+    "elven_shadow_rogue": {
+      "id": "elven_shadow_rogue",
+      "name": "Elven Shadow Rogue (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Bone Devil (Osyluth)\n\nDriven by hate, lust, and envy, bone devils act as the cruel taskmasters of the Nine Hells. They set weaker devils to work, taking special delight in seeing fiends that defy them demoted. At the same time, they long for promotion and are bitterly envious of their superiors, attempting to curry favor though it irks them to do so.\n\nA bone devil appears as a humanoid husk, with dried skin stretched tight across its skeletal frame. It bears a fearsome skull-like head and the tail of a scorpion, and a foul odor of decay hangs in the air around it. Though they are devastating in combat with their claws, bone devils also wield hooked polearms made of bone, which they use to subdue enemies before striking with their venomous tails.\n\nVARIANT: BONE DEVIL POLEARM\n\nSome bone devils have the following action options.\n\nMultiattack. The devil makes two attacks: one with its hooked polearm and one with its sting.\n\nHooked Polearm. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (2d12 + 4) piercing damage. If the target is a Huge or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the devil can\u2019t use its polearm on another target.\n\nBone Devil\nLarge fiend (devil), lawful evil\n\nArmor Class 19 (natural armor)\n\nHit Points 142 (15d10 + 60)\n\nSpeed 40 ft., fly 40 ft.\n\nSTR\n18 (+4)\nDEX\n16 (+3)\nCON\n18 (+4)\nINT\n13 (+1)\nWIS\n14 (+2)\nCHA\n16 (+3)\nSaving Throws Int +5, Wis +6, Cha +7\n\nSkills Deception +7, Insight +6\n\nDamage Resistances cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren\u2019t silvered\n\nDamage Immunities fire, poison\n\nCondition Immunities poisoned\n\nSenses darkvision 120 ft., passive Perception 12\n\nLanguages Infernal, telepathy 120 ft.\n\nChallenge 9 (5,000 XP)\n\nDevil\u2019s Sight. Magical darkness doesn\u2019t impede the devil\u2019s darkvision.\n\nMagic Resistance. The devil has advantage on saving throws against spells and other magical effects.\n\nActions\n\nMultiattack. The devil makes three attacks: two with its claws and one with its sting.\n\nClaw. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) slashing damage.\n\nSting. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\n",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/elven_shadow_rogue_preview.png",
+      "actions": {
+        "idle": "/actions/elven_shadow_rogue_idle_loop.png",
+        "walk": "/actions/elven_shadow_rogue_walk_loop.png",
+        "run": "/actions/elven_shadow_rogue_walk_loop.png",
+        "spellcast": "/actions/elven_shadow_rogue_idle_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "lunaria_sorceress": {
+      "id": "lunaria_sorceress",
+      "name": "Lunaria (Lunar Archmage)",
+      "category": "heroes",
+      "badge": "SEL\u00dbNITE HIGH ARCHMAGE",
+      "badgeColor": "bg-gradient-to-r from-amber-500/30 to-purple-500/30 text-amber-300 border-amber-500/50",
+      "description": "High Elven celestial sorceress in crimson liturgical vestments and royal violet mantle, channeling radiant lunar resonance and dual orbital spell rings.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/lunaria_sorceress_preview.png",
+      "actions": {
+        "idle": "/actions/lunaria_sorceress_idle_loop.png",
+        "walk": "/actions/lunaria_sorceress_walk_loop.png",
+        "run": "/actions/lunaria_sorceress_run_loop.png",
+        "spellcast": "/actions/lunaria_sorceress_spellcast_loop.png"
+      },
+      "pillarAlignment": "transcendence"
+    },
+    "cyber_goliath": {
+      "id": "cyber_goliath",
+      "name": "Cyber Goliath (Heavy Golem)",
+      "category": "heroes",
+      "badge": "FLESH CYBER GOLEM",
+      "badgeColor": "bg-gradient-to-r from-blue-600/30 to-indigo-600/30 text-cyan-300 border-blue-500/50",
+      "description": "Heavy mechanized assault golem translated from reference art and sculpted from the master FLESH mannequin, encased in midnight ballistic kabuto carapace with dual crimson optic sensors.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.15,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/cyber_goliath_preview.png",
+      "actions": {
+        "idle": "/actions/cyber_goliath_idle_loop.png",
+        "walk": "/actions/cyber_goliath_walk_loop.png",
+        "run": "/actions/cyber_goliath_run_loop.png",
+        "spellcast": "/actions/cyber_goliath_spellcast_loop.png"
+      },
+      "pillarAlignment": "will"
+    },
+    "einstein": {
+      "id": "einstein",
+      "name": "Albert Einstein (Chrono-Physicist)",
+      "category": "heroes",
+      "badge": "QUANTUM RELATIVITY",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Legendary theoretical physicist in tailored khaki overcoat, charcoal suit vest, and black bow tie with voluminous shock-white locks and sweeping walrus mustache, bending spacetime and relativity.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.05,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/einstein_preview.png",
+      "actions": {
+        "idle": "/actions/einstein_idle_loop.png",
+        "walk": "/actions/einstein_walk_loop.png",
+        "run": "/actions/einstein_run_loop.png",
+        "spellcast": "/actions/einstein_spellcast_loop.png"
+      },
+      "pillarAlignment": "logic"
+    },
+    "monodrone_5e": {
+      "id": "monodrone_5e",
+      "name": "Monodrone 5e",
+      "category": "heroes",
+      "badge": "CUSTOM HERO",
+      "badgeColor": "bg-gradient-to-r from-purple-500/30 to-indigo-500/30 text-purple-300 border-purple-500/50",
+      "description": "Custom synthesized 2.5D miniature-painted character.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/monodrone_5e_preview.png",
+      "actions": {
+        "idle": "/actions/monodrone_5e_idle_loop.png"
+      },
+      "pillarAlignment": "unity"
+    },
+    "duodrone_5e": {
+      "id": "duodrone_5e",
+      "name": "Duodrone 5e",
+      "category": "heroes",
+      "badge": "CUSTOM HERO",
+      "badgeColor": "bg-gradient-to-r from-purple-500/30 to-indigo-500/30 text-purple-300 border-purple-500/50",
+      "description": "Custom synthesized 2.5D miniature-painted character.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/duodrone_5e_preview.png",
+      "actions": {
+        "idle": "/actions/duodrone_5e_idle_loop.png"
+      },
+      "pillarAlignment": "unity"
+    },
+    "test_golem": {
+      "id": "test_golem",
+      "name": "Test Golem (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Elven rogue in dark traveling cloak with dual daggers.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/test_golem_preview.png",
+      "actions": {
+        "idle": "/actions/test_golem_idle_loop.png",
+        "walk": "/actions/test_golem_walk_loop.png",
+        "run": "/actions/test_golem_run_loop.png",
+        "spellcast": "/actions/test_golem_spellcast_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "einstein_synthesized": {
+      "id": "einstein_synthesized",
+      "name": "Albert Einstein (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Albert Einstein in khaki trenchcoat with wild hair cloud and glowing relativity sigil",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/einstein_synthesized_preview.png",
+      "actions": {
+        "idle": "/actions/einstein_synthesized_idle_loop.png",
+        "walk": "/actions/einstein_synthesized_walk_loop.png",
+        "run": "/actions/einstein_synthesized_walk_loop.png",
+        "spellcast": "/actions/einstein_synthesized_idle_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "curl_test": {
+      "id": "curl_test",
+      "name": "Curl Test (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "test knight",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/curl_test_preview.png",
+      "actions": {
+        "idle": "/actions/curl_test_idle_loop.png",
+        "walk": "/actions/curl_test_walk_loop.png",
+        "run": "/actions/curl_test_walk_loop.png",
+        "spellcast": "/actions/curl_test_idle_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "verification_hero": {
+      "id": "verification_hero",
+      "name": "Verification Hero (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Righteous paladin in polished steel armor with glowing sword",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/verification_hero_preview.png",
+      "actions": {
+        "idle": "/actions/verification_hero_idle_loop.png",
+        "walk": "/actions/verification_hero_walk_loop.png",
+        "run": "/actions/verification_hero_walk_loop.png",
+        "spellcast": "/actions/verification_hero_idle_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "bullywug_5e": {
+      "id": "bullywug_5e",
+      "name": "Bullywug Warrior (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "bullywug frog humanoid with green skin, yellow eyes, leather tunic, carrying spear",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/bullywug_5e_preview.png",
+      "actions": {
+        "idle": "/actions/bullywug_5e_idle_loop.png",
+        "walk": "/actions/bullywug_5e_walk_loop.png",
+        "run": "/actions/bullywug_5e_run_loop.png",
+        "spellcast": "/actions/bullywug_5e_spellcast_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "barbed_devil": {
+      "id": "barbed_devil",
+      "name": "Barbed Devil (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "Barbed Devil: Barbed Devil (Hamatula)\nCreatures of unbridled greed and desire, barbed devils act as guards to the more powerful denizens of the Nine Hells and their vaults. Resembling a tall humanoid covered in sharp barbs, spines, and hooks, a barbed devil has gleaming eyes that are ever watchful for objects and creatures it might claim for itself. These fiends welcome any chance to fight when victory promises reward.\n\nBarbed devils are known for an alertness that makes them difficult to surprise, and they attend to their duties without boredom or distraction. They use their sharp claws as weapons or hurl balls of flame at foes that try to flee them.",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/barbed_devil_preview.png",
+      "actions": {
+        "idle": "/actions/barbed_devil_idle_loop.png",
+        "walk": "/actions/barbed_devil_walk_loop.png",
+        "run": "/actions/barbed_devil_walk_loop.png",
+        "spellcast": "/actions/barbed_devil_idle_loop.png"
+      },
+      "pillarAlignment": "thought"
+    },
+    "microvoxel_golem": {
+      "id": "microvoxel_golem",
+      "name": "Obsidian Wyrmkin (FLESH Golem)",
+      "category": "heroes",
+      "badge": "FLESH GOLEM",
+      "badgeColor": "bg-gradient-to-r from-amber-600/30 to-yellow-600/30 text-amber-300 border-amber-500/50",
+      "description": "obsidian dragon wyrmkin microvoxel flesh golem with glowing ruby scale voxels and fiery core",
+      "tileSize": 256,
+      "grid": {
+        "cols": 8,
+        "rows": 8
+      },
+      "scale": 1.0,
+      "defaultAction": "idle",
+      "previewUrl": "/actions/microvoxel_golem_preview.png",
+      "actions": {
+        "idle": "/actions/microvoxel_golem_idle_loop.png",
+        "walk": "/actions/microvoxel_golem_walk_loop.png",
+        "run": "/actions/microvoxel_golem_run_loop.png",
+        "spellcast": "/actions/microvoxel_golem_spellcast_loop.png"
+      },
+      "pillarAlignment": "thought"
+    }
+  }
+}
