@@ -19,7 +19,7 @@ const PORT = 8081;
 
 // Config and Env variables for dual routing
 const CONFIG_PATH = path.resolve(__dirname, 'bridge_config.json');
-let bridgeConfig = { useCloud: false, activeModel: 'gemma4:26b' };
+let bridgeConfig = { useCloud: false, activeModel: 'myos-cortex:latest' };
 let geminiApiKey = '';
 
 // Zero-API Gemini Web DOM Synaptic Bridge Queue
@@ -802,13 +802,11 @@ const server = http.createServer(async (req, res) => {
                         let description = "Aetherial Vision Scan completed.";
                         
                         if (fsSync.existsSync(dbPath)) {
-                            const sqlite3 = require('sqlite3').verbose();
-                            const db = new sqlite3.Database(dbPath);
                             description = await new Promise((resolve) => {
-                                db.get("SELECT text FROM vectors WHERE type = 'visual_context' ORDER BY timestamp DESC LIMIT 1", (err, row) => {
-                                    db.close();
-                                    if (row && row.text) {
-                                        resolve(row.text);
+                                const pyCode = "import sqlite3; conn = sqlite3.connect(r'" + dbPath + "'); c = conn.cursor(); c.execute(\"SELECT text FROM vectors WHERE type = 'visual_context' ORDER BY timestamp DESC LIMIT 1\"); row = c.fetchone(); print(row[0] if row and row[0] else 'Aetherial Vision Scan completed and vector node stored.'); conn.close()";
+                                execFile('python', ['-c', pyCode], (err, stdout) => {
+                                    if (!err && stdout && stdout.trim()) {
+                                        resolve(stdout.trim());
                                     } else {
                                         resolve("Aetherial Vision Scan completed and vector node stored.");
                                     }
@@ -905,7 +903,7 @@ const server = http.createServer(async (req, res) => {
                     console.log('[Agent Bridge] Studio manifest generation requested...');
                     try {
                         const promptText = data.prompt || '1980s Bakshi/Frazetta dark high fantasy duel on a cliff plateau';
-                        const model = data.model || bridgeConfig.activeModel || 'gemma4:latest';
+                        const model = data.model || bridgeConfig.activeModel || 'myos-cortex:latest';
                         const isOffline = !!data.offline;
 
                         const scriptPath = path.resolve(PROJECT_ROOT, 'scripts/tools/studio_agent_pipeline.py');
@@ -988,7 +986,7 @@ const server = http.createServer(async (req, res) => {
                         // 1. Obtain manifest if not provided directly
                         if (!manifest) {
                             const promptText = data.prompt || '1980s Bakshi/Frazetta dark high fantasy duel on a cliff plateau';
-                            const model = data.model || bridgeConfig.activeModel || 'gemma4:latest';
+                            const model = data.model || bridgeConfig.activeModel || 'myos-cortex:latest';
                             const pipelineScript = path.resolve(PROJECT_ROOT, 'scripts/tools/studio_agent_pipeline.py');
                             const tempManifestPath = path.resolve(PROJECT_ROOT, 'temp_studio_frames', `manifest_gen_${Date.now()}.json`);
                             await fs.mkdir(path.dirname(tempManifestPath), { recursive: true });
@@ -1183,6 +1181,75 @@ const server = http.createServer(async (req, res) => {
                      res.writeHead(200, { 'Content-Type': 'application/json' });
                      return res.end(JSON.stringify({ results }));
                  }
+
+                // Endpoint: /api/models/registry (Sovereign Model Registry)
+                if (pathname === '/api/models/registry') {
+                    const dbPath = path.resolve(PROJECT_ROOT, 'data/myos_vector_store.db');
+                    const pyCode = "import sqlite3, json; conn = sqlite3.connect(r'" + dbPath + "'); c = conn.cursor(); c.execute('SELECT model_id, name, dominant_pillar, substrate_type, endpoint, system_role, vector_filter_types, is_active FROM model_registry'); rows = c.fetchall(); conn.close(); cols = ['model_id', 'name', 'dominant_pillar', 'substrate_type', 'endpoint', 'system_role', 'vector_filter_types', 'is_active']; print(json.dumps([dict(zip(cols, r)) for r in rows]))";
+                    execFile('python', ['-c', pyCode], (err, stdout) => {
+                        if (err) {
+                            res.writeHead(500);
+                            return res.end(JSON.stringify({ error: err.message }));
+                        }
+                        res.writeHead(200, { 'Content-Type': 'application/json' });
+                        return res.end(stdout.trim());
+                    });
+                    return;
+                }
+
+                // Endpoint: /api/inode/stamp (Living Semantic Inode Generator & Stamper)
+                if (pathname === '/api/inode/stamp') {
+                    const targetFile = data.filePath;
+                    if (!targetFile) {
+                        res.writeHead(400);
+                        return res.end(JSON.stringify({ error: 'Missing filePath in request body' }));
+                    }
+                    const injectorScript = path.resolve(PROJECT_ROOT, 'scripts/tools/semantic_node_injector.py');
+                    execFile('python', [injectorScript, targetFile, '--stamp'], (err, stdout) => {
+                        if (err) {
+                            res.writeHead(500);
+                            return res.end(JSON.stringify({ error: err.message }));
+                        }
+                        res.writeHead(200, { 'Content-Type': 'application/json' });
+                        return res.end(JSON.stringify({ success: true, log: stdout.trim() }));
+                    });
+                    return;
+                }
+
+                // Endpoint: /api/cortex/ask (Grounded Memory RAG Cortex Query)
+                if (pathname === '/api/cortex/ask') {
+                    const userQuery = data.query || data.prompt;
+                    if (!userQuery) {
+                        res.writeHead(400);
+                        return res.end(JSON.stringify({ error: 'Missing query in request body' }));
+                    }
+
+                    const pythonScript = path.resolve(PROJECT_ROOT, 'scripts/tools/cortex_memory_bridge.py');
+                    const child = spawn('python', [pythonScript, userQuery]);
+
+                    let stdoutData = '';
+                    let stderrData = '';
+
+                    child.stdout.on('data', (d) => { stdoutData += d.toString(); });
+                    child.stderr.on('data', (d) => { stderrData += d.toString(); });
+
+                    child.on('close', (code) => {
+                        if (code !== 0) {
+                            console.error('[Cortex Bridge Error]', stderrData);
+                            res.writeHead(500);
+                            return res.end(JSON.stringify({ error: "Cortex memory bridge failed: " + stderrData }));
+                        }
+                        try {
+                            const parsed = JSON.parse(stdoutData.trim());
+                            res.writeHead(200, { 'Content-Type': 'application/json' });
+                            return res.end(JSON.stringify(parsed));
+                        } catch (parseErr) {
+                            res.writeHead(200, { 'Content-Type': 'application/json' });
+                            return res.end(JSON.stringify({ success: true, response: stdoutData.trim() }));
+                        }
+                    });
+                    return;
+                }
 
                 // Not found
                 res.writeHead(404);
